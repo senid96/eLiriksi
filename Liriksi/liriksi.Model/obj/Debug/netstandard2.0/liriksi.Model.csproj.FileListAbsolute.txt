@@ -1,0 +1,9 @@
+C:\Users\ajkun\source\repos\Liriksi\liriksi.Model\bin\Debug\netstandard2.0\liriksi.Model.deps.json
+C:\Users\ajkun\source\repos\Liriksi\liriksi.Model\bin\Debug\netstandard2.0\liriksi.Model.dll
+C:\Users\ajkun\source\repos\Liriksi\liriksi.Model\bin\Debug\netstandard2.0\liriksi.Model.pdb
+C:\Users\ajkun\source\repos\Liriksi\liriksi.Model\obj\Debug\netstandard2.0\liriksi.Model.csprojAssemblyReference.cache
+C:\Users\ajkun\source\repos\Liriksi\liriksi.Model\obj\Debug\netstandard2.0\liriksi.Model.csproj.CoreCompileInputs.cache
+C:\Users\ajkun\source\repos\Liriksi\liriksi.Model\obj\Debug\netstandard2.0\liriksi.Model.AssemblyInfoInputs.cache
+C:\Users\ajkun\source\repos\Liriksi\liriksi.Model\obj\Debug\netstandard2.0\liriksi.Model.AssemblyInfo.cs
+C:\Users\ajkun\source\repos\Liriksi\liriksi.Model\obj\Debug\netstandard2.0\liriksi.Model.dll
+C:\Users\ajkun\source\repos\Liriksi\liriksi.Model\obj\Debug\netstandard2.0\liriksi.Model.pdb

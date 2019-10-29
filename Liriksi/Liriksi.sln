@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "liriksi.Model", "liriksi.Model\liriksi.Model.csproj", "{D1434C7F-0A47-4CBD-A419-4F3F041A1818}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "liriksi.WebAPI", "liriksi.WebAPI\liriksi.WebAPI.csproj", "{53566392-898B-4948-8003-E5DA224F28B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1434C7F-0A47-4CBD-A419-4F3F041A1818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1434C7F-0A47-4CBD-A419-4F3F041A1818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1434C7F-0A47-4CBD-A419-4F3F041A1818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1434C7F-0A47-4CBD-A419-4F3F041A1818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53566392-898B-4948-8003-E5DA224F28B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53566392-898B-4948-8003-E5DA224F28B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53566392-898B-4948-8003-E5DA224F28B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53566392-898B-4948-8003-E5DA224F28B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4A3363C-C5D6-4C86-9F46-6DE9ED9D8401}
+	EndGlobalSection
+EndGlobal
