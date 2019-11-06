@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using liriksi.WebAPI.EF;
+using liriksi.WebAPI.Filters;
 using liriksi.WebAPI.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -27,7 +31,7 @@ namespace liriksi.WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc(x=> x.Filters.Add<ErrorFilter>()).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
@@ -35,8 +39,14 @@ namespace liriksi.WebAPI
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
             });
 
-            //dependeny injection
+            //services dependeny injection
             services.AddScoped<ISongService, SongService>();
+            services.AddScoped<IUserService, UserService>();
+
+            //entity framework
+            services.AddDbContext<LiriksiContext>(options => options.UseSqlServer("Server=DESKTOP-CP7742G; Database=liriksiDB; Trusted_Connection=true;"));
+
+            services.AddAutoMapper();
 
         }
 

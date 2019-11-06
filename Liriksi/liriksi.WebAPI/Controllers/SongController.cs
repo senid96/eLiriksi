@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using liriksi.Model;
 using liriksi.WebAPI.Services;
+using liriksi.Model.Requests;
 
 namespace liriksi.WebAPI.Controllers
 {
@@ -22,43 +23,22 @@ namespace liriksi.WebAPI.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Song>> GetAllSongs(){
-            return _songService.Get().ToList<Song>();
+        public ActionResult<List<Song>> Get(){
+            return _songService.Get();
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Song> GetSongById(int id)
+        public ActionResult<Song> Get(int id)
         {
-            var item = new Song()
-            {
-                SongId = 3,
-                Name = "Fade to black",
-                Album = "Black Album"
-            };
-
-            return item;
+            return _songService.GetById(id);
         }
 
         [HttpPost]
-        public Song Insert(Song song)
+        public ActionResult<Song> Insert(SongInsertRequest song)
         {
-            return new Song()
-            {
-                SongId = 3,
-                Name = "Fade to black",
-                Album = "Black Album"
-            };
+           return _songService.Insert(song);
         }
 
-        [HttpPut("{id}")]
-        public Song Update(int id, Song song)
-        {
-            return new Song()
-            {
-                SongId = 3,
-                Name = "Fade to black",
-                Album = "Black Album"
-            };
-        }
+
     }
 }

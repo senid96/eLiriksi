@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "liriksi.Model", "liriksi.Model\liriksi.Model.csproj", "{D1434C7F-0A47-4CBD-A419-4F3F041A1818}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "liriksi.Model", "liriksi.Model\liriksi.Model.csproj", "{D1434C7F-0A47-4CBD-A419-4F3F041A1818}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "liriksi.WebAPI", "liriksi.WebAPI\liriksi.WebAPI.csproj", "{53566392-898B-4948-8003-E5DA224F28B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "liriksi.WebAPI", "liriksi.WebAPI\liriksi.WebAPI.csproj", "{53566392-898B-4948-8003-E5DA224F28B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{8E961501-54F2-4407-BF32-B9BEE58F18D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "liriksi.WinUI", "liriksi.WinUI\liriksi.WinUI.csproj", "{EC229FCE-CE67-4C05-92B2-6224D6844A27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +25,16 @@ Global
 		{53566392-898B-4948-8003-E5DA224F28B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53566392-898B-4948-8003-E5DA224F28B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53566392-898B-4948-8003-E5DA224F28B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC229FCE-CE67-4C05-92B2-6224D6844A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC229FCE-CE67-4C05-92B2-6224D6844A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC229FCE-CE67-4C05-92B2-6224D6844A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC229FCE-CE67-4C05-92B2-6224D6844A27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EC229FCE-CE67-4C05-92B2-6224D6844A27} = {8E961501-54F2-4407-BF32-B9BEE58F18D7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E4A3363C-C5D6-4C86-9F46-6DE9ED9D8401}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ajkun\\Documents\\GitHub\\eLiriksi\\Liriksi\\liriksi.Model\\liriksi.Model.csproj": {}
+    "C:\\Users\\ajkun\\Desktop\\GitRepos\\eLiriksi\\Liriksi\\liriksi.Model\\liriksi.Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ajkun\\Documents\\GitHub\\eLiriksi\\Liriksi\\liriksi.Model\\liriksi.Model.csproj": {
+    "C:\\Users\\ajkun\\Desktop\\GitRepos\\eLiriksi\\Liriksi\\liriksi.Model\\liriksi.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ajkun\\Documents\\GitHub\\eLiriksi\\Liriksi\\liriksi.Model\\liriksi.Model.csproj",
+        "projectUniqueName": "C:\\Users\\ajkun\\Desktop\\GitRepos\\eLiriksi\\Liriksi\\liriksi.Model\\liriksi.Model.csproj",
         "projectName": "liriksi.Model",
-        "projectPath": "C:\\Users\\ajkun\\Documents\\GitHub\\eLiriksi\\Liriksi\\liriksi.Model\\liriksi.Model.csproj",
+        "projectPath": "C:\\Users\\ajkun\\Desktop\\GitRepos\\eLiriksi\\Liriksi\\liriksi.Model\\liriksi.Model.csproj",
         "packagesPath": "C:\\Users\\ajkun\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ajkun\\Documents\\GitHub\\eLiriksi\\Liriksi\\liriksi.Model\\obj\\",
+        "outputPath": "C:\\Users\\ajkun\\Desktop\\GitRepos\\eLiriksi\\Liriksi\\liriksi.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -43,6 +43,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -52,6 +56,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.0.0-rc4, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.5.0, )"
             }
           },
           "imports": [

@@ -5,12 +5,32 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\**" />
+    <Content Remove="Migrations\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <None Remove="Migrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Migrations\20191030084454_addedUserTable.cs" />
+    <Compile Include="Migrations\20191030084454_addedUserTable.Designer.cs" />
+    <Compile Include="Migrations\20191030085036_addedUserTable3.cs" />
+    <Compile Include="Migrations\20191030085036_addedUserTable3.Designer.cs" />
+    <Compile Include="Migrations\20191030110534_addedUserType.cs" />
+    <Compile Include="Migrations\20191030110534_addedUserType.Designer.cs" />
+    <Compile Include="Migrations\LiriksiContextModelSnapshot.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
   </ItemGroup>
 
