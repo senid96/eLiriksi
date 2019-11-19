@@ -21,10 +21,24 @@ namespace liriksi.WebAPI.Services
         }
 
         //methods
-        public List<UserGetRequest> Get()
+        public List<UserGetRequest> Get(UserSearchRequest request)
         {
-            var list = _context.User.ToList();
+            var query = _context.User.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(request?.Name))
+            { // ? je ako je citav objekat null prestaje izvrsenje koda
+                query = query.Where(x => x.Name.Contains(request.Name));
+            }
+
+            if (!string.IsNullOrWhiteSpace(request?.Surname))
+            { // ? je ako je citav objekat null prestaje izvrsenje koda
+                query = query.Where(x => x.Surname.Contains(request.Surname));
+            }
+
+            var list = query.ToList();
+
             return _mapper.Map<List<UserGetRequest>>(list);
+
         }
         public UserGetRequest GetById(int id)
         {
@@ -41,7 +55,8 @@ namespace liriksi.WebAPI.Services
             var entity = _mapper.Map<User>(userRequest);
             entity.Hash = "test";
             entity.Salt = "test";
-
+            entity.Status = true;
+            entity.UserTypeId = 1; //todo ne treba biti zakucano
             _context.User.Add(entity);
             _context.SaveChanges();
 

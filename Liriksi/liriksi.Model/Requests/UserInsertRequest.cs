@@ -8,10 +8,10 @@ namespace liriksi.Model.Requests
     public class UserInsertRequest
     {
         [Required]
-        [MinLength(5)]
+        [MinLength(2)]
         public string Name { get; set; }
         [Required]
-        [MinLength(5)]
+        [MinLength(3)]
         public string Surname { get; set; }
         [Required]
         [EmailAddress]
@@ -21,10 +21,8 @@ namespace liriksi.Model.Requests
         [Required]
         [MinLength(5)]
         public string Username { get; set; }
-        [Required]
-        public int UserType { get; set; }
-
         public string Password { get; set; }
         public string PasswordConfirmation { get; set; }
+        public int UserTypeId { get; set; }
     }
 }

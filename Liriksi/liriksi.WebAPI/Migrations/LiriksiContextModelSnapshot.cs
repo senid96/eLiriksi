@@ -67,21 +67,36 @@ namespace liriksi.WebAPI.Migrations
 
                     b.Property<string>("Name");
 
-                    b.Property<string>("Password");
-
                     b.Property<string>("PhoneNumber");
 
                     b.Property<string>("Salt");
 
+                    b.Property<bool>("Status");
+
                     b.Property<string>("Surname");
 
-                    b.Property<int>("UserType");
+                    b.Property<int>("UserTypeId");
 
                     b.Property<string>("Username");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("UserTypeId");
+
                     b.ToTable("User");
+                });
+
+            modelBuilder.Entity("liriksi.Model.UserType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Type");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UserType");
                 });
 
             modelBuilder.Entity("liriksi.Model.Song", b =>
@@ -89,6 +104,14 @@ namespace liriksi.WebAPI.Migrations
                     b.HasOne("liriksi.Model.Album", "Album")
                         .WithMany()
                         .HasForeignKey("AlbumId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("liriksi.Model.User", b =>
+                {
+                    b.HasOne("liriksi.Model.UserType", "UserType")
+                        .WithMany()
+                        .HasForeignKey("UserTypeId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

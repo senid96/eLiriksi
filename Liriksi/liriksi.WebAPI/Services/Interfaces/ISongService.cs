@@ -9,7 +9,7 @@ namespace liriksi.WebAPI.Services
 {
     public interface ISongService
     {
-        List<Song> Get();
+        List<SongGetRequest> Get(string songTitle);
         Song GetById(int id);
         Song Insert(SongInsertRequest song);
         void Delete(int id);

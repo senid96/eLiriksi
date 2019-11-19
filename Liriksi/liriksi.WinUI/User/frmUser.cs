@@ -9,15 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Flurl;
 using Flurl.Http;
+using liriksi.Model.Requests;
+
 namespace liriksi.WinUI.User
 {
     public partial class frmUser : Form
     {
+
+        private readonly APIService _apiService = new APIService("user");
         public frmUser()
         {
             InitializeComponent();
-            var result = "https://localhost:44313/api/User".GetJsonAsync<dynamic>().Result;
-            dgvUser.DataSource = result;
+
+            //dgvUser.DataSource = _apiService.Get<dynamic>();
         }
 
         private void GroupBox1_Enter(object sender, EventArgs e)
@@ -32,13 +36,38 @@ namespace liriksi.WinUI.User
 
         private void FrmUser_Load(object sender, EventArgs e)
         {
-
+            dgvUser.AutoGenerateColumns = false;
         }
 
-        private void BtnShow_Click(object sender, EventArgs e)
+        private async void BtnShow_Click(object sender, EventArgs e)
         {
-            var result = "https://localhost:44313/api/User".GetJsonAsync<dynamic>().Result;
+            var search = new UserSearchRequest()
+            {
+                Name = txtboxName.Text,
+                Surname = txtboxSurname.Text            
+            };
+
+            var result = await _apiService.Get<List<UserGetRequest>>(search);
+
             dgvUser.DataSource = result;
+          
         }
+
+        private void TxtSearchParameter_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LblSearchParam_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnClearSearch_Click(object sender, EventArgs e)
+        {
+            txtboxName.Text = "";
+            txtboxSurname.Text = "";
+        }
+       
     }
 }

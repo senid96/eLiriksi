@@ -45,7 +45,6 @@ namespace liriksi.WebAPI
 
             //entity framework
             services.AddDbContext<LiriksiContext>(options => options.UseSqlServer("Server=DESKTOP-CP7742G; Database=liriksiDB; Trusted_Connection=true;"));
-
             services.AddAutoMapper();
 
         }

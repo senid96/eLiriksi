@@ -1,0 +1,145 @@
+﻿namespace liriksi.WinUI
+{
+    partial class frmIndex
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.korisniciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pjesmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.songRequestsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip.SuspendLayout();
+            this.statusStrip.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // menuStrip
+            // 
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.korisniciToolStripMenuItem,
+            this.pjesmeToolStripMenuItem,
+            this.songRequestsToolStripMenuItem});
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(632, 24);
+            this.menuStrip.TabIndex = 0;
+            this.menuStrip.Text = "MenuStrip";
+            // 
+            // statusStrip
+            // 
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel});
+            this.statusStrip.Location = new System.Drawing.Point(0, 431);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(632, 22);
+            this.statusStrip.TabIndex = 2;
+            this.statusStrip.Text = "StatusStrip";
+            // 
+            // toolStripStatusLabel
+            // 
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
+            this.toolStripStatusLabel.Text = "Status";
+            // 
+            // korisniciToolStripMenuItem
+            // 
+            this.korisniciToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.searchToolStripMenuItem,
+            this.addNewUserToolStripMenuItem});
+            this.korisniciToolStripMenuItem.Name = "korisniciToolStripMenuItem";
+            this.korisniciToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.korisniciToolStripMenuItem.Text = "Users";
+            this.korisniciToolStripMenuItem.Click += new System.EventHandler(this.KorisniciToolStripMenuItem_Click);
+            // 
+            // pjesmeToolStripMenuItem
+            // 
+            this.pjesmeToolStripMenuItem.Name = "pjesmeToolStripMenuItem";
+            this.pjesmeToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.pjesmeToolStripMenuItem.Text = "Songs";
+            // 
+            // songRequestsToolStripMenuItem
+            // 
+            this.songRequestsToolStripMenuItem.Name = "songRequestsToolStripMenuItem";
+            this.songRequestsToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
+            this.songRequestsToolStripMenuItem.Text = "Song requests";
+            // 
+            // searchToolStripMenuItem
+            // 
+            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.searchToolStripMenuItem.Text = "Search";
+            this.searchToolStripMenuItem.Click += new System.EventHandler(this.SearchToolStripMenuItem_Click);
+            // 
+            // addNewUserToolStripMenuItem
+            // 
+            this.addNewUserToolStripMenuItem.Name = "addNewUserToolStripMenuItem";
+            this.addNewUserToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addNewUserToolStripMenuItem.Text = "New user";
+            this.addNewUserToolStripMenuItem.Click += new System.EventHandler(this.AddNewUserToolStripMenuItem_Click);
+            // 
+            // frmIndex
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(632, 453);
+            this.Controls.Add(this.statusStrip);
+            this.Controls.Add(this.menuStrip);
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.menuStrip;
+            this.Name = "frmIndex";
+            this.Text = "frmIndex";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+        #endregion
+
+
+        private System.Windows.Forms.MenuStrip menuStrip;
+        private System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
+        private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.ToolStripMenuItem korisniciToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pjesmeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addNewUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem songRequestsToolStripMenuItem;
+    }
+}
+
+
+

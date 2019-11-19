@@ -13,5 +13,6 @@ namespace liriksi.Model.Requests
         public string PhoneNumber { get; set; }
         public string Username { get; set; }
         public int UserType { get; set; }
+        public bool Status { get; set; }
     }
 }

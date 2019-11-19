@@ -22,9 +22,9 @@ namespace liriksi.WebAPI.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<UserGetRequest>> Get()
+        public ActionResult<List<UserGetRequest>> Get([FromQuery]UserSearchRequest request)
         {
-            return _userService.Get();
+            return _userService.Get(request);
         }
 
         [HttpGet("{id}")]

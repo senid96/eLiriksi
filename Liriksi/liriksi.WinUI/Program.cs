@@ -17,7 +17,7 @@ namespace liriksi.WinUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmUser());
+            Application.Run(new frmIndex());
         }
     }
 }

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "41cadcbf48b20e8e44a172122c96546950b3daeb"
+    "signature": "fa96e4dc57d939666140debf3953cbb7f5a2b6a3"
   },
   "compilationOptions": {
     "defines": [
@@ -115,7 +115,7 @@
           "Microsoft.Extensions.Logging": "2.1.1",
           "Remotion.Linq": "2.2.0",
           "System.Collections.Immutable": "1.5.0",
-          "System.ComponentModel.Annotations": "4.5.0",
+          "System.ComponentModel.Annotations": "4.6.0",
           "System.Diagnostics.DiagnosticSource": "4.5.1",
           "System.Interactive.Async": "3.1.1"
         },
@@ -570,6 +570,7 @@
         }
       },
       "System.Collections.Immutable/1.5.0": {},
+      "System.ComponentModel.Annotations/4.6.0": {},
       "System.Composition/1.0.31": {
         "dependencies": {
           "System.Composition.AttributedModel": "1.0.31",
@@ -748,7 +749,7 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0",
           "Swashbuckle.AspNetCore": "5.0.0-rc4",
-          "System.ComponentModel.Annotations": "4.5.0"
+          "System.ComponentModel.Annotations": "4.6.0"
         },
         "runtime": {
           "liriksi.Model.dll": {}
@@ -1526,7 +1527,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.Core": "2.1.1",
           "Microsoft.Extensions.Localization": "2.1.1",
-          "System.ComponentModel.Annotations": "4.5.0"
+          "System.ComponentModel.Annotations": "4.6.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.DataAnnotations.dll": {}
@@ -2333,7 +2334,7 @@
           "Microsoft.AspNetCore.Cryptography.KeyDerivation": "2.1.1",
           "Microsoft.Extensions.Logging": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1",
-          "System.ComponentModel.Annotations": "4.5.0"
+          "System.ComponentModel.Annotations": "4.6.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Identity.Core.dll": {}
@@ -2344,7 +2345,7 @@
         "dependencies": {
           "Microsoft.Extensions.Identity.Core": "2.1.1",
           "Microsoft.Extensions.Logging": "2.1.1",
-          "System.ComponentModel.Annotations": "4.5.0"
+          "System.ComponentModel.Annotations": "4.6.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Identity.Stores.dll": {}
@@ -2763,9 +2764,6 @@
           "System.Runtime.Extensions": "4.3.0",
           "System.Threading": "4.3.0"
         },
-        "compileOnly": true
-      },
-      "System.ComponentModel.Annotations/4.5.0": {
         "compileOnly": true
       },
       "System.Console/4.3.0": {
@@ -3849,6 +3847,13 @@
       "sha512": "sha512-EXKiDFsChZW0RjrZ4FYHu9aW6+P4MCgEDCklsVseRfhoO0F+dXeMSsMRAlVXIo06kGJ/zv+2w1a2uc2+kxxSaQ==",
       "path": "system.collections.immutable/1.5.0",
       "hashPath": "system.collections.immutable.1.5.0.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pOd+UhZ3X8xfwKDlgAzowUJNjp8VYVmOHZm++vCd0kq1HZ0zK3mNo2yRXjYgv7Ik/Xi43fmJfND2PLEsQSALCg==",
+      "path": "system.componentmodel.annotations/4.6.0",
+      "hashPath": "system.componentmodel.annotations.4.6.0.nupkg.sha512"
     },
     "System.Composition/1.0.31": {
       "type": "package",
@@ -5191,13 +5196,6 @@
       "sha512": "sha512-Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
       "path": "system.collections.specialized/4.3.0",
       "hashPath": "system.collections.specialized.4.3.0.nupkg.sha512"
-    },
-    "System.ComponentModel.Annotations/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-UxYQ3FGUOtzJ7LfSdnYSFd7+oEv6M8NgUatatIN2HxNtDdlcvFAf+VIq4Of9cDMJEJC0aSRv/x898RYhB4Yppg==",
-      "path": "system.componentmodel.annotations/4.5.0",
-      "hashPath": "system.componentmodel.annotations.4.5.0.nupkg.sha512"
     },
     "System.Console/4.3.0": {
       "type": "package",

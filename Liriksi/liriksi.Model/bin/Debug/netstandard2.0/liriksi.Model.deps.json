@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "14fd3c6b1ea0583959bd110d1b8702e253f1aed7"
+    "signature": "caaa36dbda899768b81ec4e1f107694aa24167f2"
   },
   "compilationOptions": {},
   "targets": {
@@ -12,7 +12,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0",
           "NETStandard.Library": "2.0.3",
           "Swashbuckle.AspNetCore": "5.0.0-rc4",
-          "System.ComponentModel.Annotations": "4.5.0"
+          "System.ComponentModel.Annotations": "4.6.0"
         },
         "runtime": {
           "liriksi.Model.dll": {}
@@ -234,7 +234,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.Core": "2.0.0",
           "Microsoft.Extensions.Localization": "2.0.0",
-          "System.ComponentModel.Annotations": "4.5.0"
+          "System.ComponentModel.Annotations": "4.6.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.DataAnnotations.dll": {
@@ -673,7 +673,7 @@
           }
         }
       },
-      "System.ComponentModel.Annotations/4.5.0": {
+      "System.ComponentModel.Annotations/4.6.0": {
         "runtime": {
           "lib/netstandard2.0/System.ComponentModel.Annotations.dll": {
             "assemblyVersion": "4.2.1.0",
@@ -1602,12 +1602,12 @@
       "path": "system.componentmodel/4.3.0",
       "hashPath": "system.componentmodel.4.3.0.nupkg.sha512"
     },
-    "System.ComponentModel.Annotations/4.5.0": {
+    "System.ComponentModel.Annotations/4.6.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UxYQ3FGUOtzJ7LfSdnYSFd7+oEv6M8NgUatatIN2HxNtDdlcvFAf+VIq4Of9cDMJEJC0aSRv/x898RYhB4Yppg==",
-      "path": "system.componentmodel.annotations/4.5.0",
-      "hashPath": "system.componentmodel.annotations.4.5.0.nupkg.sha512"
+      "sha512": "sha512-pOd+UhZ3X8xfwKDlgAzowUJNjp8VYVmOHZm++vCd0kq1HZ0zK3mNo2yRXjYgv7Ik/Xi43fmJfND2PLEsQSALCg==",
+      "path": "system.componentmodel.annotations/4.6.0",
+      "hashPath": "system.componentmodel.annotations.4.6.0.nupkg.sha512"
     },
     "System.ComponentModel.Primitives/4.3.0": {
       "type": "package",

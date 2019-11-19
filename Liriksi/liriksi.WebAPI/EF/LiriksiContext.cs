@@ -20,6 +20,7 @@ namespace liriksi.WebAPI.EF
         public DbSet<Song> Song { get; set; }
         public DbSet<Album> Album { get; set; }
         public DbSet<User> User { get; set; }
+        public DbSet<UserType> UserType { get; set; }
 
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
