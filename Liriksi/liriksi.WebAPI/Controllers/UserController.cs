@@ -39,6 +39,11 @@ namespace liriksi.WebAPI.Controllers
             return _userService.Insert(userRequst);
         }
 
+        [HttpPut("{id}")]
+        public UserGetRequest Update(int id, UserInsertRequest userRequest)
+        {
+            return _userService.Update(id, userRequest);
+        }
         
 
     }

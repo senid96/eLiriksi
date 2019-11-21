@@ -14,7 +14,6 @@ namespace liriksi.WinUI
     public partial class frmIndex : Form
     {
         private int childFormNumber = 0;
-        frmUser _frmUser = null;
         public frmIndex()
         {
             InitializeComponent();
@@ -115,23 +114,10 @@ namespace liriksi.WinUI
 
         private void SearchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (_frmUser == null)
-            {
-                _frmUser = new frmUser();
-                _frmUser.MdiParent = this;
-                _frmUser.WindowState = FormWindowState.Maximized;
-                _frmUser.Show();
-            }
-            else
-            {
-                _frmUser.Show(); // TODO: pada ovdje jer ne seta na null formu kada je zatvori
-            }
-           
-        }
-
-        private void FrmUser_Closing(object sender, FormClosingEventArgs e)
-        {
-            _frmUser = null;
+            frmUser frm = new frmUser();
+            frm.MdiParent = this;
+            frm.WindowState = FormWindowState.Maximized;
+            frm.Show();
         }
     }
 }

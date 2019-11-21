@@ -15,7 +15,7 @@ namespace liriksi.Model
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
         [ForeignKey("UserTypeId")]
-        public UserType UserType { get; set; }
+        public virtual UserType UserType { get; set; }
         public int UserTypeId { get; set; }
         public string Username { get; set; }
         public string Hash { get; set; }

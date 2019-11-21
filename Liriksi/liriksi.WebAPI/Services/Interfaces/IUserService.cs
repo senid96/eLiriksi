@@ -12,7 +12,7 @@ namespace liriksi.WebAPI.Services
         List<UserGetRequest> Get(UserSearchRequest request);
         UserGetRequest GetById(int id);
         UserGetRequest Insert(UserInsertRequest userRequest);
-       
+        UserGetRequest Update(int id, UserInsertRequest userRequest);
 
     }
 }

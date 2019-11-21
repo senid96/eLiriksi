@@ -42,7 +42,7 @@ namespace liriksi.WebAPI.Services
         }
         public UserGetRequest GetById(int id)
         {
-            var user = _context.User.Where(x => x.Id.Equals(id)).FirstOrDefault();
+            var user = _context.User.Find(id);
             return _mapper.Map<UserGetRequest>(user);
         }    
         public UserGetRequest Insert(UserInsertRequest userRequest)
@@ -56,11 +56,32 @@ namespace liriksi.WebAPI.Services
             entity.Hash = "test";
             entity.Salt = "test";
             entity.Status = true;
-            entity.UserTypeId = 1; //todo ne treba biti zakucano
             _context.User.Add(entity);
             _context.SaveChanges();
 
             return _mapper.Map<UserGetRequest>(entity);
+        }
+        public UserGetRequest Update(int id, UserInsertRequest userRequest)
+        {
+            var entity = _context.User.Find(id);
+
+            if (!string.IsNullOrEmpty(userRequest.Password) && !string.IsNullOrEmpty(userRequest.Password))
+            {
+                if (!userRequest.Password.Equals(userRequest.PasswordConfirmation))
+                {
+                    throw new Exception("Passwords are not equal");
+                }
+                //TODO update password
+            }
+             
+            _context.Attach(entity);
+            _context.Update(entity);
+
+           // _mapper.Map<User>(userRequest);
+            _mapper.Map(userRequest, entity);
+            _context.SaveChanges();
+
+            return _mapper.Map<UserGetRequest>(userRequest);
         }
      
     }

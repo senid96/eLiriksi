@@ -50,7 +50,6 @@ namespace liriksi.WinUI.User
             var result = await _apiService.Get<List<UserGetRequest>>(search);
 
             dgvUser.DataSource = result;
-          
         }
 
         private void TxtSearchParameter_TextChanged(object sender, EventArgs e)
@@ -68,6 +67,17 @@ namespace liriksi.WinUI.User
             txtboxName.Text = "";
             txtboxSurname.Text = "";
         }
-       
+
+        private void DgvUser_DoubleClick(object sender, EventArgs e)
+        {
+            var id = dgvUser.SelectedRows[0].Cells[0].Value;
+            frmUserDetails frm = new frmUserDetails(int.Parse(id.ToString()));
+            frm.Show();
+        }
+
+        private void DgvUser_AllowUserToOrderColumnsChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

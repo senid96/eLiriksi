@@ -14,13 +14,15 @@ namespace liriksi.WinUI.User
     public partial class frmUserDetails : Form
     {
         private readonly APIService _userService = new APIService("user");
+        private int? _userId;
         
-        public frmUserDetails()
+        public frmUserDetails(int? userId = null)
         {
+            _userId = userId;
             InitializeComponent();
         }
 
-        private void BtnSaveUser_Click(object sender, EventArgs e)
+        private async void BtnSaveUser_Click(object sender, EventArgs e)
         {
             UserInsertRequest user = new UserInsertRequest();
             user.Name = txtboxName.Text;
@@ -31,13 +33,29 @@ namespace liriksi.WinUI.User
             user.Password = txtboxPassword.Text;
             user.PasswordConfirmation = txtboxPasswordConf.Text;
 
-            
-          //_userService.. // TODO 
+            if (_userId.HasValue)
+            {
+                await _userService.Update<UserInsertRequest>(_userId.Value, user);
+            }
+            else
+            {
+                //radimo insert
+                await _userService.Insert<UserInsertRequest>(user);
+
+            }
         }
 
-        private void FrmUserDetails_Load(object sender, EventArgs e)
+        private async void FrmUserDetails_Load(object sender, EventArgs e)
         {
-
+            if (_userId.HasValue)
+            {
+                var user = await _userService.GetById<UserGetRequest>(_userId);
+                txtboxName.Text = user.Name;
+                txtboxSurname.Text = user.Surname;
+                txtboxEmail.Text = user.Email;
+                txtBoxPhone.Text = user.PhoneNumber;
+                txtboxUsername.Text = user.Username;
+            }
         }
 
         private void Label1_Click(object sender, EventArgs e)
