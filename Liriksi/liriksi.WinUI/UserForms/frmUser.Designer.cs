@@ -30,18 +30,18 @@
         {
             this.User = new System.Windows.Forms.GroupBox();
             this.dgvUser = new System.Windows.Forms.DataGridView();
-            this.btnSearchUser = new System.Windows.Forms.Button();
-            this.txtboxName = new System.Windows.Forms.TextBox();
-            this.lblName = new System.Windows.Forms.Label();
-            this.txtboxSurname = new System.Windows.Forms.TextBox();
-            this.lblSurname = new System.Windows.Forms.Label();
-            this.btnClearSearch = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UsrName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSearchUser = new System.Windows.Forms.Button();
+            this.txtboxName = new System.Windows.Forms.TextBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.txtboxSurname = new System.Windows.Forms.TextBox();
+            this.lblSurname = new System.Windows.Forms.Label();
+            this.btnClearSearch = new System.Windows.Forms.Button();
             this.User.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.SuspendLayout();
@@ -81,6 +81,49 @@
             this.dgvUser.AllowUserToOrderColumnsChanged += new System.EventHandler(this.DgvUser_AllowUserToOrderColumnsChanged);
             this.dgvUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             this.dgvUser.DoubleClick += new System.EventHandler(this.DgvUser_DoubleClick);
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
+            // 
+            // UsrName
+            // 
+            this.UsrName.DataPropertyName = "Name";
+            this.UsrName.HeaderText = "Name";
+            this.UsrName.Name = "UsrName";
+            this.UsrName.ReadOnly = true;
+            // 
+            // Surname
+            // 
+            this.Surname.DataPropertyName = "Surname";
+            this.Surname.HeaderText = "Surname";
+            this.Surname.Name = "Surname";
+            this.Surname.ReadOnly = true;
+            // 
+            // Username
+            // 
+            this.Username.DataPropertyName = "Username";
+            this.Username.HeaderText = "Username";
+            this.Username.Name = "Username";
+            this.Username.ReadOnly = true;
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
+            // 
+            // Status
+            // 
+            this.Status.DataPropertyName = "Status";
+            this.Status.HeaderText = "Status";
+            this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
             // 
             // btnSearchUser
             // 
@@ -136,43 +179,6 @@
             this.btnClearSearch.UseVisualStyleBackColor = true;
             this.btnClearSearch.Click += new System.EventHandler(this.BtnClearSearch_Click);
             // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.Visible = false;
-            // 
-            // UsrName
-            // 
-            this.UsrName.DataPropertyName = "Name";
-            this.UsrName.HeaderText = "Name";
-            this.UsrName.Name = "UsrName";
-            // 
-            // Surname
-            // 
-            this.Surname.DataPropertyName = "Surname";
-            this.Surname.HeaderText = "Surname";
-            this.Surname.Name = "Surname";
-            // 
-            // Username
-            // 
-            this.Username.DataPropertyName = "Username";
-            this.Username.HeaderText = "Username";
-            this.Username.Name = "Username";
-            // 
-            // Email
-            // 
-            this.Email.DataPropertyName = "Email";
-            this.Email.HeaderText = "Email";
-            this.Email.Name = "Email";
-            // 
-            // Status
-            // 
-            this.Status.DataPropertyName = "Status";
-            this.Status.HeaderText = "Status";
-            this.Status.Name = "Status";
-            // 
             // frmUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -197,7 +203,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox User;
-        private System.Windows.Forms.DataGridView dgvUser;
         private System.Windows.Forms.Button btnSearchUser;
         private System.Windows.Forms.TextBox txtboxName;
         private System.Windows.Forms.Label lblName;
@@ -210,5 +215,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Username;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
+        public System.Windows.Forms.DataGridView dgvUser;
     }
 }

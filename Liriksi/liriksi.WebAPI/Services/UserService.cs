@@ -63,8 +63,7 @@ namespace liriksi.WebAPI.Services
         }
         public UserGetRequest Update(int id, UserInsertRequest userRequest)
         {
-            var entity = _context.User.Find(id);
-
+            User entity = _context.User.Find(id);
             if (!string.IsNullOrEmpty(userRequest.Password) && !string.IsNullOrEmpty(userRequest.Password))
             {
                 if (!userRequest.Password.Equals(userRequest.PasswordConfirmation))
@@ -79,9 +78,11 @@ namespace liriksi.WebAPI.Services
 
            // _mapper.Map<User>(userRequest);
             _mapper.Map(userRequest, entity);
+            entity.UserTypeId = 2; //2 = regular user
+
             _context.SaveChanges();
 
-            return _mapper.Map<UserGetRequest>(userRequest);
+            return _mapper.Map<UserGetRequest>(entity);
         }
      
     }

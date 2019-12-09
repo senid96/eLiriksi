@@ -13,6 +13,7 @@ namespace liriksi.WebAPI.Mappers
             CreateMap<User, UserInsertRequest>().ReverseMap();
             CreateMap<UserInsertRequest, UserGetRequest>().ReverseMap();
             CreateMap<User, UserSearchRequest>().ReverseMap();
+          
             //song
             CreateMap<Song, SongInsertRequest > ().ReverseMap();
             CreateMap<Song, SongGetRequest>().ReverseMap();

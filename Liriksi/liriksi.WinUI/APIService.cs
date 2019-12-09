@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +9,7 @@ using Flurl.Http;
 using liriksi.Model;
 namespace liriksi.WinUI
 {
-    class APIService
+   public class APIService
     {
         public string _route { get; set; }
         public APIService(string route)
@@ -40,14 +41,14 @@ namespace liriksi.WinUI
         {
             var url = $"{Properties.Settings.Default.APIUrl}/{_route}"; //pravi se ruta.. u setingsu je definisan api
 
-            var result = await url.PostJsonAsync(obj).ReceiveJson();
+            var result = await url.PostJsonAsync(obj).ReceiveJson<T>();
             return result;
         }
-        public async Task<T> Update<T>(int id, object obj)
+        public async Task<T> Update<T>(object id, object obj)
         {
             var url = $"{Properties.Settings.Default.APIUrl}/{_route}/{id}"; //pravi se ruta.. u setingsu je definisan api
-
-            var result = await url.PutJsonAsync(obj).ReceiveJson();
+            
+            var result = await url.PutJsonAsync(obj).ReceiveJson<T>();
             return result;
         }
     }

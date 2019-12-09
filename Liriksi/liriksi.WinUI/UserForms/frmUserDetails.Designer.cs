@@ -51,6 +51,7 @@
             this.txtboxName.Name = "txtboxName";
             this.txtboxName.Size = new System.Drawing.Size(351, 20);
             this.txtboxName.TabIndex = 0;
+            this.txtboxName.TextChanged += new System.EventHandler(this.TxtboxName_TextChanged);
             // 
             // lblName
             // 

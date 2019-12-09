@@ -1,4 +1,5 @@
-﻿using liriksi.WinUI.User;
+﻿using liriksi.WinUI.SongForms;
+using liriksi.WinUI.User;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -118,6 +119,19 @@ namespace liriksi.WinUI
             frm.MdiParent = this;
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();
+        }
+
+        private void SearchToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmSong frm = new frmSong();
+            frm.MdiParent = this;
+            frm.WindowState = FormWindowState.Maximized;           
+            frm.Show();
+        }
+
+        private void FrmIndex_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

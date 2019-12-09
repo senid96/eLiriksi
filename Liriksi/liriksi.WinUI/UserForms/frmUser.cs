@@ -16,11 +16,11 @@ namespace liriksi.WinUI.User
     public partial class frmUser : Form
     {
 
-        private readonly APIService _apiService = new APIService("user");
+        private readonly APIService _userService = new APIService("user");
         public frmUser()
         {
             InitializeComponent();
-
+          
             //dgvUser.DataSource = _apiService.Get<dynamic>();
         }
 
@@ -36,7 +36,7 @@ namespace liriksi.WinUI.User
 
         private void FrmUser_Load(object sender, EventArgs e)
         {
-            dgvUser.AutoGenerateColumns = false;
+            dgvUser.AutoGenerateColumns = false;        
         }
 
         private async void BtnShow_Click(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace liriksi.WinUI.User
                 Surname = txtboxSurname.Text            
             };
 
-            var result = await _apiService.Get<List<UserGetRequest>>(search);
+            var result = await _userService.Get<List<UserGetRequest>>(search);
 
             dgvUser.DataSource = result;
         }

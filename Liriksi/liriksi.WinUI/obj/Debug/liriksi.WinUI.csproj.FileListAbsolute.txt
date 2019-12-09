@@ -21,3 +21,5 @@ C:\Users\ajkun\Desktop\GitRepos\eLiriksi\Liriksi\liriksi.WinUI\obj\Debug\liriksi
 C:\Users\ajkun\Desktop\GitRepos\eLiriksi\Liriksi\liriksi.WinUI\obj\Debug\liriksi.WinUI.exe
 C:\Users\ajkun\Desktop\GitRepos\eLiriksi\Liriksi\liriksi.WinUI\obj\Debug\liriksi.WinUI.pdb
 C:\Users\ajkun\Desktop\GitRepos\eLiriksi\Liriksi\liriksi.WinUI\obj\Debug\liriksi.WinUI.User.frmUserDetails.resources
+C:\Users\ajkun\Desktop\GitRepos\eLiriksi\Liriksi\liriksi.WinUI\obj\Debug\liriksi.WinUI.SongForms.frmSong.resources
+C:\Users\ajkun\Desktop\GitRepos\eLiriksi\Liriksi\liriksi.WinUI\obj\Debug\liriksi.WinUI.SongForms.frmSongDetails.resources
