@@ -32,12 +32,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtBoxTitle = new System.Windows.Forms.TextBox();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.btnEnableEdit = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtboxLyrics
             // 
             this.txtboxLyrics.Location = new System.Drawing.Point(15, 94);
             this.txtboxLyrics.Name = "txtboxLyrics";
+            this.txtboxLyrics.ReadOnly = true;
             this.txtboxLyrics.Size = new System.Drawing.Size(313, 320);
             this.txtboxLyrics.TabIndex = 0;
             this.txtboxLyrics.Text = "";
@@ -56,6 +59,7 @@
             // 
             this.txtBoxTitle.Location = new System.Drawing.Point(45, 23);
             this.txtBoxTitle.Name = "txtBoxTitle";
+            this.txtBoxTitle.ReadOnly = true;
             this.txtBoxTitle.Size = new System.Drawing.Size(202, 20);
             this.txtBoxTitle.TabIndex = 2;
             // 
@@ -68,11 +72,33 @@
             this.lblTitle.TabIndex = 3;
             this.lblTitle.Text = "Title";
             // 
+            // btnEnableEdit
+            // 
+            this.btnEnableEdit.Location = new System.Drawing.Point(15, 421);
+            this.btnEnableEdit.Name = "btnEnableEdit";
+            this.btnEnableEdit.Size = new System.Drawing.Size(75, 23);
+            this.btnEnableEdit.TabIndex = 4;
+            this.btnEnableEdit.Text = "Enable edit";
+            this.btnEnableEdit.UseVisualStyleBackColor = true;
+            this.btnEnableEdit.Click += new System.EventHandler(this.BtnEnableEdit_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(253, 421);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 5;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Visible = false;
+            // 
             // frmSongDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 450);
+            this.ClientSize = new System.Drawing.Size(376, 468);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnEnableEdit);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.txtBoxTitle);
             this.Controls.Add(this.label1);
@@ -91,5 +117,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBoxTitle;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Button btnEnableEdit;
+        private System.Windows.Forms.Button btnSave;
     }
 }

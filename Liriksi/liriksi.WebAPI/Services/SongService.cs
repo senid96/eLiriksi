@@ -20,15 +20,19 @@ namespace liriksi.WebAPI.Services
             _mapper = mapper;
         }
        
-        public List<SongGetRequest> Get(string songTitle)
+        public List<SongGetRequest> Get(SongSearchRequest request)
         {
             var query = _context.Song.AsQueryable();
 
-            if (!string.IsNullOrEmpty(songTitle))
+            if (!string.IsNullOrWhiteSpace(request?.Title))
             {
-                query = query.Where(x => x.Title.Contains(songTitle));
+                query = query.Where(x => x.Title.Contains(request.Title));
             }
-
+            if (!string.IsNullOrWhiteSpace(request?.Text))
+            {
+                query = query.Where(x => x.Text.Contains(request.Text));
+            }
+          
             var result = query.ToList();
 
             return _mapper.Map<List<SongGetRequest>>(result);

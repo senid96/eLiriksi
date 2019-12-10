@@ -35,5 +35,12 @@ namespace liriksi.WinUI.SongForms
         {
 
         }
+
+        private void BtnEnableEdit_Click(object sender, EventArgs e)
+        {
+            txtboxLyrics.ReadOnly = false;
+            txtBoxTitle.ReadOnly = false;
+            btnSave.Visible = true;
+        }
     }
 }

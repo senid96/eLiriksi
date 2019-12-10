@@ -34,9 +34,10 @@ namespace liriksi.WinUI.User
 
         }
 
-        private void FrmUser_Load(object sender, EventArgs e)
+        private async void FrmUser_Load(object sender, EventArgs e)
         {
-            dgvUser.AutoGenerateColumns = false;        
+            dgvUser.AutoGenerateColumns = false;
+            dgvUser.DataSource = await _userService.Get<List<UserGetRequest>>(null);
         }
 
         private async void BtnShow_Click(object sender, EventArgs e)

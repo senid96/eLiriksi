@@ -14,15 +14,17 @@ namespace liriksi.WinUI.SongForms
 {
     public partial class frmSong : Form
     {
-        private readonly APIService _apiService = new APIService("song");
+        private readonly APIService _songService = new APIService("song");
         public frmSong()
         {
             InitializeComponent();
         }
 
         private async void BtnSongSearch_Click(object sender, EventArgs e)
-        {          
-            var data = await _apiService.Get<List<SongGetRequest>>(txtboxTitle.Text);
+        {
+            var temp = new SongSearchRequest() { Title = txtboxTitle.Text, Text = txtBoxLyrics.Text };
+
+            var data = await _songService.Get<List<SongGetRequest>>(temp);
             dgvSong.DataSource = data;           
         }
 
@@ -36,6 +38,17 @@ namespace liriksi.WinUI.SongForms
             var id = dgvSong.SelectedRows[0].Cells[0].Value.ToString();
             frmSongDetails frm = new frmSongDetails(int.Parse(id));
             frm.Show();
+        }
+
+        private async void FrmSong_Load(object sender, EventArgs e)
+        {
+            dgvSong.DataSource = await _songService.Get<List<SongGetRequest>>(null);
+        }
+
+        private void BtnClearInputs_Click(object sender, EventArgs e)
+        {
+            txtBoxLyrics.Text = "";
+            txtboxTitle.Text = "";
         }
     }
 }

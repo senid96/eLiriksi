@@ -21,10 +21,9 @@ namespace liriksi.WebAPI.Controllers
         {
             _songService = songService;
         }
-
-        //[HttpGet("{title}")]
-        public ActionResult<List<SongGetRequest>> Get([FromQuery]string title){
-            return _songService.Get(title);
+      
+        public ActionResult<List<SongGetRequest>> Get([FromQuery]SongSearchRequest request){
+            return _songService.Get(request);
         }
 
         [HttpGet("{id}")]

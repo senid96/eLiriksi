@@ -34,11 +34,12 @@
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pjesmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.songRequestsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.searchToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.newSongToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -82,10 +83,18 @@
             // pjesmeToolStripMenuItem
             // 
             this.pjesmeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.searchToolStripMenuItem1});
+            this.searchToolStripMenuItem1,
+            this.newSongToolStripMenuItem});
             this.pjesmeToolStripMenuItem.Name = "pjesmeToolStripMenuItem";
             this.pjesmeToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
             this.pjesmeToolStripMenuItem.Text = "Songs";
+            // 
+            // searchToolStripMenuItem1
+            // 
+            this.searchToolStripMenuItem1.Name = "searchToolStripMenuItem1";
+            this.searchToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.searchToolStripMenuItem1.Text = "Search";
+            this.searchToolStripMenuItem1.Click += new System.EventHandler(this.SearchToolStripMenuItem1_Click);
             // 
             // songRequestsToolStripMenuItem
             // 
@@ -109,12 +118,11 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
-            // searchToolStripMenuItem1
+            // newSongToolStripMenuItem
             // 
-            this.searchToolStripMenuItem1.Name = "searchToolStripMenuItem1";
-            this.searchToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.searchToolStripMenuItem1.Text = "Search";
-            this.searchToolStripMenuItem1.Click += new System.EventHandler(this.SearchToolStripMenuItem1_Click);
+            this.newSongToolStripMenuItem.Name = "newSongToolStripMenuItem";
+            this.newSongToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newSongToolStripMenuItem.Text = "New song";
             // 
             // frmIndex
             // 
@@ -150,6 +158,7 @@
         private System.Windows.Forms.ToolStripMenuItem addNewUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem songRequestsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem newSongToolStripMenuItem;
     }
 }
 
