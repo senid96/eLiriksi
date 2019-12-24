@@ -230,5 +230,11 @@ namespace liriksi.WinUI.User
         {
 
         }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            //added to enable to close form (error provider disnable to close form)
+            e.Cancel = false;
+        }
     }
 }
