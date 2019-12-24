@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtboxName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
             this.lblSurname = new System.Windows.Forms.Label();
@@ -35,7 +36,6 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtboxEmail = new System.Windows.Forms.TextBox();
             this.lblPhone = new System.Windows.Forms.Label();
-            this.txtBoxPhone = new System.Windows.Forms.TextBox();
             this.txtboxPassword = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblPasswordConf = new System.Windows.Forms.Label();
@@ -43,6 +43,9 @@
             this.btnSaveUser = new System.Windows.Forms.Button();
             this.lblUsername = new System.Windows.Forms.Label();
             this.txtboxUsername = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.txtBoxPhone = new System.Windows.Forms.MaskedTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtboxName
@@ -52,6 +55,7 @@
             this.txtboxName.Size = new System.Drawing.Size(351, 20);
             this.txtboxName.TabIndex = 0;
             this.txtboxName.TextChanged += new System.EventHandler(this.TxtboxName_TextChanged);
+            this.txtboxName.Validating += new System.ComponentModel.CancelEventHandler(this.TxtboxName_Validating);
             // 
             // lblName
             // 
@@ -77,6 +81,8 @@
             this.txtboxSurname.Name = "txtboxSurname";
             this.txtboxSurname.Size = new System.Drawing.Size(351, 20);
             this.txtboxSurname.TabIndex = 4;
+            this.txtboxSurname.TextChanged += new System.EventHandler(this.TxtboxSurname_TextChanged);
+            this.txtboxSurname.Validating += new System.ComponentModel.CancelEventHandler(this.TxtboxSurname_Validating);
             // 
             // lblEmail
             // 
@@ -93,6 +99,8 @@
             this.txtboxEmail.Name = "txtboxEmail";
             this.txtboxEmail.Size = new System.Drawing.Size(351, 20);
             this.txtboxEmail.TabIndex = 6;
+            this.txtboxEmail.TextChanged += new System.EventHandler(this.TxtboxEmail_TextChanged);
+            this.txtboxEmail.Validating += new System.ComponentModel.CancelEventHandler(this.TxtboxEmail_Validating);
             // 
             // lblPhone
             // 
@@ -103,19 +111,14 @@
             this.lblPhone.TabIndex = 9;
             this.lblPhone.Text = "Phone number";
             // 
-            // txtBoxPhone
-            // 
-            this.txtBoxPhone.Location = new System.Drawing.Point(12, 190);
-            this.txtBoxPhone.Name = "txtBoxPhone";
-            this.txtBoxPhone.Size = new System.Drawing.Size(351, 20);
-            this.txtBoxPhone.TabIndex = 8;
-            // 
             // txtboxPassword
             // 
             this.txtboxPassword.Location = new System.Drawing.Point(12, 290);
             this.txtboxPassword.Name = "txtboxPassword";
+            this.txtboxPassword.PasswordChar = '*';
             this.txtboxPassword.Size = new System.Drawing.Size(169, 20);
             this.txtboxPassword.TabIndex = 10;
+            this.txtboxPassword.Validating += new System.ComponentModel.CancelEventHandler(this.TxtboxPassword_Validating);
             // 
             // lblPassword
             // 
@@ -139,8 +142,11 @@
             // 
             this.txtboxPasswordConf.Location = new System.Drawing.Point(191, 290);
             this.txtboxPasswordConf.Name = "txtboxPasswordConf";
+            this.txtboxPasswordConf.PasswordChar = '*';
             this.txtboxPasswordConf.Size = new System.Drawing.Size(169, 20);
             this.txtboxPasswordConf.TabIndex = 14;
+            this.txtboxPasswordConf.TextChanged += new System.EventHandler(this.TxtboxPasswordConf_TextChanged);
+            this.txtboxPasswordConf.Validating += new System.ComponentModel.CancelEventHandler(this.TxtboxPasswordConf_Validating);
             // 
             // btnSaveUser
             // 
@@ -167,12 +173,28 @@
             this.txtboxUsername.Name = "txtboxUsername";
             this.txtboxUsername.Size = new System.Drawing.Size(351, 20);
             this.txtboxUsername.TabIndex = 16;
+            this.txtboxUsername.Validating += new System.ComponentModel.CancelEventHandler(this.TxtboxUsername_Validating);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // txtBoxPhone
+            // 
+            this.txtBoxPhone.Location = new System.Drawing.Point(12, 190);
+            this.txtBoxPhone.Mask = "000-000-000";
+            this.txtBoxPhone.Name = "txtBoxPhone";
+            this.txtBoxPhone.Size = new System.Drawing.Size(351, 20);
+            this.txtBoxPhone.TabIndex = 18;
+            this.txtBoxPhone.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.TxtBoxPhone_MaskInputRejected);
+            this.txtBoxPhone.Validating += new System.ComponentModel.CancelEventHandler(this.TxtBoxPhone_Validating);
             // 
             // frmUserDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(381, 413);
+            this.Controls.Add(this.txtBoxPhone);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.txtboxUsername);
             this.Controls.Add(this.btnSaveUser);
@@ -181,7 +203,6 @@
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.txtboxPassword);
             this.Controls.Add(this.lblPhone);
-            this.Controls.Add(this.txtBoxPhone);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.txtboxEmail);
             this.Controls.Add(this.lblSurname);
@@ -191,6 +212,7 @@
             this.Name = "frmUserDetails";
             this.Text = "frmUserDetails";
             this.Load += new System.EventHandler(this.FrmUserDetails_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,7 +227,6 @@
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtboxEmail;
         private System.Windows.Forms.Label lblPhone;
-        private System.Windows.Forms.TextBox txtBoxPhone;
         private System.Windows.Forms.TextBox txtboxPassword;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblPasswordConf;
@@ -213,5 +234,7 @@
         private System.Windows.Forms.Button btnSaveUser;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.TextBox txtboxUsername;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.MaskedTextBox txtBoxPhone;
     }
 }

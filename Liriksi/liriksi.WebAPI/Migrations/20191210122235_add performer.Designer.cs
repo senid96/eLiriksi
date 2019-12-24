@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using liriksi.WebAPI.EF;
 
 namespace liriksi.WebAPI.Migrations
 {
     [DbContext(typeof(LiriksiContext))]
-    partial class LiriksiContextModelSnapshot : ModelSnapshot
+    [Migration("20191210122235_add performer")]
+    partial class addperformer
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,8 +27,6 @@ namespace liriksi.WebAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("GenreId");
-
                     b.Property<string>("Name")
                         .IsRequired();
 
@@ -36,24 +36,9 @@ namespace liriksi.WebAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("GenreId");
-
                     b.HasIndex("PerformerId");
 
                     b.ToTable("Album");
-                });
-
-            modelBuilder.Entity("liriksi.Model.Genre", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Name");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Genre");
                 });
 
             modelBuilder.Entity("liriksi.Model.Performer", b =>
@@ -140,11 +125,6 @@ namespace liriksi.WebAPI.Migrations
 
             modelBuilder.Entity("liriksi.Model.Album", b =>
                 {
-                    b.HasOne("liriksi.Model.Genre", "Genre")
-                        .WithMany()
-                        .HasForeignKey("GenreId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
                     b.HasOne("liriksi.Model.Performer", "Performer")
                         .WithMany()
                         .HasForeignKey("PerformerId")

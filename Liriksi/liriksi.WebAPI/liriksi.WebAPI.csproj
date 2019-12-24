@@ -14,6 +14,10 @@
   <ItemGroup>
     <Compile Include="Migrations\20191119131642_init.cs" />
     <Compile Include="Migrations\20191119131642_init.Designer.cs" />
+    <Compile Include="Migrations\20191210122235_add performer.cs" />
+    <Compile Include="Migrations\20191210122235_add performer.Designer.cs" />
+    <Compile Include="Migrations\20191210125033_add genre.cs" />
+    <Compile Include="Migrations\20191210125033_add genre.Designer.cs" />
     <Compile Include="Migrations\LiriksiContextModelSnapshot.cs" />
   </ItemGroup>
 
