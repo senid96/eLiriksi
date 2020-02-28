@@ -18,6 +18,7 @@ namespace liriksi.WinUI
         public frmIndex()
         {
             InitializeComponent();
+            //this.WindowState = FormWindowState.Normal;
         }
 
         private void ShowNewForm(object sender, EventArgs e)
@@ -130,6 +131,19 @@ namespace liriksi.WinUI
         }
 
         private void FrmIndex_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void newSongToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddSong frm = new frmAddSong();
+            frm.MdiParent = this;
+            frm.WindowState = FormWindowState.Maximized;
+            frm.Show();
+        }
+
+        private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }

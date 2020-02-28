@@ -10,14 +10,14 @@ using liriksi.WebAPI.EF;
 namespace liriksi.WebAPI.Migrations
 {
     [DbContext(typeof(LiriksiContext))]
-    [Migration("20191210125033_add genre")]
-    partial class addgenre
+    [Migration("20200228101017_update12")]
+    partial class update12
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.11-servicing-32099")
+                .HasAnnotation("ProductVersion", "2.1.14-servicing-32113")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -32,17 +32,43 @@ namespace liriksi.WebAPI.Migrations
                     b.Property<string>("Name")
                         .IsRequired();
 
-                    b.Property<int>("PerformerId");
-
                     b.Property<int>("YearRelease");
 
                     b.HasKey("Id");
 
                     b.HasIndex("GenreId");
 
-                    b.HasIndex("PerformerId");
-
                     b.ToTable("Album");
+                });
+
+            modelBuilder.Entity("liriksi.Model.City", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("CountryId");
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CountryId");
+
+                    b.ToTable("City");
+                });
+
+            modelBuilder.Entity("liriksi.Model.Country", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Country");
                 });
 
             modelBuilder.Entity("liriksi.Model.Genre", b =>
@@ -83,6 +109,10 @@ namespace liriksi.WebAPI.Migrations
 
                     b.Property<int>("AlbumId");
 
+                    b.Property<int>("Approved");
+
+                    b.Property<int>("PerformerId");
+
                     b.Property<string>("Text")
                         .IsRequired();
 
@@ -93,6 +123,8 @@ namespace liriksi.WebAPI.Migrations
 
                     b.HasIndex("AlbumId");
 
+                    b.HasIndex("PerformerId");
+
                     b.ToTable("Song");
                 });
 
@@ -101,6 +133,8 @@ namespace liriksi.WebAPI.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("CityId");
 
                     b.Property<string>("Email");
 
@@ -122,9 +156,45 @@ namespace liriksi.WebAPI.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CityId");
+
                     b.HasIndex("UserTypeId");
 
                     b.ToTable("User");
+                });
+
+            modelBuilder.Entity("liriksi.Model.UsersAlbumRate", b =>
+                {
+                    b.Property<int>("AlbumId");
+
+                    b.Property<int>("UserId");
+
+                    b.Property<string>("Comment");
+
+                    b.Property<int>("Rate");
+
+                    b.HasKey("AlbumId", "UserId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UsersAlbumRates");
+                });
+
+            modelBuilder.Entity("liriksi.Model.UsersSongRates", b =>
+                {
+                    b.Property<int>("SongId");
+
+                    b.Property<int>("UserId");
+
+                    b.Property<string>("Comment");
+
+                    b.Property<int>("Rate");
+
+                    b.HasKey("SongId", "UserId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UsersSongRates");
                 });
 
             modelBuilder.Entity("liriksi.Model.UserType", b =>
@@ -146,10 +216,13 @@ namespace liriksi.WebAPI.Migrations
                         .WithMany()
                         .HasForeignKey("GenreId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
 
-                    b.HasOne("liriksi.Model.Performer", "Performer")
+            modelBuilder.Entity("liriksi.Model.City", b =>
+                {
+                    b.HasOne("liriksi.Model.Country", "Country")
                         .WithMany()
-                        .HasForeignKey("PerformerId")
+                        .HasForeignKey("CountryId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
@@ -159,13 +232,49 @@ namespace liriksi.WebAPI.Migrations
                         .WithMany()
                         .HasForeignKey("AlbumId")
                         .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("liriksi.Model.Performer", "Performer")
+                        .WithMany()
+                        .HasForeignKey("PerformerId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("liriksi.Model.User", b =>
                 {
+                    b.HasOne("liriksi.Model.City", "City")
+                        .WithMany()
+                        .HasForeignKey("CityId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
                     b.HasOne("liriksi.Model.UserType", "UserType")
                         .WithMany()
                         .HasForeignKey("UserTypeId");
+                });
+
+            modelBuilder.Entity("liriksi.Model.UsersAlbumRate", b =>
+                {
+                    b.HasOne("liriksi.Model.Album")
+                        .WithMany("UsersAlbumRates")
+                        .HasForeignKey("AlbumId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("liriksi.Model.User")
+                        .WithMany("UsersAlbumRates")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("liriksi.Model.UsersSongRates", b =>
+                {
+                    b.HasOne("liriksi.Model.Song")
+                        .WithMany("UsersSongRates")
+                        .HasForeignKey("SongId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("liriksi.Model.User")
+                        .WithMany("UsersSongRates")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

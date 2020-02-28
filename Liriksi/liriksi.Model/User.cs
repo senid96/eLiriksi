@@ -14,14 +14,20 @@ namespace liriksi.Model
         public string Surname { get; set; }
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
+
         [ForeignKey("UserTypeId")]
         public virtual UserType UserType { get; set; }
         public int? UserTypeId { get; set; }
         public string Username { get; set; }
         public string Hash { get; set; }
         public string Salt { get; set; }
-        public bool Status { get; set; }
-      
 
+        public int CityId { get; set; }
+        [ForeignKey("CityId")]
+        public City City { get; set; }
+        public bool Status { get; set; }
+        //public ICollection<UsersAlbumRate> UsersAlbumRates { get; set; }
+        public ICollection<UsersSongRates> UsersSongRates { get; set; }
+        public ICollection<UsersAlbumRate> UsersAlbumRates { get; set; }
     }
 }

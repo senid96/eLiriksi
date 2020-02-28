@@ -16,9 +16,23 @@ namespace liriksi.Model
         [Required]
         [MinLength(1)]
         public string Text { get; set; }
+        public int Approved { get; set; }
         public int AlbumId { get; set; }
         [ForeignKey("AlbumId")]
         public Album Album { get; set; }
-       
+
+        //performer relationship
+        //[ForeignKey("PerformerId")]
+        //public ICollection<Performer> Performer { get; set; }
+        //public int PerformerId { get; set; }
+
+        public ICollection<UsersSongRates> UsersSongRates { get; set; }
+
+
+        public int PerformerId { get; set; }
+
+        [ForeignKey("PerformerId")]
+        public Performer Performer { get; set; }
+
     }
 }

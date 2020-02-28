@@ -14,5 +14,6 @@ namespace liriksi.Model.Requests
         [MinLength(1)]
         public string Text { get; set; }
         public int AlbumId { get; set; }
+        public int PerformerId { get; set; }
     }
 }

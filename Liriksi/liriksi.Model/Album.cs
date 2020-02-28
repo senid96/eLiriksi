@@ -15,15 +15,18 @@ namespace liriksi.Model
         [Required]
         public int YearRelease { get; set; }
 
-        //performer relationship
-        [ForeignKey("PerformerId")]
-        public Performer Performer { get; set; }
-        public int PerformerId { get; set; }
+        ////performer relationship
+        //[ForeignKey("PerformerId")]
+        //public Performer Performer { get; set; }
+        //public int PerformerId { get; set; }
 
         //genre relationship
         [ForeignKey("GenreId")]
         public Genre Genre { get; set; }
         public int GenreId { get; set; }
+        
+        public virtual ICollection<UsersAlbumRate> UsersAlbumRates { get; set; }
+
 
     }
 }

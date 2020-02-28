@@ -19,8 +19,20 @@ namespace liriksi.WebAPI.EF
 
         public DbSet<Song> Song { get; set; }
         public DbSet<Album> Album { get; set; }
+        public DbSet<Country> Country { get; set; }
+        public DbSet<City> City { get; set; }
         public DbSet<User> User { get; set; }
         public DbSet<UserType> UserType { get; set; }
+        public DbSet<UsersAlbumRate> UsersAlbumRates { get; set; }
+        public DbSet<UsersSongRates> UsersSongRates { get; set; }
+        public DbSet<Genre> Genre { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<UsersAlbumRate>().HasKey(ba => new { ba.AlbumId, ba.UserId });
+            modelBuilder.Entity<UsersSongRates>().HasKey(ba => new { ba.SongId, ba.UserId });
+        }
+
+
 
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -6,6 +6,7 @@ using AutoMapper;
 using liriksi.WebAPI.EF;
 using liriksi.WebAPI.Filters;
 using liriksi.WebAPI.Services;
+using liriksi.WebAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -42,9 +43,10 @@ namespace liriksi.WebAPI
             //services dependeny injection
             services.AddScoped<ISongService, SongService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IGenreService, GenreService>();
 
             //entity framework
-            services.AddDbContext<LiriksiContext>(options => options.UseSqlServer("Server=DESKTOP-CP7742G; Database=liriksiDB; Trusted_Connection=true;"));
+            services.AddDbContext<LiriksiContext>(options => options.UseSqlServer("Server=BST123\\SQLEXPRESS; Database=liriksiDB; Trusted_Connection=true;"));
             services.AddAutoMapper();
 
         }

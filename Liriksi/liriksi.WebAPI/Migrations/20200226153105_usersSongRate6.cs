@@ -3,39 +3,35 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace liriksi.WebAPI.Migrations
 {
-    public partial class addgenre : Migration
+    public partial class usersSongRate6 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<int>(
-                name: "GenreId",
-                table: "Album",
-                nullable: false,
-                defaultValue: 0);
-
             migrationBuilder.CreateTable(
-                name: "Genre",
+                name: "Performer",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(nullable: true)
+                    Name = table.Column<string>(nullable: true),
+                    Surname = table.Column<string>(nullable: true),
+                    ArtisticName = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Genre", x => x.Id);
+                    table.PrimaryKey("PK_Performer", x => x.Id);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Album_GenreId",
-                table: "Album",
-                column: "GenreId");
+                name: "IX_Song_PerformerId",
+                table: "Song",
+                column: "PerformerId");
 
             migrationBuilder.AddForeignKey(
-                name: "FK_Album_Genre_GenreId",
-                table: "Album",
-                column: "GenreId",
-                principalTable: "Genre",
+                name: "FK_Song_Performer_PerformerId",
+                table: "Song",
+                column: "PerformerId",
+                principalTable: "Performer",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Cascade);
         }
@@ -43,19 +39,15 @@ namespace liriksi.WebAPI.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
-                name: "FK_Album_Genre_GenreId",
-                table: "Album");
+                name: "FK_Song_Performer_PerformerId",
+                table: "Song");
 
             migrationBuilder.DropTable(
-                name: "Genre");
+                name: "Performer");
 
             migrationBuilder.DropIndex(
-                name: "IX_Album_GenreId",
-                table: "Album");
-
-            migrationBuilder.DropColumn(
-                name: "GenreId",
-                table: "Album");
+                name: "IX_Song_PerformerId",
+                table: "Song");
         }
     }
 }
