@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using liriksi.Model;
 using liriksi.WebAPI.Services;
+using liriksi.WebAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,17 +14,22 @@ namespace liriksi.WebAPI.Controllers
     [ApiController]
     public class GenreController : ControllerBase
     {
-        private readonly GenreService _genreService;
+        private readonly IGenreService _genreService;
 
-        public GenreController(GenreService service)
+        public GenreController(IGenreService service)
         {
             _genreService = service;
         }
 
-        [HttpGet("{name}")]
-        public ActionResult<List<Genre>> GetByName(string name)
+        [HttpGet]
+        public ActionResult<List<Genre>> Get(string genre)
         {
-            return _genreService.Get(name);
+            return _genreService.Get(genre);
+        }
+
+        public void Insert(string genre)
+        {          
+            _genreService.Insert(genre);
         }
     }
 }

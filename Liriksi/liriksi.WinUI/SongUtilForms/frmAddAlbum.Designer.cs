@@ -95,6 +95,7 @@
             this.btnAddGenre.TabIndex = 7;
             this.btnAddGenre.Text = "Add new";
             this.btnAddGenre.UseVisualStyleBackColor = true;
+            this.btnAddGenre.Click += new System.EventHandler(this.btnAddGenre_Click);
             // 
             // button2
             // 

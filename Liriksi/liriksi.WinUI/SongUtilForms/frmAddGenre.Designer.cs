@@ -57,6 +57,7 @@
             this.btnAddGenre.TabIndex = 2;
             this.btnAddGenre.Text = "Finish";
             this.btnAddGenre.UseVisualStyleBackColor = true;
+            this.btnAddGenre.Click += new System.EventHandler(this.btnAddGenre_Click);
             // 
             // frmAddGenre
             // 

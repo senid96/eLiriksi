@@ -1,6 +1,7 @@
 ﻿using liriksi.Model;
 using liriksi.WebAPI.EF;
 using liriksi.WebAPI.Services.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,12 +20,20 @@ namespace liriksi.WebAPI.Services
         public List<Genre> Get(string genre)
         {
             var query = _context.Genre.AsQueryable();
+            if (genre==null)
+                return query.ToList<Genre>();
+            else
+                return query.Where(x => x.Name.Contains(genre)).ToList<Genre>();
+        }
 
-            // return query.Where(x => x.Name.Contains(genre)).ToList<Genre>();
-            return _context.Genre.ToList<Genre>();
+        [HttpPost]
+        public void Insert(string genre)
+        {
+            var query = _context.Genre.AsQueryable();
+            Genre obj = new Genre() { Name = genre };
 
-            //return null;
-            // return;//TODO, ne radi, ne gadja metodu
+            _context.Genre.Add(obj);
+            _context.SaveChanges();
         }
     }
 }
