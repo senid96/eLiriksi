@@ -1,4 +1,5 @@
-﻿using liriksi.Model.Requests;
+﻿using liriksi.Model;
+using liriksi.Model.Requests;
 using liriksi.WinUI.UtilForms;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,8 @@ namespace liriksi.WinUI.SongForms
 {
     public partial class frmAddSong : Form
     {
-        APIService _SongService = new APIService("song");
+        APIService _songService = new APIService("song");
+        APIService _genreService = new APIService("genre");
 
         public frmAddSong()
         {
@@ -37,7 +39,12 @@ namespace liriksi.WinUI.SongForms
             req.AlbumId = cmbAlbum.SelectedIndex;
             req.PerformerId = cmbPerformer.SelectedIndex;
 
-            await _SongService.Insert<SongInsertRequest>(req);
+            await _songService.Insert<SongInsertRequest>(req);
+        }
+
+        private async void frmAddSong_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

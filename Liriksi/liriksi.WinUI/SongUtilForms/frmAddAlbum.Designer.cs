@@ -33,7 +33,7 @@
             this.Genre = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbGenre = new System.Windows.Forms.ComboBox();
             this.btnAddGenre = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -79,13 +79,13 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Genre";
             // 
-            // comboBox1
+            // cmbGenre
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(107, 104);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(175, 24);
-            this.comboBox1.TabIndex = 6;
+            this.cmbGenre.FormattingEnabled = true;
+            this.cmbGenre.Location = new System.Drawing.Point(107, 104);
+            this.cmbGenre.Name = "cmbGenre";
+            this.cmbGenre.Size = new System.Drawing.Size(175, 24);
+            this.cmbGenre.TabIndex = 6;
             // 
             // btnAddGenre
             // 
@@ -113,7 +113,7 @@
             this.ClientSize = new System.Drawing.Size(371, 201);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnAddGenre);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbGenre);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.Genre);
@@ -121,6 +121,7 @@
             this.Controls.Add(this.txtTitle);
             this.Name = "frmAddAlbum";
             this.Text = "frmAddAlbum";
+            this.Load += new System.EventHandler(this.frmAddAlbum_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,7 +134,7 @@
         private System.Windows.Forms.Label Genre;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbGenre;
         private System.Windows.Forms.Button btnAddGenre;
         private System.Windows.Forms.Button button2;
     }

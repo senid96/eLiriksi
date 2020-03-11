@@ -13,7 +13,7 @@ namespace liriksi.WinUI.UtilForms
 {
     public partial class frmAddAlbum : Form
     {
-        APIService _genre = new APIService("genre");
+        APIService _genreService = new APIService("genre");
         public frmAddAlbum()
         {
             //var a = _genre.Get<List<Genre>>(//todo);
@@ -22,8 +22,17 @@ namespace liriksi.WinUI.UtilForms
 
         private void btnAddGenre_Click(object sender, EventArgs e)
         {
+            this.Close(); 
             frmAddGenre frm = new frmAddGenre();
             frm.Show();
+        }
+
+        private async void frmAddAlbum_Load(object sender, EventArgs e)
+        {
+            var genres = await _genreService.Get<List<Genre>>(null);
+            cmbGenre.DataSource = genres;
+            cmbGenre.DisplayMember = "Name";
+            cmbGenre.ValueMember = "Id";
         }
     }
 }

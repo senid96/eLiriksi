@@ -27,6 +27,7 @@ namespace liriksi.WebAPI.Controllers
             return _genreService.Get(genre);
         }
 
+        [HttpPost]
         public void Insert(string genre)
         {          
             _genreService.Insert(genre);

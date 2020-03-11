@@ -2,6 +2,7 @@
 using liriksi.Model;
 using liriksi.Model.Requests;
 using liriksi.WebAPI.EF;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,7 +43,8 @@ namespace liriksi.WebAPI.Services
         {
             return _context.Song.Where(x => x.Id.Equals(id)).FirstOrDefault();
         }
-        public Song Insert(SongInsertRequest song)
+        
+        public Song Insert(Song song)
         {        
             var entity = _mapper.Map<Song>(song);
             _context.Song.Add(entity);

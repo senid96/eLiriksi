@@ -23,6 +23,13 @@ namespace liriksi.WinUI.UtilForms
         {
             await _genreService.Insert<string>(txtName.Text);
             this.Close();
+            frmAddAlbum frm = new frmAddAlbum();
+            frm.Show();
+        }
+
+        private void frmAddGenre_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

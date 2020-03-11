@@ -33,7 +33,7 @@ namespace liriksi.WebAPI.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Song> Insert(SongInsertRequest song)
+        public ActionResult<Song> Insert(Song song)
         {
            return _songService.Insert(song);
         }

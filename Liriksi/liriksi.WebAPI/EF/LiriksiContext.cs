@@ -23,9 +23,12 @@ namespace liriksi.WebAPI.EF
         public DbSet<City> City { get; set; }
         public DbSet<User> User { get; set; }
         public DbSet<UserType> UserType { get; set; }
+        public DbSet<Performer> Performer { get; set; }
         public DbSet<UsersAlbumRate> UsersAlbumRates { get; set; }
         public DbSet<UsersSongRates> UsersSongRates { get; set; }
         public DbSet<Genre> Genre { get; set; }
+
+        //kazemo mu da je ovo kompozicija
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<UsersAlbumRate>().HasKey(ba => new { ba.AlbumId, ba.UserId });

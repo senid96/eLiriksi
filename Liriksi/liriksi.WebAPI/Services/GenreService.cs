@@ -26,10 +26,9 @@ namespace liriksi.WebAPI.Services
                 return query.Where(x => x.Name.Contains(genre)).ToList<Genre>();
         }
 
-        [HttpPost]
         public void Insert(string genre)
         {
-            var query = _context.Genre.AsQueryable();
+            //var query = _context.Genre.AsQueryable();
             Genre obj = new Genre() { Name = genre };
 
             _context.Genre.Add(obj);

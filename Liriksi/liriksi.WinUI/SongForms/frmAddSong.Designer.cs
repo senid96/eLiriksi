@@ -166,6 +166,7 @@
             this.Controls.Add(this.txtName);
             this.Name = "frmAddSong";
             this.Text = "frmAddSong";
+            this.Load += new System.EventHandler(this.frmAddSong_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

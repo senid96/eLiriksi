@@ -44,6 +44,7 @@ namespace liriksi.WebAPI
             services.AddScoped<ISongService, SongService>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IGenreService, GenreService>();
+            services.AddScoped<IPerformerService, PerformerService>();
 
             //entity framework
             services.AddDbContext<LiriksiContext>(options => options.UseSqlServer("Server=BST123\\SQLEXPRESS; Database=liriksiDB; Trusted_Connection=true;"));
