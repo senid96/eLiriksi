@@ -28,7 +28,7 @@ namespace liriksi.WebAPI.Controllers
         }
 
         [HttpPost]
-        public void Insert(string genre)
+        public void Insert([FromQuery]string genre)
         {          
             _genreService.Insert(genre);
         }

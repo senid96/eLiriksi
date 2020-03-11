@@ -46,7 +46,7 @@ namespace liriksi.WebAPI
             services.AddScoped<IGenreService, GenreService>();
             services.AddScoped<IPerformerService, PerformerService>();
 
-            //entity framework
+            //entity framework.. mijenjati zavisno gdje radis.. na poslu, laptopu i slicno
             services.AddDbContext<LiriksiContext>(options => options.UseSqlServer("Server=BST123\\SQLEXPRESS; Database=liriksiDB; Trusted_Connection=true;"));
             services.AddAutoMapper();
 
