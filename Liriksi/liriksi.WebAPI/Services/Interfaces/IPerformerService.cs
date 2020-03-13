@@ -9,5 +9,7 @@ namespace liriksi.WebAPI.Services.Interfaces
     public interface IPerformerService
     {
         List<Performer> Get();
+
+        Performer Insert(Performer obj);
     }
 }

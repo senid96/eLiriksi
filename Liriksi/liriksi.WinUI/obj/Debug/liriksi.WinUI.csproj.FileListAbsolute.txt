@@ -51,3 +51,4 @@ C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WinUI\obj\Debug\liriksi.
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WinUI\obj\Debug\liriksi.WinUI.UserForms.frmAddPerformer.resources
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WinUI\obj\Debug\liriksi.WinUI.UtilForms.frmAddAlbum.resources
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WinUI\obj\Debug\liriksi.WinUI.UtilForms.frmAddGenre.resources
+C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WinUI\obj\Debug\liriksi.WinUI.SongForms.SongUtilForms.frmAddPerformer.resources

@@ -86,6 +86,12 @@
     <Compile Include="SongForms\frmSongDetails.Designer.cs">
       <DependentUpon>frmSongDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="SongForms\SongUtilForms\frmAddPerformer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SongForms\SongUtilForms\frmAddPerformer.Designer.cs">
+      <DependentUpon>frmAddPerformer.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserForms\frmAddPerformer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,16 +110,16 @@
     <Compile Include="UserForms\frmUserDetails.Designer.cs">
       <DependentUpon>frmUserDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="SongUtilForms\frmAddAlbum.cs">
+    <Compile Include="SongForms\SongUtilForms\frmAddAlbum.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SongUtilForms\frmAddAlbum.Designer.cs">
+    <Compile Include="SongForms\SongUtilForms\frmAddAlbum.Designer.cs">
       <DependentUpon>frmAddAlbum.cs</DependentUpon>
     </Compile>
-    <Compile Include="SongUtilForms\frmAddGenre.cs">
+    <Compile Include="SongForms\SongUtilForms\frmAddGenre.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SongUtilForms\frmAddGenre.Designer.cs">
+    <Compile Include="SongForms\SongUtilForms\frmAddGenre.Designer.cs">
       <DependentUpon>frmAddGenre.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmIndex.resx">
@@ -137,6 +143,9 @@
     <EmbeddedResource Include="SongForms\frmSongDetails.resx">
       <DependentUpon>frmSongDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SongForms\SongUtilForms\frmAddPerformer.resx">
+      <DependentUpon>frmAddPerformer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserForms\frmAddPerformer.resx">
       <DependentUpon>frmAddPerformer.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,10 +155,10 @@
     <EmbeddedResource Include="UserForms\frmUserDetails.resx">
       <DependentUpon>frmUserDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SongUtilForms\frmAddAlbum.resx">
+    <EmbeddedResource Include="SongForms\SongUtilForms\frmAddAlbum.resx">
       <DependentUpon>frmAddAlbum.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SongUtilForms\frmAddGenre.resx">
+    <EmbeddedResource Include="SongForms\SongUtilForms\frmAddGenre.resx">
       <DependentUpon>frmAddGenre.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

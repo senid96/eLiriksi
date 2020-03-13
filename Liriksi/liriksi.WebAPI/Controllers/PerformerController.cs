@@ -23,5 +23,11 @@ namespace liriksi.WebAPI.Controllers
         {
             return _service.Get();
         }
+
+        [HttpPost]
+        public ActionResult<Performer>Insert(Performer obj)
+        {
+            return _service.Insert(obj);
+        }
     }
 }

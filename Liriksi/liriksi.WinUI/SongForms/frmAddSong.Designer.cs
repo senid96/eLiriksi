@@ -110,6 +110,7 @@
             this.btnAddPerformer.TabIndex = 7;
             this.btnAddPerformer.Text = "Add new";
             this.btnAddPerformer.UseVisualStyleBackColor = true;
+            this.btnAddPerformer.Click += new System.EventHandler(this.btnAddPerformer_Click);
             // 
             // txtLyrics
             // 

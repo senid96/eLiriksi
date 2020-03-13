@@ -1,5 +1,6 @@
 ﻿using liriksi.Model;
 using liriksi.Model.Requests;
+using liriksi.WinUI.SongForms.SongUtilForms;
 using liriksi.WinUI.UtilForms;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,8 @@ namespace liriksi.WinUI.SongForms
     public partial class frmAddSong : Form
     {
         APIService _songService = new APIService("song");
-        APIService _genreService = new APIService("genre");
+        APIService _albumService = new APIService("album");
+        APIService _performerService = new APIService("performer");
 
         public frmAddSong()
         {
@@ -40,11 +42,29 @@ namespace liriksi.WinUI.SongForms
             req.PerformerId = cmbPerformer.SelectedIndex;
 
             await _songService.Insert<SongInsertRequest>(req);
+            this.Close();
+            frmSong frm = new frmSong();
+            frm.Show();
+            frm.MdiParent = Application.OpenForms["frmIndex"];      
+            frm.WindowState = FormWindowState.Maximized;
         }
 
         private async void frmAddSong_Load(object sender, EventArgs e)
         {
-            
+
+            cmbPerformer.DataSource = await _performerService.Get<List<Performer>>(null);
+            cmbPerformer.DisplayMember = "ArtisticName";
+            cmbPerformer.ValueMember = "Id";
+
+            cmbAlbum.DataSource = await _albumService.Get<List<Album>>(null);
+            cmbAlbum.DisplayMember = "Name";
+            cmbAlbum.ValueMember = "Id";
+        }
+
+        private void btnAddPerformer_Click(object sender, EventArgs e)
+        {
+            frmAddPerformer frm = new frmAddPerformer();
+            frm.Show();
         }
     }
 }

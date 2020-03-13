@@ -9,6 +9,6 @@ namespace liriksi.WebAPI.Services.Interfaces
     public interface IGenreService
     {
         List<Genre> Get(string genre);
-        void Insert(string genre);
+        Genre Insert(string genre);
     }
 }

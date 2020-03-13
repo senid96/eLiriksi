@@ -19,5 +19,13 @@ namespace liriksi.WebAPI.Services
         {
             return _context.Performer.ToList<Performer>();
         }
+
+        public Performer Insert(Performer obj)
+        {
+            _context.Performer.Add(obj);
+            _context.SaveChanges();
+
+            return _context.Performer.Last();
+        }
     }
 }

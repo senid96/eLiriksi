@@ -36,7 +36,6 @@
             this.pjesmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.newSongToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.songRequestsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
@@ -49,8 +48,7 @@
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.korisniciToolStripMenuItem,
-            this.pjesmeToolStripMenuItem,
-            this.songRequestsToolStripMenuItem});
+            this.pjesmeToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(843, 28);
@@ -71,14 +69,14 @@
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.searchToolStripMenuItem.Text = "Search";
             this.searchToolStripMenuItem.Click += new System.EventHandler(this.SearchToolStripMenuItem_Click);
             // 
             // addNewUserToolStripMenuItem
             // 
             this.addNewUserToolStripMenuItem.Name = "addNewUserToolStripMenuItem";
-            this.addNewUserToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
+            this.addNewUserToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.addNewUserToolStripMenuItem.Text = "New user";
             this.addNewUserToolStripMenuItem.Click += new System.EventHandler(this.AddNewUserToolStripMenuItem_Click);
             // 
@@ -94,22 +92,16 @@
             // searchToolStripMenuItem1
             // 
             this.searchToolStripMenuItem1.Name = "searchToolStripMenuItem1";
-            this.searchToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.searchToolStripMenuItem1.Size = new System.Drawing.Size(158, 26);
             this.searchToolStripMenuItem1.Text = "Search";
             this.searchToolStripMenuItem1.Click += new System.EventHandler(this.SearchToolStripMenuItem1_Click);
             // 
             // newSongToolStripMenuItem
             // 
             this.newSongToolStripMenuItem.Name = "newSongToolStripMenuItem";
-            this.newSongToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.newSongToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
             this.newSongToolStripMenuItem.Text = "New song";
             this.newSongToolStripMenuItem.Click += new System.EventHandler(this.newSongToolStripMenuItem_Click);
-            // 
-            // songRequestsToolStripMenuItem
-            // 
-            this.songRequestsToolStripMenuItem.Name = "songRequestsToolStripMenuItem";
-            this.songRequestsToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
-            this.songRequestsToolStripMenuItem.Text = "Song requests";
             // 
             // statusStrip
             // 
@@ -162,7 +154,6 @@
         private System.Windows.Forms.ToolStripMenuItem pjesmeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewUserToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem songRequestsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem newSongToolStripMenuItem;
     }
