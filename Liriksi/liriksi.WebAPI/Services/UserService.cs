@@ -3,6 +3,7 @@ using liriksi.Model;
 using liriksi.Model.Requests;
 using liriksi.WebAPI.EF;
 using liriksi.WebAPI.Exceptions;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -56,11 +57,14 @@ namespace liriksi.WebAPI.Services
             entity.Hash = "test";
             entity.Salt = "test";
             entity.Status = true;
+            entity.CityId = 4;
+            entity.UserTypeId = 1;
             _context.User.Add(entity);
             _context.SaveChanges();
 
             return _mapper.Map<UserGetRequest>(entity);
         }
+        [HttpPut]
         public UserGetRequest Update(int id, UserInsertRequest userRequest)
         {
             User entity = _context.User.Find(id);
@@ -72,15 +76,15 @@ namespace liriksi.WebAPI.Services
                 }
                 //TODO update password
             }
-             
+           
+            entity.UserTypeId = 2; //2 = regular user
+            entity.Status = true;
             _context.Attach(entity);
             _context.Update(entity);
-
-           // _mapper.Map<User>(userRequest);
-            _mapper.Map(userRequest, entity);
-            entity.UserTypeId = 2; //2 = regular user
-
             _context.SaveChanges();
+
+            _mapper.Map(userRequest, entity);
+
 
             return _mapper.Map<UserGetRequest>(entity);
         }

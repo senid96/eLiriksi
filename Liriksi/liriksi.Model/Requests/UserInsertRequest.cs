@@ -24,5 +24,7 @@ namespace liriksi.Model.Requests
         public string Password { get; set; }
         public string PasswordConfirmation { get; set; }
         public int UserTypeId { get; set; }
+        public int CityId { get; set; }
+        public bool Status { get; set; }
     }
 }
