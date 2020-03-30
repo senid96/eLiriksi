@@ -9,25 +9,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace liriksi.WebAPI.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class AlbumController : ControllerBase
+    public class AlbumController : BaseController<Album, object> //drugi objekt je search, to nemamo pa stavljamo object
     {
-        private readonly IAlbumService _albumService;
-        public AlbumController(IAlbumService service)
+        public AlbumController(IService<Album, object> service) : base(service)
         {
-            _albumService = service;
-        }
-
-        [HttpGet]
-        public ActionResult<List<Album>> Get()
-        {
-            return _albumService.Get();
-        }
-
-        public ActionResult<Album>Insert(Album album)
-        {
-            return _albumService.Insert(album);
+            /*konstruktor ostaje, ali u startup klasi treba staviti 
+            implementaciju interface-service */
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using liriksi.Model;
 using liriksi.WebAPI.EF;
 using liriksi.WebAPI.Filters;
 using liriksi.WebAPI.Services;
@@ -45,7 +46,10 @@ namespace liriksi.WebAPI
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IGenreService, GenreService>();
             services.AddScoped<IPerformerService, PerformerService>();
-            services.AddScoped<IAlbumService, AlbumService>();
+
+            //ovdje je za genericki dio
+            //services.AddScoped<IAlbumService, AlbumService>(); to je sad nepotrebno, i mozemo obrisati service i interface za album
+            services.AddScoped<IService<Model.Album, object>, BaseService<Model.Album, object, Album>>();
 
             //entity framework.. mijenjati zavisno gdje radis.. na poslu, laptopu i slicno
             services.AddDbContext<LiriksiContext>(options => options.UseSqlServer("Server=BST123\\SQLEXPRESS; Database=liriksiDB; Trusted_Connection=true;"));
