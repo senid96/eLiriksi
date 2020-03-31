@@ -5,46 +5,16 @@ using System.Threading.Tasks;
 using liriksi.Model;
 using liriksi.Model.Requests;
 using liriksi.WebAPI.Services;
+using liriksi.WebAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace liriksi.WebAPI.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class UserController : ControllerBase
+    public class UserController : CRUDController<User, UserSearchRequest, UserInsertRequest, UserInsertRequest>
     {
-        private readonly IUserService _userService;
-
-        public UserController(IUserService userService)
+        public UserController(ICRUD<User, UserSearchRequest, UserInsertRequest, UserInsertRequest> service) : base(service)
         {
-            _userService = userService;
         }
-
-        [HttpGet]
-        public ActionResult<List<UserGetRequest>> Get([FromQuery]UserSearchRequest request)
-        {
-            return _userService.Get(request);
-        }
-
-        [HttpGet("{id}")]
-        public ActionResult<UserGetRequest> Get(int id)
-        {
-            return _userService.GetById(id);
-        }
-
-        [HttpPost]
-        public UserGetRequest Insert(UserInsertRequest userRequst)
-        {
-            return _userService.Insert(userRequst);
-        }
-
-        [HttpPut("{id}")]
-        public UserGetRequest Update(int id, UserInsertRequest userRequest)
-        {
-            return _userService.Update(id, userRequest);
-        }
-        
-
     }
 }

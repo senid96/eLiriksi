@@ -17,8 +17,10 @@ namespace liriksi.WinUI.SongForms
     public partial class frmAddSong : Form
     {
         APIService _songService = new APIService("song");
-        APIService _albumService = new APIService("album");
         APIService _performerService = new APIService("performer");
+
+        //genericki
+        APIService _albumService = new APIService("album");
 
         public frmAddSong()
         {

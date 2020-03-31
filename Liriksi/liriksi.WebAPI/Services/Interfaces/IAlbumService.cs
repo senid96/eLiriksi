@@ -8,9 +8,7 @@ namespace liriksi.WebAPI.Services.Interfaces
 {
     public interface IAlbumService
     {
-        List<Album> Get();
-
-        Album Insert(Album album);
+     
 
     }
 }

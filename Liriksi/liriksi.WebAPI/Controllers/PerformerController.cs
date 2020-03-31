@@ -19,6 +19,7 @@ namespace liriksi.WebAPI.Controllers
         {
             _service = service;
         }
+        [HttpGet]
         public ActionResult<List<Performer>> Get()
         {
             return _service.Get();

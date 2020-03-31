@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using liriksi.Model;
+using liriksi.Model.Requests;
 using liriksi.WebAPI.EF;
 using liriksi.WebAPI.Filters;
 using liriksi.WebAPI.Services;
@@ -43,13 +44,14 @@ namespace liriksi.WebAPI
 
             //services dependeny injection
             services.AddScoped<ISongService, SongService>();
-            services.AddScoped<IUserService, UserService>();
             services.AddScoped<IGenreService, GenreService>();
             services.AddScoped<IPerformerService, PerformerService>();
 
             //ovdje je za genericki dio
             //services.AddScoped<IAlbumService, AlbumService>(); to je sad nepotrebno, i mozemo obrisati service i interface za album
             services.AddScoped<IService<Model.Album, object>, BaseService<Model.Album, object, Album>>();
+            //ovo dolje je sad implementacija u proizvod servisu, nije vise u baznom
+            services.AddScoped<ICRUD<User, UserSearchRequest, UserInsertRequest, UserInsertRequest>, UserService>();
 
             //entity framework.. mijenjati zavisno gdje radis.. na poslu, laptopu i slicno
             services.AddDbContext<LiriksiContext>(options => options.UseSqlServer("Server=BST123\\SQLEXPRESS; Database=liriksiDB; Trusted_Connection=true;"));
@@ -81,6 +83,7 @@ namespace liriksi.WebAPI
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
+
         }
     }
 }

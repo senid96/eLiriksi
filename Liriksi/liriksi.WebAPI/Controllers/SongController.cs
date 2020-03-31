@@ -22,6 +22,7 @@ namespace liriksi.WebAPI.Controllers
             _songService = songService;
         }
       
+        [HttpGet]
         public ActionResult<List<SongGetRequest>> Get([FromQuery]SongSearchRequest request){
             return _songService.Get(request);
         }

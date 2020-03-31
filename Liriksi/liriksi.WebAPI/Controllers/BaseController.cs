@@ -17,12 +17,7 @@ namespace liriksi.WebAPI.Controllers
         {
             _service = service;
         }
-        //TODO
-        /*
-         za sad si samo album ovako napravio,jos nije testirano, fale insert itd..
-         omoguciti swagger da radi
-         minuta videa: 30 min
-         */
+       
         [HttpGet]
         public List<T> Get([FromQuery]TSearch search)
         {
