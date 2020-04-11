@@ -11,25 +11,39 @@ using System.Threading.Tasks;
 
 namespace liriksi.WebAPI.Services
 {
-    public class UserService : CRUDService<User, UserSearchRequest,User, UserInsertRequest, UserInsertRequest>
+    public class UserService : IUserService
     {
-        //ovdje implementiramo generic sa search objektom
-        public UserService(LiriksiContext context, IMapper mapper) : base(context, mapper)
+        private readonly LiriksiContext _context;
+        private readonly IMapper _mapper;
+        public UserService(LiriksiContext context, IMapper mapper) 
         {
+            _context = context;
+            _mapper = mapper;
         }
 
-        public override List<User> Get(UserSearchRequest search)
+        public List<UserGetRequest> Get(UserSearchRequest obj)
         {
-            var query = _context.Set<User>().AsQueryable();
+            var query = _context.User.AsQueryable();
 
-            if (search?.Name != null || search?.Surname != null)
-            {
-                query = query.Where(x => x.Name.Contains(search.Name) || x.Surname.Contains(search.Surname));
-            }
-          
-            query = query.OrderBy(x => x.Name);
+            if (!string.IsNullOrEmpty(obj.Name))
+                query = query.Where(x => x.Name.Contains(obj.Name));
+            if (!string.IsNullOrEmpty(obj.Surname))
+                query = query.Where(x => x.Surname.Contains(obj.Surname));
 
-            return query.ToList();
+            var result = query.ToList();
+            return _mapper.Map<List<UserGetRequest>>(result);
+        }
+
+        public UserGetRequest Insert(UserInsertRequest obj)
+        {
+            var entity = _mapper.Map<User>(obj);
+            entity.Salt = "test";
+            entity.Hash = "test"; //todo login
+
+            _context.User.Add(entity);
+            _context.SaveChanges();
+
+            return _mapper.Map<UserGetRequest>(entity);
         }
     }
 }

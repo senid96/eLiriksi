@@ -44,7 +44,7 @@ namespace liriksi.WebAPI.Services
             return _context.Song.Where(x => x.Id.Equals(id)).FirstOrDefault();
         }
         
-        public Song Insert(Song song)
+        public Song Insert(SongInsertRequest song)
         {        
             var entity = _mapper.Map<Song>(song);
             _context.Song.Add(entity);
@@ -55,7 +55,8 @@ namespace liriksi.WebAPI.Services
         public void Delete(int id)
         {
             Song s = new Song() { Id = id };
-            _context.Remove(s); //todo
+            _context.Remove(s);
+            //todo
         }
 
     }

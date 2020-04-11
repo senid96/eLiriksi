@@ -28,11 +28,11 @@ namespace liriksi.WebAPI.Services
 
         public Genre Insert(string genre)
         {
-            //var query = _context.Genre.AsQueryable();
             Genre obj = new Genre() { Name = genre };
 
             _context.Genre.Add(obj);
             _context.SaveChanges();
+
             return _context.Genre.Last();
         }
     }

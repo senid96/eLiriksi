@@ -16,8 +16,13 @@ namespace liriksi.WebAPI.Mappers
           
             //song
             CreateMap<Song, SongInsertRequest > ().ReverseMap();
-            CreateMap<Song, SongGetRequest>().ReverseMap();
-            
+            //CreateMap<Song, SongGetRequest>().ReverseMap(); todo obrisati 'song get request'
+
+            //album
+            CreateMap<Album, AlbumInsertRequest>().ReverseMap();
+
+            //performer
+            CreateMap<Performer, PerformerInsertRequest>().ReverseMap();
         }
     }
 }

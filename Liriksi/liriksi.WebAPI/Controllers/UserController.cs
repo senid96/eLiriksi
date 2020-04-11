@@ -11,10 +11,29 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace liriksi.WebAPI.Controllers
 {
-    public class UserController : CRUDController<User, UserSearchRequest, UserInsertRequest, UserInsertRequest>
+
+    [Route("api/[controller]")]
+    [ApiController]
+    public class UserController : ControllerBase
     {
-        public UserController(ICRUD<User, UserSearchRequest, UserInsertRequest, UserInsertRequest> service) : base(service)
+        private readonly IUserService _service;
+
+        public UserController(IUserService service)
         {
+            _service = service;
         }
+
+        [HttpGet]
+        public ActionResult<List<UserGetRequest>>Get([FromQuery]UserSearchRequest obj)
+        {
+            return _service.Get(obj);
+        }
+
+        [HttpPost]
+        public ActionResult<UserGetRequest>Insert(UserInsertRequest obj)
+        {
+            return _service.Insert(obj);
+        }
+
     }
 }

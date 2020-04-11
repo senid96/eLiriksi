@@ -3,18 +3,35 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using liriksi.Model;
+using liriksi.Model.Requests;
+using liriksi.WebAPI.Services;
 using liriksi.WebAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace liriksi.WebAPI.Controllers
 {
-    public class AlbumController : BaseController<Album, object> //drugi objekt je search, to nemamo pa stavljamo object
+
+    [Route("api/[controller]")]
+    [ApiController]
+    public class AlbumController : ControllerBase
     {
-        public AlbumController(IService<Album, object> service) : base(service)
+        private readonly IAlbumService _service;
+        public AlbumController(IAlbumService service)
         {
-            /*konstruktor ostaje, ali u startup klasi treba staviti 
-            implementaciju interface-service */
+            _service = service;
+        }
+
+        [HttpGet]
+        public ActionResult<List<Album>> Get(string title)
+        {
+            return _service.Get(title);
+        }
+
+        [HttpPost]
+        public ActionResult<Album> Insert([FromBody]AlbumInsertRequest album)
+        {
+            return _service.Insert(album);
         }
     }
 }

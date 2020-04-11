@@ -36,8 +36,6 @@ namespace liriksi.WebAPI.EF
         }
 
 
-
-
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
         //    optionsBuilder.UseSqlServer("Server=DESKTOP-CP7742G; Database=liriksiDB; Trusted_Connection=true;"); 

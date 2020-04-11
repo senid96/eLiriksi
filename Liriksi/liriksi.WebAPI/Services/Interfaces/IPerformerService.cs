@@ -1,4 +1,5 @@
 ﻿using liriksi.Model;
+using liriksi.Model.Requests;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,8 +9,8 @@ namespace liriksi.WebAPI.Services.Interfaces
 {
     public interface IPerformerService
     {
-        List<Performer> Get();
+        List<Performer> Get(PerformerInsertRequest obj); //same object for search and insert
 
-        Performer Insert(Performer obj);
+        Performer Insert(PerformerInsertRequest obj);
     }
 }

@@ -9,6 +9,7 @@ namespace liriksi.WebAPI.Services
 {
     public interface IUserService
     {
-
+        List<UserGetRequest> Get(UserSearchRequest obj);
+        UserGetRequest Insert(UserInsertRequest obj);
     }
 }

@@ -46,12 +46,13 @@ namespace liriksi.WebAPI
             services.AddScoped<ISongService, SongService>();
             services.AddScoped<IGenreService, GenreService>();
             services.AddScoped<IPerformerService, PerformerService>();
+            services.AddScoped<IAlbumService, AlbumService>();
+            services.AddScoped<IUserService, UserService>();
 
             //ovdje je za genericki dio
-            //services.AddScoped<IAlbumService, AlbumService>(); to je sad nepotrebno, i mozemo obrisati service i interface za album
-            services.AddScoped<IService<Model.Album, object>, BaseService<Model.Album, object, Album>>();
+            //services.AddScoped<IService<Model.Album, object>, BaseService<Model.Album, object, Album>>();
             //ovo dolje je sad implementacija u proizvod servisu, nije vise u baznom
-            services.AddScoped<ICRUD<User, UserSearchRequest, UserInsertRequest, UserInsertRequest>, UserService>();
+            //services.AddScoped<ICRUD<User, UserSearchRequest, UserInsertRequest, UserInsertRequest>, UserService>();
 
             //entity framework.. mijenjati zavisno gdje radis.. na poslu, laptopu i slicno
             services.AddDbContext<LiriksiContext>(options => options.UseSqlServer("Server=BST123\\SQLEXPRESS; Database=liriksiDB; Trusted_Connection=true;"));

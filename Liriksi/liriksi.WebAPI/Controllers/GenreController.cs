@@ -22,13 +22,13 @@ namespace liriksi.WebAPI.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<Genre>> Get(string genre)
+        public ActionResult<List<Genre>> Get([FromQuery]string genre)
         {
             return _genreService.Get(genre);
         }
 
         [HttpPost]
-        public ActionResult<Genre> Insert([FromBody]string genre)
+        public ActionResult<Genre> Insert(string genre)
         {          
             return _genreService.Insert(genre);
         }

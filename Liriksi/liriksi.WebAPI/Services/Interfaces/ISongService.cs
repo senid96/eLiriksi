@@ -11,7 +11,7 @@ namespace liriksi.WebAPI.Services
     {
         List<SongGetRequest> Get(SongSearchRequest request);
         Song GetById(int id);
-        Song Insert(Song song);
+        Song Insert(SongInsertRequest song);
         void Delete(int id);
     }
 }
