@@ -10,5 +10,9 @@ namespace liriksi.WebAPI.Services.Interfaces
     {
         List<Genre> Get(string genre);
         Genre Insert(string genre);
+        Genre GetById(int id);
+        Genre Update(int id, string name);
+        bool Delete(int id);
+
     }
 }

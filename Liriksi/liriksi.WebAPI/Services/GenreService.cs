@@ -26,6 +26,12 @@ namespace liriksi.WebAPI.Services
                 return query.Where(x => x.Name.Contains(genre)).ToList<Genre>();
         }
 
+        [HttpGet("{id}")]
+        public Genre GetById(int id)
+        {
+            var entity = _context.Genre.Find(id);
+            return entity;
+        }
         public Genre Insert(string genre)
         {
             Genre obj = new Genre() { Name = genre };
@@ -34,6 +40,29 @@ namespace liriksi.WebAPI.Services
             _context.SaveChanges();
 
             return _context.Genre.Last();
+        }
+
+        public Genre Update(int id, string name)
+        {
+            var entity = _context.Genre.Find(id);
+            _context.Attach(entity);
+            _context.Update(entity);
+            entity.Name = name;
+
+            _context.SaveChanges();
+            return entity;
+        }
+
+        public bool Delete(int id)
+        {
+            var entity = _context.Genre.Find(id);
+            if (entity != null)
+            {
+                _context.Genre.Remove(entity);
+                _context.SaveChanges();
+                return true;
+            }
+            return false;
         }
     }
 }

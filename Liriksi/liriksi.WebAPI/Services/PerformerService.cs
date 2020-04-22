@@ -19,6 +19,7 @@ namespace liriksi.WebAPI.Services
             _context = context;
             _mapper = mapper;
         }
+
         public List<Performer> Get(PerformerInsertRequest obj) //insertRequest.. same object used for search
         {
             var query = _context.Performer.AsQueryable();
@@ -32,6 +33,11 @@ namespace liriksi.WebAPI.Services
             return query.ToList();
         }
 
+        public Performer GetById(int id)
+        {
+            return _context.Performer.Find(id);
+        }
+
         public Performer Insert(PerformerInsertRequest obj)
         {
             var entity = _mapper.Map<Performer>(obj);
@@ -39,6 +45,38 @@ namespace liriksi.WebAPI.Services
             _context.SaveChanges();
 
             return  _context.Performer.Last();
+        }
+
+        public Performer Update(int id, PerformerInsertRequest obj)
+        {
+            var entity = _context.Performer.Find(id);
+            if (entity != null)
+            {
+                _context.Performer.Attach(entity);
+                _context.Performer.Update(entity);
+
+                entity.Name = obj.Name;
+                entity.Surname = obj.Surname;
+                entity.ArtisticName = obj.ArtisticName;
+
+                _context.SaveChanges();
+
+                return entity;
+            }
+            else
+                return null;
+        }
+
+        public bool Delete(int id)
+        {
+            var entity = _context.Performer.Find(id);
+            if (entity != null)
+            {
+                _context.Remove(entity);
+                _context.SaveChanges();
+                return true;
+            }
+            return false;
         }
     }
 }

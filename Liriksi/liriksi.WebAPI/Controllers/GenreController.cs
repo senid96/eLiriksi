@@ -27,10 +27,28 @@ namespace liriksi.WebAPI.Controllers
             return _genreService.Get(genre);
         }
 
+        [HttpGet("{id}")]
+        public Genre GetById(int id)
+        {
+            return _genreService.GetById(id);
+        }
+
+        [HttpPut]
+        public Genre Update(int id, string name) 
+        {
+            return _genreService.Update(id, name);
+        }
+
         [HttpPost]
         public ActionResult<Genre> Insert(string genre)
         {          
             return _genreService.Insert(genre);
+        }
+
+        [HttpDelete]
+        public bool Delete(int id)
+        {
+            return _genreService.Delete(id);
         }
     }
 }

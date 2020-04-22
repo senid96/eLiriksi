@@ -27,7 +27,14 @@ namespace liriksi.WebAPI.Services
             else
                 return _context.Album.Where(x => x.Name.Contains(title)).ToList();
         }
-
+        public Album GetById(int id)
+        {
+            var entity = _context.Album.Find(id);
+            if (entity != null)
+                return entity;
+            else
+                return null;
+        }
         public Album Insert(AlbumInsertRequest album)
         {
             var entity = _mapper.Map<Album>(album);
@@ -35,6 +42,31 @@ namespace liriksi.WebAPI.Services
             _context.SaveChanges();
 
             return entity;
+        }
+        public Album Update(int id, AlbumInsertRequest album)
+        {
+            var entity = _context.Album.Find(id);
+            _context.Album.Attach(entity);
+            _context.Album.Update(entity);
+
+            entity.Name = album.Name;
+            entity.YearRelease = album.YearRelease;
+            entity.GenreId = album.GenreId;
+
+            _context.SaveChanges();
+
+            return entity;
+        }
+        public bool Delete(int id)
+        {
+            var entity = _context.Album.Find(id);
+            if (entity != null)
+            {
+                _context.Album.Remove(entity);
+                _context.SaveChanges();
+                return true;
+            }
+            return false;
         }
     }
 }

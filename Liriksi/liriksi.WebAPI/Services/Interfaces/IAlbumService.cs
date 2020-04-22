@@ -10,7 +10,11 @@ namespace liriksi.WebAPI.Services.Interfaces
     public interface IAlbumService
     {
         List<Album> Get(string title);
+        Album GetById(int id);
         Album Insert(AlbumInsertRequest album);
+        Album Update(int id, AlbumInsertRequest album);
 
+        bool Delete(int id);
+        
     }
 }

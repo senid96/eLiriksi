@@ -26,10 +26,28 @@ namespace liriksi.WebAPI.Controllers
             return _service.Get(obj);
         }
 
+        [HttpGet("{id}")]
+        public Performer GetById(int id)
+        {
+            return _service.GetById(id);
+        }
+
         [HttpPost]
         public ActionResult<Performer>Insert(PerformerInsertRequest obj)
         {
             return _service.Insert(obj);
+        }
+    
+        [HttpPut]
+        public Performer Update(int id, PerformerInsertRequest obj)
+        {
+            return _service.Update(id, obj);
+        }
+
+        [HttpDelete]
+        public bool Delete(int id)
+        {
+            return _service.Delete(id);
         }
     }
 }

@@ -28,10 +28,29 @@ namespace liriksi.WebAPI.Controllers
             return _service.Get(title);
         }
 
+        [HttpGet("/GetById/{id}")]
+        public ActionResult<Album>GetById(int id)
+        {
+            return _service.GetById(id);
+        }
+
         [HttpPost]
         public ActionResult<Album> Insert([FromBody]AlbumInsertRequest album)
         {
             return _service.Insert(album);
+        }
+
+        [HttpPut]
+        public ActionResult<Album> Update(int id, AlbumInsertRequest album)
+        {
+            return _service.Update(id, album);
+        }
+
+        //[HttpDelete("{id}")]
+        [HttpDelete]
+        public bool Delete(int id)
+        {
+            return _service.Delete(id);
         }
     }
 }

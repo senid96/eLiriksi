@@ -10,7 +10,9 @@ namespace liriksi.WebAPI.Services.Interfaces
     public interface IPerformerService
     {
         List<Performer> Get(PerformerInsertRequest obj); //same object for search and insert
-
+        Performer GetById(int id);
         Performer Insert(PerformerInsertRequest obj);
+        Performer Update(int id, PerformerInsertRequest obj);
+        bool Delete(int id);
     }
 }
