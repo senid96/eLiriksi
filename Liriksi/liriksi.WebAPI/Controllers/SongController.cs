@@ -28,15 +28,33 @@ namespace liriksi.WebAPI.Controllers
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Song> Get(int id)
+        public ActionResult<SongGetRequest> Get(int id)
         {
             return _songService.GetById(id);
         }
 
         [HttpPost]
-        public ActionResult<Song> Insert(SongInsertRequest song)
+        public ActionResult<SongGetRequest> Insert(SongInsertRequest song)
         {
            return _songService.Insert(song);
+        }
+
+        [HttpPut]
+        public ActionResult<SongGetRequest> Update(int id, SongInsertRequest song)
+        {
+            return _songService.Update(id, song);
+        }
+
+        [HttpDelete]
+        public bool Delete(int id)
+        {
+            return _songService.Delete(id);
+        }
+
+        [HttpPatch]
+        public bool ChangeApproveStatus(int id, int status)
+        {
+            return _songService.ChangeApproveStatus(id, status);
         }
 
 

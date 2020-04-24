@@ -27,6 +27,7 @@ namespace liriksi.WebAPI.EF
         public DbSet<UsersAlbumRate> UsersAlbumRates { get; set; }
         public DbSet<UsersSongRates> UsersSongRates { get; set; }
         public DbSet<Genre> Genre { get; set; }
+        public DbSet<SongStatus> SongStatus { get; set; }
 
         //kazemo mu da je ovo kompozicija
         protected override void OnModelCreating(ModelBuilder modelBuilder)

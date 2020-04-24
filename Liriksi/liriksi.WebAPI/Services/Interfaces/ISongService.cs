@@ -10,8 +10,12 @@ namespace liriksi.WebAPI.Services
     public interface ISongService
     {
         List<SongGetRequest> Get(SongSearchRequest request);
-        Song GetById(int id);
-        Song Insert(SongInsertRequest song);
-        void Delete(int id);
+        SongGetRequest GetById(int id);
+        SongGetRequest Insert(SongInsertRequest song);
+        SongGetRequest Update(int id, SongInsertRequest song);
+        bool Delete(int id);
+
+        bool ChangeApproveStatus(int id, int status);
+
     }
 }

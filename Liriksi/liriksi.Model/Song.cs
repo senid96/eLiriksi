@@ -16,7 +16,11 @@ namespace liriksi.Model
         [Required]
         [MinLength(1)]
         public string Text { get; set; }
-        public int Approved { get; set; }
+
+        public int SongStatusId { get; set; }
+        [ForeignKey("SongStatusId")]
+        public SongStatus SongStatus { get; set; }
+
         public int AlbumId { get; set; }
         [ForeignKey("AlbumId")]
         public Album Album { get; set; }

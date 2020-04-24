@@ -39,24 +39,66 @@ namespace liriksi.WebAPI.Services
             return _mapper.Map<List<SongGetRequest>>(result);
         }
 
-        public Song GetById(int id)
+        public SongGetRequest GetById(int id)
         {
-            return _context.Song.Where(x => x.Id.Equals(id)).FirstOrDefault();
+            var entity = _context.Song.Where(x => x.Id.Equals(id)).FirstOrDefault();
+            return _mapper.Map<SongGetRequest>(entity);
         }
         
-        public Song Insert(SongInsertRequest song)
+        public SongGetRequest Insert(SongInsertRequest song)
         {        
             var entity = _mapper.Map<Song>(song);
             _context.Song.Add(entity);
             _context.SaveChanges();
 
-            return _mapper.Map<Song>(song);
+            return _mapper.Map<SongGetRequest>(entity);
         }
-        public void Delete(int id)
+        
+        public SongGetRequest Update(int id, SongInsertRequest obj)
         {
-            Song s = new Song() { Id = id };
-            _context.Remove(s);
-            //todo
+            var entity = _context.Song.Find(id);
+            if (entity != null)
+            {
+                _context.Song.Attach(entity);
+                _context.Song.Update(entity);
+
+                entity.Title = obj.Title;
+                entity.Text = obj.Text;
+                entity.AlbumId = obj.AlbumId;
+                entity.PerformerId = obj.PerformerId;
+
+                _context.SaveChanges();
+                return _mapper.Map<SongGetRequest>(entity);
+            }
+            return null;
+        }
+
+        public bool Delete(int id)
+        {
+            var entity = _context.Song.Find(id);
+            if(entity != null)
+            {
+                _context.Song.Remove(entity);
+                _context.SaveChanges();
+                return true;
+            }
+            return false;
+        }
+
+        public bool ChangeApproveStatus(int id, int status)
+        {
+            var entity = _context.Song.Find(id);
+            if (entity != null)
+            {
+                _context.Song.Attach(entity);
+                _context.Song.Update(entity);
+
+                entity.SongStatusId = status;
+
+                _context.SaveChanges();
+                return true;
+            }
+            return false;
         }
 
     }
