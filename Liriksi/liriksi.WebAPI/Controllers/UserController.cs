@@ -35,5 +35,11 @@ namespace liriksi.WebAPI.Controllers
             return _service.Insert(obj);
         }
 
+        [HttpPatch("ChangeUserStatus")]
+        public bool ChangeUserStatus(int id, bool status)
+        {
+            return _service.ChangeUserStatus(id, status);
+        }
+
     }
 }

@@ -45,5 +45,20 @@ namespace liriksi.WebAPI.Services
 
             return _mapper.Map<UserGetRequest>(entity);
         }
+
+        public bool ChangeUserStatus(int id, bool status) //1 active, 0 nonactive
+        {
+            var usr = _context.User.Find(id);
+            if (usr != null)
+            {
+                _context.User.Attach(usr);
+                _context.Update(usr);
+                usr.Status = status;
+
+                _context.SaveChanges();
+                return true;
+            }
+            return false;
+        }
     }
 }
