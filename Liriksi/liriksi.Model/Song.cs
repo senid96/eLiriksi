@@ -30,7 +30,7 @@ namespace liriksi.Model
         //public ICollection<Performer> Performer { get; set; }
         //public int PerformerId { get; set; }
 
-        public ICollection<UsersSongRates> UsersSongRates { get; set; }
+        public ICollection<UsersSongRate> UsersSongRates { get; set; }
 
         public int PerformerId { get; set; }
         [ForeignKey("PerformerId")]

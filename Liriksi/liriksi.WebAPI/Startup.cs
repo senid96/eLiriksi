@@ -34,7 +34,8 @@ namespace liriksi.WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc(x=> x.Filters.Add<ErrorFilter>()).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            //services.AddMvc(x=> x.Filters.Add<ErrorFilter>()).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
@@ -48,11 +49,7 @@ namespace liriksi.WebAPI
             services.AddScoped<IPerformerService, PerformerService>();
             services.AddScoped<IAlbumService, AlbumService>();
             services.AddScoped<IUserService, UserService>();
-
-            //ovdje je za genericki dio
-            //services.AddScoped<IService<Model.Album, object>, BaseService<Model.Album, object, Album>>();
-            //ovo dolje je sad implementacija u proizvod servisu, nije vise u baznom
-            //services.AddScoped<ICRUD<User, UserSearchRequest, UserInsertRequest, UserInsertRequest>, UserService>();
+            services.AddScoped<IRatingService, RatingService>();
 
             //entity framework.. mijenjati zavisno gdje radis.. na poslu, laptopu i slicno
             services.AddDbContext<LiriksiContext>(options => options.UseSqlServer("Server=BST123\\SQLEXPRESS; Database=liriksiDB; Trusted_Connection=true;"));

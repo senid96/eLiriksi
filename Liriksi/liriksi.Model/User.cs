@@ -27,7 +27,7 @@ namespace liriksi.Model
         public City City { get; set; }
         public bool Status { get; set; }
         //public ICollection<UsersAlbumRate> UsersAlbumRates { get; set; }
-        public ICollection<UsersSongRates> UsersSongRates { get; set; }
+        public ICollection<UsersSongRate> UsersSongRates { get; set; }
         public ICollection<UsersAlbumRate> UsersAlbumRates { get; set; }
     }
 }
