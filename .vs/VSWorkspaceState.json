@@ -1,6 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Liriksi",
+    "\\Liriksi\\liriksi.Model",
+    "\\Liriksi\\liriksi.WebAPI",
+    "\\Liriksi\\liriksi.WebAPI\\EF",
+    "\\Liriksi\\liriksi.WebAPI\\Exceptions",
+    "\\Liriksi\\liriksi.WebAPI\\Filters",
+    "\\Liriksi\\liriksi.WebAPI\\Mappers",
+    "\\Liriksi\\liriksi.WebAPI\\Migrations",
+    "\\Liriksi\\liriksi.WebAPI\\Services"
   ],
+  "SelectedNode": "\\Liriksi\\liriksi.Model",
   "PreviewInSolutionExplorer": false
 }
