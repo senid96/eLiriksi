@@ -60,5 +60,10 @@ namespace liriksi.WebAPI.Services
             }
             return false;
         }
+
+        public List<UserType> GetUserTypes()
+        {
+            return _context.UserType.ToList();
+        }
     }
 }

@@ -41,5 +41,10 @@ namespace liriksi.WebAPI.Controllers
             return _service.ChangeUserStatus(id, status);
         }
 
+        [HttpGet("GetUserTypes")]
+        public ActionResult<List<UserType>> GetUserTypes()
+        {
+            return _service.GetUserTypes();
+        }
     }
 }

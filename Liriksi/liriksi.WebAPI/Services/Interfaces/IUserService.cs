@@ -12,5 +12,6 @@ namespace liriksi.WebAPI.Services
         List<UserGetRequest> Get(UserSearchRequest obj);
         UserGetRequest Insert(UserInsertRequest obj);
         bool ChangeUserStatus(int id, bool status);
+        List<UserType> GetUserTypes();
     }
 }
