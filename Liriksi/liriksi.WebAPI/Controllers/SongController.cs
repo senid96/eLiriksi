@@ -21,9 +21,10 @@ namespace liriksi.WebAPI.Controllers
         {
             _songService = songService;
         }
-      
+
         [HttpGet]
-        public ActionResult<List<SongGetRequest>> Get([FromQuery]SongSearchRequest request){
+        public ActionResult<List<SongGetRequest>> Get([FromQuery]SongSearchRequest request)
+        {
             return _songService.Get(request);
         }
 
@@ -36,7 +37,7 @@ namespace liriksi.WebAPI.Controllers
         [HttpPost]
         public ActionResult<SongGetRequest> Insert(SongInsertRequest song)
         {
-           return _songService.Insert(song);
+            return _songService.Insert(song);
         }
 
         [HttpPut]
@@ -50,13 +51,5 @@ namespace liriksi.WebAPI.Controllers
         {
             return _songService.Delete(id);
         }
-
-        [HttpPatch]
-        public bool ChangeApproveStatus(int id, int status)
-        {
-            return _songService.ChangeApproveStatus(id, status);
-        }
-
-
     }
 }

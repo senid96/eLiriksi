@@ -23,16 +23,29 @@ namespace liriksi.WebAPI.Controllers
             _service = service;
         }
 
+        //search by name, or get all
         [HttpGet]
         public ActionResult<List<UserGetRequest>>Get([FromQuery]UserSearchRequest obj)
         {
             return _service.Get(obj);
         }
 
+        [HttpGet("{id}")]
+        public UserGetRequest Get(int id)
+        {
+            return _service.Get(id);
+        }
+        
         [HttpPost]
         public ActionResult<UserGetRequest>Insert(UserInsertRequest obj)
         {
             return _service.Insert(obj);
+        }
+
+        [HttpPut("{id}")]
+        public UserGetRequest Update(int id, UserInsertRequest obj)
+        {
+           return _service.Update(id, obj);
         }
 
         [HttpPatch("ChangeUserStatus")]

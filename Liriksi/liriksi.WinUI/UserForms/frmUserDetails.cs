@@ -34,9 +34,8 @@ namespace liriksi.WinUI.User
                     Email = txtboxEmail.Text,
                     PhoneNumber = txtBoxPhone.Text,
                     Username = txtboxUsername.Text,
-                    Password = txtboxPassword.Text,
-                    PasswordConfirmation = txtboxPasswordConf.Text,
-                    UserTypeId = 2 //todo
+                    UserTypeId = 2, //todo
+                    CityId = 4 //todo
                 };
                 if (_userId.HasValue) //if user exist (update), if not (insert)
                 {
@@ -72,11 +71,26 @@ namespace liriksi.WinUI.User
             if (_userId.HasValue)
             {
                 var user = await _userService.GetById<UserGetRequest>(_userId);
+                txtboxName.ReadOnly = true;
                 txtboxName.Text = user.Name;
+
                 txtboxSurname.Text = user.Surname;
+                txtboxSurname.ReadOnly = true;
+
                 txtboxEmail.Text = user.Email;
+                txtboxEmail.ReadOnly = true;
+
                 txtBoxPhone.Text = user.PhoneNumber;
+                txtBoxPhone.ReadOnly = true;
+
                 txtboxUsername.Text = user.Username;
+                txtboxUsername.ReadOnly = true;
+
+                txtboxCity.Text = user.City.Name;
+                txtboxCity.ReadOnly = true;
+
+                txtboxUserType.ReadOnly = true;
+                txtboxUserType.Text = user.UserType.Type;
             }
         }
 
@@ -90,57 +104,33 @@ namespace liriksi.WinUI.User
 
         }
 
-        private void TxtboxName_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrEmpty(txtboxName.Text))
-            {
-                errorProvider1.SetError(txtboxName, "Required field");
-                e.Cancel = true; //cancel further form execution
-            }
-            else
-            {
-                errorProvider1.SetError(txtboxName, null); //to clear error
-            }
-        }
 
-        private void TxtboxSurname_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrEmpty(txtboxSurname.Text))
-            {
-                errorProvider1.SetError(txtboxSurname, "Required field");
-            }
-            else
-            {
-                errorProvider1.SetError(txtboxSurname, null);
-            }
-        }
-
-        private void TxtboxEmail_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrEmpty(txtboxEmail.Text))
-            {
-                errorProvider1.SetError(txtboxEmail, "Required field");
-                e.Cancel = true;
-            }
-            else
-            {
-                errorProvider1.SetError(txtboxEmail, null);
-
-                //email format validation
-                string email = txtboxEmail.Text;
-                Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
-                Match match = regex.Match(email);
-                if (match.Success)
-                {
-                    errorProvider1.SetError(txtboxEmail, null);
-                }
-                else
-                {
-                    errorProvider1.SetError(txtboxEmail, "Invalid email format");
-                    e.Cancel = true;
-                }
-            }
-        }
+        //private void TxtboxEmail_Validating(object sender, CancelEventArgs e)
+        //{
+        //    if (string.IsNullOrEmpty(txtboxEmail.Text))
+        //    {
+        //        errorProvider1.SetError(txtboxEmail, "Required field");
+        //        e.Cancel = true;
+        //    }
+        //    else
+        //    {
+        //        errorProvider1.SetError(txtboxEmail, null);
+        //regex email
+        //        //email format validation
+        //        string email = txtboxEmail.Text;
+        //        Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+        //        Match match = regex.Match(email);
+        //        if (match.Success)
+        //        {
+        //            errorProvider1.SetError(txtboxEmail, null);
+        //        }
+        //        else
+        //        {
+        //            errorProvider1.SetError(txtboxEmail, "Invalid email format");
+        //            e.Cancel = true;
+        //        }
+        //    }
+        //}
 
         private void TxtboxSurname_TextChanged(object sender, EventArgs e)
         {
@@ -152,73 +142,9 @@ namespace liriksi.WinUI.User
            
         }
 
-        private void TxtBoxPhone_Validating(object sender, CancelEventArgs e)
-        {
-            if (!txtBoxPhone.MaskCompleted)
-            {
-                errorProvider1.SetError(txtBoxPhone, "Required field");
-                e.Cancel = true;
-            }
-            else
-            {
-                errorProvider1.SetError(txtBoxPhone, null);
-            }
-
-        }
-
         private void TxtboxEmail_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void TxtboxUsername_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrEmpty(txtboxUsername.Text))
-            {
-                errorProvider1.SetError(txtboxUsername, "Required field");
-                e.Cancel = true;
-            }
-            else
-            {
-                errorProvider1.SetError(txtboxUsername, null);
-            }
-        }
-
-        private void TxtboxPassword_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrEmpty(txtboxPassword.Text))
-            {
-                errorProvider1.SetError(txtboxPassword, "Required field");
-                e.Cancel = true;
-            }
-            else
-            {
-                errorProvider1.SetError(txtboxPassword, null);
-            }
-        }
-
-        private void TxtboxPasswordConf_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrEmpty(txtboxPasswordConf.Text))
-            {
-                errorProvider1.SetError(txtboxPasswordConf, "Required field");
-                e.Cancel = true;
-            }
-            else
-            {
-                errorProvider1.SetError(txtboxPasswordConf, null);
-
-                //check if paswords match
-                //if (!txtboxPassword.Text.Equals(txtboxPasswordConf.Text))
-                //{
-                //    errorProvider1.SetError(txtboxPasswordConf, "Password doesn't match");
-                //    e.Cancel = true;
-                //}
-                //else
-                //{
-                //    errorProvider1.SetError(txtboxPasswordConf, null);
-                //}
-            }
         }
 
         private void TxtboxPasswordConf_TextChanged(object sender, EventArgs e)

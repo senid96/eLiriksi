@@ -31,7 +31,6 @@ namespace liriksi.WinUI.SongForms
         {
             frmAddAlbum frm = new frmAddAlbum();
             frm.Show();
-            //frm.MdiParent = this; //todo
         }
 
         private async void btnFinish_Click(object sender, EventArgs e)
@@ -40,8 +39,8 @@ namespace liriksi.WinUI.SongForms
             SongInsertRequest req = new SongInsertRequest();
             req.Title = txtName.Text;
             req.Text = txtLyrics.Text;
-            req.AlbumId = cmbAlbum.SelectedIndex;
-            req.PerformerId = cmbPerformer.SelectedIndex;
+            req.AlbumId = (int)cmbAlbum.SelectedValue;
+            req.PerformerId = (int)cmbPerformer.SelectedValue;
 
             await _songService.Insert<SongInsertRequest>(req);
             this.Close();
@@ -67,6 +66,11 @@ namespace liriksi.WinUI.SongForms
         {
             frmAddPerformer frm = new frmAddPerformer();
             frm.Show();
+        }
+
+        private void cmbAlbum_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

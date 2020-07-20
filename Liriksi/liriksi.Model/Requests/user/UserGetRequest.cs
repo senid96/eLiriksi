@@ -12,7 +12,8 @@ namespace liriksi.Model.Requests
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
         public string Username { get; set; }
-        public int UserType { get; set; }
         public bool Status { get; set; }
+        public City City { get; set; }
+        public UserType UserType { get; set; }
     }
 }

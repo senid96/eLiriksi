@@ -107,8 +107,6 @@ namespace liriksi.WebAPI.Migrations
 
                     b.Property<int>("AlbumId");
 
-                    b.Property<int>("Approved");
-
                     b.Property<int>("PerformerId");
 
                     b.Property<string>("Text")
@@ -178,7 +176,7 @@ namespace liriksi.WebAPI.Migrations
                     b.ToTable("UsersAlbumRates");
                 });
 
-            modelBuilder.Entity("liriksi.Model.UsersSongRates", b =>
+            modelBuilder.Entity("liriksi.Model.UsersSongRate", b =>
                 {
                     b.Property<int>("SongId");
 
@@ -262,7 +260,7 @@ namespace liriksi.WebAPI.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("liriksi.Model.UsersSongRates", b =>
+            modelBuilder.Entity("liriksi.Model.UsersSongRate", b =>
                 {
                     b.HasOne("liriksi.Model.Song")
                         .WithMany("UsersSongRates")

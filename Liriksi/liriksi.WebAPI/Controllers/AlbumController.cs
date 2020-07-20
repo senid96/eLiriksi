@@ -28,8 +28,8 @@ namespace liriksi.WebAPI.Controllers
             return _service.Get(title);
         }
 
-        [HttpGet("/GetById/{id}")]
-        public ActionResult<Album>GetById(int id)
+        [HttpGet("{id}")]
+        public ActionResult<Album>Get(int id)
         {
             return _service.GetById(id);
         }
@@ -46,7 +46,6 @@ namespace liriksi.WebAPI.Controllers
             return _service.Update(id, album);
         }
 
-        //[HttpDelete("{id}")]
         [HttpDelete]
         public bool Delete(int id)
         {

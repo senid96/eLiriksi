@@ -65,6 +65,7 @@
             this.cmbAlbum.Name = "cmbAlbum";
             this.cmbAlbum.Size = new System.Drawing.Size(277, 24);
             this.cmbAlbum.TabIndex = 2;
+            this.cmbAlbum.SelectedIndexChanged += new System.EventHandler(this.cmbAlbum_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -165,7 +166,10 @@
             this.Controls.Add(this.cmbAlbum);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtName);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmAddSong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmAddSong";
             this.Load += new System.EventHandler(this.frmAddSong_Load);
             this.ResumeLayout(false);

@@ -84,22 +84,5 @@ namespace liriksi.WebAPI.Services
             }
             return false;
         }
-
-        public bool ChangeApproveStatus(int id, int status)
-        {
-            var entity = _context.Song.Find(id);
-            if (entity != null)
-            {
-                _context.Song.Attach(entity);
-                _context.Song.Update(entity);
-
-                entity.SongStatusId = status;
-
-                _context.SaveChanges();
-                return true;
-            }
-            return false;
-        }
-
     }
 }

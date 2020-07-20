@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace liriksi.WebAPI.Services
 {
@@ -21,6 +22,7 @@ namespace liriksi.WebAPI.Services
             _mapper = mapper;
         }
 
+       
         public List<UserGetRequest> Get(UserSearchRequest obj)
         {
             var query = _context.User.AsQueryable();
@@ -33,7 +35,13 @@ namespace liriksi.WebAPI.Services
             var result = query.ToList();
             return _mapper.Map<List<UserGetRequest>>(result);
         }
-
+        [HttpGet("{id}")]
+        public UserGetRequest Get(int id)
+        {
+            User usr = _context.User.Where(x => x.Id == id)
+                                    .Include(b => b.City).Include(b => b.UserType).FirstOrDefault();
+            return _mapper.Map<UserGetRequest>(usr);
+        }
         public UserGetRequest Insert(UserInsertRequest obj)
         {
             var entity = _mapper.Map<User>(obj);
@@ -44,6 +52,23 @@ namespace liriksi.WebAPI.Services
             _context.SaveChanges();
 
             return _mapper.Map<UserGetRequest>(entity);
+        }
+
+        public UserGetRequest Update(int id, UserInsertRequest obj)
+        {
+            var entity = _context.User.Find(id);
+            if (obj != null)
+            {
+                entity.Username = obj.Username;
+                entity.Name = obj.Name;
+                entity.PhoneNumber = obj.PhoneNumber;
+                entity.Status = obj.Status;
+                entity.Surname = obj.Surname;
+                entity.Email = obj.Email;
+                _context.SaveChanges();
+                return _mapper.Map<UserGetRequest>(entity);
+            }
+            return null;
         }
 
         public bool ChangeUserStatus(int id, bool status) //1 active, 0 nonactive

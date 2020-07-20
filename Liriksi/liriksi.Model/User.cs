@@ -24,9 +24,8 @@ namespace liriksi.Model
 
         public int CityId { get; set; }
         [ForeignKey("CityId")]
-        public City City { get; set; }
-        public bool Status { get; set; }
-        //public ICollection<UsersAlbumRate> UsersAlbumRates { get; set; }
+        public virtual City City { get; set; }
+        public bool Status { get; set; } //active-inactive
         public ICollection<UsersSongRate> UsersSongRates { get; set; }
         public ICollection<UsersAlbumRate> UsersAlbumRates { get; set; }
     }

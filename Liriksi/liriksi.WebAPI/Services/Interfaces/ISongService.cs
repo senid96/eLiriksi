@@ -14,8 +14,5 @@ namespace liriksi.WebAPI.Services
         SongGetRequest Insert(SongInsertRequest song);
         SongGetRequest Update(int id, SongInsertRequest song);
         bool Delete(int id);
-
-        bool ChangeApproveStatus(int id, int status);
-
     }
 }

@@ -139,7 +139,6 @@ namespace liriksi.WinUI
         {
             frmAddSong frm = new frmAddSong();
             frm.MdiParent = this;
-            frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }
 
