@@ -41,7 +41,7 @@ namespace liriksi.WebAPI.Services
             _context.Album.Add(entity);
             _context.SaveChanges();
 
-            return entity;
+            return _context.Album.Last(); ;
         }
         public Album Update(int id, AlbumInsertRequest album)
         {

@@ -29,6 +29,7 @@ namespace liriksi.WinUI.SongForms
 
         private void btnAddAlbum_Click(object sender, EventArgs e)
         {
+            this.Close();
             frmAddAlbum frm = new frmAddAlbum();
             frm.Show();
         }
@@ -52,7 +53,6 @@ namespace liriksi.WinUI.SongForms
 
         private async void frmAddSong_Load(object sender, EventArgs e)
         {
-
             cmbPerformer.DataSource = await _performerService.Get<List<Performer>>(null);
             cmbPerformer.DisplayMember = "ArtisticName";
             cmbPerformer.ValueMember = "Id";
@@ -64,6 +64,7 @@ namespace liriksi.WinUI.SongForms
 
         private void btnAddPerformer_Click(object sender, EventArgs e)
         {
+            this.Close();
             frmAddPerformer frm = new frmAddPerformer();
             frm.Show();
         }

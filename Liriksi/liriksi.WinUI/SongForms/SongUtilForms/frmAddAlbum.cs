@@ -47,9 +47,17 @@ namespace liriksi.WinUI.UtilForms
 
         private void frmAddAlbum_FormClosed(object sender, FormClosedEventArgs e)
         {
-         Application.OpenForms["frmAddAlbum"].Close();
             frmAddSong frm = new frmAddSong();
             frm.Show();
         }
+
+        //public void CloseAllForm()
+        //{
+        //    for (int x = 0; x < Application.OpenForms.Count; x++)
+        //    {
+        //        if (Application.OpenForms[x] != this)
+        //            Application.OpenForms[x].Close();
+        //    }
+        //}
     }
 }

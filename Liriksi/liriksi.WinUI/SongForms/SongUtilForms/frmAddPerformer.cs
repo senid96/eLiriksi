@@ -29,16 +29,17 @@ namespace liriksi.WinUI.SongForms.SongUtilForms
 
         }
 
-        private void frmAddPerformer_FormClosed(object sender, FormClosedEventArgs e)
-        {
-
-        }
-
         private async void btnAddPerformer_Click(object sender, EventArgs e)
         {
             Performer obj = new Performer() { Name = txtName.Text, Surname = txtSurname.Text, ArtisticName = txtArtisticName.Text };
             await _performerService.Insert<Performer>(obj);
             this.Close();
+        }
+
+        private void frmAddPerformer_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmAddSong frm = new frmAddSong();
+            frm.Show();
         }
     }
 }

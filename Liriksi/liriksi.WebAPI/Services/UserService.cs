@@ -51,7 +51,7 @@ namespace liriksi.WebAPI.Services
             _context.User.Add(entity);
             _context.SaveChanges();
 
-            return _mapper.Map<UserGetRequest>(entity);
+            return _mapper.Map<UserGetRequest>(_context.User.Last());
         }
 
         public UserGetRequest Update(int id, UserInsertRequest obj)

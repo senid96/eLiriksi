@@ -51,7 +51,7 @@ namespace liriksi.WebAPI.Services
             _context.Song.Add(entity);
             _context.SaveChanges();
 
-            return _mapper.Map<SongGetRequest>(entity);
+            return _mapper.Map<SongGetRequest>(_context.Song.Last());
         }
         
         public SongGetRequest Update(int id, SongInsertRequest obj)
