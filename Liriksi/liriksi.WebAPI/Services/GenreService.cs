@@ -32,11 +32,9 @@ namespace liriksi.WebAPI.Services
             var entity = _context.Genre.Find(id);
             return entity;
         }
-        public Genre Insert(string genre)
+        public Genre Insert(Genre genre)
         {
-            Genre obj = new Genre() { Name = genre };
-
-            _context.Genre.Add(obj);
+            _context.Genre.Add(genre);
             _context.SaveChanges();
 
             return _context.Genre.Last();

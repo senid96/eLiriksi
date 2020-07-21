@@ -31,6 +31,8 @@ namespace liriksi.WinUI.SongForms
         {
             this.Close();
             frmAddAlbum frm = new frmAddAlbum();
+            frm.WindowState = FormWindowState.Maximized;
+            frm.MdiParent = Application.OpenForms["frmIndex"]; //postavi mdi na na mdi parenta ove forme
             frm.Show();
         }
 
@@ -66,6 +68,7 @@ namespace liriksi.WinUI.SongForms
         {
             this.Close();
             frmAddPerformer frm = new frmAddPerformer();
+            frm.MdiParent = Application.OpenForms["frmIndex"];
             frm.Show();
         }
 

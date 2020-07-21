@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
             this.btnAddGenre = new System.Windows.Forms.Button();
+            this.txtGenreName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -42,13 +42,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Name: ";
             // 
-            // txtName
-            // 
-            this.txtName.Location = new System.Drawing.Point(71, 33);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(204, 22);
-            this.txtName.TabIndex = 1;
-            // 
             // btnAddGenre
             // 
             this.btnAddGenre.Location = new System.Drawing.Point(200, 61);
@@ -59,17 +52,24 @@
             this.btnAddGenre.UseVisualStyleBackColor = true;
             this.btnAddGenre.Click += new System.EventHandler(this.btnAddGenre_Click);
             // 
+            // txtGenreName
+            // 
+            this.txtGenreName.Location = new System.Drawing.Point(71, 36);
+            this.txtGenreName.Name = "txtGenreName";
+            this.txtGenreName.Size = new System.Drawing.Size(204, 22);
+            this.txtGenreName.TabIndex = 3;
+            // 
             // frmAddGenre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(295, 159);
+            this.Controls.Add(this.txtGenreName);
             this.Controls.Add(this.btnAddGenre);
-            this.Controls.Add(this.txtName);
             this.Controls.Add(this.label1);
             this.Name = "frmAddGenre";
             this.Text = "frmAddGenre";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAddGenre_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAddGenre_FormClosed);
             this.Load += new System.EventHandler(this.frmAddGenre_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -79,7 +79,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Button btnAddGenre;
+        private System.Windows.Forms.TextBox txtGenreName;
     }
 }

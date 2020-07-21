@@ -9,7 +9,7 @@ namespace liriksi.WebAPI.Services.Interfaces
     public interface IGenreService
     {
         List<Genre> Get(string genre);
-        Genre Insert(string genre);
+        Genre Insert(Genre genre);
         Genre GetById(int id);
         Genre Update(int id, string name);
         bool Delete(int id);

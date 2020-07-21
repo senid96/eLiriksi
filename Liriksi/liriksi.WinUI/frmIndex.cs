@@ -116,6 +116,7 @@ namespace liriksi.WinUI
 
         private void SearchToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            CloseAllForm(); //close all form first
             frmUser frm = new frmUser();
             frm.MdiParent = this;
             frm.WindowState = FormWindowState.Maximized;
@@ -124,6 +125,7 @@ namespace liriksi.WinUI
 
         private void SearchToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            CloseAllForm();
             frmSong frm = new frmSong();
             frm.MdiParent = this;
             frm.WindowState = FormWindowState.Maximized;           
@@ -137,7 +139,9 @@ namespace liriksi.WinUI
 
         private void newSongToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            CloseAllForm();
             frmAddSong frm = new frmAddSong();
+            frm.WindowState = FormWindowState.Maximized;
             frm.MdiParent = this;
             frm.Show();
         }
@@ -145,6 +149,16 @@ namespace liriksi.WinUI
         private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        //helper method
+        public void CloseAllForm()
+        {
+            for (int x = 0; x < Application.OpenForms.Count; x++)
+            {
+                if (Application.OpenForms[x] != Application.OpenForms["frmIndex"])
+                    Application.OpenForms[x].Close();
+            }
         }
     }
 }

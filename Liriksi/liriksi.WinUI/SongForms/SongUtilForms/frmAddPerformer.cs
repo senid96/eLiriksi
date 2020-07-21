@@ -39,6 +39,8 @@ namespace liriksi.WinUI.SongForms.SongUtilForms
         private void frmAddPerformer_FormClosed(object sender, FormClosedEventArgs e)
         {
             frmAddSong frm = new frmAddSong();
+            frm.MdiParent = this.MdiParent;
+            frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }
     }

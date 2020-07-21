@@ -13,7 +13,7 @@ namespace liriksi.WinUI.UtilForms
 {
     public partial class frmAddGenre : Form
     {
-        APIService _genreService = new APIService("genre");
+        private readonly APIService _genreService = new APIService("genre");
         public frmAddGenre()
         {
             InitializeComponent();
@@ -21,21 +21,31 @@ namespace liriksi.WinUI.UtilForms
 
         private async void btnAddGenre_Click(object sender, EventArgs e)
         {
-            await _genreService.Insert<Genre>(txtName.Text);
+            Genre obj = new Genre { Name = txtGenreName.Text };
+            await _genreService.Insert<Genre>(obj);
             this.Close();
-            frmAddAlbum frm = new frmAddAlbum();
-            frm.Show();
         }
 
         private void frmAddGenre_Load(object sender, EventArgs e)
         {
 
         }
-        private void frmAddGenre_FormClosing(Object sender, FormClosingEventArgs e)
+        private void frmAddGenre_FormClosed(object sender, FormClosedEventArgs e)
         {
+            CloseAllForm();
             frmAddAlbum frm = new frmAddAlbum();
+            frm.MdiParent = this.MdiParent;
+            frm.WindowState = FormWindowState.Maximized;
             frm.Show();
-            // Do something
+        }
+
+        public void CloseAllForm()
+        {
+            for (int x = 0; x < Application.OpenForms.Count; x++)
+            {
+                if (Application.OpenForms[x] != Application.OpenForms["frmIndex"])
+                    Application.OpenForms[x].Close();
+            }
         }
     }
 }

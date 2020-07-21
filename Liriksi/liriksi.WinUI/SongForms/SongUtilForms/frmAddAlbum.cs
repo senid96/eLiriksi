@@ -26,6 +26,7 @@ namespace liriksi.WinUI.UtilForms
         {
             this.Close(); 
             frmAddGenre frm = new frmAddGenre();
+            frm.MdiParent = Application.OpenForms["frmIndex"];
             frm.Show();
         }
 
@@ -48,16 +49,9 @@ namespace liriksi.WinUI.UtilForms
         private void frmAddAlbum_FormClosed(object sender, FormClosedEventArgs e)
         {
             frmAddSong frm = new frmAddSong();
+            frm.MdiParent = this.MdiParent;
+            frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }
-
-        //public void CloseAllForm()
-        //{
-        //    for (int x = 0; x < Application.OpenForms.Count; x++)
-        //    {
-        //        if (Application.OpenForms[x] != this)
-        //            Application.OpenForms[x].Close();
-        //    }
-        //}
     }
 }

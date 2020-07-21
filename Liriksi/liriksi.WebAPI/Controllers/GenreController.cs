@@ -40,7 +40,7 @@ namespace liriksi.WebAPI.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Genre> Insert(string genre)
+        public ActionResult<Genre> Insert(Genre genre)
         {          
             return _genreService.Insert(genre);
         }
