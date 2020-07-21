@@ -7,6 +7,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace liriksi.WebAPI.Services
 {
@@ -41,7 +43,7 @@ namespace liriksi.WebAPI.Services
 
         public SongGetRequest GetById(int id)
         {
-            var entity = _context.Song.Where(x => x.Id.Equals(id)).FirstOrDefault();
+            var entity = _context.Song.Where(x => x.Id.Equals(id)).Include(b=>b.Performer).Include(b=>b.Album.Genre).FirstOrDefault();
             return _mapper.Map<SongGetRequest>(entity);
         }
         

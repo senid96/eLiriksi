@@ -29,80 +29,118 @@
         private void InitializeComponent()
         {
             this.txtboxLyrics = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelPerformer = new System.Windows.Forms.Label();
             this.txtBoxTitle = new System.Windows.Forms.TextBox();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.btnEnableEdit = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
+            this.labelAlbum = new System.Windows.Forms.Label();
+            this.labelGenre = new System.Windows.Forms.Label();
+            this.txtboxAlbum = new System.Windows.Forms.TextBox();
+            this.txtboxPerformer = new System.Windows.Forms.TextBox();
+            this.txtboxGenre = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtboxLyrics
             // 
-            this.txtboxLyrics.Location = new System.Drawing.Point(15, 94);
+            this.txtboxLyrics.Location = new System.Drawing.Point(20, 196);
+            this.txtboxLyrics.Margin = new System.Windows.Forms.Padding(4);
             this.txtboxLyrics.Name = "txtboxLyrics";
             this.txtboxLyrics.ReadOnly = true;
-            this.txtboxLyrics.Size = new System.Drawing.Size(313, 320);
+            this.txtboxLyrics.Size = new System.Drawing.Size(416, 313);
             this.txtboxLyrics.TabIndex = 0;
             this.txtboxLyrics.Text = "";
             this.txtboxLyrics.TextChanged += new System.EventHandler(this.TxtboxLyrics_TextChanged);
             // 
-            // label1
+            // labelPerformer
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 78);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Lyrics";
+            this.labelPerformer.AutoSize = true;
+            this.labelPerformer.Location = new System.Drawing.Point(13, 95);
+            this.labelPerformer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPerformer.Name = "labelPerformer";
+            this.labelPerformer.Size = new System.Drawing.Size(71, 17);
+            this.labelPerformer.TabIndex = 1;
+            this.labelPerformer.Text = "Performer";
             // 
             // txtBoxTitle
             // 
-            this.txtBoxTitle.Location = new System.Drawing.Point(45, 23);
+            this.txtBoxTitle.Location = new System.Drawing.Point(95, 34);
+            this.txtBoxTitle.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoxTitle.Name = "txtBoxTitle";
             this.txtBoxTitle.ReadOnly = true;
-            this.txtBoxTitle.Size = new System.Drawing.Size(202, 20);
+            this.txtBoxTitle.Size = new System.Drawing.Size(228, 22);
             this.txtBoxTitle.TabIndex = 2;
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Location = new System.Drawing.Point(12, 26);
+            this.lblTitle.Location = new System.Drawing.Point(13, 39);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(27, 13);
+            this.lblTitle.Size = new System.Drawing.Size(35, 17);
             this.lblTitle.TabIndex = 3;
             this.lblTitle.Text = "Title";
             // 
-            // btnEnableEdit
+            // labelAlbum
             // 
-            this.btnEnableEdit.Location = new System.Drawing.Point(15, 421);
-            this.btnEnableEdit.Name = "btnEnableEdit";
-            this.btnEnableEdit.Size = new System.Drawing.Size(75, 23);
-            this.btnEnableEdit.TabIndex = 4;
-            this.btnEnableEdit.Text = "Enable edit";
-            this.btnEnableEdit.UseVisualStyleBackColor = true;
-            this.btnEnableEdit.Click += new System.EventHandler(this.BtnEnableEdit_Click);
+            this.labelAlbum.AutoSize = true;
+            this.labelAlbum.Location = new System.Drawing.Point(13, 67);
+            this.labelAlbum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelAlbum.Name = "labelAlbum";
+            this.labelAlbum.Size = new System.Drawing.Size(47, 17);
+            this.labelAlbum.TabIndex = 6;
+            this.labelAlbum.Text = "Album";
             // 
-            // btnSave
+            // labelGenre
             // 
-            this.btnSave.Location = new System.Drawing.Point(253, 421);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 5;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Visible = false;
+            this.labelGenre.AutoSize = true;
+            this.labelGenre.Location = new System.Drawing.Point(12, 125);
+            this.labelGenre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelGenre.Name = "labelGenre";
+            this.labelGenre.Size = new System.Drawing.Size(48, 17);
+            this.labelGenre.TabIndex = 7;
+            this.labelGenre.Text = "Genre";
+            // 
+            // txtboxAlbum
+            // 
+            this.txtboxAlbum.Location = new System.Drawing.Point(95, 62);
+            this.txtboxAlbum.Margin = new System.Windows.Forms.Padding(4);
+            this.txtboxAlbum.Name = "txtboxAlbum";
+            this.txtboxAlbum.ReadOnly = true;
+            this.txtboxAlbum.Size = new System.Drawing.Size(228, 22);
+            this.txtboxAlbum.TabIndex = 8;
+            // 
+            // txtboxPerformer
+            // 
+            this.txtboxPerformer.Location = new System.Drawing.Point(95, 92);
+            this.txtboxPerformer.Margin = new System.Windows.Forms.Padding(4);
+            this.txtboxPerformer.Name = "txtboxPerformer";
+            this.txtboxPerformer.ReadOnly = true;
+            this.txtboxPerformer.Size = new System.Drawing.Size(228, 22);
+            this.txtboxPerformer.TabIndex = 9;
+            // 
+            // txtboxGenre
+            // 
+            this.txtboxGenre.Location = new System.Drawing.Point(95, 122);
+            this.txtboxGenre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtboxGenre.Name = "txtboxGenre";
+            this.txtboxGenre.ReadOnly = true;
+            this.txtboxGenre.Size = new System.Drawing.Size(228, 22);
+            this.txtboxGenre.TabIndex = 10;
             // 
             // frmSongDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(376, 468);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.btnEnableEdit);
+            this.ClientSize = new System.Drawing.Size(464, 531);
+            this.Controls.Add(this.txtboxGenre);
+            this.Controls.Add(this.txtboxPerformer);
+            this.Controls.Add(this.txtboxAlbum);
+            this.Controls.Add(this.labelGenre);
+            this.Controls.Add(this.labelAlbum);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.txtBoxTitle);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelPerformer);
             this.Controls.Add(this.txtboxLyrics);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmSongDetails";
             this.Text = "frmSongDetails";
             this.Load += new System.EventHandler(this.FrmSongDetails_Load);
@@ -114,10 +152,13 @@
         #endregion
 
         private System.Windows.Forms.RichTextBox txtboxLyrics;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelPerformer;
         private System.Windows.Forms.TextBox txtBoxTitle;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Button btnEnableEdit;
-        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label labelAlbum;
+        private System.Windows.Forms.Label labelGenre;
+        private System.Windows.Forms.TextBox txtboxAlbum;
+        private System.Windows.Forms.TextBox txtboxPerformer;
+        private System.Windows.Forms.TextBox txtboxGenre;
     }
 }
