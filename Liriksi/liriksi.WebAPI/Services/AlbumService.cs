@@ -3,6 +3,7 @@ using liriksi.Model;
 using liriksi.Model.Requests;
 using liriksi.WebAPI.EF;
 using liriksi.WebAPI.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,9 +24,9 @@ namespace liriksi.WebAPI.Services
         public List<Album> Get(string title)
         {
             if(string.IsNullOrEmpty(title))
-                return _context.Album.ToList();
+                return _context.Album.Include(b=>b.Genre).ToList();
             else
-                return _context.Album.Where(x => x.Name.Contains(title)).ToList();
+                return _context.Album.Where(x => x.Name.Contains(title)).Include(b => b.Genre).ToList();
         }
         public Album GetById(int id)
         {

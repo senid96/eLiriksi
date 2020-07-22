@@ -24,7 +24,7 @@ namespace liriksi.Model
         [ForeignKey("GenreId")]
         public Genre Genre { get; set; }
         public int GenreId { get; set; }
-        
+        public byte[] Image { get; set; }
         public virtual ICollection<UsersAlbumRate> UsersAlbumRates { get; set; }
 
 

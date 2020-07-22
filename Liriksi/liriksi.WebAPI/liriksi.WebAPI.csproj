@@ -16,6 +16,8 @@
     <Compile Include="Migrations\20200722103341_fix4.Designer.cs" />
     <Compile Include="Migrations\20200722103724_fix5.cs" />
     <Compile Include="Migrations\20200722103724_fix5.Designer.cs" />
+    <Compile Include="Migrations\20200722123617_fix6.cs" />
+    <Compile Include="Migrations\20200722123617_fix6.Designer.cs" />
     <Compile Include="Migrations\LiriksiContextModelSnapshot.cs" />
   </ItemGroup>
 

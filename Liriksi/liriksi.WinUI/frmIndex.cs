@@ -1,4 +1,5 @@
 ﻿using liriksi.WinUI.SongForms;
+using liriksi.WinUI.SongForms.AlbumForms;
 using liriksi.WinUI.User;
 using liriksi.WinUI.UserForms;
 using liriksi.WinUI.UtilForms;
@@ -175,6 +176,15 @@ namespace liriksi.WinUI
         private void addUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmAddUser frm = new frmAddUser();
+            frm.MdiParent = this;
+            frm.WindowState = FormWindowState.Maximized;
+            frm.Show();
+        }
+
+        private void viewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CloseAllForm();
+            frmAlbum frm = new frmAlbum();
             frm.MdiParent = this;
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();

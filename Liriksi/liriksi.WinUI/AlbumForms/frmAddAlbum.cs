@@ -1,0 +1,98 @@
+﻿using liriksi.Model;
+using liriksi.WinUI.Helper;
+using liriksi.WinUI.SongForms;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace liriksi.WinUI.UtilForms
+{
+    public partial class frmAddAlbum : Form
+    {
+        APIService _genreService = new APIService("genre");
+        APIService _albumService = new APIService("album");
+        public frmAddAlbum()
+        {
+            //var a = _genre.Get<List<Genre>>(//todo);
+            InitializeComponent();
+        }
+
+        private void btnAddGenre_Click(object sender, EventArgs e)
+        {
+            this.Close(); 
+            frmAddGenre frm = new frmAddGenre();
+            frm.MdiParent = Application.OpenForms["frmIndex"];
+            frm.Show();
+        }
+
+        private async void frmAddAlbum_Load(object sender, EventArgs e)
+        {
+            cmbYear.DataSource = Enumerable.Range(1900, 130).ToList();
+            var genres = await _genreService.Get<List<Genre>>(null, null);
+            cmbGenre.DataSource = genres;
+            cmbGenre.DisplayMember = "Name";
+            cmbGenre.ValueMember = "Id";
+        }
+
+        private async void finishAlbum_Click(object sender, EventArgs e)
+        {
+            //prepare image for database
+            string FileName = txtboxImgPath.Text;
+            byte[] ImageData;
+            FileStream fs = new FileStream(FileName, FileMode.Open, FileAccess.Read);
+            BinaryReader br = new BinaryReader(fs);
+            ImageData = br.ReadBytes((int)fs.Length);
+            br.Close();
+            fs.Close();
+            //end prepare image for database
+
+            Album obj = new Album() { Name = txtTitle.Text, GenreId = (int)cmbGenre.SelectedValue, YearRelease = (int)cmbYear.SelectedValue, Image = ImageData };
+            await _albumService.Insert<Album>(obj);
+            this.Close();
+        }
+
+        private void frmAddAlbum_FormClosed(object sender, FormClosedEventArgs e)
+        {
+         
+        }
+
+        //upload slike
+        private void btnOpenFileDialog_Click(object sender, EventArgs e)
+        {
+            var fileContent = string.Empty;
+            var filePath = string.Empty;
+
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = "c:\\";
+                openFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+                openFileDialog.FilterIndex = 2;
+                openFileDialog.RestoreDirectory = true;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    //Get the path of specified file
+                    filePath = openFileDialog.FileName;
+
+                    //Read the contents of the file into a stream
+                    var fileStream = openFileDialog.OpenFile();
+
+                    using (StreamReader reader = new StreamReader(fileStream))
+                    {
+                        fileContent = reader.ReadToEnd();
+                    }
+                }
+                Bitmap img = new Bitmap(openFileDialog.FileName);
+                picboxAlbum.Image = HelperMethods.ResizeImage(img, 120, 120);
+                txtboxImgPath.Text = filePath;
+            }
+        }
+    }
+}

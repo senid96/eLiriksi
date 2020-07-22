@@ -69,6 +69,12 @@
     <Compile Include="Helper\HelperMethods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AlbumForms\frmAlbum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlbumForms\frmAlbum.Designer.cs">
+      <DependentUpon>frmAlbum.cs</DependentUpon>
+    </Compile>
     <Compile Include="SongForms\frmAddSong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,10 +93,10 @@
     <Compile Include="SongForms\frmSongDetails.Designer.cs">
       <DependentUpon>frmSongDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="SongForms\SongUtilForms\frmAddPerformer.cs">
+    <Compile Include="PerformerForms\frmAddPerformer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SongForms\SongUtilForms\frmAddPerformer.Designer.cs">
+    <Compile Include="PerformerForms\frmAddPerformer.Designer.cs">
       <DependentUpon>frmAddPerformer.cs</DependentUpon>
     </Compile>
     <Compile Include="UserForms\frmAddPerformer.cs">
@@ -117,16 +123,16 @@
     <Compile Include="UserForms\frmUserDetails.Designer.cs">
       <DependentUpon>frmUserDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="SongForms\SongUtilForms\frmAddAlbum.cs">
+    <Compile Include="AlbumForms\frmAddAlbum.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SongForms\SongUtilForms\frmAddAlbum.Designer.cs">
+    <Compile Include="AlbumForms\frmAddAlbum.Designer.cs">
       <DependentUpon>frmAddAlbum.cs</DependentUpon>
     </Compile>
-    <Compile Include="SongForms\SongUtilForms\frmAddGenre.cs">
+    <Compile Include="GenreForms\frmAddGenre.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SongForms\SongUtilForms\frmAddGenre.Designer.cs">
+    <Compile Include="GenreForms\frmAddGenre.Designer.cs">
       <DependentUpon>frmAddGenre.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmIndex.resx">
@@ -141,6 +147,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AlbumForms\frmAlbum.resx">
+      <DependentUpon>frmAlbum.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SongForms\frmAddSong.resx">
       <DependentUpon>frmAddSong.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,7 +159,7 @@
     <EmbeddedResource Include="SongForms\frmSongDetails.resx">
       <DependentUpon>frmSongDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SongForms\SongUtilForms\frmAddPerformer.resx">
+    <EmbeddedResource Include="PerformerForms\frmAddPerformer.resx">
       <DependentUpon>frmAddPerformer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserForms\frmAddPerformer.resx">
@@ -165,13 +174,15 @@
     <EmbeddedResource Include="UserForms\frmUserDetails.resx">
       <DependentUpon>frmUserDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SongForms\SongUtilForms\frmAddAlbum.resx">
+    <EmbeddedResource Include="AlbumForms\frmAddAlbum.resx">
       <DependentUpon>frmAddAlbum.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SongForms\SongUtilForms\frmAddGenre.resx">
+    <EmbeddedResource Include="GenreForms\frmAddGenre.resx">
       <DependentUpon>frmAddGenre.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\liriksi.Model.Album.datasource" />
+    <None Include="Properties\DataSources\liriksi.Model.Genre.datasource" />
     <None Include="Properties\DataSources\liriksi.Model.Requests.UserGetRequest.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
