@@ -25,7 +25,7 @@ namespace liriksi.WinUI.SongForms
         {
             if (!_id.Equals(null))
             {
-                SongGetRequest song = await _songService.GetById<SongGetRequest>(_id);
+                SongGetRequest song = await _songService.GetById<SongGetRequest>(_id, null);
                 txtboxLyrics.Text = song.Text;
                 txtBoxTitle.Text = song.Title;
                 txtboxAlbum.Text = song.Album.Name;

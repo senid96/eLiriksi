@@ -48,6 +48,7 @@ namespace liriksi.WebAPI.Controllers
            return _service.Update(id, obj);
         }
 
+        //obratiti paznju sa api service kako ce ovo raditi
         [HttpPatch("ChangeUserStatus")]
         public bool ChangeUserStatus(int id, bool status)
         {

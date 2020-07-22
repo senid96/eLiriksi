@@ -33,7 +33,7 @@ namespace liriksi.WinUI.UtilForms
         private async void frmAddAlbum_Load(object sender, EventArgs e)
         {
             cmbYear.DataSource = Enumerable.Range(1900, 130).ToList();
-            var genres = await _genreService.Get<List<Genre>>(null);
+            var genres = await _genreService.Get<List<Genre>>(null, null);
             cmbGenre.DataSource = genres;
             cmbGenre.DisplayMember = "Name";
             cmbGenre.ValueMember = "Id";
@@ -48,10 +48,7 @@ namespace liriksi.WinUI.UtilForms
 
         private void frmAddAlbum_FormClosed(object sender, FormClosedEventArgs e)
         {
-            frmAddSong frm = new frmAddSong();
-            frm.MdiParent = this.MdiParent;
-            frm.WindowState = FormWindowState.Maximized;
-            frm.Show();
+         
         }
     }
 }

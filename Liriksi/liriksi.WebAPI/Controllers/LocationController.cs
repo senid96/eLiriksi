@@ -19,7 +19,7 @@ namespace liriksi.WebAPI.Controllers
             _service = service;
         }
 
-        [HttpGet("GetCitiesByCountryId")]
+        [HttpGet("GetCitiesByCountryId/{countryId}")]
         public ActionResult<List<City>> GetCitiesByCountryId(int countryId)
         {
             return _service.GetCitiesByCountryId(countryId);

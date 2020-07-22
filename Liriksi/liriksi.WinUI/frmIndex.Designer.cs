@@ -35,9 +35,12 @@
             this.pjesmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.newSongToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.albumsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewAlbumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.addUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -47,7 +50,8 @@
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.korisniciToolStripMenuItem,
-            this.pjesmeToolStripMenuItem});
+            this.pjesmeToolStripMenuItem,
+            this.albumsToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(843, 28);
@@ -58,7 +62,8 @@
             // korisniciToolStripMenuItem
             // 
             this.korisniciToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.searchToolStripMenuItem});
+            this.searchToolStripMenuItem,
+            this.addUserToolStripMenuItem});
             this.korisniciToolStripMenuItem.Name = "korisniciToolStripMenuItem";
             this.korisniciToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.korisniciToolStripMenuItem.Text = "Users";
@@ -94,6 +99,21 @@
             this.newSongToolStripMenuItem.Text = "New song";
             this.newSongToolStripMenuItem.Click += new System.EventHandler(this.newSongToolStripMenuItem_Click);
             // 
+            // albumsToolStripMenuItem
+            // 
+            this.albumsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addNewAlbumToolStripMenuItem});
+            this.albumsToolStripMenuItem.Name = "albumsToolStripMenuItem";
+            this.albumsToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
+            this.albumsToolStripMenuItem.Text = "Albums";
+            // 
+            // addNewAlbumToolStripMenuItem
+            // 
+            this.addNewAlbumToolStripMenuItem.Name = "addNewAlbumToolStripMenuItem";
+            this.addNewAlbumToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.addNewAlbumToolStripMenuItem.Text = "Add new album";
+            this.addNewAlbumToolStripMenuItem.Click += new System.EventHandler(this.addNewAlbumToolStripMenuItem_Click);
+            // 
             // statusStrip
             // 
             this.statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -111,6 +131,13 @@
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
             this.toolStripStatusLabel.Size = new System.Drawing.Size(49, 20);
             this.toolStripStatusLabel.Text = "Status";
+            // 
+            // addUserToolStripMenuItem
+            // 
+            this.addUserToolStripMenuItem.Name = "addUserToolStripMenuItem";
+            this.addUserToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addUserToolStripMenuItem.Text = "Add user";
+            this.addUserToolStripMenuItem.Click += new System.EventHandler(this.addUserToolStripMenuItem_Click);
             // 
             // frmIndex
             // 
@@ -146,6 +173,9 @@
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem newSongToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem albumsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addNewAlbumToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addUserToolStripMenuItem;
     }
 }
 

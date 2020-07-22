@@ -108,6 +108,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmAddPerformer";
             this.Text = "frmAddPerformer";
+            this.Load += new System.EventHandler(this.frmAddPerformer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

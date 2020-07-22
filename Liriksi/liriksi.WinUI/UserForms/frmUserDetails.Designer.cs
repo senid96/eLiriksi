@@ -42,21 +42,23 @@
             this.lblUserType = new System.Windows.Forms.Label();
             this.txtboxCity = new System.Windows.Forms.TextBox();
             this.txtboxUserType = new System.Windows.Forms.TextBox();
+            this.picboxUser = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxUser)).BeginInit();
             this.SuspendLayout();
             // 
             // txtboxName
             // 
-            this.txtboxName.Location = new System.Drawing.Point(16, 49);
+            this.txtboxName.Location = new System.Drawing.Point(208, 49);
             this.txtboxName.Margin = new System.Windows.Forms.Padding(4);
             this.txtboxName.Name = "txtboxName";
-            this.txtboxName.Size = new System.Drawing.Size(467, 22);
+            this.txtboxName.Size = new System.Drawing.Size(234, 22);
             this.txtboxName.TabIndex = 0;
             this.txtboxName.TextChanged += new System.EventHandler(this.TxtboxName_TextChanged);
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(12, 30);
+            this.lblName.Location = new System.Drawing.Point(205, 28);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(45, 17);
@@ -66,7 +68,7 @@
             // lblSurname
             // 
             this.lblSurname.AutoSize = true;
-            this.lblSurname.Location = new System.Drawing.Point(12, 90);
+            this.lblSurname.Location = new System.Drawing.Point(205, 75);
             this.lblSurname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSurname.Name = "lblSurname";
             this.lblSurname.Size = new System.Drawing.Size(65, 17);
@@ -75,17 +77,17 @@
             // 
             // txtboxSurname
             // 
-            this.txtboxSurname.Location = new System.Drawing.Point(16, 110);
+            this.txtboxSurname.Location = new System.Drawing.Point(208, 96);
             this.txtboxSurname.Margin = new System.Windows.Forms.Padding(4);
             this.txtboxSurname.Name = "txtboxSurname";
-            this.txtboxSurname.Size = new System.Drawing.Size(467, 22);
+            this.txtboxSurname.Size = new System.Drawing.Size(234, 22);
             this.txtboxSurname.TabIndex = 4;
             this.txtboxSurname.TextChanged += new System.EventHandler(this.TxtboxSurname_TextChanged);
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(12, 153);
+            this.lblEmail.Location = new System.Drawing.Point(205, 122);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(42, 17);
@@ -94,17 +96,17 @@
             // 
             // txtboxEmail
             // 
-            this.txtboxEmail.Location = new System.Drawing.Point(16, 172);
+            this.txtboxEmail.Location = new System.Drawing.Point(208, 143);
             this.txtboxEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtboxEmail.Name = "txtboxEmail";
-            this.txtboxEmail.Size = new System.Drawing.Size(467, 22);
+            this.txtboxEmail.Size = new System.Drawing.Size(234, 22);
             this.txtboxEmail.TabIndex = 6;
             this.txtboxEmail.TextChanged += new System.EventHandler(this.TxtboxEmail_TextChanged);
             // 
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(12, 214);
+            this.lblPhone.Location = new System.Drawing.Point(8, 183);
             this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(101, 17);
@@ -114,7 +116,7 @@
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(12, 400);
+            this.lblUsername.Location = new System.Drawing.Point(8, 367);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(73, 17);
@@ -123,26 +125,26 @@
             // 
             // txtboxUsername
             // 
-            this.txtboxUsername.Location = new System.Drawing.Point(16, 421);
+            this.txtboxUsername.Location = new System.Drawing.Point(12, 388);
             this.txtboxUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtboxUsername.Name = "txtboxUsername";
-            this.txtboxUsername.Size = new System.Drawing.Size(467, 22);
+            this.txtboxUsername.Size = new System.Drawing.Size(430, 22);
             this.txtboxUsername.TabIndex = 16;
             // 
             // txtBoxPhone
             // 
-            this.txtBoxPhone.Location = new System.Drawing.Point(16, 234);
+            this.txtBoxPhone.Location = new System.Drawing.Point(12, 203);
             this.txtBoxPhone.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoxPhone.Mask = "000-000-000";
             this.txtBoxPhone.Name = "txtBoxPhone";
-            this.txtBoxPhone.Size = new System.Drawing.Size(467, 22);
+            this.txtBoxPhone.Size = new System.Drawing.Size(430, 22);
             this.txtBoxPhone.TabIndex = 18;
             this.txtBoxPhone.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.TxtBoxPhone_MaskInputRejected);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 276);
+            this.label2.Location = new System.Drawing.Point(8, 245);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 17);
@@ -152,7 +154,7 @@
             // lblUserType
             // 
             this.lblUserType.AutoSize = true;
-            this.lblUserType.Location = new System.Drawing.Point(12, 338);
+            this.lblUserType.Location = new System.Drawing.Point(8, 307);
             this.lblUserType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUserType.Name = "lblUserType";
             this.lblUserType.Size = new System.Drawing.Size(69, 17);
@@ -161,25 +163,36 @@
             // 
             // txtboxCity
             // 
-            this.txtboxCity.Location = new System.Drawing.Point(16, 297);
+            this.txtboxCity.Location = new System.Drawing.Point(12, 266);
             this.txtboxCity.Margin = new System.Windows.Forms.Padding(4);
             this.txtboxCity.Name = "txtboxCity";
-            this.txtboxCity.Size = new System.Drawing.Size(211, 22);
+            this.txtboxCity.Size = new System.Drawing.Size(430, 22);
             this.txtboxCity.TabIndex = 25;
             // 
             // txtboxUserType
             // 
-            this.txtboxUserType.Location = new System.Drawing.Point(16, 360);
+            this.txtboxUserType.Location = new System.Drawing.Point(12, 329);
             this.txtboxUserType.Margin = new System.Windows.Forms.Padding(4);
             this.txtboxUserType.Name = "txtboxUserType";
-            this.txtboxUserType.Size = new System.Drawing.Size(211, 22);
+            this.txtboxUserType.Size = new System.Drawing.Size(430, 22);
             this.txtboxUserType.TabIndex = 26;
+            // 
+            // picboxUser
+            // 
+            this.picboxUser.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picboxUser.Location = new System.Drawing.Point(12, 28);
+            this.picboxUser.Name = "picboxUser";
+            this.picboxUser.Size = new System.Drawing.Size(162, 137);
+            this.picboxUser.TabIndex = 27;
+            this.picboxUser.TabStop = false;
+            this.picboxUser.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // frmUserDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(508, 477);
+            this.ClientSize = new System.Drawing.Size(470, 444);
+            this.Controls.Add(this.picboxUser);
             this.Controls.Add(this.txtboxUserType);
             this.Controls.Add(this.txtboxCity);
             this.Controls.Add(this.lblUserType);
@@ -198,6 +211,7 @@
             this.Name = "frmUserDetails";
             this.Text = "frmUserDetails";
             this.Load += new System.EventHandler(this.FrmUserDetails_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picboxUser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,5 +233,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtboxUserType;
         private System.Windows.Forms.TextBox txtboxCity;
+        private System.Windows.Forms.PictureBox picboxUser;
     }
 }

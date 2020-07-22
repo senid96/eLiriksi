@@ -27,7 +27,7 @@ namespace liriksi.WebAPI.Controllers
             return _genreService.Get(genre);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("GetGenreById/{id}")]
         public ActionResult<Genre> Get(int id)
         {
             return _genreService.GetById(id);

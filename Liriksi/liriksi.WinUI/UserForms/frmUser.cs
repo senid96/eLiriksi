@@ -37,7 +37,7 @@ namespace liriksi.WinUI.User
         private async void FrmUser_Load(object sender, EventArgs e)
         {
             dgvUser.AutoGenerateColumns = false;
-            dgvUser.DataSource = await _userService.Get<List<UserGetRequest>>(null);
+            dgvUser.DataSource = await _userService.Get<List<UserGetRequest>>(null,null);
         }
 
         private async void BtnShow_Click(object sender, EventArgs e)
@@ -48,7 +48,7 @@ namespace liriksi.WinUI.User
                 Surname = txtboxSurname.Text            
             };
 
-            var result = await _userService.Get<List<UserGetRequest>>(search);
+            var result = await _userService.Get<List<UserGetRequest>>(search, null);
 
             dgvUser.DataSource = result;
         }

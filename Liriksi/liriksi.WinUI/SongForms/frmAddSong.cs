@@ -55,11 +55,11 @@ namespace liriksi.WinUI.SongForms
 
         private async void frmAddSong_Load(object sender, EventArgs e)
         {
-            cmbPerformer.DataSource = await _performerService.Get<List<Performer>>(null);
+            cmbPerformer.DataSource = await _performerService.Get<List<Performer>>(null, null);
             cmbPerformer.DisplayMember = "ArtisticName";
             cmbPerformer.ValueMember = "Id";
 
-            cmbAlbum.DataSource = await _albumService.Get<List<Album>>(null);
+            cmbAlbum.DataSource = await _albumService.Get<List<Album>>(null,null);
             cmbAlbum.DisplayMember = "Name";
             cmbAlbum.ValueMember = "Id";
         }

@@ -15,5 +15,6 @@ namespace liriksi.Model.Requests
         public bool Status { get; set; }
         public City City { get; set; }
         public UserType UserType { get; set; }
+        public byte[] Image { get; set; }
     }
 }

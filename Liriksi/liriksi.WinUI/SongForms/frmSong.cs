@@ -22,9 +22,9 @@ namespace liriksi.WinUI.SongForms
 
         private async void BtnSongSearch_Click(object sender, EventArgs e)
         {
-            var temp = new SongSearchRequest() { Title = txtboxTitle.Text, Text = txtBoxLyrics.Text };
+            var obj = new SongSearchRequest() { Title = txtboxTitle.Text, Text = txtBoxLyrics.Text };
 
-            var data = await _songService.Get<List<SongGetRequest>>(temp);
+            var data = await _songService.Get<List<SongGetRequest>>(obj, null);
             dgvSong.DataSource = data;           
         }
 
@@ -42,7 +42,7 @@ namespace liriksi.WinUI.SongForms
 
         private async void FrmSong_Load(object sender, EventArgs e)
         {
-            dgvSong.DataSource = await _songService.Get<List<SongGetRequest>>(null);
+            dgvSong.DataSource = await _songService.Get<List<SongGetRequest>>(null, null);
         }
 
         private void BtnClearInputs_Click(object sender, EventArgs e)

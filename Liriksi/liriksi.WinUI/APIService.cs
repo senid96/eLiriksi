@@ -17,9 +17,13 @@ namespace liriksi.WinUI
             _route = route;
         }
 
-        public async Task<T> Get<T>(object search)
+        public async Task<T> Get<T>(object search, string method)
         {
-            var url = $"{Properties.Settings.Default.APIUrl}/{_route}"; //pravi se ruta.. u setingsu je definisan api
+            string url;
+            if (String.IsNullOrEmpty(method))
+                url = $"{Properties.Settings.Default.APIUrl}/{_route}"; //pravi se ruta.. u setingsu je definisan api
+            else
+                url = $"{Properties.Settings.Default.APIUrl}/{_route}/{method}";
 
             if (search != null)
             {
@@ -30,9 +34,13 @@ namespace liriksi.WinUI
             var result = await url.GetJsonAsync<T>();
             return result;
         }
-        public async Task<T> GetById<T>(object id)
+        public async Task<T> GetById<T>(object id, string method)
         {
-            var url = $"{Properties.Settings.Default.APIUrl}/{_route}/{id}"; //pravi se ruta.. u setingsu je definisan api
+            string url;
+            if (String.IsNullOrEmpty(method))
+                url = $"{Properties.Settings.Default.APIUrl}/{_route}/{id}"; //pravi se ruta.. u setingsu je definisan api
+            else
+                url = $"{Properties.Settings.Default.APIUrl}/{_route}/{method}/{id}"; //pravi se ruta.. u setingsu je definisan api
 
             var result = url.GetJsonAsync<T>();
             return await result; 

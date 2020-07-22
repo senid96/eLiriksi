@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using liriksi.Model.Requests;
+using liriksi.WinUI.Helper;
 
 namespace liriksi.WinUI.User
 {
@@ -70,7 +72,7 @@ namespace liriksi.WinUI.User
         {
             if (_userId.HasValue)
             {
-                var user = await _userService.GetById<UserGetRequest>(_userId);
+                var user = await _userService.GetById<UserGetRequest>(_userId, null);
                 txtboxName.ReadOnly = true;
                 txtboxName.Text = user.Name;
 
@@ -91,6 +93,14 @@ namespace liriksi.WinUI.User
 
                 txtboxUserType.ReadOnly = true;
                 txtboxUserType.Text = user.UserType.Type;
+
+                //prepare image to display from db
+                if (user.Image.Length > 0)
+                {
+                    byte[] imgData = user.Image;
+                    MemoryStream stream = new MemoryStream(imgData);
+                    picboxUser.Image = HelperMethods.ResizeImage(Image.FromStream(stream), 120, 120);
+                }
             }
         }
 
@@ -161,6 +171,11 @@ namespace liriksi.WinUI.User
         {
             //added to enable to close form (error provider disnable to close form)
             e.Cancel = false;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -17,6 +17,7 @@ namespace liriksi.WebAPI.Services
             _context = context;
         }
 
+        
         public List<City> GetCitiesByCountryId(int countryId)
         {
             return _context.City.Where(x => x.CountryId == countryId).ToList();

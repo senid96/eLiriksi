@@ -1,5 +1,7 @@
 ﻿using liriksi.WinUI.SongForms;
 using liriksi.WinUI.User;
+using liriksi.WinUI.UserForms;
+using liriksi.WinUI.UtilForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -159,6 +161,23 @@ namespace liriksi.WinUI
                 if (Application.OpenForms[x] != Application.OpenForms["frmIndex"])
                     Application.OpenForms[x].Close();
             }
+        }
+
+        private void addNewAlbumToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CloseAllForm();
+            frmAddAlbum frm = new frmAddAlbum();
+            frm.WindowState = FormWindowState.Maximized;
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void addUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddUser frm = new frmAddUser();
+            frm.MdiParent = this;
+            frm.WindowState = FormWindowState.Maximized;
+            frm.Show();
         }
     }
 }

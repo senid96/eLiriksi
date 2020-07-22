@@ -136,6 +136,8 @@ namespace liriksi.WebAPI.Migrations
 
                     b.Property<string>("Hash");
 
+                    b.Property<byte[]>("Image");
+
                     b.Property<string>("Name");
 
                     b.Property<string>("PhoneNumber");

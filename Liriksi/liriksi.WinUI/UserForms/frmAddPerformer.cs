@@ -16,5 +16,10 @@ namespace liriksi.WinUI.UserForms
         {
             InitializeComponent();
         }
+
+        private void frmAddPerformer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
