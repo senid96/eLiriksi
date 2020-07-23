@@ -81,5 +81,13 @@ namespace liriksi.WinUI.SongForms
             cmbAlbum.DisplayMember = "Name";
             cmbAlbum.ValueMember = "Id";
         }
+
+        private void frmAddSong_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmSong frm = new frmSong();
+            frm.MdiParent = Application.OpenForms["frmIndex"];
+            frm.WindowState = FormWindowState.Maximized;
+            frm.Show();
+        }
     }
 }

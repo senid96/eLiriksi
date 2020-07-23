@@ -137,6 +137,7 @@
             this.Name = "frmAddSong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmAddSong";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAddSong_FormClosed);
             this.Load += new System.EventHandler(this.frmAddSong_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

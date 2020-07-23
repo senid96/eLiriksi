@@ -68,7 +68,6 @@
             this.korisniciToolStripMenuItem.Name = "korisniciToolStripMenuItem";
             this.korisniciToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.korisniciToolStripMenuItem.Text = "Users";
-            this.korisniciToolStripMenuItem.Click += new System.EventHandler(this.KorisniciToolStripMenuItem_Click);
             // 
             // searchToolStripMenuItem
             // 

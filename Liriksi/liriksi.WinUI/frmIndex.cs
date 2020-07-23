@@ -101,16 +101,6 @@ namespace liriksi.WinUI
             }
         }
 
-        private void ContentsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void KorisniciToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void AddNewUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmUserDetails frm = new frmUserDetails();
@@ -137,7 +127,10 @@ namespace liriksi.WinUI
 
         private void FrmIndex_Load(object sender, EventArgs e)
         {
-
+            frmUser frm = new frmUser();
+            frm.MdiParent = Application.OpenForms["frmIndex"];
+            frm.WindowState = FormWindowState.Maximized;
+            frm.Show();
         }
 
         private void newSongToolStripMenuItem_Click(object sender, EventArgs e)

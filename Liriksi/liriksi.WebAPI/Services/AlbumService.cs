@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using liriksi.Model;
 using liriksi.Model.Requests;
+using liriksi.Model.Requests.album;
 using liriksi.WebAPI.EF;
 using liriksi.WebAPI.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -21,16 +22,16 @@ namespace liriksi.WebAPI.Services
             _context = context;
             _mapper = mapper;
         }
-        public List<Album> Get(string title)
+        public List<Album> Get(AlbumSearchRequest album)
         {
-            if(string.IsNullOrEmpty(title))
+            if(album.Name == null)
                 return _context.Album.Include(b=>b.Genre).ToList();
-            else
-                return _context.Album.Where(x => x.Name.Contains(title)).Include(b => b.Genre).ToList();
+            
+            return _context.Album.Where(x => x.Name.Contains(album.Name)).ToList();
         }
         public Album GetById(int id)
         {
-            var entity = _context.Album.Find(id);
+            var entity = _context.Album.Include(b=>b.Genre).Include(b=>b.Performer).SingleOrDefault(x=>x.Id == id);
             if (entity != null)
                 return entity;
             else

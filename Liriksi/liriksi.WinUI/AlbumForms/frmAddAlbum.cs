@@ -2,6 +2,7 @@
 using liriksi.Model.Requests;
 using liriksi.WinUI.Helper;
 using liriksi.WinUI.SongForms;
+using liriksi.WinUI.SongForms.AlbumForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -67,7 +68,10 @@ namespace liriksi.WinUI.UtilForms
 
         private void frmAddAlbum_FormClosed(object sender, FormClosedEventArgs e)
         {
-         
+            frmAlbum frm = new frmAlbum();
+            frm.MdiParent = Application.OpenForms["frmIndex"];
+            frm.WindowState = FormWindowState.Maximized;
+            frm.Show();
         }
 
         //upload slike

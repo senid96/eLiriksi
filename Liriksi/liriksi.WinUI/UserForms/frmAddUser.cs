@@ -52,6 +52,7 @@ namespace liriksi.WinUI.UserForms
                 }
                 //ako si odabrao sliku prikazi, ako si zatvorio dialog i nisi odabrao - nemoj prikazivati
                 //padne ako se ovako ne stavi
+                //prepare for display
                 if (!openFileDialog.FileName.Equals(""))
                 {
                     Bitmap img = new Bitmap(openFileDialog.FileName);

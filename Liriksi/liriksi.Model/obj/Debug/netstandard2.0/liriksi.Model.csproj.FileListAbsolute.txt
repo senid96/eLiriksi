@@ -21,7 +21,7 @@ C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.Model\bin\Debug\netstand
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.Model\bin\Debug\netstandard2.0\liriksi.Model.pdb
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.Model\obj\Debug\netstandard2.0\liriksi.Model.AssemblyInfoInputs.cache
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.Model\obj\Debug\netstandard2.0\liriksi.Model.AssemblyInfo.cs
+C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.Model\obj\Debug\netstandard2.0\liriksi.Model.csproj.CoreCompileInputs.cache
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.Model\obj\Debug\netstandard2.0\liriksi.Model.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.Model\obj\Debug\netstandard2.0\liriksi.Model.pdb
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.Model\obj\Debug\netstandard2.0\liriksi.Model.csprojAssemblyReference.cache
-C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.Model\obj\Debug\netstandard2.0\liriksi.Model.csproj.CoreCompileInputs.cache

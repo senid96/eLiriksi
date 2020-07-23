@@ -4,11 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using liriksi.Model;
 using liriksi.Model.Requests;
+using liriksi.Model.Requests.album;
 using liriksi.WebAPI.Services;
 using liriksi.WebAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-
 namespace liriksi.WebAPI.Controllers
 {
 
@@ -23,9 +23,9 @@ namespace liriksi.WebAPI.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<Album>> Get(string title)
+        public ActionResult<List<Album>> Get([FromQuery]AlbumSearchRequest searchReq)
         {
-            return _service.Get(title);
+            return _service.Get(searchReq);
         }
 
         [HttpGet("{id}")]

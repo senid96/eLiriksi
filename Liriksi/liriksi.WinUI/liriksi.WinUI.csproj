@@ -59,6 +59,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlbumForms\frmAlbumDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlbumForms\frmAlbumDetails.Designer.cs">
+      <DependentUpon>frmAlbumDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="APIService.cs" />
     <Compile Include="frmIndex.cs">
       <SubType>Form</SubType>
@@ -129,6 +135,9 @@
     <Compile Include="GenreForms\frmAddGenre.Designer.cs">
       <DependentUpon>frmAddGenre.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AlbumForms\frmAlbumDetails.resx">
+      <DependentUpon>frmAlbumDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmIndex.resx">
       <DependentUpon>frmIndex.cs</DependentUpon>
     </EmbeddedResource>
