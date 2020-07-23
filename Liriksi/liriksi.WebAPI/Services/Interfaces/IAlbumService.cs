@@ -13,8 +13,9 @@ namespace liriksi.WebAPI.Services.Interfaces
         Album GetById(int id);
         Album Insert(AlbumInsertRequest album);
         Album Update(int id, AlbumInsertRequest album);
-
         bool Delete(int id);
-        
+        List<Album> GetAlbumsByPerformerId(int id);
+
+
     }
 }

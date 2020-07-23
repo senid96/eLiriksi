@@ -38,12 +38,10 @@ namespace liriksi.WinUI.SongForms
 
         private async void btnFinish_Click(object sender, EventArgs e)
         {
-            //Provjeriti todo
             SongInsertRequest req = new SongInsertRequest();
             req.Title = txtName.Text;
             req.Text = txtLyrics.Text;
             req.AlbumId = (int)cmbAlbum.SelectedValue;
-            req.PerformerId = (int)cmbPerformer.SelectedValue;
 
             await _songService.Insert<SongInsertRequest>(req);
             this.Close();
@@ -59,7 +57,7 @@ namespace liriksi.WinUI.SongForms
             cmbPerformer.DisplayMember = "ArtisticName";
             cmbPerformer.ValueMember = "Id";
 
-            cmbAlbum.DataSource = await _albumService.Get<List<Album>>(null,null);
+            cmbAlbum.DataSource = await _albumService.Get<List<Album>>(cmbPerformer.SelectedValue, "GetAlbumsByPerformerId");
             cmbAlbum.DisplayMember = "Name";
             cmbAlbum.ValueMember = "Id";
         }
@@ -75,6 +73,13 @@ namespace liriksi.WinUI.SongForms
         private void cmbAlbum_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private async void cmbPerformer_DropDownClosed(object sender, EventArgs e)
+        {
+            cmbAlbum.DataSource = await _albumService.Get<List<Album>>(cmbPerformer.SelectedValue, "GetAlbumsByPerformerId");
+            cmbAlbum.DisplayMember = "Name";
+            cmbAlbum.ValueMember = "Id";
         }
     }
 }

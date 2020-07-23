@@ -191,6 +191,7 @@
             // 
             this.txtboxImgPath.Location = new System.Drawing.Point(29, 650);
             this.txtboxImgPath.Name = "txtboxImgPath";
+            this.txtboxImgPath.ReadOnly = true;
             this.txtboxImgPath.Size = new System.Drawing.Size(308, 22);
             this.txtboxImgPath.TabIndex = 43;
             // 

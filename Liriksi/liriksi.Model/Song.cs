@@ -22,10 +22,5 @@ namespace liriksi.Model
         public int AlbumId { get; set; }
 
         public ICollection<UsersSongRate> UsersSongRates { get; set; }
-
-        [ForeignKey("PerformerId")]
-        public Performer Performer { get; set; }
-        public int PerformerId { get; set; }
-
     }
 }

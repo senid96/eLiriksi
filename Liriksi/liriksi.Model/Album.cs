@@ -20,6 +20,11 @@ namespace liriksi.Model
         //public Performer Performer { get; set; }
         //public int PerformerId { get; set; }
 
+
+        [ForeignKey("PerformerId")]
+        public Performer Performer { get; set; }
+        public int PerformerId { get; set; }
+
         //genre relationship
         [ForeignKey("GenreId")]
         public Genre Genre { get; set; }

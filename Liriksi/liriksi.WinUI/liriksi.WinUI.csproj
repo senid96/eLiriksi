@@ -99,12 +99,6 @@
     <Compile Include="PerformerForms\frmAddPerformer.Designer.cs">
       <DependentUpon>frmAddPerformer.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserForms\frmAddPerformer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserForms\frmAddPerformer.Designer.cs">
-      <DependentUpon>frmAddPerformer.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserForms\frmAddUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,9 +154,6 @@
       <DependentUpon>frmSongDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PerformerForms\frmAddPerformer.resx">
-      <DependentUpon>frmAddPerformer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserForms\frmAddPerformer.resx">
       <DependentUpon>frmAddPerformer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserForms\frmAddUser.resx">

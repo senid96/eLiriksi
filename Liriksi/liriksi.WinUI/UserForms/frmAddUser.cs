@@ -50,9 +50,15 @@ namespace liriksi.WinUI.UserForms
                         fileContent = reader.ReadToEnd();
                     }
                 }
-                Bitmap img = new Bitmap(openFileDialog.FileName);
-                picboxUser.Image = HelperMethods.ResizeImage(img,  120, 120);
-                txtboxImgPath.Text = filePath;
+                //ako si odabrao sliku prikazi, ako si zatvorio dialog i nisi odabrao - nemoj prikazivati
+                //padne ako se ovako ne stavi
+                if (!openFileDialog.FileName.Equals(""))
+                {
+                    Bitmap img = new Bitmap(openFileDialog.FileName);
+                    picboxUser.Image = HelperMethods.ResizeImage(img, 120, 120);
+                    txtboxImgPath.Text = filePath;
+                }
+              
             }
         }
 

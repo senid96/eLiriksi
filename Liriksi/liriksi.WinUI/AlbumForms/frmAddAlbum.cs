@@ -1,4 +1,5 @@
 ﻿using liriksi.Model;
+using liriksi.Model.Requests;
 using liriksi.WinUI.Helper;
 using liriksi.WinUI.SongForms;
 using System;
@@ -18,6 +19,7 @@ namespace liriksi.WinUI.UtilForms
     {
         APIService _genreService = new APIService("genre");
         APIService _albumService = new APIService("album");
+        APIService _performerService = new APIService("performer");
         public frmAddAlbum()
         {
             //var a = _genre.Get<List<Genre>>(//todo);
@@ -39,6 +41,11 @@ namespace liriksi.WinUI.UtilForms
             cmbGenre.DataSource = genres;
             cmbGenre.DisplayMember = "Name";
             cmbGenre.ValueMember = "Id";
+
+            var performers = await _performerService.Get<List<Performer>>(null, null);
+            cmbPerformer.DataSource = performers;
+            cmbPerformer.DisplayMember = "ArtisticName";
+            cmbPerformer.ValueMember = "Id";
         }
 
         private async void finishAlbum_Click(object sender, EventArgs e)
@@ -53,8 +60,8 @@ namespace liriksi.WinUI.UtilForms
             fs.Close();
             //end prepare image for database
 
-            Album obj = new Album() { Name = txtTitle.Text, GenreId = (int)cmbGenre.SelectedValue, YearRelease = (int)cmbYear.SelectedValue, Image = ImageData };
-            await _albumService.Insert<Album>(obj);
+            AlbumInsertRequest obj = new AlbumInsertRequest() { Name = txtTitle.Text, GenreId = (int)cmbGenre.SelectedValue, YearRelease = (int)cmbYear.SelectedValue, Image = ImageData, PerformerId = (int)cmbPerformer.SelectedValue };
+            await _albumService.Insert<AlbumInsertRequest>(obj);
             this.Close();
         }
 
@@ -89,9 +96,14 @@ namespace liriksi.WinUI.UtilForms
                         fileContent = reader.ReadToEnd();
                     }
                 }
-                Bitmap img = new Bitmap(openFileDialog.FileName);
-                picboxAlbum.Image = HelperMethods.ResizeImage(img, 120, 120);
-                txtboxImgPath.Text = filePath;
+                //ako si odabrao sliku prikazi, ako si zatvorio dialog i nisi odabrao - nemoj prikazivati
+                //padne ako se ovako ne stavi
+                if (!openFileDialog.FileName.Equals(""))
+                {
+                    Bitmap img = new Bitmap(openFileDialog.FileName);
+                    picboxAlbum.Image = HelperMethods.ResizeImage(img, 120, 120);
+                    txtboxImgPath.Text = filePath;
+                }
             }
         }
     }

@@ -18,6 +18,8 @@
     <Compile Include="Migrations\20200722103724_fix5.Designer.cs" />
     <Compile Include="Migrations\20200722123617_fix6.cs" />
     <Compile Include="Migrations\20200722123617_fix6.Designer.cs" />
+    <Compile Include="Migrations\20200723071130_performerFix.cs" />
+    <Compile Include="Migrations\20200723071130_performerFix.Designer.cs" />
     <Compile Include="Migrations\LiriksiContextModelSnapshot.cs" />
   </ItemGroup>
 

@@ -30,7 +30,6 @@ namespace liriksi.WinUI.SongForms
                 txtBoxTitle.Text = song.Title;
                 txtboxAlbum.Text = song.Album.Name;
                 txtboxGenre.Text = song.Album.Genre.Name;
-                txtboxPerformer.Text = song.Performer.ArtisticName;
             }
         }
 

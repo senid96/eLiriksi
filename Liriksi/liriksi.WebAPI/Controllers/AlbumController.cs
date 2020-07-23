@@ -51,5 +51,11 @@ namespace liriksi.WebAPI.Controllers
         {
             return _service.Delete(id);
         }
+
+        [HttpGet("GetAlbumsByPerformerId")]
+        public ActionResult<List<Album>> GetAlbumsByPerformerId(int id)
+        {
+            return _service.GetAlbumsByPerformerId(id);
+        }
     }
 }
