@@ -35,13 +35,12 @@
             this.cmbGenre = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.cmbYear = new System.Windows.Forms.ComboBox();
-            this.lblImage = new System.Windows.Forms.Label();
-            this.txtboxImgPath = new System.Windows.Forms.TextBox();
             this.btnOpenFileDialog = new System.Windows.Forms.Button();
             this.picboxAlbum = new System.Windows.Forms.PictureBox();
             this.lblPerformer = new System.Windows.Forms.Label();
             this.cmbPerformer = new System.Windows.Forms.ComboBox();
             this.btnAddGenre = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picboxAlbum)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,12 +83,12 @@
             this.cmbGenre.FormattingEnabled = true;
             this.cmbGenre.Location = new System.Drawing.Point(109, 140);
             this.cmbGenre.Name = "cmbGenre";
-            this.cmbGenre.Size = new System.Drawing.Size(298, 24);
+            this.cmbGenre.Size = new System.Drawing.Size(152, 24);
             this.cmbGenre.TabIndex = 6;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(427, 207);
+            this.button2.Location = new System.Drawing.Point(269, 312);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 24);
             this.button2.TabIndex = 8;
@@ -105,25 +104,9 @@
             this.cmbYear.Size = new System.Drawing.Size(235, 24);
             this.cmbYear.TabIndex = 9;
             // 
-            // lblImage
-            // 
-            this.lblImage.AutoSize = true;
-            this.lblImage.Location = new System.Drawing.Point(10, 177);
-            this.lblImage.Name = "lblImage";
-            this.lblImage.Size = new System.Drawing.Size(85, 17);
-            this.lblImage.TabIndex = 49;
-            this.lblImage.Text = "Cover photo";
-            // 
-            // txtboxImgPath
-            // 
-            this.txtboxImgPath.Location = new System.Drawing.Point(109, 177);
-            this.txtboxImgPath.Name = "txtboxImgPath";
-            this.txtboxImgPath.Size = new System.Drawing.Size(298, 22);
-            this.txtboxImgPath.TabIndex = 48;
-            // 
             // btnOpenFileDialog
             // 
-            this.btnOpenFileDialog.Location = new System.Drawing.Point(427, 177);
+            this.btnOpenFileDialog.Location = new System.Drawing.Point(269, 282);
             this.btnOpenFileDialog.Name = "btnOpenFileDialog";
             this.btnOpenFileDialog.Size = new System.Drawing.Size(75, 24);
             this.btnOpenFileDialog.TabIndex = 47;
@@ -134,7 +117,7 @@
             // picboxAlbum
             // 
             this.picboxAlbum.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picboxAlbum.Location = new System.Drawing.Point(360, 25);
+            this.picboxAlbum.Location = new System.Drawing.Point(202, 177);
             this.picboxAlbum.Name = "picboxAlbum";
             this.picboxAlbum.Size = new System.Drawing.Size(142, 99);
             this.picboxAlbum.TabIndex = 50;
@@ -159,7 +142,7 @@
             // 
             // btnAddGenre
             // 
-            this.btnAddGenre.Location = new System.Drawing.Point(427, 141);
+            this.btnAddGenre.Location = new System.Drawing.Point(269, 140);
             this.btnAddGenre.Name = "btnAddGenre";
             this.btnAddGenre.Size = new System.Drawing.Size(75, 24);
             this.btnAddGenre.TabIndex = 7;
@@ -167,16 +150,24 @@
             this.btnAddGenre.UseVisualStyleBackColor = true;
             this.btnAddGenre.Click += new System.EventHandler(this.btnAddGenre_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(10, 177);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 17);
+            this.label3.TabIndex = 53;
+            this.label3.Text = "Cover photo";
+            // 
             // frmAddAlbum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 248);
+            this.ClientSize = new System.Drawing.Size(362, 364);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbPerformer);
             this.Controls.Add(this.lblPerformer);
             this.Controls.Add(this.picboxAlbum);
-            this.Controls.Add(this.lblImage);
-            this.Controls.Add(this.txtboxImgPath);
             this.Controls.Add(this.btnOpenFileDialog);
             this.Controls.Add(this.cmbYear);
             this.Controls.Add(this.button2);
@@ -205,12 +196,11 @@
         private System.Windows.Forms.ComboBox cmbGenre;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox cmbYear;
-        private System.Windows.Forms.Label lblImage;
-        private System.Windows.Forms.TextBox txtboxImgPath;
         private System.Windows.Forms.Button btnOpenFileDialog;
         private System.Windows.Forms.PictureBox picboxAlbum;
         private System.Windows.Forms.Label lblPerformer;
         private System.Windows.Forms.ComboBox cmbPerformer;
         private System.Windows.Forms.Button btnAddGenre;
+        private System.Windows.Forms.Label label3;
     }
 }

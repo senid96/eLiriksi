@@ -54,6 +54,8 @@ namespace liriksi.WebAPI.Services
             entity.Name = album.Name;
             entity.YearRelease = album.YearRelease;
             entity.GenreId = album.GenreId;
+            entity.Image = album.Image;
+            entity.PerformerId = album.PerformerId;
 
             _context.SaveChanges();
 

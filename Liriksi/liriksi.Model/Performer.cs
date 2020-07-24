@@ -12,7 +12,5 @@ namespace liriksi.Model
         public string Name { get; set; }
         public string Surname { get; set; }
         public string ArtisticName { get; set; }
-
-
     }
 }

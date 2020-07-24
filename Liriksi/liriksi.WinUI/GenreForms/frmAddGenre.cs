@@ -1,4 +1,5 @@
 ﻿using liriksi.Model;
+using liriksi.WinUI.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,20 +33,13 @@ namespace liriksi.WinUI.UtilForms
         }
         private void frmAddGenre_FormClosed(object sender, FormClosedEventArgs e)
         {
-            CloseAllForm();
+            HelperMethods.CloseAllForms();
             frmAddAlbum frm = new frmAddAlbum();
             frm.MdiParent = this.MdiParent;
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }
 
-        public void CloseAllForm()
-        {
-            for (int x = 0; x < Application.OpenForms.Count; x++)
-            {
-                if (Application.OpenForms[x] != Application.OpenForms["frmIndex"])
-                    Application.OpenForms[x].Close();
-            }
-        }
+      
     }
 }

@@ -40,7 +40,7 @@ namespace liriksi.WebAPI.Controllers
             return _service.Insert(album);
         }
 
-        [HttpPut]
+        [HttpPut("{Id}")]
         public ActionResult<Album> Update(int id, AlbumInsertRequest album)
         {
             return _service.Update(id, album);

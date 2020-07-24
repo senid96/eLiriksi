@@ -42,9 +42,7 @@
             this.txtboxName = new System.Windows.Forms.TextBox();
             this.picboxUser = new System.Windows.Forms.PictureBox();
             this.btnOpenFileDialog = new System.Windows.Forms.Button();
-            this.txtboxImgPath = new System.Windows.Forms.TextBox();
             this.btnSaveUser = new System.Windows.Forms.Button();
-            this.lblImage = new System.Windows.Forms.Label();
             this.cmbUserType = new System.Windows.Forms.ComboBox();
             this.cmbCountry = new System.Windows.Forms.ComboBox();
             this.cmbCity = new System.Windows.Forms.ComboBox();
@@ -179,7 +177,7 @@
             // 
             // btnOpenFileDialog
             // 
-            this.btnOpenFileDialog.Location = new System.Drawing.Point(343, 646);
+            this.btnOpenFileDialog.Location = new System.Drawing.Point(342, 197);
             this.btnOpenFileDialog.Name = "btnOpenFileDialog";
             this.btnOpenFileDialog.Size = new System.Drawing.Size(97, 28);
             this.btnOpenFileDialog.TabIndex = 42;
@@ -187,32 +185,15 @@
             this.btnOpenFileDialog.UseVisualStyleBackColor = true;
             this.btnOpenFileDialog.Click += new System.EventHandler(this.btnOpenFileDialog_Click);
             // 
-            // txtboxImgPath
-            // 
-            this.txtboxImgPath.Location = new System.Drawing.Point(29, 650);
-            this.txtboxImgPath.Name = "txtboxImgPath";
-            this.txtboxImgPath.ReadOnly = true;
-            this.txtboxImgPath.Size = new System.Drawing.Size(308, 22);
-            this.txtboxImgPath.TabIndex = 43;
-            // 
             // btnSaveUser
             // 
-            this.btnSaveUser.Location = new System.Drawing.Point(343, 702);
+            this.btnSaveUser.Location = new System.Drawing.Point(343, 628);
             this.btnSaveUser.Name = "btnSaveUser";
             this.btnSaveUser.Size = new System.Drawing.Size(97, 28);
             this.btnSaveUser.TabIndex = 44;
             this.btnSaveUser.Text = "Save";
             this.btnSaveUser.UseVisualStyleBackColor = true;
             this.btnSaveUser.Click += new System.EventHandler(this.btnSaveUser_Click);
-            // 
-            // lblImage
-            // 
-            this.lblImage.AutoSize = true;
-            this.lblImage.Location = new System.Drawing.Point(26, 626);
-            this.lblImage.Name = "lblImage";
-            this.lblImage.Size = new System.Drawing.Size(46, 17);
-            this.lblImage.TabIndex = 46;
-            this.lblImage.Text = "Image";
             // 
             // cmbUserType
             // 
@@ -252,7 +233,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 512);
+            this.label1.Location = new System.Drawing.Point(26, 514);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 17);
@@ -261,7 +242,7 @@
             // 
             // txtboxPassword
             // 
-            this.txtboxPassword.Location = new System.Drawing.Point(29, 533);
+            this.txtboxPassword.Location = new System.Drawing.Point(29, 535);
             this.txtboxPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtboxPassword.MaxLength = 14;
             this.txtboxPassword.Name = "txtboxPassword";
@@ -272,7 +253,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 568);
+            this.label2.Location = new System.Drawing.Point(28, 570);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 17);
@@ -281,7 +262,7 @@
             // 
             // txtboxConfirmPassword
             // 
-            this.txtboxConfirmPassword.Location = new System.Drawing.Point(29, 589);
+            this.txtboxConfirmPassword.Location = new System.Drawing.Point(29, 591);
             this.txtboxConfirmPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtboxConfirmPassword.MaxLength = 14;
             this.txtboxConfirmPassword.Name = "txtboxConfirmPassword";
@@ -293,7 +274,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 775);
+            this.ClientSize = new System.Drawing.Size(464, 678);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtboxPassword);
             this.Controls.Add(this.label2);
@@ -302,9 +283,7 @@
             this.Controls.Add(this.cmbCity);
             this.Controls.Add(this.cmbCountry);
             this.Controls.Add(this.cmbUserType);
-            this.Controls.Add(this.lblImage);
             this.Controls.Add(this.btnSaveUser);
-            this.Controls.Add(this.txtboxImgPath);
             this.Controls.Add(this.btnOpenFileDialog);
             this.Controls.Add(this.picboxUser);
             this.Controls.Add(this.lblUserType);
@@ -344,9 +323,7 @@
         private System.Windows.Forms.TextBox txtboxName;
         private System.Windows.Forms.PictureBox picboxUser;
         private System.Windows.Forms.Button btnOpenFileDialog;
-        private System.Windows.Forms.TextBox txtboxImgPath;
         private System.Windows.Forms.Button btnSaveUser;
-        private System.Windows.Forms.Label lblImage;
         private System.Windows.Forms.ComboBox cmbUserType;
         private System.Windows.Forms.ComboBox cmbCountry;
         private System.Windows.Forms.ComboBox cmbCity;

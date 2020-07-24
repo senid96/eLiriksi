@@ -1,6 +1,8 @@
 ﻿using liriksi.Model;
+using liriksi.Model.Requests;
 using liriksi.Model.Requests.album;
 using liriksi.WinUI.AlbumForms;
+using liriksi.WinUI.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -37,6 +39,21 @@ namespace liriksi.WinUI.SongForms.AlbumForms
         {
             var id = dgvAlbum.SelectedRows[0].Cells[0].Value.ToString();
             frmAlbumDetails frm = new frmAlbumDetails(int.Parse(id));
+            frm.Show();
+        }
+
+        private void dgvAlbum_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private async void btnUpdateAlbum_Click(object sender, EventArgs e)
+        {
+            int albumId = Convert.ToInt32(dgvAlbum.SelectedRows[0].Cells[0].Value.ToString());
+            HelperMethods.CloseAllForms();
+            frmUpdateAlbum frm = new frmUpdateAlbum(albumId);
+            frm.MdiParent = Application.OpenForms["frmIndex"];
+            frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }
     }

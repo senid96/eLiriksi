@@ -36,6 +36,7 @@
             this.txtboxAlbumName = new System.Windows.Forms.TextBox();
             this.lblAlbumName = new System.Windows.Forms.Label();
             this.btnSearchAlbum = new System.Windows.Forms.Button();
+            this.btnUpdateAlbum = new System.Windows.Forms.Button();
             this.genreBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.albumBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlbum)).BeginInit();
@@ -51,14 +52,15 @@
             this.Title,
             this.YearRelease});
             this.dgvAlbum.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvAlbum.Location = new System.Drawing.Point(12, 80);
+            this.dgvAlbum.Location = new System.Drawing.Point(15, 79);
             this.dgvAlbum.Name = "dgvAlbum";
             this.dgvAlbum.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dgvAlbum.RowHeadersWidth = 60;
             this.dgvAlbum.RowTemplate.Height = 50;
             this.dgvAlbum.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAlbum.Size = new System.Drawing.Size(985, 424);
+            this.dgvAlbum.Size = new System.Drawing.Size(1027, 390);
             this.dgvAlbum.TabIndex = 0;
+            this.dgvAlbum.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAlbum_CellContentClick);
             this.dgvAlbum.DoubleClick += new System.EventHandler(this.dgvAlbum_DoubleClick);
             // 
             // Id
@@ -67,6 +69,7 @@
             this.Id.HeaderText = "Id";
             this.Id.MinimumWidth = 6;
             this.Id.Name = "Id";
+            this.Id.Visible = false;
             this.Id.Width = 125;
             // 
             // Title
@@ -111,6 +114,16 @@
             this.btnSearchAlbum.UseVisualStyleBackColor = true;
             this.btnSearchAlbum.Click += new System.EventHandler(this.btnSearchAlbum_Click);
             // 
+            // btnUpdateAlbum
+            // 
+            this.btnUpdateAlbum.Location = new System.Drawing.Point(456, 33);
+            this.btnUpdateAlbum.Name = "btnUpdateAlbum";
+            this.btnUpdateAlbum.Size = new System.Drawing.Size(98, 23);
+            this.btnUpdateAlbum.TabIndex = 4;
+            this.btnUpdateAlbum.Text = "Update";
+            this.btnUpdateAlbum.UseVisualStyleBackColor = true;
+            this.btnUpdateAlbum.Click += new System.EventHandler(this.btnUpdateAlbum_Click);
+            // 
             // genreBindingSource
             // 
             this.genreBindingSource.DataSource = typeof(liriksi.Model.Genre);
@@ -123,7 +136,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1011, 516);
+            this.ClientSize = new System.Drawing.Size(1053, 481);
+            this.Controls.Add(this.btnUpdateAlbum);
             this.Controls.Add(this.btnSearchAlbum);
             this.Controls.Add(this.lblAlbumName);
             this.Controls.Add(this.txtboxAlbumName);
@@ -149,5 +163,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Title;
         private System.Windows.Forms.DataGridViewTextBoxColumn YearRelease;
+        private System.Windows.Forms.Button btnUpdateAlbum;
     }
 }

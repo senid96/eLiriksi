@@ -65,6 +65,12 @@
     <Compile Include="AlbumForms\frmAlbumDetails.Designer.cs">
       <DependentUpon>frmAlbumDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlbumForms\frmUpdateAlbum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlbumForms\frmUpdateAlbum.Designer.cs">
+      <DependentUpon>frmUpdateAlbum.cs</DependentUpon>
+    </Compile>
     <Compile Include="APIService.cs" />
     <Compile Include="frmIndex.cs">
       <SubType>Form</SubType>
@@ -73,6 +79,7 @@
       <DependentUpon>frmIndex.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\HelperMethods.cs" />
+    <Compile Include="Helper\ImageHelperMethods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AlbumForms\frmAlbum.cs">
@@ -137,6 +144,9 @@
     </Compile>
     <EmbeddedResource Include="AlbumForms\frmAlbumDetails.resx">
       <DependentUpon>frmAlbumDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlbumForms\frmUpdateAlbum.resx">
+      <DependentUpon>frmUpdateAlbum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmIndex.resx">
       <DependentUpon>frmIndex.cs</DependentUpon>

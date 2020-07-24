@@ -56,8 +56,7 @@ namespace liriksi.WinUI.UserForms
                 if (!openFileDialog.FileName.Equals(""))
                 {
                     Bitmap img = new Bitmap(openFileDialog.FileName);
-                    picboxUser.Image = HelperMethods.ResizeImage(img, 120, 120);
-                    txtboxImgPath.Text = filePath;
+                    picboxUser.Image = ImageHelperMethods.ResizeImage(img, 120, 120);
                 }
               
             }
@@ -66,14 +65,7 @@ namespace liriksi.WinUI.UserForms
         private async void btnSaveUser_Click(object sender, EventArgs e)
         {
             //prepare image for database
-            string FileName = txtboxImgPath.Text;
-            byte[] ImageData;
-            FileStream fs = new FileStream(FileName, FileMode.Open, FileAccess.Read);
-            BinaryReader br = new BinaryReader(fs);
-            ImageData = br.ReadBytes((int)fs.Length);
-            br.Close();
-            fs.Close();
-            //end prepare image for database
+            byte[] ImageData = ImageHelperMethods.PrepareImgForDB(picboxUser.Image);
 
             UserInsertRequest obj = new UserInsertRequest()
             {
@@ -90,16 +82,8 @@ namespace liriksi.WinUI.UserForms
                 Status = true //active by default
             };
 
-            try
-            {
                 await _userService.Insert<UserInsertRequest>(obj);
                 this.Close();
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-
         }
 
         private async void frmAddUser_Load(object sender, EventArgs e)

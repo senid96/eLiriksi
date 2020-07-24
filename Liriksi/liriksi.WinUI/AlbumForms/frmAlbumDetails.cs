@@ -39,7 +39,7 @@ namespace liriksi.WinUI.AlbumForms
             {
                 byte[] imgData = album.Image;
                 MemoryStream stream = new MemoryStream(imgData);
-                picboxAlbum.Image = HelperMethods.ResizeImage( Image.FromStream(stream),140,120);
+                picboxAlbum.Image = ImageHelperMethods.ResizeImage( Image.FromStream(stream),140,120);
             }
             //end prepare image
 

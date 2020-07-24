@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using liriksi.WebAPI.EF;
 
 namespace liriksi.WebAPI.Migrations
 {
     [DbContext(typeof(LiriksiContext))]
-    partial class LiriksiContextModelSnapshot : ModelSnapshot
+    [Migration("20200724064634_deletefix")]
+    partial class deletefix
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -83,6 +85,8 @@ namespace liriksi.WebAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<bool>("Deleted");
+
                     b.Property<string>("Name");
 
                     b.HasKey("Id");
@@ -97,6 +101,8 @@ namespace liriksi.WebAPI.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ArtisticName");
+
+                    b.Property<bool>("Deleted");
 
                     b.Property<string>("Name");
 
@@ -114,6 +120,8 @@ namespace liriksi.WebAPI.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("AlbumId");
+
+                    b.Property<bool>("Deleted");
 
                     b.Property<string>("Text")
                         .IsRequired();
@@ -135,6 +143,8 @@ namespace liriksi.WebAPI.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("CityId");
+
+                    b.Property<bool>("Deleted");
 
                     b.Property<string>("Email");
 

@@ -1,4 +1,5 @@
-﻿using liriksi.WinUI.SongForms;
+﻿using liriksi.WinUI.Helper;
+using liriksi.WinUI.SongForms;
 using liriksi.WinUI.SongForms.AlbumForms;
 using liriksi.WinUI.User;
 using liriksi.WinUI.UserForms;
@@ -109,7 +110,7 @@ namespace liriksi.WinUI
 
         private void SearchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CloseAllForm(); //close all form first
+            HelperMethods.CloseAllForms(); //close all form first
             frmUser frm = new frmUser();
             frm.MdiParent = this;
             frm.WindowState = FormWindowState.Maximized;
@@ -118,7 +119,7 @@ namespace liriksi.WinUI
 
         private void SearchToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            CloseAllForm();
+            HelperMethods.CloseAllForms();
             frmSong frm = new frmSong();
             frm.MdiParent = this;
             frm.WindowState = FormWindowState.Maximized;           
@@ -135,7 +136,7 @@ namespace liriksi.WinUI
 
         private void newSongToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CloseAllForm();
+            HelperMethods.CloseAllForms();
             frmAddSong frm = new frmAddSong();
             frm.WindowState = FormWindowState.Maximized;
             frm.MdiParent = this;
@@ -147,19 +148,10 @@ namespace liriksi.WinUI
 
         }
 
-        //helper method
-        public void CloseAllForm()
-        {
-            for (int x = 0; x < Application.OpenForms.Count; x++)
-            {
-                if (Application.OpenForms[x] != Application.OpenForms["frmIndex"])
-                    Application.OpenForms[x].Close();
-            }
-        }
-
+    
         private void addNewAlbumToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CloseAllForm();
+            HelperMethods.CloseAllForms();
             frmAddAlbum frm = new frmAddAlbum();
             frm.WindowState = FormWindowState.Maximized;
             frm.MdiParent = this;
@@ -176,7 +168,7 @@ namespace liriksi.WinUI
 
         private void viewToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CloseAllForm();
+            HelperMethods.CloseAllForms();
             frmAlbum frm = new frmAlbum();
             frm.MdiParent = this;
             frm.WindowState = FormWindowState.Maximized;

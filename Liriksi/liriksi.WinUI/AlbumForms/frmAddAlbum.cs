@@ -51,15 +51,7 @@ namespace liriksi.WinUI.UtilForms
 
         private async void finishAlbum_Click(object sender, EventArgs e)
         {
-            //prepare image for database
-            string FileName = txtboxImgPath.Text;
-            byte[] ImageData;
-            FileStream fs = new FileStream(FileName, FileMode.Open, FileAccess.Read);
-            BinaryReader br = new BinaryReader(fs);
-            ImageData = br.ReadBytes((int)fs.Length);
-            br.Close();
-            fs.Close();
-            //end prepare image for database
+            byte[] ImageData = ImageHelperMethods.PrepareImgForDB(picboxAlbum.Image);
 
             AlbumInsertRequest obj = new AlbumInsertRequest() { Name = txtTitle.Text, GenreId = (int)cmbGenre.SelectedValue, YearRelease = (int)cmbYear.SelectedValue, Image = ImageData, PerformerId = (int)cmbPerformer.SelectedValue };
             await _albumService.Insert<AlbumInsertRequest>(obj);
@@ -105,8 +97,7 @@ namespace liriksi.WinUI.UtilForms
                 if (!openFileDialog.FileName.Equals(""))
                 {
                     Bitmap img = new Bitmap(openFileDialog.FileName);
-                    picboxAlbum.Image = HelperMethods.ResizeImage(img, 120, 120);
-                    txtboxImgPath.Text = filePath;
+                    picboxAlbum.Image = ImageHelperMethods.ResizeImage(img, 120, 120);
                 }
             }
         }

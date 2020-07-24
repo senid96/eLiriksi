@@ -24,6 +24,10 @@
     <Compile Include="Migrations\20200723123014_fixDb6.Designer.cs" />
     <Compile Include="Migrations\20200723123106_fixDb7.cs" />
     <Compile Include="Migrations\20200723123106_fixDb7.Designer.cs" />
+    <Compile Include="Migrations\20200724064634_deletefix.cs" />
+    <Compile Include="Migrations\20200724064634_deletefix.Designer.cs" />
+    <Compile Include="Migrations\20200724064834_deletefix1.cs" />
+    <Compile Include="Migrations\20200724064834_deletefix1.Designer.cs" />
     <Compile Include="Migrations\LiriksiContextModelSnapshot.cs" />
   </ItemGroup>
 

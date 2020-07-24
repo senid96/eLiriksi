@@ -99,7 +99,7 @@ namespace liriksi.WinUI.User
                 {
                     byte[] imgData = user.Image;
                     MemoryStream stream = new MemoryStream(imgData);
-                    picboxUser.Image = HelperMethods.ResizeImage(Image.FromStream(stream), 120, 120);
+                    picboxUser.Image = ImageHelperMethods.ResizeImage(Image.FromStream(stream), 120, 120);
                 }
             }
         }
