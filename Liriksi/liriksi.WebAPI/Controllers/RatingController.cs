@@ -22,6 +22,30 @@ namespace liriksi.WebAPI.Controllers
         }
         //todo GET top 10 rejtinga
 
+        [HttpGet("GetSongRates")]
+        public List<AverageRate> GetSongRates()
+        {
+            return _service.GetSongRates();
+        }
+
+        [HttpGet("GetAlbumRates")]
+        public List<AverageRate> GetAlbumRates()
+        {
+            return _service.GetAlbumRates();
+        }
+
+        [HttpGet("GetUsersAlbumRate")]
+        public List<UsersAlbumRateGetRequest> GetRatesByAlbum(int albumId)
+        {
+            return _service.GetRatesByAlbum(albumId);
+        }
+
+        [HttpGet("GetUsersSongRate")]
+        public List<UsersSongRateGetRequest> GetUsersRateBySong(int songId)
+        {
+            return _service.GetRatesBySong(songId);
+        }
+
         [HttpPost("RateSong")]
         public bool RateSong(UsersSongRate obj)
         {
@@ -34,16 +58,6 @@ namespace liriksi.WebAPI.Controllers
             return _service.RateAlbum(obj);
         }
 
-        [HttpGet("GetUsersAlbumRate")]
-        public List<UsersAlbumRateRequest> GetUsersAlbumRate()
-        {
-            return _service.GetAlbumRates();
-        }
-
-        [HttpGet("GetUsersSongRate")]
-        public List<UsersSongRateRequest> GetUsersSongRate()
-        {
-            return _service.GetSongRates();
-        }
+       
     }
 }

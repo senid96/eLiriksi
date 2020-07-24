@@ -35,11 +35,15 @@
             this.Surname = new System.Windows.Forms.Label();
             this.txtArtisticName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.picBoxPerformer = new System.Windows.Forms.PictureBox();
+            this.btnUpload = new System.Windows.Forms.Button();
+            this.lblImg = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxPerformer)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAddPerformer
             // 
-            this.btnAddPerformer.Location = new System.Drawing.Point(235, 110);
+            this.btnAddPerformer.Location = new System.Drawing.Point(235, 262);
             this.btnAddPerformer.Name = "btnAddPerformer";
             this.btnAddPerformer.Size = new System.Drawing.Size(75, 26);
             this.btnAddPerformer.TabIndex = 5;
@@ -96,11 +100,42 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Artistic name:";
             // 
+            // picBoxPerformer
+            // 
+            this.picBoxPerformer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picBoxPerformer.Location = new System.Drawing.Point(106, 121);
+            this.picBoxPerformer.Name = "picBoxPerformer";
+            this.picBoxPerformer.Size = new System.Drawing.Size(204, 105);
+            this.picBoxPerformer.TabIndex = 10;
+            this.picBoxPerformer.TabStop = false;
+            // 
+            // btnUpload
+            // 
+            this.btnUpload.Location = new System.Drawing.Point(235, 233);
+            this.btnUpload.Name = "btnUpload";
+            this.btnUpload.Size = new System.Drawing.Size(75, 23);
+            this.btnUpload.TabIndex = 11;
+            this.btnUpload.Text = "Upload";
+            this.btnUpload.UseVisualStyleBackColor = true;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
+            // 
+            // lblImg
+            // 
+            this.lblImg.AutoSize = true;
+            this.lblImg.Location = new System.Drawing.Point(7, 121);
+            this.lblImg.Name = "lblImg";
+            this.lblImg.Size = new System.Drawing.Size(46, 17);
+            this.lblImg.TabIndex = 12;
+            this.lblImg.Text = "Image";
+            // 
             // frmAddPerformer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(328, 159);
+            this.ClientSize = new System.Drawing.Size(337, 310);
+            this.Controls.Add(this.lblImg);
+            this.Controls.Add(this.btnUpload);
+            this.Controls.Add(this.picBoxPerformer);
             this.Controls.Add(this.txtArtisticName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtSurname);
@@ -113,6 +148,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAddPerformer_FormClosed);
             this.Load += new System.EventHandler(this.frmAddPerformer_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxPerformer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,5 +163,8 @@
         private System.Windows.Forms.Label Surname;
         private System.Windows.Forms.TextBox txtArtisticName;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox picBoxPerformer;
+        private System.Windows.Forms.Button btnUpload;
+        private System.Windows.Forms.Label lblImg;
     }
 }

@@ -35,6 +35,8 @@
             this.labelGenre = new System.Windows.Forms.Label();
             this.txtboxAlbum = new System.Windows.Forms.TextBox();
             this.txtboxGenre = new System.Windows.Forms.TextBox();
+            this.picboxAlbum = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxAlbum)).BeginInit();
             this.SuspendLayout();
             // 
             // txtboxLyrics
@@ -54,7 +56,7 @@
             this.txtBoxTitle.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoxTitle.Name = "txtBoxTitle";
             this.txtBoxTitle.ReadOnly = true;
-            this.txtBoxTitle.Size = new System.Drawing.Size(228, 22);
+            this.txtBoxTitle.Size = new System.Drawing.Size(196, 22);
             this.txtBoxTitle.TabIndex = 2;
             // 
             // lblTitle
@@ -93,7 +95,7 @@
             this.txtboxAlbum.Margin = new System.Windows.Forms.Padding(4);
             this.txtboxAlbum.Name = "txtboxAlbum";
             this.txtboxAlbum.ReadOnly = true;
-            this.txtboxAlbum.Size = new System.Drawing.Size(228, 22);
+            this.txtboxAlbum.Size = new System.Drawing.Size(196, 22);
             this.txtboxAlbum.TabIndex = 8;
             // 
             // txtboxGenre
@@ -102,14 +104,23 @@
             this.txtboxGenre.Margin = new System.Windows.Forms.Padding(4);
             this.txtboxGenre.Name = "txtboxGenre";
             this.txtboxGenre.ReadOnly = true;
-            this.txtboxGenre.Size = new System.Drawing.Size(228, 22);
+            this.txtboxGenre.Size = new System.Drawing.Size(196, 22);
             this.txtboxGenre.TabIndex = 10;
+            // 
+            // picboxAlbum
+            // 
+            this.picboxAlbum.Location = new System.Drawing.Point(313, 34);
+            this.picboxAlbum.Name = "picboxAlbum";
+            this.picboxAlbum.Size = new System.Drawing.Size(126, 80);
+            this.picboxAlbum.TabIndex = 11;
+            this.picboxAlbum.TabStop = false;
             // 
             // frmSongDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 531);
+            this.Controls.Add(this.picboxAlbum);
             this.Controls.Add(this.txtboxGenre);
             this.Controls.Add(this.txtboxAlbum);
             this.Controls.Add(this.labelGenre);
@@ -121,6 +132,7 @@
             this.Name = "frmSongDetails";
             this.Text = "frmSongDetails";
             this.Load += new System.EventHandler(this.FrmSongDetails_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picboxAlbum)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,5 +147,6 @@
         private System.Windows.Forms.Label labelGenre;
         private System.Windows.Forms.TextBox txtboxAlbum;
         private System.Windows.Forms.TextBox txtboxGenre;
+        private System.Windows.Forms.PictureBox picboxAlbum;
     }
 }

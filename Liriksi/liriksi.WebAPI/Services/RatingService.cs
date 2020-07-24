@@ -4,8 +4,11 @@ using liriksi.Model.Requests;
 using liriksi.Model.Requests.rates;
 using liriksi.WebAPI.EF;
 using liriksi.WebAPI.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Xml;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -49,7 +52,7 @@ namespace liriksi.WebAPI.Services
             return true;
         }
 
-        public List<UsersAlbumRateRequest> GetAlbumRates()
+        public List<UsersAlbumRateGetRequest> GetRatesByAlbum(int albumId)
         {
             var entity = (from rates in _context.UsersAlbumRates
                               join album in _context.Album on rates.AlbumId equals album.Id
@@ -61,14 +64,15 @@ namespace liriksi.WebAPI.Services
                                   UserId = rates.UserId,
                                   Username = user.Username,
                                   Rate = rates.Rate,
-                                  Comment = rates.Comment
+                                  Comment = rates.Comment,
                               });
-            return _mapper.Map<List<UsersAlbumRateRequest>>(entity);
+            return _mapper.Map<List<UsersAlbumRateGetRequest>>(entity);
 
         }
 
-        public List<UsersSongRateRequest> GetSongRates()
+        public List<UsersSongRateGetRequest> GetRatesBySong(int songId)
         {
+           
             var entity = (from rates in _context.UsersSongRates
                           join song in _context.Song on rates.SongId equals song.Id
                           join user in _context.User on rates.UserId equals user.Id
@@ -79,9 +83,25 @@ namespace liriksi.WebAPI.Services
                               UserId = rates.UserId,
                               Username = user.Username,
                               Rate = rates.Rate,
-                              Comment = rates.Comment
+                              Comment = rates.Comment,
                           });
-            return _mapper.Map<List<UsersSongRateRequest>>(entity);
+            return _mapper.Map<List<UsersSongRateGetRequest>>(entity);
+        }
+
+        public List<AverageRate> GetAlbumRates()
+        {
+            string command = "select s.Title, SUM(uar.Rate)/Count(uar.UserId) as AvgRate from UsersSongRates uar join Song s on s.Id = uar.SongId group by uar.SongId, s.Title";
+            var result = _context.Database.ExecuteSqlCommand(command);
+            return null;
+        }
+
+        public List<AverageRate> GetSongRates()
+        {
+            using (LiriksiContext db = new LiriksiContext())
+            {
+                db.Database.ExecuteSqlCommand<AverageRate>("");
+            }
+            return null;
         }
     }
 }

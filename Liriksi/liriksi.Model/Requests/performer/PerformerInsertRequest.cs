@@ -9,5 +9,6 @@ namespace liriksi.Model.Requests
         public string Name { get; set; }
         public string Surname { get; set; }
         public string ArtisticName { get; set; }
+        public byte[] Image { get; set; }
     }
 }

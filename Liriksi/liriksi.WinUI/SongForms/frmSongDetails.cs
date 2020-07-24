@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using liriksi.Model.Requests;
+using liriksi.WinUI.Helper;
 
 namespace liriksi.WinUI.SongForms
 {
@@ -30,6 +31,7 @@ namespace liriksi.WinUI.SongForms
                 txtBoxTitle.Text = song.Title;
                 txtboxAlbum.Text = song.Album.Name;
                 txtboxGenre.Text = song.Album.Genre.Name;
+                picboxAlbum.Image = ImageHelperMethods.ResizeImage(ImageHelperMethods.PrepareImgForDisplayFromDB(song.Album.Image), 100, 100);
             }
         }
 

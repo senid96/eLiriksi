@@ -28,6 +28,10 @@
     <Compile Include="Migrations\20200724064634_deletefix.Designer.cs" />
     <Compile Include="Migrations\20200724064834_deletefix1.cs" />
     <Compile Include="Migrations\20200724064834_deletefix1.Designer.cs" />
+    <Compile Include="Migrations\20200724105418_performerImgFix.cs" />
+    <Compile Include="Migrations\20200724105418_performerImgFix.Designer.cs" />
+    <Compile Include="Migrations\20200724112855_performerImgFix3.cs" />
+    <Compile Include="Migrations\20200724112855_performerImgFix3.Designer.cs" />
     <Compile Include="Migrations\LiriksiContextModelSnapshot.cs" />
   </ItemGroup>
 

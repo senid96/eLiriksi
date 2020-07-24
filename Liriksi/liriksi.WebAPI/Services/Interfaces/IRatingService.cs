@@ -13,7 +13,9 @@ namespace liriksi.WebAPI.Services.Interfaces
         bool RateSong(UsersSongRate obj);
         bool RateAlbum(UsersAlbumRate obj);
 
-        List<UsersAlbumRateRequest> GetAlbumRates();
-        List<UsersSongRateRequest> GetSongRates();
+        List<UsersAlbumRateGetRequest> GetRatesByAlbum(int albumId);
+        List<UsersSongRateGetRequest> GetRatesBySong(int songId);
+        List<AverageRate> GetSongRates();
+        List<AverageRate> GetAlbumRates();
     }
 }

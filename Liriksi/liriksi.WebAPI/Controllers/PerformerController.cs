@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using liriksi.Model;
 using liriksi.Model.Requests;
+using liriksi.Model.Requests.performer;
 using liriksi.WebAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -21,7 +22,7 @@ namespace liriksi.WebAPI.Controllers
             _service = service;
         }
         [HttpGet]
-        public ActionResult<List<Performer>> Get([FromQuery]PerformerInsertRequest obj)
+        public ActionResult<List<Performer>> Get([FromQuery]PerformerSearchRequest obj)
         {
             return _service.Get(obj);
         }

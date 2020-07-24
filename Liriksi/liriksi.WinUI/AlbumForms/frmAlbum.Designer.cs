@@ -30,15 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvAlbum = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.YearRelease = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtboxAlbumName = new System.Windows.Forms.TextBox();
             this.lblAlbumName = new System.Windows.Forms.Label();
             this.btnSearchAlbum = new System.Windows.Forms.Button();
             this.btnUpdateAlbum = new System.Windows.Forms.Button();
             this.genreBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.albumBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.YearRelease = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Image = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlbum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.genreBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.albumBindingSource)).BeginInit();
@@ -50,7 +51,8 @@
             this.dgvAlbum.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.Title,
-            this.YearRelease});
+            this.YearRelease,
+            this.Image});
             this.dgvAlbum.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvAlbum.Location = new System.Drawing.Point(15, 79);
             this.dgvAlbum.Name = "dgvAlbum";
@@ -62,31 +64,6 @@
             this.dgvAlbum.TabIndex = 0;
             this.dgvAlbum.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAlbum_CellContentClick);
             this.dgvAlbum.DoubleClick += new System.EventHandler(this.dgvAlbum_DoubleClick);
-            // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "Id";
-            this.Id.MinimumWidth = 6;
-            this.Id.Name = "Id";
-            this.Id.Visible = false;
-            this.Id.Width = 125;
-            // 
-            // Title
-            // 
-            this.Title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Title.DataPropertyName = "Name";
-            this.Title.HeaderText = "Title";
-            this.Title.MinimumWidth = 6;
-            this.Title.Name = "Title";
-            // 
-            // YearRelease
-            // 
-            this.YearRelease.DataPropertyName = "YearRelease";
-            this.YearRelease.HeaderText = "Year release";
-            this.YearRelease.MinimumWidth = 6;
-            this.YearRelease.Name = "YearRelease";
-            this.YearRelease.Width = 125;
             // 
             // txtboxAlbumName
             // 
@@ -132,6 +109,39 @@
             // 
             this.albumBindingSource.DataSource = typeof(liriksi.Model.Album);
             // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.MinimumWidth = 6;
+            this.Id.Name = "Id";
+            this.Id.Visible = false;
+            this.Id.Width = 125;
+            // 
+            // Title
+            // 
+            this.Title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Title.DataPropertyName = "Name";
+            this.Title.HeaderText = "Title";
+            this.Title.MinimumWidth = 6;
+            this.Title.Name = "Title";
+            // 
+            // YearRelease
+            // 
+            this.YearRelease.DataPropertyName = "YearRelease";
+            this.YearRelease.HeaderText = "Year release";
+            this.YearRelease.MinimumWidth = 6;
+            this.YearRelease.Name = "YearRelease";
+            this.YearRelease.Width = 125;
+            // 
+            // Image
+            // 
+            this.Image.DataPropertyName = "Image";
+            this.Image.HeaderText = "Image";
+            this.Image.MinimumWidth = 6;
+            this.Image.Name = "Image";
+            this.Image.Width = 420;
+            // 
             // frmAlbum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -160,9 +170,10 @@
         private System.Windows.Forms.Button btnSearchAlbum;
         private System.Windows.Forms.BindingSource genreBindingSource;
         private System.Windows.Forms.BindingSource albumBindingSource;
+        private System.Windows.Forms.Button btnUpdateAlbum;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Title;
         private System.Windows.Forms.DataGridViewTextBoxColumn YearRelease;
-        private System.Windows.Forms.Button btnUpdateAlbum;
+        private System.Windows.Forms.DataGridViewImageColumn Image;
     }
 }

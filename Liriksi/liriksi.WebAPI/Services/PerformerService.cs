@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using liriksi.Model;
 using liriksi.Model.Requests;
+using liriksi.Model.Requests.performer;
 using liriksi.WebAPI.EF;
 using liriksi.WebAPI.Services.Interfaces;
 using System;
@@ -20,7 +21,7 @@ namespace liriksi.WebAPI.Services
             _mapper = mapper;
         }
 
-        public List<Performer> Get(PerformerInsertRequest obj) //insertRequest.. same object used for search
+        public List<Performer> Get(PerformerSearchRequest obj) //insertRequest.. same object used for search
         {
             var query = _context.Performer.AsQueryable();
             if (!string.IsNullOrWhiteSpace(obj.Name))

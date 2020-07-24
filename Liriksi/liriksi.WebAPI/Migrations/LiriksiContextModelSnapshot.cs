@@ -25,8 +25,6 @@ namespace liriksi.WebAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<bool>("Deleted");
-
                     b.Property<int>("GenreId");
 
                     b.Property<byte[]>("Image");
@@ -97,6 +95,8 @@ namespace liriksi.WebAPI.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ArtisticName");
+
+                    b.Property<byte[]>("Image");
 
                     b.Property<string>("Name");
 

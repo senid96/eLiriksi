@@ -1,6 +1,9 @@
 ﻿using liriksi.WinUI.Helper;
+using liriksi.WinUI.PerformerForms;
+using liriksi.WinUI.RatingForms;
 using liriksi.WinUI.SongForms;
 using liriksi.WinUI.SongForms.AlbumForms;
+using liriksi.WinUI.SongForms.SongUtilForms;
 using liriksi.WinUI.User;
 using liriksi.WinUI.UserForms;
 using liriksi.WinUI.UtilForms;
@@ -33,27 +36,6 @@ namespace liriksi.WinUI
             childForm.Show();
         }
 
-        private void OpenFile(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            openFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
-            if (openFileDialog.ShowDialog(this) == DialogResult.OK)
-            {
-                string FileName = openFileDialog.FileName;
-            }
-        }
-
-        private void SaveAsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            saveFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
-            if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
-            {
-                string FileName = saveFileDialog.FileName;
-            }
-        }
 
         private void ExitToolsStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -170,6 +152,42 @@ namespace liriksi.WinUI
         {
             HelperMethods.CloseAllForms();
             frmAlbum frm = new frmAlbum();
+            frm.MdiParent = this;
+            frm.WindowState = FormWindowState.Maximized;
+            frm.Show();
+        }
+
+        private void addPerformerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HelperMethods.CloseAllForms();
+            frmAddPerformer frm = new frmAddPerformer();
+            frm.MdiParent = this;
+            frm.WindowState = FormWindowState.Maximized;
+            frm.Show();
+        }
+
+        private void viewToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            HelperMethods.CloseAllForms();
+            frmPerformer frm = new frmPerformer();
+            frm.MdiParent = this;
+            frm.WindowState = FormWindowState.Maximized;
+            frm.Show();
+        }
+
+        private void viewToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            HelperMethods.CloseAllForms();
+            frmAlbumRating frm = new frmAlbumRating();
+            frm.MdiParent = this;
+            frm.WindowState = FormWindowState.Maximized;
+            frm.Show();
+        }
+
+        private void songRatingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HelperMethods.CloseAllForms();
+            frmSongRating frm = new frmSongRating();
             frm.MdiParent = this;
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();
