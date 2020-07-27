@@ -15,13 +15,17 @@ namespace liriksi.WinUI.RatingForms
     public partial class frmAlbumRatingDetails : Form
     {
         private readonly APIService _ratingService = new APIService("rating");
-        public frmAlbumRatingDetails()
+        private int _albumId;
+        public frmAlbumRatingDetails(int id)
         {
             InitializeComponent();
+            _albumId = id;
+            dgvAlbumRatingDetails.AutoGenerateColumns = false;
         }
 
         private async void frmRating_Load(object sender, EventArgs e)
         {
+            dgvAlbumRatingDetails.DataSource = await _ratingService.GetById<List<UsersAlbumRateGetRequest>>(_albumId, "GetRatesByAlbum");
         }
     }
 }

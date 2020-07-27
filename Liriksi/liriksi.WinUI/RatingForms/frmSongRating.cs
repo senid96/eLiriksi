@@ -19,9 +19,16 @@ namespace liriksi.WinUI.RatingForms
             InitializeComponent();
         }
 
-        private void frmSongRating_Load(object sender, EventArgs e)
+        private async void frmSongRating_Load(object sender, EventArgs e)
         {
-            dgvSongRating.DataSource = _ratingService.Get<AverageRate>(null, "GetSongRates");
+            dgvSongRating.DataSource = await _ratingService.Get<List<AverageRate>>(null, "GetSongRates");
+        }
+
+        private void dgvSongRating_DoubleClick(object sender, EventArgs e)
+        {
+            var id = dgvSongRating.SelectedRows[0].Cells[0].Value.ToString();
+            frmSongRatingDetails frm = new frmSongRatingDetails(int.Parse(id));
+            frm.Show();
         }
     }
 }

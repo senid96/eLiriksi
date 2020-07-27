@@ -22,42 +22,60 @@ namespace liriksi.WebAPI.Controllers
         }
         //todo GET top 10 rejtinga
 
+        //get rates grouped by song and their average rates
         [HttpGet("GetSongRates")]
         public List<AverageRate> GetSongRates()
         {
             return _service.GetSongRates();
         }
 
+        //get rates grouped by album and their average rates
         [HttpGet("GetAlbumRates")]
         public List<AverageRate> GetAlbumRates()
         {
             return _service.GetAlbumRates();
         }
 
-        [HttpGet("GetUsersAlbumRate")]
+
+        //get list of all users rate by song
+        [HttpGet("GetRatesBySong/{songId}")]
+        public List<UsersSongRateGetRequest> GetRatesBySong(int songId)
+        {
+            return _service.GetRatesBySong(songId);
+        }
+
+        //get list of all users rate by album
+        [HttpGet("GetRatesByAlbum/{albumId}")]
         public List<UsersAlbumRateGetRequest> GetRatesByAlbum(int albumId)
         {
             return _service.GetRatesByAlbum(albumId);
         }
-
-        [HttpGet("GetUsersSongRate")]
-        public List<UsersSongRateGetRequest> GetUsersRateBySong(int songId)
-        {
-            return _service.GetRatesBySong(songId);
-        }
+      
 
         [HttpPost("RateSong")]
         public bool RateSong(UsersSongRate obj)
         {
             return _service.RateSong(obj);
         }
-
+       
         [HttpPost("RateAlbum")]
         public bool RateAlbum(UsersAlbumRate obj)
         {
             return _service.RateAlbum(obj);
         }
 
-       
+
+        [HttpGet("GetSongRatesByUser/{userId}")]
+        public List<UsersSongRateGetRequest> GetSongRatesByUser(int userId)
+        {
+           return _service.GetSongRatesByUser(userId);
+        }
+
+        [HttpGet("GetAlbumRatesByUser/{userId}")]
+        public List<UsersAlbumRateGetRequest> GetAlbumRatesByUser(int userId)
+        {
+            return _service.GetAlbumRatesByUser(userId);
+        }
+
     }
 }

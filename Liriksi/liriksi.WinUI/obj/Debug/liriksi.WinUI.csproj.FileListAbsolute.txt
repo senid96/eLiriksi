@@ -60,3 +60,4 @@ C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WinUI\obj\Debug\liriksi.
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WinUI\obj\Debug\liriksi.WinUI.RatingForms.frmSongRating.resources
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WinUI\obj\Debug\liriksi.WinUI.RatingForms.frmAlbumRatingDetails.resources
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WinUI\obj\Debug\liriksi.WinUI.RatingForms.frmSongRatingDetails.resources
+C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WinUI\obj\Debug\liriksi.WinUI.RatingForms.frmAlbumRating.resources

@@ -196,6 +196,9 @@
     <EmbeddedResource Include="AlbumForms\frmAlbum.resx">
       <DependentUpon>frmAlbum.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RatingForms\frmAlbumRating.resx">
+      <DependentUpon>frmAlbumRating.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RatingForms\frmAlbumRatingDetails.resx">
       <DependentUpon>frmAlbumRatingDetails.cs</DependentUpon>
     </EmbeddedResource>
