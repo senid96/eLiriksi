@@ -24,7 +24,7 @@ namespace liriksi.WinUI.RatingForms
 
         private async void frmSongRating_Load(object sender, EventArgs e)
         {
-            dgvSongRateDetails.DataSource = await _ratingService.GetById<List<UsersSongRateGetRequest>>(_songId, "GetRatesBySong");
+            dgvSongRateDetails.DataSource = await _ratingService.GetById<List<UserSongRateGetRequest>>(_songId, "GetRatesBySong");
 
         }
     }

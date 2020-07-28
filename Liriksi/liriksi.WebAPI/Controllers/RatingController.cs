@@ -39,14 +39,14 @@ namespace liriksi.WebAPI.Controllers
 
         //get list of all users rate by song
         [HttpGet("GetRatesBySong/{songId}")]
-        public List<UsersSongRateGetRequest> GetRatesBySong(int songId)
+        public List<UserSongRateGetRequest> GetRatesBySong(int songId)
         {
             return _service.GetRatesBySong(songId);
         }
 
         //get list of all users rate by album
         [HttpGet("GetRatesByAlbum/{albumId}")]
-        public List<UsersAlbumRateGetRequest> GetRatesByAlbum(int albumId)
+        public List<UserAlbumRateGetRequest> GetRatesByAlbum(int albumId)
         {
             return _service.GetRatesByAlbum(albumId);
         }
@@ -66,13 +66,13 @@ namespace liriksi.WebAPI.Controllers
 
 
         [HttpGet("GetSongRatesByUser/{userId}")]
-        public List<UsersSongRateGetRequest> GetSongRatesByUser(int userId)
+        public List<UserSongRateGetRequest> GetSongRatesByUser(int userId)
         {
            return _service.GetSongRatesByUser(userId);
         }
 
         [HttpGet("GetAlbumRatesByUser/{userId}")]
-        public List<UsersAlbumRateGetRequest> GetAlbumRatesByUser(int userId)
+        public List<UserAlbumRateGetRequest> GetAlbumRatesByUser(int userId)
         {
             return _service.GetAlbumRatesByUser(userId);
         }

@@ -13,11 +13,11 @@ namespace liriksi.WebAPI.Services.Interfaces
         bool RateSong(UsersSongRate obj);
         bool RateAlbum(UsersAlbumRate obj);
 
-        List<UsersAlbumRateGetRequest> GetRatesByAlbum(int albumId);
-        List<UsersSongRateGetRequest> GetRatesBySong(int songId);
+        List<UserAlbumRateGetRequest> GetRatesByAlbum(int albumId);
+        List<UserSongRateGetRequest> GetRatesBySong(int songId);
         List<AverageRate> GetSongRates();
         List<AverageRate> GetAlbumRates();
-        List<UsersSongRateGetRequest> GetSongRatesByUser(int userId);
-        List<UsersAlbumRateGetRequest> GetAlbumRatesByUser(int userId);
+        List<UserSongRateGetRequest> GetSongRatesByUser(int userId);
+        List<UserAlbumRateGetRequest> GetAlbumRatesByUser(int userId);
     }
 }

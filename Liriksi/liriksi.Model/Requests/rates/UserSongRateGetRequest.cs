@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace liriksi.Model.Requests
+namespace liriksi.Model.Requests.rates
 {
-    public class UsersAlbumRateGetRequest
+    public class UserSongRateGetRequest
     {
-        public int AlbumId { get; set; }
-        public string AlbumTitle { get; set; }
+        public int SongId { get; set; }
+        public string Title { get; set; }
         public int UserId { get; set; }
         public string Username { get; set; }
         public int Rate { get; set; }

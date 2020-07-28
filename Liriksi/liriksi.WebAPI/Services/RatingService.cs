@@ -54,7 +54,7 @@ namespace liriksi.WebAPI.Services
             return true;
         }
 
-        public List<UsersAlbumRateGetRequest> GetRatesByAlbum(int albumId)
+        public List<UserAlbumRateGetRequest> GetRatesByAlbum(int albumId)
         {
             var entity = (from rates in _context.UsersAlbumRates
                           join album in _context.Album on rates.AlbumId equals album.Id
@@ -68,11 +68,11 @@ namespace liriksi.WebAPI.Services
                               Rate = rates.Rate,
                               Comment = rates.Comment,
                           }).Where(x=>x.AlbumId == albumId);
-            return _mapper.Map<List<UsersAlbumRateGetRequest>>(entity);
+            return _mapper.Map<List<UserAlbumRateGetRequest>>(entity);
 
         }
 
-        public List<UsersSongRateGetRequest> GetRatesBySong(int songId)
+        public List<UserSongRateGetRequest> GetRatesBySong(int songId)
         {
 
             var entity = (from rates in _context.UsersSongRates
@@ -87,7 +87,7 @@ namespace liriksi.WebAPI.Services
                               Rate = rates.Rate,
                               Comment = rates.Comment,
                           }).Where(x=>x.SongId == songId);
-            return _mapper.Map<List<UsersSongRateGetRequest>>(entity);
+            return _mapper.Map<List<UserSongRateGetRequest>>(entity);
         }
 
         //get all albums and their average rate
@@ -128,7 +128,7 @@ namespace liriksi.WebAPI.Services
             return list;
         }
 
-        public List<UsersSongRateGetRequest> GetSongRatesByUser(int userId)
+        public List<UserSongRateGetRequest> GetSongRatesByUser(int userId)
         {
             var entity = (from rates in _context.UsersSongRates
                           join song in _context.Song on rates.SongId equals song.Id
@@ -136,16 +136,16 @@ namespace liriksi.WebAPI.Services
                           select new
                           {
                               SongId = song.Id,
-                              SongTitle = song.Title,
+                              Title = song.Title,
                               UserId = rates.UserId,
                               Username = user.Username,
                               Rate = rates.Rate,
                               Comment = rates.Comment,
                           }).Where(x => x.UserId == userId);
-            return _mapper.Map<List<UsersSongRateGetRequest>>(entity);
+            return _mapper.Map<List<UserSongRateGetRequest>>(entity);
         }
 
-        public List<UsersAlbumRateGetRequest> GetAlbumRatesByUser(int userId)
+        public List<UserAlbumRateGetRequest> GetAlbumRatesByUser(int userId)
         {
             var entity = (from rates in _context.UsersAlbumRates
                           join album in _context.Album on rates.AlbumId equals album.Id
@@ -153,13 +153,13 @@ namespace liriksi.WebAPI.Services
                           select new
                           {
                               AlbumId = album.Id,
-                              AlbumTitle = album.Name,
+                              Title = album.Name,
                               UserId = rates.UserId,
                               Username = user.Username,
                               Rate = rates.Rate,
                               Comment = rates.Comment,
                           }).Where(x => x.UserId == userId);
-            return _mapper.Map<List<UsersAlbumRateGetRequest>>(entity);
+            return _mapper.Map<List<UserAlbumRateGetRequest>>(entity);
         }
 
     }

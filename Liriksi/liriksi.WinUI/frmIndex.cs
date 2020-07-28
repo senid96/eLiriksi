@@ -192,5 +192,14 @@ namespace liriksi.WinUI
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }
+
+        private void ratingsByUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HelperMethods.CloseAllForms();
+            frmUsersRating frm = new frmUsersRating();
+            frm.MdiParent = this;
+            frm.WindowState = FormWindowState.Maximized;
+            frm.Show();
+        }
     }
 }

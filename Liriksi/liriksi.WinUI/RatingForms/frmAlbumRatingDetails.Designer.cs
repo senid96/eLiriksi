@@ -54,7 +54,7 @@
             // AlbumTitle
             // 
             this.AlbumTitle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.AlbumTitle.DataPropertyName = "AlbumTitle";
+            this.AlbumTitle.DataPropertyName = "Title";
             this.AlbumTitle.HeaderText = "AlbumTitle";
             this.AlbumTitle.MinimumWidth = 6;
             this.AlbumTitle.Name = "AlbumTitle";

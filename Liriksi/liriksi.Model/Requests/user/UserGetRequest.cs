@@ -9,6 +9,14 @@ namespace liriksi.Model.Requests
         public int Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
+        public string FullName 
+        { 
+            get 
+            {
+                return Name + " " + Surname;
+            }
+        }
+
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
         public string Username { get; set; }
