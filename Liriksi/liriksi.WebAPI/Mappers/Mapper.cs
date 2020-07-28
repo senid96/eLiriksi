@@ -23,6 +23,8 @@ namespace liriksi.WebAPI.Mappers
 
             //performer
             CreateMap<Performer, PerformerInsertRequest>().ReverseMap();
+
+            //
         }
     }
 }

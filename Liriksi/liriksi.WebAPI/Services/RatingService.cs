@@ -62,7 +62,7 @@ namespace liriksi.WebAPI.Services
                           select new
                           {
                               AlbumId = album.Id,
-                              AlbumTitle = album.Name,
+                              Title = album.Name,
                               UserId = rates.UserId,
                               Username = user.Username,
                               Rate = rates.Rate,
@@ -81,7 +81,7 @@ namespace liriksi.WebAPI.Services
                           select new
                           {
                               SongId = song.Id,
-                              SongTitle = song.Title,
+                              Title = song.Title,
                               UserId = rates.UserId,
                               Username = user.Username,
                               Rate = rates.Rate,
