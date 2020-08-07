@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 using liriksi.Model;
 using liriksi.WebAPI.Services;
 using liriksi.Model.Requests;
+using Microsoft.AspNetCore.Authorization;
 
 namespace liriksi.WebAPI.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class SongController : ControllerBase

@@ -24,7 +24,6 @@ namespace liriksi.WebAPI.Services
             _context = context;
             _mapper = mapper;
         }
-
        
         public List<UserGetRequest> Get(UserSearchRequest obj)
         {
@@ -142,6 +141,16 @@ namespace liriksi.WebAPI.Services
             HashAlgorithm algorithm = HashAlgorithm.Create("SHA1");
             byte[] inArray = algorithm.ComputeHash(dst);
             return Convert.ToBase64String(inArray);
+        }
+
+        public Model.User GetMyProfile()
+        {
+            if(_currentUser == null)
+            {
+                return null;
+            }
+
+            return _context.User.Find(_currentUser.Id);
         }
     }
 }

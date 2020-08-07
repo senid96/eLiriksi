@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using liriksi.WebAPI.EF;
+using liriksi.WebAPI.Filters;
 using liriksi.WebAPI.Security;
 using liriksi.WebAPI.Services;
 using liriksi.WebAPI.Services.Interfaces;
@@ -41,23 +42,10 @@ namespace liriksi.WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddMvc(x=> x.Filters.Add<ErrorFilter>()).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc(x=> x.Filters.Add<ErrorFilter>()).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddAutoMapper();
 
-            // Register the Swagger generator, defining 1 or more Swagger documents
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
-                //za autorizaciju
-                c.AddSecurityDefinition("basic", new BasicAuthScheme() { Type = "basic" });
-                c.DocumentFilter<BasicAuthDocumentFilter>();
-            });
-
-            //autentifikacija
-            services.AddAuthentication("BasicAuthentication")
-              .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
-
-            //services dependeny injection
             services.AddScoped<ISongService, SongService>();
             services.AddScoped<IGenreService, GenreService>();
             services.AddScoped<IPerformerService, PerformerService>();
@@ -66,9 +54,20 @@ namespace liriksi.WebAPI
             services.AddScoped<IRatingService, RatingService>();
             services.AddScoped<ILocationService, LocationService>();
 
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+                c.AddSecurityDefinition("basic", new BasicAuthScheme() { Type = "basic" });
+                c.DocumentFilter<BasicAuthDocumentFilter>();
+            });
+
+
+            //autentifikacija
+            services.AddAuthentication("BasicAuthentication")
+               .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
+
             //entity framework.. mijenjati zavisno gdje radis.. na poslu, laptopu i slicno
             services.AddDbContext<LiriksiContext>(options => options.UseSqlServer("Server=BST123\\SQLEXPRESS; Database=liriksiDB; Trusted_Connection=true;"));
-            services.AddAutoMapper();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -78,23 +77,19 @@ namespace liriksi.WebAPI
             {
                 app.UseDeveloperExceptionPage();
             }
-            else
-            {
-                app.UseHsts();
-            }
 
-            app.UseHttpsRedirection();
-            app.UseMvc();
-            //autentifikacija
-            app.UseAuthentication();
-            // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
-            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
             // specifying the Swagger JSON endpoint.
-            app.UseSwaggerUI(c =>
+
+            app.UseSwaggerUI(s =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                s.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
+
+            app.UseAuthentication();
+            app.UseMvc();
         }
     }
 }

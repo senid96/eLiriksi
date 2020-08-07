@@ -26,11 +26,16 @@ namespace liriksi.WinUI
             {
                 APIService._username = txtboxUsername.Text;
                 APIService._password = txtboxPassword.Text;
-
-                await _userService.Get<dynamic>(null, null);
-
-                frmIndex frm = new frmIndex();
-                frm.Show();
+                APIService._currentUser = await _userService.Get<Model.User>(null, "GetMyProfile");
+                if(APIService._currentUser != null)
+                {
+                    frmIndex frm = new frmIndex();
+                    frm.Show();
+                }
+                else //todo srediti ovo malo.. procackat jos
+                {
+                    MessageBox.Show("Username or password are not valid", "Authentication", MessageBoxButtons.OK);
+                }
             }
             catch (Exception ex)
             {

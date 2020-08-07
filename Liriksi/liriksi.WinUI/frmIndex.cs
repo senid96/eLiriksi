@@ -94,7 +94,7 @@ namespace liriksi.WinUI
         {
             HelperMethods.CloseAllForms(); //close all form first
             frmUser frm = new frmUser();
-            frm.MdiParent = this;
+            frm.MdiParent = Application.OpenForms["frmIndex"];
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }
@@ -103,7 +103,7 @@ namespace liriksi.WinUI
         {
             HelperMethods.CloseAllForms();
             frmSong frm = new frmSong();
-            frm.MdiParent = this;
+            frm.MdiParent = Application.OpenForms["frmIndex"];
             frm.WindowState = FormWindowState.Maximized;           
             frm.Show();
         }
@@ -120,8 +120,8 @@ namespace liriksi.WinUI
         {
             HelperMethods.CloseAllForms();
             frmAddSong frm = new frmAddSong();
+            frm.MdiParent = Application.OpenForms["frmIndex"];
             frm.WindowState = FormWindowState.Maximized;
-            frm.MdiParent = this;
             frm.Show();
         }
 
@@ -135,15 +135,16 @@ namespace liriksi.WinUI
         {
             HelperMethods.CloseAllForms();
             frmAddAlbum frm = new frmAddAlbum();
+            frm.MdiParent = Application.OpenForms["frmIndex"];
             frm.WindowState = FormWindowState.Maximized;
-            frm.MdiParent = this;
             frm.Show();
         }
 
         private void addUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            HelperMethods.CloseAllForms();
             frmAddUser frm = new frmAddUser();
-            frm.MdiParent = this;
+            frm.MdiParent = Application.OpenForms["frmIndex"];
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }
@@ -152,7 +153,7 @@ namespace liriksi.WinUI
         {
             HelperMethods.CloseAllForms();
             frmAlbum frm = new frmAlbum();
-            frm.MdiParent = this;
+            frm.MdiParent = Application.OpenForms["frmIndex"];
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }
@@ -161,7 +162,7 @@ namespace liriksi.WinUI
         {
             HelperMethods.CloseAllForms();
             frmAddPerformer frm = new frmAddPerformer();
-            frm.MdiParent = this;
+            frm.MdiParent = Application.OpenForms["frmIndex"];
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }
@@ -170,7 +171,7 @@ namespace liriksi.WinUI
         {
             HelperMethods.CloseAllForms();
             frmPerformer frm = new frmPerformer();
-            frm.MdiParent = this;
+            frm.MdiParent = Application.OpenForms["frmIndex"];
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }
@@ -179,7 +180,7 @@ namespace liriksi.WinUI
         {
             HelperMethods.CloseAllForms();
             frmAlbumRating frm = new frmAlbumRating();
-            frm.MdiParent = this;
+            frm.MdiParent = Application.OpenForms["frmIndex"];
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }
@@ -188,7 +189,7 @@ namespace liriksi.WinUI
         {
             HelperMethods.CloseAllForms();
             frmSongRating frm = new frmSongRating();
-            frm.MdiParent = this;
+            frm.MdiParent = Application.OpenForms["frmIndex"];
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }
@@ -197,7 +198,7 @@ namespace liriksi.WinUI
         {
             HelperMethods.CloseAllForms();
             frmUsersRating frm = new frmUsersRating();
-            frm.MdiParent = this;
+            frm.MdiParent = Application.OpenForms["frmIndex"];
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }

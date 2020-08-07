@@ -17,5 +17,6 @@ namespace liriksi.WebAPI.Services
         List<UserType> GetUserTypes();
         User Authenticate(string username, string pass);
         void SetCurrentUser(User currentUser);
+        Model.User GetMyProfile();
     }
 }

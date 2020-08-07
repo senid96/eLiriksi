@@ -12,7 +12,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace liriksi.WebAPI.Controllers
 {
-   
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
@@ -60,6 +59,12 @@ namespace liriksi.WebAPI.Controllers
         public ActionResult<List<UserType>> GetUserTypes()
         {
             return _service.GetUserTypes();
+        }
+
+        [HttpGet("GetMyProfile")]
+        public Model.User GetMyProfile()
+        {
+            return _service.GetMyProfile();
         }
     }
 }

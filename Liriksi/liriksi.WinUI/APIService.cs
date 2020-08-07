@@ -13,6 +13,7 @@ namespace liriksi.WinUI
     {
         public static string _username { get; set; }
         public static string _password { get; set; }
+        public static Model.User _currentUser { get; set; }
         public string _route { get; set; }
         public APIService(string route)
         { 

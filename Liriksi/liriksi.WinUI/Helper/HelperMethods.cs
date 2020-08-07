@@ -15,11 +15,18 @@ namespace liriksi.WinUI.Helper
     {
         public static void CloseAllForms()
         {
-            for (int x = 0; x < Application.OpenForms.Count; x++)
+            List<Form> openForms = new List<Form>();
+
+            foreach (Form f in Application.OpenForms)
+                openForms.Add(f);
+
+            foreach (Form f in openForms)
             {
-                if (Application.OpenForms[x] != Application.OpenForms["frmIndex"])
-                    Application.OpenForms[x].Close();
+                if(!f.Name.Equals("frmIndex"))
+                    f.Visible = false;
             }
+
+            
         }
     }
 }
