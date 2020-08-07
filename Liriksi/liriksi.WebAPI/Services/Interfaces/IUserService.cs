@@ -15,5 +15,7 @@ namespace liriksi.WebAPI.Services
         UserGetRequest Update(int id, UserInsertRequest obj);
         bool ChangeUserStatus(int id, bool status);
         List<UserType> GetUserTypes();
+        User Authenticate(string username, string pass);
+        void SetCurrentUser(User currentUser);
     }
 }

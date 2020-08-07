@@ -11,6 +11,8 @@ namespace liriksi.WinUI
 {
    public class APIService
     {
+        public static string _username { get; set; }
+        public static string _password { get; set; }
         public string _route { get; set; }
         public APIService(string route)
         { 
@@ -31,7 +33,7 @@ namespace liriksi.WinUI
                 url += await search.ToQueryString();
             }
 
-            var result = await url.GetJsonAsync<T>();
+            var result = await url.WithBasicAuth(_username, _password).GetJsonAsync<T>();
             return result;
         }
         public async Task<T> GetById<T>(object id, string method)
@@ -42,21 +44,21 @@ namespace liriksi.WinUI
             else
                 url = $"{Properties.Settings.Default.APIUrl}/{_route}/{method}/{id}"; //pravi se ruta.. u setingsu je definisan api
 
-            var result = url.GetJsonAsync<T>();
+            var result = url.WithBasicAuth(_username, _password).GetJsonAsync<T>();
             return await result; 
         }
         public async Task<T> Insert<T>(object obj)
         {
             var url = $"{Properties.Settings.Default.APIUrl}/{_route}"; //pravi se ruta.. u setingsu je definisan api
 
-            var result = await url.PostJsonAsync(obj).ReceiveJson<T>();
+            var result = await url.WithBasicAuth(_username, _password).PostJsonAsync(obj).ReceiveJson<T>();
             return result;
         }
         public async Task<T> Update<T>(object id, object obj)
         {
             var url = $"{Properties.Settings.Default.APIUrl}/{_route}/{id}"; //pravi se ruta.. u setingsu je definisan api
             
-            var result = await url.PutJsonAsync(obj).ReceiveJson<T>();
+            var result = await url.WithBasicAuth(_username, _password).PutJsonAsync(obj).ReceiveJson<T>();
             return result;
         }
     }

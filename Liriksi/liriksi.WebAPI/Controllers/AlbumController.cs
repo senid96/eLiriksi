@@ -7,11 +7,12 @@ using liriksi.Model.Requests;
 using liriksi.Model.Requests.album;
 using liriksi.WebAPI.Services;
 using liriksi.WebAPI.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 namespace liriksi.WebAPI.Controllers
 {
-
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AlbumController : ControllerBase

@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace liriksi.WebAPI.Services
 {
@@ -16,6 +18,7 @@ namespace liriksi.WebAPI.Services
     {
         private readonly LiriksiContext _context;
         private readonly IMapper _mapper;
+        private User _currentUser;
         public UserService(LiriksiContext context, IMapper mapper) 
         {
             _context = context;
@@ -44,9 +47,15 @@ namespace liriksi.WebAPI.Services
         }
         public UserGetRequest Insert(UserInsertRequest obj)
         {
+            if(!obj.Password.Equals(obj.PasswordConfirmation))
+            {
+                //todo
+                //vjv custom exceptione ce trebat napravit
+            }
+
             var entity = _mapper.Map<User>(obj);
-            entity.Salt = "test";
-            entity.Hash = "test"; //todo login
+            entity.Salt = GenerateSalt();
+            entity.Hash = GenerateHash(entity.Salt, obj.Password);  
 
             _context.User.Add(entity);
             _context.SaveChanges();
@@ -89,6 +98,50 @@ namespace liriksi.WebAPI.Services
         public List<UserType> GetUserTypes()
         {
             return _context.UserType.ToList();
+        }
+
+        public User Authenticate(string username, string pass)
+        {
+            var user = _context.User
+                         .Include(x => x.UserType)
+                         .FirstOrDefault(x => x.Username == username);
+
+            if (user != null)
+            {
+                var newHash = GenerateHash(user.Salt, pass);
+
+                if (newHash == user.Hash)
+                {
+                    _context.SaveChanges();
+                    return _mapper.Map<User>(user);
+                }
+            }
+            return null;
+        }
+        public void SetCurrentUser(User currentUser)
+        {
+            _currentUser = currentUser;
+        }
+
+        //hash method helpers
+        public static string GenerateSalt()
+        {
+            var buf = new byte[16];
+            (new RNGCryptoServiceProvider()).GetBytes(buf);
+            return Convert.ToBase64String(buf);
+        }
+        public static string GenerateHash(string salt, string password)
+        {
+            byte[] src = Convert.FromBase64String(salt);
+            byte[] bytes = Encoding.Unicode.GetBytes(password);
+            byte[] dst = new byte[src.Length + bytes.Length];
+
+            System.Buffer.BlockCopy(src, 0, dst, 0, src.Length);
+            System.Buffer.BlockCopy(bytes, 0, dst, src.Length, bytes.Length);
+
+            HashAlgorithm algorithm = HashAlgorithm.Create("SHA1");
+            byte[] inArray = algorithm.ComputeHash(dst);
+            return Convert.ToBase64String(inArray);
         }
     }
 }

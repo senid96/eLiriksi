@@ -6,12 +6,13 @@ using liriksi.Model;
 using liriksi.Model.Requests;
 using liriksi.WebAPI.Services;
 using liriksi.WebAPI.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace liriksi.WebAPI.Controllers
 {
-
+   
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
