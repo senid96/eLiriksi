@@ -21,25 +21,26 @@ namespace liriksi.WinUI
 
         private async void btnLogin_Click(object sender, EventArgs e)
         {
-
             try
             {
                 APIService._username = txtboxUsername.Text;
                 APIService._password = txtboxPassword.Text;
                 APIService._currentUser = await _userService.Get<Model.User>(null, "GetMyProfile");
-                if(APIService._currentUser != null)
+                if (APIService._currentUser != null)
                 {
                     frmIndex frm = new frmIndex();
+                    frm.IsMdiContainer = true;
                     frm.Show();
+                    this.Hide();
                 }
-                else //todo srediti ovo malo.. procackat jos
+                else
                 {
-                    MessageBox.Show("Username or password are not valid", "Authentication", MessageBoxButtons.OK);
+                    MessageBox.Show("Username or password incorect!","Autentikacija", MessageBoxButtons.OK);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Autentifikacija", MessageBoxButtons.OK);
+                MessageBox.Show(ex.Message, "Autentifikacija err", MessageBoxButtons.OK);
             }
            
         }

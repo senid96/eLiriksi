@@ -1,12 +1,39 @@
 {
   "version": 2,
-  "dgSpecHash": "KBbcDh2rBwTdKBZ4b1Jlvi3SP/6ndfk+yRuZX2WK6aabzcl9nIY2rRZDeHSLymbWyBS+PIlktuCavzaIZwywfw==",
+  "dgSpecHash": "78KKH07s7a0YY/u2IT0rCdZ/vBurmyhlv1MYr0FCQYGITM7bxyfofpn8Y+W4VMNlFOwKN2/ZBEkZ5rxzPHk5HA==",
   "success": true,
   "projectFilePath": "C:\\Users\\senid.ajkunic\\eLiriksiProjekat\\Liriksi\\lirksi.Mobile\\lirksi.Mobile.iOS\\lirksi.Mobile.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\senid.ajkunic\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
+    "C:\\Users\\senid.ajkunic\\.nuget\\packages\\xamarin.forms\\4.5.0.725\\xamarin.forms.4.5.0.725.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.5.3.2 to 1.3.1. Reference the package directly from the project to select a different version. \r\n lirksi.Mobile.iOS -> lirksi.Mobile -> Xamarin.Essentials (>= 1.5.3.2) \r\n lirksi.Mobile.iOS -> Xamarin.Essentials (>= 1.3.1)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 4.8.0.1269 to 4.5.0.725. Reference the package directly from the project to select a different version. \r\n lirksi.Mobile.iOS -> lirksi.Mobile -> Xamarin.Forms (>= 4.8.0.1269) \r\n lirksi.Mobile.iOS -> Xamarin.Forms (>= 4.5.0.725)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
 }
