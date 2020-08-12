@@ -2,7 +2,6 @@ C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\Debug\netstandard2.0\lirksi.Mobile.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\Debug\netstandard2.0\ref\lirksi.Mobile.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\Debug\netstandard2.0\lirksi.Mobile.pdb
-C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\lirksi.Mobile.csprojAssemblyReference.cache
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs

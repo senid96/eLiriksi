@@ -16,7 +16,7 @@
             <Entry Text="{Binding Username}"></Entry>
             <Label Text="Password:"/>
             <Entry Text="{Binding Password}"></Entry>
-            <Button Text="Login"></Button>
+            <Button Command="{Binding LoginCommand}" Text="Login"></Button>
             <Label Text="{Binding Username}"></Label>
         </StackLayout>
     </ContentPage.Content>

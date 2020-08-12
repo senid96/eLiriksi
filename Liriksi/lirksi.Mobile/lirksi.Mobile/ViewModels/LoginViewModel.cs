@@ -1,11 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace lirksi.Mobile.ViewModels
 {
     public class LoginViewModel : BaseViewModel
     {
+        public LoginViewModel()
+        {
+            LoginCommand = new Command(() =>
+            {
+                Username = "Iz komande";
+            });
+        }
         string _username = string.Empty;
         public string Username 
         {           
@@ -19,5 +28,7 @@ namespace lirksi.Mobile.ViewModels
             get { return _password; }
             set { SetProperty(ref _password, value); }
         }
+
+        public ICommand LoginCommand { get; set; }
     }
 }

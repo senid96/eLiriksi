@@ -36,6 +36,7 @@ namespace liriksi.WebAPI.Controllers
             return _service.Get(id);
         }
         
+        [Authorize(Roles ="Admin")]
         [HttpPost]
         public ActionResult<UserGetRequest>Insert(UserInsertRequest obj)
         {

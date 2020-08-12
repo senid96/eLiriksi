@@ -59,7 +59,7 @@ namespace liriksi.WebAPI.Security
                 new Claim(ClaimTypes.NameIdentifier, CurrentUser.Username),
                 new Claim(ClaimTypes.Name, CurrentUser.Name),
             };
-
+            claims.Add(new Claim(ClaimTypes.Role, CurrentUser.UserType.Type)); //role
             var identity = new ClaimsIdentity(claims, Scheme.Name);
             var principal = new ClaimsPrincipal(identity);
             var ticket = new AuthenticationTicket(principal, Scheme.Name);
