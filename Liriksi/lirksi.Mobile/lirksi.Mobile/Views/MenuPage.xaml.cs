@@ -21,7 +21,8 @@ namespace lirksi.Mobile.Views
             menuItems = new List<HomeMenuItem>
             {
                 new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
-                new HomeMenuItem {Id = MenuItemType.About, Title="About" }
+                new HomeMenuItem {Id = MenuItemType.About, Title="About" },
+                new HomeMenuItem {Id = MenuItemType.Songs, Title="Songs" }
             };
 
             ListViewMenu.ItemsSource = menuItems;
@@ -33,7 +34,7 @@ namespace lirksi.Mobile.Views
                     return;
 
                 var id = (int)((HomeMenuItem)e.SelectedItem).Id;
-                await RootPage.NavigateFromMenu(id);
+                await RootPage.NavigateFromMenu(id); //navigacija menu..tu dodajemo meni stavke
             };
         }
     }

@@ -7,7 +7,8 @@ namespace lirksi.Mobile.Models
     public enum MenuItemType
     {
         Browse,
-        About
+        About,
+        Songs
     }
     public class HomeMenuItem
     {
