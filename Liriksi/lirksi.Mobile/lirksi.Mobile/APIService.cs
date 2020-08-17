@@ -12,9 +12,9 @@ public class APIService
     public static string _password { get; set; }
     public static liriksi.Model.User _currentUser { get; set; }
     public string _route { get; set; }
-
 #if DEBUG
-    private string _apiUrl = "http://192.168.1.17:65113/api";
+    //private string _apiUrl = "http://192.168.1.17:65113/api"; //xiaomi
+    private string _apiUrl = "http://10.0.2.2:65113/api"; //emulator
 #endif
 #if RELEASE
     private string _apiUrl = "https://mywebsite.com/api/";
