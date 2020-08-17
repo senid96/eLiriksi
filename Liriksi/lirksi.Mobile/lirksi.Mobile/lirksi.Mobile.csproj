@@ -11,8 +11,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Flurl" Version="2.8.1" />
+    <PackageReference Include="Flurl.Http" Version="2.4.1" />
     <PackageReference Include="Xamarin.Forms" Version="4.8.0.1269" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\liriksi.Model\liriksi.Model.csproj" />
   </ItemGroup>
 
   <ItemGroup>
