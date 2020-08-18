@@ -39,6 +39,9 @@ namespace lirksi.Mobile.Views
                     case (int)MenuItemType.Songs:
                         MenuPages.Add(id, new NavigationPage(new SongPage()));
                         break;
+                    case (int)MenuItemType.Albums:
+                        MenuPages.Add(id, new NavigationPage(new AlbumPage()));
+                        break;
                 }
             }
 

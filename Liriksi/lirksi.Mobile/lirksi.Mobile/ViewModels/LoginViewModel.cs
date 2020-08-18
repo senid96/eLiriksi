@@ -33,9 +33,12 @@ namespace lirksi.Mobile.ViewModels
         async Task Login()
         {
             IsBusy = true;
-            APIService._username = Username;
-            APIService._password = Password;
+            //APIService._username = Username;     
+            //APIService._password = Password;
 
+            //za brzi razvoj samo TODO obrisati kasnije
+            APIService._username = "testiranje"; 
+            APIService._password = "testiranje";
             try
             {
                 APIService._currentUser = await _loginService.Get<liriksi.Model.User>(null, "GetMyProfile");
