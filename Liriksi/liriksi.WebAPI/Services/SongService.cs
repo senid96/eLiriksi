@@ -49,7 +49,7 @@ namespace liriksi.WebAPI.Services
 
         public List<SongGetRequest> GetSongsByAlbum(int id)
         {
-            List<Song> songs =  _context.Song.Where(x => x.AlbumId.Equals(id)).Include(b=>b.Album).ToList();
+            List<Song> songs =  _context.Song.Where(x => x.AlbumId.Equals(id)).Include(b=>b.Album).Include(b=>b.Album.Genre).Include(b=>b.Album.Performer).ToList();
             return _mapper.Map<List<SongGetRequest>>(songs);
         }
 

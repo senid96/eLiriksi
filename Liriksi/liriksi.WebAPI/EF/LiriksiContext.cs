@@ -15,7 +15,7 @@ namespace liriksi.WebAPI.EF
         public LiriksiContext(DbContextOptions<LiriksiContext> options)
             : base(options)
         {
-            this.ChangeTracker.LazyLoadingEnabled = true;
+            this.ChangeTracker.LazyLoadingEnabled = false;
         }
 
         public DbSet<Song> Song { get; set; }

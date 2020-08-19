@@ -13,7 +13,7 @@ namespace liriksi.Model
         public string Name { get; set; }
 
         [ForeignKey("CountryId")]
-        public Country Country { get; set; }
+        public virtual Country Country { get; set; }
         public int CountryId { get; set; }
         
     }

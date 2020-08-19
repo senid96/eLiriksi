@@ -2,14 +2,42 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:converters="clr-namespace:lirksi.Mobile.Converters"
              mc:Ignorable="d"
              x:Class="lirksi.Mobile.Views.SongDetails">
+    <ContentPage.Resources>
+        <converters:ImageConverter x:Key="imgConv"></converters:ImageConverter>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="detalji pjesme"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Fill" Padding="10" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="3*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+                <StackLayout Grid.Row="0" Grid.Column="0">
+                    <Label Text="Title:" Style="{DynamicResource ListItemTextStyle}" TextColor="Black"></Label>
+                    <Label Text="{Binding Song.Title}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
+                    <Label Text="Genre:" Style="{DynamicResource ListItemTextStyle}" TextColor="Black"></Label>
+                    <Label Text="{Binding Song.Album.Genre.Name}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
+                </StackLayout>
+                <StackLayout Grid.Row="0" Grid.Column="1" >
+                    <Label Text="Year:" Style="{DynamicResource ListItemTextStyle}" TextColor="Black"></Label>
+                    <Label Text="{Binding Song.Album.YearRelease}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
+                    <Label Text="Album:" Style="{DynamicResource ListItemTextStyle}" TextColor="Black"></Label>
+                    <Label Text="{Binding Song.Album.Name}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
+                </StackLayout>
+                <Image Grid.Row="0" Grid.Column="2" Source="{Binding Song.Album.Image, Converter={StaticResource imgConv}}" Aspect="AspectFit" ></Image>
+                <StackLayout Grid.Row="1" Grid.ColumnSpan="3">
+                    <Label Style="{DynamicResource TitleStyle}" Text="{Binding Song.Title}" HorizontalTextAlignment="Center" ></Label>
+                    <Label Text="{Binding Song.Text}" HorizontalTextAlignment="Center"></Label>
+                </StackLayout>
+        </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

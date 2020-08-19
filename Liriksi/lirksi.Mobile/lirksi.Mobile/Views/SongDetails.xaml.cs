@@ -1,4 +1,6 @@
-﻿using System;
+﻿using liriksi.Model.Requests;
+using lirksi.Mobile.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +14,14 @@ namespace lirksi.Mobile.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SongDetails : ContentPage
     {
-        public SongDetails()
+        private SongDetailsViewModel model = null;
+        public SongDetails(SongGetRequest song)
         {
             InitializeComponent();
+            BindingContext = model = new SongDetailsViewModel()
+            {
+                Song = song
+            };
         }
     }
 }

@@ -27,7 +27,7 @@ namespace liriksi.Model
         public virtual City City { get; set; }
         public bool Status { get; set; } //active-inactive
         public byte[] Image { get; set; }
-        public ICollection<UsersSongRate> UsersSongRates { get; set; }
-        public ICollection<UsersAlbumRate> UsersAlbumRates { get; set; }
+        public virtual ICollection<UsersSongRate> UsersSongRates { get; set; }
+        public virtual ICollection<UsersAlbumRate> UsersAlbumRates { get; set; }
     }
 }

@@ -22,12 +22,12 @@ namespace liriksi.Model
 
 
         [ForeignKey("PerformerId")]
-        public Performer Performer { get; set; }
+        public virtual Performer Performer { get; set; }
         public int PerformerId { get; set; }
 
         //genre relationship
         [ForeignKey("GenreId")]
-        public Genre Genre { get; set; }
+        public virtual Genre Genre { get; set; }
         public int GenreId { get; set; }
         public byte[] Image { get; set; }
         public virtual ICollection<UsersAlbumRate> UsersAlbumRates { get; set; }

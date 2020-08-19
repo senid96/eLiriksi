@@ -18,8 +18,8 @@ namespace liriksi.Model
         public string Text { get; set; }
 
         [ForeignKey("AlbumId")]
-        public Album Album { get; set; }
+        public virtual Album Album { get; set; }
         public int AlbumId { get; set; }
-        public ICollection<UsersSongRate> UsersSongRates { get; set; }
+        public virtual ICollection<UsersSongRate> UsersSongRates { get; set; }
     }
 }
