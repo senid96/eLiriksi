@@ -1,4 +1,5 @@
-﻿using System;
+﻿using lirksi.Mobile.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,18 @@ namespace lirksi.Mobile.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AlbumPage : ContentPage
     {
+        public AlbumViewModel model { get; set; }
         public AlbumPage()
         {
             InitializeComponent();
+            BindingContext = model = new AlbumViewModel();
         }
+
+        protected async override void OnAppearing()
+        {
+            base.OnAppearing();
+            await model.Init();
+        }
+
     }
 }
