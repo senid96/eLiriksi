@@ -12,13 +12,18 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Albums" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
-            <ListView ItemsSource="{Binding AlbumList}">
+            <Picker 
+                x:Name="PerformerPicker"
+                ItemsSource="{Binding PerformerList}" 
+                ItemDisplayBinding="{Binding Name}" 
+                SelectedItem="{Binding SelectedPerformer}"
+                />
+            <ListView ItemsSource="{Binding AlbumList}" ItemSelected="ListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell Height="60">
                             <StackLayout Padding="10">
                                 <Label Text="{Binding Name}" Style="{DynamicResource ListItemTextStyle}" />
-                                <Label Text="{Binding YearRelease}" Style="{DynamicResource ListItemDetailTextStyle}" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

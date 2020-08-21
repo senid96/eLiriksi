@@ -75,7 +75,7 @@ namespace liriksi.WebAPI.Services
 
         public List<Album> GetAlbumsByPerformerId(int id)
         {
-            return _context.Album.Where(x => x.PerformerId == id).ToList();
+            return _context.Album.Where(x => x.PerformerId == id).Include(b=>b.Genre).Include(b=>b.Performer).ToList();
         }
     }
 }

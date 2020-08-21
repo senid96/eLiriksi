@@ -13,7 +13,6 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Songs" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
-            <Picker ItemsSource="{Binding AlbumList}" ItemDisplayBinding="{Binding Name}" SelectedItem="{Binding SelectedAlbum}" ></Picker>
             <ListView ItemsSource="{Binding SongList}" ItemSelected="ListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>

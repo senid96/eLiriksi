@@ -15,14 +15,20 @@ namespace lirksi.Mobile.ViewModels
     {
         private readonly APIService _songService = new APIService("song");
         private readonly APIService _albumService = new APIService("album");
+        private readonly APIService _performerService = new APIService("performer");
         public SongViewModel()
         {
             InitCommand = new Command(async () => await Init());
         }
+
+        Album _selectedAlbum = null;
+        Performer _selectedPerformer = null;
+
         //observble je da bi gui mogao raditi fino, kao fb kad se skrola.. procitati malo jos
         public ObservableCollection<SongGetRequest> SongList { get; set; } = new ObservableCollection<SongGetRequest>();
         public ObservableCollection<Album> AlbumList { get; set; } = new ObservableCollection<Album>();
-        Album _selectedAlbum = null;
+        public ObservableCollection<Performer> PerformerList { get; set; } = new ObservableCollection<Performer>();
+
         public Album SelectedAlbum 
         {
             get { return _selectedAlbum; }
@@ -35,20 +41,49 @@ namespace lirksi.Mobile.ViewModels
                 }
             } 
         }
+        public Performer SelectedPerformer
+        {
+            get { return _selectedPerformer; }
+            set
+            {
+                SetProperty(ref _selectedPerformer, value);
+                if (value != null)
+                {
+                    InitCommand.Execute(null);
+                }
+            }
+        }
+
         public ICommand InitCommand { get; set; }
         public async Task Init()
         {
-            if(AlbumList.Count == 0) //ne puni je ako je vec napunjena(ovo je jer se isto ovo sve poziva na change drop downa)
+            //performeri
+            if (PerformerList.Count == 0)
+            {
+                
+                    var performerList = await _performerService.Get<IEnumerable<Performer>>(null, null);
+                    PerformerList.Clear();
+                    foreach (var item in performerList)
+                    {
+                        PerformerList.Add(item);
+                    }
+            }
+          
+
+            //albumi
+            if (SelectedPerformer != null) //ne puni je ako je vec napunjena(ovo je jer se isto ovo sve poziva na change drop downa)
             {
                 //za punjenje dropdown liste
-                var albumList = await _albumService.Get<IEnumerable<Album>>(null, null);
+                int performerId = SelectedPerformer.Id;
+                var albumList = await _albumService.Get<IEnumerable<Album>>(performerId, "GetAlbumsByPerformerId");
                 AlbumList.Clear();
                 foreach (var album in albumList)
                 {
                     AlbumList.Add(album);
                 }
             }
-
+            
+            //pjesme 
             if (SelectedAlbum != null)
             {
                 int albumId = SelectedAlbum.Id;
@@ -61,6 +96,8 @@ namespace lirksi.Mobile.ViewModels
                     SongList.Add(song);
                 }
             }
+
+          
          
         } 
     }
