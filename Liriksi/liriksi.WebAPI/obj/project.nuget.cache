@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ShBwncdIam+cBjP597BIBbpJiwX65kUZeGL5zgAekuKG8CXQMy77xte2Dt/Ywf6o+sirTmBLrEzINxretZEYjQ==",
+  "dgSpecHash": "dLJ9u+W7mq1G92G0seS0XP3FOV15OuZYdTZhk9TYNE5CUHmwZqnzon7s4TthRkLlwSiWVodcryLT3htgBtOMmg==",
   "success": true,
   "projectFilePath": "C:\\Users\\senid.ajkunic\\eLiriksiProjekat\\Liriksi\\liriksi.WebAPI\\liriksi.WebAPI.csproj",
   "expectedPackageFiles": [
@@ -206,6 +206,8 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\senid.ajkunic\\.nuget\\packages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.10\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",
+    "C:\\Users\\senid.ajkunic\\.nuget\\packages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
     "C:\\Users\\senid.ajkunic\\.nuget\\packages\\swashbuckle.aspnetcore\\4.0.1\\swashbuckle.aspnetcore.4.0.1.nupkg.sha512",
     "C:\\Users\\senid.ajkunic\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\4.0.1\\swashbuckle.aspnetcore.swagger.4.0.1.nupkg.sha512",
     "C:\\Users\\senid.ajkunic\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\4.0.1\\swashbuckle.aspnetcore.swaggergen.4.0.1.nupkg.sha512",

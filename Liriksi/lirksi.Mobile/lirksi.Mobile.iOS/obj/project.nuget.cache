@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fIDOrqaIIgx2Z5/waAEGY1hqvn7HX1P5W6pERaBeojtg04K957uceB8ne+xuMpQP1QBbSVD3VGKbr5PmRmU2bw==",
+  "dgSpecHash": "46erWSt+hf/fxNCk2gyezCIkeVsWqYCCA5kwm1MNf3FyrAI1bg2TWkP5HQ6Kbw8M9O8qNE277S+Gj7QrmRZqoQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\senid.ajkunic\\eLiriksiProjekat\\Liriksi\\lirksi.Mobile\\lirksi.Mobile.iOS\\lirksi.Mobile.iOS.csproj",
   "expectedPackageFiles": [
@@ -61,7 +61,6 @@
     "C:\\Users\\senid.ajkunic\\.nuget\\packages\\system.io\\4.1.0\\system.io.4.1.0.nupkg.sha512",
     "C:\\Users\\senid.ajkunic\\.nuget\\packages\\system.io.filesystem\\4.0.1\\system.io.filesystem.4.0.1.nupkg.sha512",
     "C:\\Users\\senid.ajkunic\\.nuget\\packages\\system.linq\\4.1.0\\system.linq.4.1.0.nupkg.sha512",
-    "C:\\Users\\senid.ajkunic\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\senid.ajkunic\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
     "C:\\Users\\senid.ajkunic\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
     "C:\\Users\\senid.ajkunic\\.nuget\\packages\\system.reflection.typeextensions\\4.1.0\\system.reflection.typeextensions.4.1.0.nupkg.sha512",
@@ -73,35 +72,8 @@
     "C:\\Users\\senid.ajkunic\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512",
     "C:\\Users\\senid.ajkunic\\.nuget\\packages\\system.text.encodings.web\\4.4.0\\system.text.encodings.web.4.4.0.nupkg.sha512",
     "C:\\Users\\senid.ajkunic\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
-    "C:\\Users\\senid.ajkunic\\.nuget\\packages\\xamarin.forms\\4.5.0.725\\xamarin.forms.4.5.0.725.nupkg.sha512"
+    "C:\\Users\\senid.ajkunic\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\senid.ajkunic\\.nuget\\packages\\xamarin.forms\\4.8.0.1269\\xamarin.forms.4.8.0.1269.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.5.3.2 to 1.3.1. Reference the package directly from the project to select a different version. \r\n lirksi.Mobile.iOS -> lirksi.Mobile -> Xamarin.Essentials (>= 1.5.3.2) \r\n lirksi.Mobile.iOS -> Xamarin.Essentials (>= 1.3.1)",
-      "libraryId": "Xamarin.Essentials",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0",
-        "Xamarin.iOS,Version=v1.0/win",
-        "Xamarin.iOS,Version=v1.0/win-x64",
-        "Xamarin.iOS,Version=v1.0/win-x86"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 4.8.0.1269 to 4.5.0.725. Reference the package directly from the project to select a different version. \r\n lirksi.Mobile.iOS -> lirksi.Mobile -> Xamarin.Forms (>= 4.8.0.1269) \r\n lirksi.Mobile.iOS -> Xamarin.Forms (>= 4.5.0.725)",
-      "libraryId": "Xamarin.Forms",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0",
-        "Xamarin.iOS,Version=v1.0/win",
-        "Xamarin.iOS,Version=v1.0/win-x64",
-        "Xamarin.iOS,Version=v1.0/win-x86"
-      ]
-    }
-  ]
+  "logs": []
 }
