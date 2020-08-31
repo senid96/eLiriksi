@@ -103,6 +103,7 @@ namespace liriksi.WebAPI.Services
         {
             var user = _context.User
                          .Include(x => x.UserType)
+                         .Include(x=> x.City)
                          .FirstOrDefault(x => x.Username == username);
 
             if (user != null)
@@ -143,14 +144,14 @@ namespace liriksi.WebAPI.Services
             return Convert.ToBase64String(inArray);
         }
 
-        public Model.User GetMyProfile()
+        public UserGetRequest GetMyProfile()
         {
             if(_currentUser == null)
             {
                 return null;
             }
 
-            return _context.User.Find(_currentUser.Id);
+            return _mapper.Map<UserGetRequest>(_context.User.Find(_currentUser.Id));
         }
     }
 }

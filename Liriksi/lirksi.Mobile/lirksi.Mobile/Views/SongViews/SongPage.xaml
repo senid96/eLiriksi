@@ -10,33 +10,29 @@
     <ContentPage.BindingContext>
         <vm:SongViewModel />
     </ContentPage.BindingContext>
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Songs" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
-            <Picker 
-                x:Name="PerformerPicker"
-                ItemsSource="{Binding PerformerList}" 
-                ItemDisplayBinding="{Binding Name}" 
-                SelectedItem="{Binding SelectedPerformer}"
-                />
-            <Picker 
-                x:Name="AlbumPicker"
-                ItemsSource="{Binding AlbumList}" 
-                ItemDisplayBinding="{Binding Name}" 
-                SelectedItem="{Binding SelectedAlbum}"
-                />
+
+    <ContentPage.Content >
+        <ScrollView>
+            <StackLayout Padding="10" >
+            <Label Text="Title:" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <Entry Text="{Binding Title}"></Entry>
+            <Label Text="Keyword:" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <Entry Text="{Binding Text}"></Entry>
+            <Button Text="Search" Command="{Binding SearchCommand}" Padding="0,0,0,10"></Button>
+            
             <ListView ItemsSource="{Binding SongList}" ItemSelected="ListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell Height="60">
-                            <StackLayout Padding="10">
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" VerticalOptions="Start">
                                 <Label Text="{Binding Title}" Style="{DynamicResource ListItemTextStyle}" />
                                 <Label Text="{Binding Album.Performer.ArtisticName}" Style="{DynamicResource ListItemDetailTextStyle}" />
-                            </StackLayout>
+                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

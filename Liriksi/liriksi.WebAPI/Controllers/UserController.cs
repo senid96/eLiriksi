@@ -63,7 +63,7 @@ namespace liriksi.WebAPI.Controllers
         }
 
         [HttpGet("GetMyProfile")]
-        public Model.User GetMyProfile()
+        public UserGetRequest GetMyProfile()
         {
             return _service.GetMyProfile();
         }

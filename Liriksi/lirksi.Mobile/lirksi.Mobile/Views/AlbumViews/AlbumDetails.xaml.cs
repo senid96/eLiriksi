@@ -1,4 +1,5 @@
 ﻿using liriksi.Model;
+using liriksi.Model.Requests;
 using lirksi.Mobile.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -22,6 +23,17 @@ namespace lirksi.Mobile.Views
             {
                 Album = album
             };
+        }
+        protected async override void OnAppearing()
+        {
+            base.OnAppearing();
+            await model.Init();
+        }
+
+        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var item = e.SelectedItem as SongGetRequest;
+            Application.Current.MainPage.DisplayAlert("Lyrics",item.Text.ToString(), "Ok");
         }
     }
 }

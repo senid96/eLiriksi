@@ -31,6 +31,7 @@ namespace liriksi.Model
         public int GenreId { get; set; }
         public byte[] Image { get; set; }
         public virtual ICollection<UsersAlbumRate> UsersAlbumRates { get; set; }
+        public string Description { get; set; }
 
 
     }

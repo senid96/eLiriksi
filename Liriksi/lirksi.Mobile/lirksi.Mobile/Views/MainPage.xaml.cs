@@ -21,7 +21,7 @@ namespace lirksi.Mobile.Views
 
             MasterBehavior = MasterBehavior.Popover;
 
-            MenuPages.Add((int)MenuItemType.Browse, (NavigationPage)Detail);
+            //MenuPages.Add((int)MenuItemType.Browse, (NavigationPage)Detail);
         }
 
         public async Task NavigateFromMenu(int id)
@@ -30,17 +30,14 @@ namespace lirksi.Mobile.Views
             {
                 switch (id)
                 {
-                    case (int)MenuItemType.Browse:
-                        MenuPages.Add(id, new NavigationPage(new ItemsPage()));
-                        break;
-                    case (int)MenuItemType.About:
-                        MenuPages.Add(id, new NavigationPage(new AboutPage()));
-                        break;
                     case (int)MenuItemType.Songs:
                         MenuPages.Add(id, new NavigationPage(new SongPage()));
                         break;
                     case (int)MenuItemType.Albums:
                         MenuPages.Add(id, new NavigationPage(new AlbumPage()));
+                        break;
+                    case (int)MenuItemType.MyProfile:
+                        MenuPages.Add(id, new NavigationPage(new MyProfile()));
                         break;
                 }
             }

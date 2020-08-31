@@ -20,8 +20,7 @@ namespace lirksi.Mobile.Views
 
             menuItems = new List<HomeMenuItem>
             {
-                new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
-                new HomeMenuItem {Id = MenuItemType.About, Title="About" },
+                new HomeMenuItem {Id = MenuItemType.MyProfile, Title="MyProfile" },
                 new HomeMenuItem {Id = MenuItemType.Songs, Title="Songs" },
                 new HomeMenuItem {Id = MenuItemType.Albums, Title="Albums" }
             };

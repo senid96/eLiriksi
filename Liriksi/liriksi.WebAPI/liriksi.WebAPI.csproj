@@ -32,6 +32,8 @@
     <Compile Include="Migrations\20200724105418_performerImgFix.Designer.cs" />
     <Compile Include="Migrations\20200724112855_performerImgFix3.cs" />
     <Compile Include="Migrations\20200724112855_performerImgFix3.Designer.cs" />
+    <Compile Include="Migrations\20200826124401_description to album.cs" />
+    <Compile Include="Migrations\20200826124401_description to album.Designer.cs" />
     <Compile Include="Migrations\LiriksiContextModelSnapshot.cs" />
   </ItemGroup>
 

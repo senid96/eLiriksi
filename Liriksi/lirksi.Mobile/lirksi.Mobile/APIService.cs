@@ -1,5 +1,6 @@
 ﻿using Flurl.Http;
 using liriksi.Model;
+using liriksi.Model.Requests;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,7 +11,7 @@ public class APIService
 {
     public static string _username { get; set; }
     public static string _password { get; set; }
-    public static liriksi.Model.User _currentUser { get; set; }
+    public static User _currentUser { get; set; }
     public string _route { get; set; }
 #if DEBUG
     //android

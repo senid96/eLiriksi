@@ -11,88 +11,50 @@ using Xamarin.Forms;
 
 namespace lirksi.Mobile.ViewModels
 {
-    public class SongViewModel: BaseViewModel
+    public class SongViewModel : BaseViewModel
     {
         private readonly APIService _songService = new APIService("song");
-        private readonly APIService _albumService = new APIService("album");
-        private readonly APIService _performerService = new APIService("performer");
+
+        string _title = string.Empty;
+        public string Title
+        {
+            get { return _title; }
+            set { SetProperty(ref _title, value); }
+        }
+
+        string _text = string.Empty;
+        public string Text
+        {
+            get { return _text; }
+            set { SetProperty(ref _text, value); }
+        }
+
         public SongViewModel()
         {
-            InitCommand = new Command(async () => await Init());
+            SearchCommand = new Command(async () => await Search());
         }
-
-        Album _selectedAlbum = null;
-        Performer _selectedPerformer = null;
-
-        //observble je da bi gui mogao raditi fino, kao fb kad se skrola.. procitati malo jos
         public ObservableCollection<SongGetRequest> SongList { get; set; } = new ObservableCollection<SongGetRequest>();
-        public ObservableCollection<Album> AlbumList { get; set; } = new ObservableCollection<Album>();
-        public ObservableCollection<Performer> PerformerList { get; set; } = new ObservableCollection<Performer>();
 
-        public Album SelectedAlbum 
+        public ICommand SearchCommand { get; set; }
+
+        async Task Search()
         {
-            get { return _selectedAlbum; }
-            set 
-            { 
-                SetProperty(ref _selectedAlbum, value);
-                if (value != null)
-                {
-                    PopulateSongs();
-                }
-            } 
-        }
-        public Performer SelectedPerformer
-        {
-            get { return _selectedPerformer; }
-            set
+            SongSearchRequest req = new SongSearchRequest()
             {
-                SetProperty(ref _selectedPerformer, value);
-                if (value != null)
+                Title = Title,
+                Text = Text
+            };
+
+            SongList.Clear();
+            List<SongGetRequest> list = await _songService.Get<List<SongGetRequest>>(req, null);
+            if (list.Count != 0)
+            {
+                foreach (var item in list)
                 {
-                    PopulateAlbums();
+                    SongList.Add(item);
                 }
             }
-        }
 
-        public ICommand InitCommand { get; set; }
-
-        public async Task Init()
-        {
-            //performeri
-            if (PerformerList.Count == 0)
-            {
-                    var performerList = await _performerService.Get<IEnumerable<Performer>>(null, null);
-                    PerformerList.Clear();
-                    foreach (var item in performerList)
-                    {
-                        PerformerList.Add(item);
-                    }
-            }
-        } 
-
-        public async Task PopulateAlbums()
-        {
-            //za punjenje dropdown liste
-            int performerId = SelectedPerformer.Id;
-            var albumList = await _albumService.Get<IEnumerable<Album>>(performerId, "GetAlbumsByPerformerId");
-            AlbumList.Clear();
-            foreach (var album in albumList)
-            {
-                AlbumList.Add(album);
-            }
-        }
-
-        public async Task PopulateSongs()
-        {
-                int albumId = SelectedAlbum.Id;
-
-                //za punjenje pjesama
-                var songList = await _songService.GetById<IEnumerable<SongGetRequest>>(albumId, "GetSongsByAlbum");
-                SongList.Clear();
-                foreach (var song in songList)
-                {
-                    SongList.Add(song);
-                }
         }
     }
 }

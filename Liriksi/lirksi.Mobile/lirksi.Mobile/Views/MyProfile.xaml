@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:lirksi.Mobile.ViewModels"
+             xmlns:converters="clr-namespace:lirksi.Mobile.Converters"
+             x:Class="lirksi.Mobile.Views.MyProfile">
+    <ContentPage.BindingContext>
+        <vm:MyProfileViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <converters:ImageConverter x:Key="imgConv"></converters:ImageConverter>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+
+        <StackLayout Padding="10">
+            <StackLayout Padding="0, 30, 0, 0">
+                <Image Source="{Binding User.Image, Converter={StaticResource imgConv}}" Aspect="AspectFit" HorizontalOptions="Center"></Image>
+            </StackLayout>
+            
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="0, 30, 0, 0">
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Name: " HorizontalTextAlignment="Center"></Label>
+                    <Label Text="{Binding User.Name}" HorizontalTextAlignment="Center"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Surname: " HorizontalTextAlignment="Center"></Label>
+                    <Label Text="{Binding User.Surname}" HorizontalTextAlignment="Center"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Email: " HorizontalTextAlignment="Center" ></Label>
+                    <Label Text="{Binding User.Email}"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Phone: " HorizontalTextAlignment="Center"></Label>
+                    <Label Text="{Binding User.PhoneNumber}" HorizontalTextAlignment="Center"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="City: " HorizontalTextAlignment="Center"></Label>
+                    <Label Text="{Binding User.City.Name}" HorizontalTextAlignment="Center"></Label>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

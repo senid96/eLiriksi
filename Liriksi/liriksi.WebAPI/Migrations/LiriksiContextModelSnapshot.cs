@@ -25,6 +25,8 @@ namespace liriksi.WebAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Description");
+
                     b.Property<int>("GenreId");
 
                     b.Property<byte[]>("Image");

@@ -21,12 +21,6 @@ namespace lirksi.Mobile.Views
             BindingContext = model = new SongViewModel();
         }
 
-        protected async override void OnAppearing()
-        {
-            base.OnAppearing();
-            await model.Init();
-        }
-
         private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var item = e.SelectedItem as SongGetRequest;

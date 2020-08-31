@@ -66,7 +66,3 @@ C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WebAPI\obj\Debug\netcore
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WebAPI\obj\Debug\netcoreapp2.1\liriksi.WebAPI.csproj.CopyComplete
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WebAPI\obj\Debug\netcoreapp2.1\liriksi.WebAPI.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WebAPI\obj\Debug\netcoreapp2.1\liriksi.WebAPI.pdb
-C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WebAPI\bin\Debug\netcoreapp2.1\appsettings.Development.json
-C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WebAPI\bin\Debug\netcoreapp2.1\appsettings.json
-C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WebAPI\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
-C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WebAPI\obj\Debug\netcoreapp2.1\liriksi.WebAPI.genruntimeconfig.cache

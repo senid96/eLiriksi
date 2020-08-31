@@ -25,9 +25,9 @@ namespace liriksi.WebAPI.Services
         public List<Album> Get(AlbumSearchRequest album)
         {
             if(album.Name == null)
-                return _context.Album.Include(b=>b.Genre).ToList();
+                return _context.Album.Include(b=>b.Genre).Include(x=>x.Performer).ToList();
             
-            return _context.Album.Where(x => x.Name.Contains(album.Name)).ToList();
+            return _context.Album.Include(b => b.Genre).Include(x => x.Performer).Where(x => x.Name.Contains(album.Name)).ToList();
         }
         public Album GetById(int id)
         {
