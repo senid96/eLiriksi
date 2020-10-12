@@ -15,48 +15,39 @@
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <ScrollView>
-            <Grid Padding="10">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="100" />
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="5*" />
-                    <ColumnDefinition Width="2*" />
-                    <ColumnDefinition Width="2*" />
-                </Grid.ColumnDefinitions>
-                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="{Binding Album.Name}" FontSize="Header"></Label>
-                <Label Grid.Row="1" Grid.Column="0" Text="{Binding Album.Description}" ></Label>
-                <StackLayout Grid.Row="1" Grid.Column="1">
-                    <Label Text="Details:" FontSize="Title" ></Label>
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
-                        <Label Text="Year:" Style="{DynamicResource ListItemTextStyle}" TextColor="Black"></Label>
-                        <Label Text="{Binding Album.YearRelease}" HorizontalOptions="Start" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
-                        <Label Text="Genre:" Style="{DynamicResource ListItemTextStyle}" TextColor="Black"></Label>
-                        <Label Text="{Binding Album.Genre.Name}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
-                        <Label Text="Performer:" Style="{DynamicResource ListItemTextStyle}" TextColor="Black"></Label>
-                        <Label Text="{Binding Album.Performer.ArtisticName}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
-                    </StackLayout>
-                    
-                    <Label Text="Songs:" FontSize="Title" Padding="0, 10, 0, 0"></Label>
-                    <ListView ItemsSource="{Binding SongList}" ItemSelected="ListView_ItemSelected">
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <ViewCell>
-                                    <StackLayout >
-                                        <Label Text="{Binding Title}" Style="{DynamicResource ListItemTextStyle}" FontAttributes="None" />
-                                    </StackLayout>
-                                </ViewCell>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="10">
+                <Label Text="{Binding Album.Name}" FontSize="Header"></Label>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="{Binding Album.Description}" ></Label>
+                    <Image Source="{Binding Album.Image, Converter={StaticResource imgConv}}" Aspect="AspectFit" VerticalOptions="Start" HorizontalOptions="Start" ></Image>
                 </StackLayout>
-                <Image Grid.Row="1" Grid.Column="2" Source="{Binding Album.Image, Converter={StaticResource imgConv}}" Aspect="AspectFit" VerticalOptions="Start" ></Image>
-            </Grid>
+                <Label Text="Details:" FontSize="Title" ></Label>
+                <StackLayout >
+                    <Label Text="Year:" Style="{DynamicResource ListItemTextStyle}" TextColor="Black"></Label>
+                    <Label Text="{Binding Album.YearRelease}" HorizontalOptions="Start" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Genre:" Style="{DynamicResource ListItemTextStyle}" TextColor="Black"></Label>
+                    <Label Text="{Binding Album.Genre.Name}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Performer:" Style="{DynamicResource ListItemTextStyle}" TextColor="Black"></Label>
+                    <Label Text="{Binding Album.Performer.ArtisticName}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
+                </StackLayout>
+                <Label Text="Songs:" FontSize="Title" Padding="0, 10, 0, 0"></Label>
+                <ListView ItemsSource="{Binding SongList}" ItemSelected="ListView_ItemSelected" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout >
+                                    <Label Text="{Binding Title}" Style="{DynamicResource ListItemTextStyle}" FontAttributes="None" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                
+            </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

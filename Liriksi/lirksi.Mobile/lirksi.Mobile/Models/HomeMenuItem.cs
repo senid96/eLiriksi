@@ -8,7 +8,8 @@ namespace lirksi.Mobile.Models
     {
         Songs,
         Albums,
-        MyProfile
+        MyProfile,
+        Ratings
     }
     public class HomeMenuItem
     {

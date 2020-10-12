@@ -104,7 +104,7 @@ namespace liriksi.WebAPI.Services
                      rate.AlbumId
                  })
                  .GroupBy(p => p.AlbumId)
-                 .Select(g => new AverageRate { Id = g.First().AlbumId, Title = g.First().Name,  AvgRate = Math.Round( Convert.ToDouble(g.Sum(x => x.Rate)) / g.Count(), 1) }).ToList();
+                 .Select(g => new AverageRate { Id = g.First().AlbumId, Title = g.First().Name,  AvgRate = Math.Round( Convert.ToDouble(g.Sum(x => x.Rate)) / g.Count(), 1) }).OrderByDescending(x=>x.AvgRate).ToList();
 
             return list;
         }
@@ -123,7 +123,7 @@ namespace liriksi.WebAPI.Services
                     rate.SongId
                 })
                 .GroupBy(p => p.SongId)
-                .Select(g => new AverageRate{ Id = g.First().SongId, Title = g.First().Title , AvgRate = Math.Round(Convert.ToDouble(g.Sum(x => x.Rate)) / g.Count(), 1) }).ToList();
+                .Select(g => new AverageRate{ Id = g.First().SongId, Title = g.First().Title , AvgRate = Math.Round(Convert.ToDouble(g.Sum(x => x.Rate)) / g.Count(), 1) }).OrderByDescending(x=>x.AvgRate).ToList();
 
             return list;
         }

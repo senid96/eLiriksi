@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:lirksi.Mobile.ViewModels.RatingViewModels"
+             x:Class="lirksi.Mobile.Views.RatingViews.Ratings">
+    <ContentPage.BindingContext>
+        <vm:RatingViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Label Text="Top songs: " Style="{DynamicResource TitleStyle}"></Label>
+            <ListView ItemsSource="{Binding SongRateList}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Height="60">
+                            <StackLayout Padding="10">
+                                <Label Text="{Binding Title}" Style="{DynamicResource ListItemTextStyle}" />
+                                <Label Text="{Binding AvgRate}" Style="{DynamicResource ListItemTextStyle}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+            <Label Text="Top albums: " Style="{DynamicResource TitleStyle}"></Label>
+            <ListView ItemsSource="{Binding AlbumRateList}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Height="60">
+                            <StackLayout Padding="10">
+                                <Label Text="{Binding Title}" Style="{DynamicResource ListItemTextStyle}" />
+                                <Label Text="{Binding AvgRate}" Style="{DynamicResource ListItemTextStyle}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
