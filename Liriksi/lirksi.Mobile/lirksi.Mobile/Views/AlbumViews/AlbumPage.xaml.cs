@@ -31,7 +31,7 @@ namespace lirksi.Mobile.Views
         private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var item = e.SelectedItem as Album;
-            await Navigation.PushAsync(new AlbumDetails(item));
+            await Navigation.PushAsync(new AlbumDetails(item.Id));
         }
     }
 }

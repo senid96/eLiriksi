@@ -13,8 +13,16 @@ namespace lirksi.Mobile.ViewModels
     public class AlbumDetailsViewModel :BaseViewModel
     {
         private readonly APIService _songService = new APIService("song");
+        private readonly APIService _albumService = new APIService("album");
 
-        public Album Album { get; set; }
+        public int _albumId { get; set; }
+
+        private Album _album;
+        public Album Album
+        {
+            get { return _album; }
+            set { SetProperty(ref _album, value); }
+        }
         public ObservableCollection<SongGetRequest> SongList { get; set; } = new ObservableCollection<SongGetRequest>();
 
         public AlbumDetailsViewModel()
@@ -25,6 +33,9 @@ namespace lirksi.Mobile.ViewModels
         public ICommand InitCommand { get; set; }
         public async Task Init()
         {
+            //album
+            Album = await _albumService.GetById<Album>(_albumId, "GetAlbumById");
+
             //performeri
             if (SongList.Count == 0)
             {

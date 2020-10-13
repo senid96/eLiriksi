@@ -16,12 +16,12 @@ namespace lirksi.Mobile.Views
     public partial class AlbumDetails : ContentPage
     {
         public AlbumDetailsViewModel model { get; set; }
-        public AlbumDetails(Album album)
+        public AlbumDetails(int albumId)
         {
             InitializeComponent();
             BindingContext = model = new AlbumDetailsViewModel()
             {
-                Album = album
+                _albumId = albumId
             };
         }
         protected async override void OnAppearing()
@@ -33,7 +33,7 @@ namespace lirksi.Mobile.Views
         private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var item = e.SelectedItem as SongGetRequest;
-            Application.Current.MainPage.DisplayAlert("Lyrics",item.Text.ToString(), "Ok");
+            Navigation.PushAsync(new SongDetails(item.Id));
         }
     }
 }

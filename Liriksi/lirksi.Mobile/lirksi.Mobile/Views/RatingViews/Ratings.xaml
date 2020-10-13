@@ -9,8 +9,8 @@
     <ContentPage.Content>
         
         <StackLayout>
-            <Label Text="Top songs: " Style="{DynamicResource TitleStyle}"></Label>
-            <ListView ItemsSource="{Binding SongRateList}">
+            <Label Text="Top 10 songs: " Style="{DynamicResource SubtitleStyle}"></Label>
+            <ListView x:Name="songRateList" ItemsSource="{Binding SongRateList}" ItemSelected="SongRateList_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell Height="60">
@@ -24,8 +24,8 @@
             </ListView>
 
 
-            <Label Text="Top albums: " Style="{DynamicResource TitleStyle}"></Label>
-            <ListView ItemsSource="{Binding AlbumRateList}">
+            <Label Text="Top 10 albums: " Style="{DynamicResource SubtitleStyle}"></Label>
+            <ListView x:Name="albumRateList" ItemSelected="AlbumRateList_ItemSelected" ItemsSource="{Binding AlbumRateList}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell Height="60">

@@ -77,9 +77,13 @@ public class APIService
             throw;
         }
     }
-    public async Task<T> Insert<T>(object obj)
+    public async Task<T> Insert<T>(object obj, string method)
     {
-        var url = $"{_apiUrl}/{_route}"; //pravi se ruta.. u setingsu je definisan api
+        string url;
+        if (String.IsNullOrEmpty(method))
+            url = $"{_apiUrl}/{_route}"; //pravi se ruta.. u setingsu je definisan api
+        else
+            url = $"{_apiUrl}/{_route}/{method}"; //pravi se ruta.. u setingsu je definisan api
 
         try
         {

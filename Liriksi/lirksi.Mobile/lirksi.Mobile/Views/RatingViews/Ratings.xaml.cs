@@ -1,4 +1,6 @@
-﻿using lirksi.Mobile.ViewModels.RatingViewModels;
+﻿using liriksi.Model.Requests;
+using liriksi.Model.Requests.rates;
+using lirksi.Mobile.ViewModels.RatingViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +26,18 @@ namespace lirksi.Mobile.Views.RatingViews
         {
             base.OnAppearing();
             await model.Init();
+        }
+
+        private async void SongRateList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var item = e.SelectedItem as AverageRate;
+            await Navigation.PushAsync(new SongDetails(item.Id));
+        }
+
+        private async void AlbumRateList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var item = e.SelectedItem as AverageRate;
+            await Navigation.PushAsync(new AlbumDetails(item.Id));
         }
     }
 }
