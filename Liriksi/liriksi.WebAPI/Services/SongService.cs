@@ -43,7 +43,7 @@ namespace liriksi.WebAPI.Services
 
         public SongGetRequest GetById(int id)
         {
-            var entity = _context.Song.Where(x => x.Id.Equals(id)).Include(b=>b.Album.Genre).FirstOrDefault();
+            var entity = _context.Song.Where(x => x.Id.Equals(id)).Include(b=>b.Album.Genre).Include(b=>b.UsersSongRates).FirstOrDefault();
             return _mapper.Map<SongGetRequest>(entity);
         }
 

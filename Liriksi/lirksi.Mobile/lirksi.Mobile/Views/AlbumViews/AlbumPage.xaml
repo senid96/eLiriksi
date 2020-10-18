@@ -17,6 +17,7 @@
                 ItemsSource="{Binding PerformerList}" 
                 ItemDisplayBinding="{Binding Name}" 
                 SelectedItem="{Binding SelectedPerformer}"
+                SelectedIndexChanged="PerformerPicker_SelectedIndexChanged"
                 />
             <ListView ItemsSource="{Binding AlbumList}" ItemSelected="ListView_ItemSelected">
                 <ListView.ItemTemplate>

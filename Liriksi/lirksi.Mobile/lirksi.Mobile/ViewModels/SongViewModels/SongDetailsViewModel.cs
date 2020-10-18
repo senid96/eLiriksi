@@ -23,7 +23,7 @@ namespace lirksi.Mobile.ViewModels
             set { SetProperty(ref _songDetail, value); }
         }
 
-        private UsersSongRate _userRate = null;
+        private UsersSongRate _userRate;
         public UsersSongRate UserRate
         {
             get { return _userRate; }
@@ -39,12 +39,15 @@ namespace lirksi.Mobile.ViewModels
         public ICommand InitCommand { get; set; }
         public async Task Init()
         {
+            //get songDetails
             SongDetail = await _songService.GetById<SongGetRequest>(_songId, "GetSongById");
+
+            //get rate details
             List<UserSongRateGetRequest> obj = await _ratingService.GetById<List<UserSongRateGetRequest>>(APIService._currentUser.Id, "GetSongRatesByUser");
             UserRate.SongId = SongDetail.Id;
             UserRate.UserId = APIService._currentUser.Id;
-            UserRate.Rate = obj.Find(x => x.SongId == UserRate.SongId && x.UserId == UserRate.UserId).Rate;
-            UserRate.Comment = obj.Find(x => x.SongId == UserRate.SongId && x.UserId == UserRate.UserId).Comment;
+          //  UserRate.Rate = obj.Find(x => x.SongId == UserRate.SongId && x.UserId == UserRate.UserId).Rate;
+           // UserRate.Comment = obj.Find(x => x.SongId == UserRate.SongId && x.UserId == UserRate.UserId).Comment;
             //todo senid ovo treba da prilikom inita ako je vec ocjenjeno to prikaze.. ako nije omogucit .. to treba uradit
         }
 

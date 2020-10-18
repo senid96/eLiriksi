@@ -16,48 +16,43 @@ namespace lirksi.Mobile.ViewModels
 
         public AlbumViewModel()
         {
-            InitCommand = new Command(async() => await Init());        
+            //InitCommand = new Command(async() => await Init());        
         }
         public ObservableCollection<Album> AlbumList { get; set; } = new ObservableCollection<Album>();
         public ObservableCollection<Performer> PerformerList { get; set; } = new ObservableCollection<Performer>();
         
-        Performer _selectedPerformer = null;
-
+        Performer _selectedPerformer;
         public Performer SelectedPerformer
         {
             get { return _selectedPerformer; }
-            set
+            set { _selectedPerformer = value; }
+            
+        }
+
+        //public ICommand InitCommand { get; set; }
+        public async Task Init()
+        {
+            await GetPerformers();
+           // await GetAlbums(SelectedPerformer.Id);
+        }
+
+        public async Task GetPerformers()
+        {
+            var performerList = await _performerService.Get<IEnumerable<Performer>>(null, null);
+            PerformerList.Clear();
+            foreach (var item in performerList)
             {
-                SetProperty(ref _selectedPerformer, value);
-                if (value != null)
-                {
-                    InitCommand.Execute(null);
-                }
+                PerformerList.Add(item);
             }
         }
 
-        public ICommand InitCommand { get; set; }
-        public async Task Init()
+        public async Task GetAlbums()
         {
-            if (PerformerList.Count == 0)
+            var albumList = await _albumService.Get<IEnumerable<Album>>(SelectedPerformer.Id, "GetAlbumsByPerformerId");
+            AlbumList.Clear();
+            foreach (var item in albumList)
             {
-                var performerList = await _performerService.Get<IEnumerable<Performer>>(null, null);
-                PerformerList.Clear();
-                foreach (var item in performerList)
-                {
-                    PerformerList.Add(item);
-                }
-            }
-
-            if (SelectedPerformer != null)
-            {
-                int performerId = _selectedPerformer.Id;
-                var albumList = await _albumService.Get<IEnumerable<Album>>(performerId, "GetAlbumsByPerformerId");
-                AlbumList.Clear();
-                foreach (var item in albumList)
-                {
-                    AlbumList.Add(item);
-                }
+                AlbumList.Add(item);
             }
         }
     }
