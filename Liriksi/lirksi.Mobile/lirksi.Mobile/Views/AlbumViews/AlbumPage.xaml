@@ -25,7 +25,6 @@
                         <ViewCell Height="60">
                             <StackLayout Padding="10">
                                 <Label Text="{Binding Name}" Style="{DynamicResource ListItemTextStyle}" />
-                                <Label Text="{Binding Performer.ArtisticName}" Style="{DynamicResource ListItemDetailTextStyle}" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

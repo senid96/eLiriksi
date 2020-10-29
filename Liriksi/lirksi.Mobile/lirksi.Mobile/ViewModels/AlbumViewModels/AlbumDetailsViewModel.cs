@@ -25,30 +25,27 @@ namespace lirksi.Mobile.ViewModels
         }
         public ObservableCollection<SongGetRequest> SongList { get; set; } = new ObservableCollection<SongGetRequest>();
 
-        public AlbumDetailsViewModel()
-        {
-            InitCommand = new Command(async () => await Init());
-        }
-
-        public ICommand InitCommand { get; set; }
+       
         public async Task Init()
         {
-            //album
-            Album = await _albumService.GetById<Album>(_albumId, "GetAlbumById");
+            await GetAlbumById();
+            await GetSongs();
+        }
 
-            //performeri
-            if (SongList.Count == 0)
-            {
-                int albumId = Album.Id;
-                var songList = await _songService.GetById<IEnumerable<SongGetRequest>>(albumId, "GetSongsByAlbum");
+        public async Task GetAlbumById()
+        {
+            Album = await _albumService.GetById<Album>(_albumId, "GetAlbumById");
+        }
+       
+        public async Task GetSongs()
+        {
+                var songList = await _songService.GetById<IEnumerable<SongGetRequest>>(Album.Id, "GetSongsByAlbum");
                 SongList.Clear();
                 foreach (var item in songList)
                 {
                     SongList.Add(item);
                 }
-            }
         }
-       
 
     }
 }

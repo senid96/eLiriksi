@@ -33,7 +33,6 @@ namespace lirksi.Mobile.ViewModels
         public async Task Init()
         {
             await GetPerformers();
-           // await GetAlbums(SelectedPerformer.Id);
         }
 
         public async Task GetPerformers()

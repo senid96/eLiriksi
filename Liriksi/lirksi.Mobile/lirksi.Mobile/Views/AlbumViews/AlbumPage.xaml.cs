@@ -25,6 +25,7 @@ namespace lirksi.Mobile.Views
         {
             base.OnAppearing();
             await model.Init();
+            PerformerPicker.SelectedIndex = 0;
         }
 
         private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
