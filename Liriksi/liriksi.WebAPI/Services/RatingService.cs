@@ -42,13 +42,6 @@ namespace liriksi.WebAPI.Services
 
         public bool RateSong(UsersSongRate obj)
         {
-            var entity = _context.UsersSongRates.Find(obj.UserId, obj.SongId);
-
-            if (entity != null)
-            {
-                if (entity.SongId.Equals(obj.SongId) && entity.UserId.Equals(obj.UserId))
-                    return false;
-            }
             _context.UsersSongRates.Add(obj);
             _context.SaveChanges();
             return true;
@@ -162,6 +155,11 @@ namespace liriksi.WebAPI.Services
                               Comment = rates.Comment,
                           }).Where(x => x.UserId == userId);
             return _mapper.Map<List<UserAlbumRateGetRequest>>(entity);
+        }
+
+        public UsersSongRate GetRateBySongByUser(HasUserRatedRequest obj)
+        {
+            return _context.UsersSongRates.Where(x => x.SongId == obj.Id).Where(x=>x.UserId == obj.UserId).FirstOrDefault();
         }
 
     }

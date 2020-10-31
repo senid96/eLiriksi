@@ -8,6 +8,7 @@
     </ContentPage.BindingContext>
     <ContentPage.Content>
         
+        <!-- song ratings-->
         <StackLayout>
             <Label Text="Top 10 songs: " Style="{DynamicResource SubtitleStyle}"></Label>
             <ListView x:Name="songRateList" ItemsSource="{Binding SongRateList}" ItemSelected="SongRateList_ItemSelected">
@@ -23,7 +24,7 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-
+        <!-- album ratings-->
             <Label Text="Top 10 albums: " Style="{DynamicResource SubtitleStyle}"></Label>
             <ListView x:Name="albumRateList" ItemSelected="AlbumRateList_ItemSelected" ItemsSource="{Binding AlbumRateList}">
                 <ListView.ItemTemplate>

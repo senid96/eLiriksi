@@ -28,12 +28,14 @@ namespace lirksi.Mobile.Views.RatingViews
             await model.Init();
         }
 
+        //on song click, show song details
         private async void SongRateList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var item = e.SelectedItem as AverageRate;
             await Navigation.PushAsync(new SongDetails(item.Id));
         }
 
+        //on album click, show album details
         private async void AlbumRateList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var item = e.SelectedItem as AverageRate;

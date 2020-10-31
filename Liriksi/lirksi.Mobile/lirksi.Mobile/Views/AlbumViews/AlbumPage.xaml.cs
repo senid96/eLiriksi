@@ -24,8 +24,9 @@ namespace lirksi.Mobile.Views
         protected async override void OnAppearing()
         {
             base.OnAppearing();
-            await model.Init();
+            await model.GetPerformers();
             PerformerPicker.SelectedIndex = 0;
+            await model.GetAlbums();
         }
 
         private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -37,8 +38,11 @@ namespace lirksi.Mobile.Views
         private async void PerformerPicker_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            if (PerformerPicker.SelectedIndex == -1) { }
-            else {
+            if (PerformerPicker.SelectedIndex == -1)
+            {
+            }
+            else
+            {
                 await model.GetAlbums();
             }
         }

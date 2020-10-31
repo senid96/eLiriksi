@@ -18,7 +18,7 @@
             <Entry Text="{Binding Title}"></Entry>
             <Label Text="Keyword:" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
             <Entry Text="{Binding Text}"></Entry>
-            <Button Text="Search" Command="{Binding SearchCommand}" Padding="0,0,0,10"></Button>
+            <Button x:Name="SearchButton" Text="Search" Clicked="SearchButton_Clicked" Padding="0,0,0,10"></Button>
             
             <ListView ItemsSource="{Binding SongList}" ItemSelected="ListView_ItemSelected">
                 <ListView.ItemTemplate>

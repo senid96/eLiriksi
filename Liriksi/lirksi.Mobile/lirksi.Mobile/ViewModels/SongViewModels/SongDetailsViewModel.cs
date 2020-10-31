@@ -12,10 +12,13 @@ namespace lirksi.Mobile.ViewModels
 {
     public class SongDetailsViewModel:BaseViewModel
     {
+        /* Services */
         private readonly APIService _songService = new APIService("song");
         private readonly APIService _ratingService = new APIService("rating");
+
         public int _songId { get; set; }
 
+        /* ViewModels */
         private SongGetRequest _songDetail;
         public SongGetRequest SongDetail
         {
@@ -30,30 +33,37 @@ namespace lirksi.Mobile.ViewModels
             set { SetProperty(ref _userRate, value); }
         }
 
-        public SongDetailsViewModel()
-        {
-            UserRate = new UsersSongRate();
-            InitCommand = new Command(async () => await Init());
-        }
+        /*---------------------------------------- METHODS ------------------------------------------- */
 
-        public ICommand InitCommand { get; set; }
         public async Task Init()
         {
-            //get songDetails
+            await GetSongDetailsBySongId();
+            await GetSongRatings();
+        }
+        
+        public async Task GetSongDetailsBySongId()
+        {
             SongDetail = await _songService.GetById<SongGetRequest>(_songId, "GetSongById");
-
-            //get rate details
-            List<UserSongRateGetRequest> obj = await _ratingService.GetById<List<UserSongRateGetRequest>>(APIService._currentUser.Id, "GetSongRatesByUser");
-            UserRate.SongId = SongDetail.Id;
-            UserRate.UserId = APIService._currentUser.Id;
-          //  UserRate.Rate = obj.Find(x => x.SongId == UserRate.SongId && x.UserId == UserRate.UserId).Rate;
-           // UserRate.Comment = obj.Find(x => x.SongId == UserRate.SongId && x.UserId == UserRate.UserId).Comment;
-            //todo senid ovo treba da prilikom inita ako je vec ocjenjeno to prikaze.. ako nije omogucit .. to treba uradit
         }
 
-        public ICommand RateSongCommand { get; set; }
+        public async Task GetSongRatings()
+        {
+            //search object (userId, songId)
+            HasUserRatedRequest searchObj = new HasUserRatedRequest()
+            {
+                UserId = APIService._currentUser.Id,
+                Id = _songId
+            };
+
+            //set UserRate VM.. so if its already rated, it will display
+            UserRate = await _ratingService.Get<UsersSongRate>(searchObj, "GetRateBySongByUser");
+            
+        }
+
         public async Task RateSong()
         {
+            UserRate.SongId = _songId;
+            UserRate.UserId = APIService._currentUser.Id;
             await _ratingService.Insert<bool>(UserRate, "RateSong");
         }
     }

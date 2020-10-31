@@ -24,13 +24,14 @@ namespace lirksi.Mobile.Views
                 _albumId = albumId
             };
         }
+
         protected async override void OnAppearing()
         {
             base.OnAppearing();
             await model.Init();
         }
 
-        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private void SongList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var item = e.SelectedItem as SongGetRequest;
             Navigation.PushAsync(new SongDetails(item.Id));

@@ -21,10 +21,16 @@ namespace lirksi.Mobile.Views
             BindingContext = model = new SongViewModel();
         }
 
+        /* on song list click, open song details */
         private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var item = e.SelectedItem as SongGetRequest;
             await Navigation.PushAsync(new SongDetails(item.Id));
+        }
+
+        private async void SearchButton_Clicked(object sender, EventArgs e)
+        {
+            await model.SearchSongs();
         }
     }
 }

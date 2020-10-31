@@ -13,18 +13,24 @@ namespace lirksi.Mobile.ViewModels.RatingViewModels
 {
     public class RatingViewModel: BaseViewModel
     {
+        /* services */
         private readonly APIService _ratingService = new APIService("rating");
 
+
+        /* song and album list */
         public ObservableCollection<AverageRate> SongRateList { get; set; } = new ObservableCollection<AverageRate>();
         public ObservableCollection<AverageRate> AlbumRateList { get; set; } = new ObservableCollection<AverageRate>();
 
-        public RatingViewModel()
+
+        /*---------------------------------------- METHODS ------------------------------------------- */
+
+        public async Task Init()
         {
-            InitCommand = new Command(async () => await Init());
+            await GetTop10Songs();
+            await GetTop10Albums();
         }
 
-        public ICommand InitCommand { get; set; }
-        public async Task Init()
+        public async Task GetTop10Songs()
         {
             var songRateList = await _ratingService.Get<IEnumerable<AverageRate>>(null, "GetSongRates");
             SongRateList.Clear();
@@ -32,7 +38,10 @@ namespace lirksi.Mobile.ViewModels.RatingViewModels
             {
                 SongRateList.Add(item);
             }
+        }
 
+        public async Task GetTop10Albums()
+        {
             var albumRateList = await _ratingService.Get<IEnumerable<AverageRate>>(null, "GetAlbumRates");
             AlbumRateList.Clear();
             foreach (var item in albumRateList)

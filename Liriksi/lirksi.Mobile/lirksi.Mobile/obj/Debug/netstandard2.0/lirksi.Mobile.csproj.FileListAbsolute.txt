@@ -1,9 +1,3 @@
-C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\Debug\netstandard2.0\lirksi.Mobile.deps.json
-C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\Debug\netstandard2.0\lirksi.Mobile.dll
-C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\Debug\netstandard2.0\ref\lirksi.Mobile.dll
-C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\Debug\netstandard2.0\lirksi.Mobile.pdb
-C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\Debug\netstandard2.0\liriksi.Model.dll
-C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\Debug\netstandard2.0\liriksi.Model.pdb
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\lirksi.Mobile.csprojAssemblyReference.cache
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
@@ -22,8 +16,14 @@ C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\lirksi.Mobile.csproj.CoreCompileInputs.cache
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\lirksi.Mobile.AssemblyInfoInputs.cache
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\lirksi.Mobile.AssemblyInfo.cs
-C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\XamlC.stamp
-C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\lirksi.Mobile.csproj.CopyComplete
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\lirksi.Mobile.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\ref\lirksi.Mobile.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\lirksi.Mobile.pdb
+C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\Debug\netstandard2.0\lirksi.Mobile.deps.json
+C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\Debug\netstandard2.0\lirksi.Mobile.dll
+C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\Debug\netstandard2.0\ref\lirksi.Mobile.dll
+C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\Debug\netstandard2.0\lirksi.Mobile.pdb
+C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\Debug\netstandard2.0\liriksi.Model.dll
+C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\Debug\netstandard2.0\liriksi.Model.pdb
+C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\lirksi.Mobile.csproj.CopyComplete

@@ -35,7 +35,7 @@
                     <Label Text="{Binding Album.Performer.ArtisticName}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
                 </StackLayout>
                 <Label Text="Songs:" FontSize="Title" Padding="0, 10, 0, 0"></Label>
-                <ListView ItemsSource="{Binding SongList}" ItemSelected="ListView_ItemSelected" >
+                <ListView x:Name="SongList" ItemsSource="{Binding SongList}" ItemSelected="SongList_ItemSelected" >
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>

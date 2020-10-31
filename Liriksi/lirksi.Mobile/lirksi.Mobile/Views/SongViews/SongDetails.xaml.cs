@@ -30,11 +30,26 @@ namespace lirksi.Mobile.Views
         {
             base.OnAppearing();
             await model.Init();
+
+            //if its already rated, disable rate feature
+            if(model.UserRate != null)
+            {
+                PickerRate.IsEnabled = false;
+                Comment.IsEnabled = false;
+                Rate.IsEnabled = false;
+            }
+            else
+            {
+                //instance userRate VM, so it can be used with picker and rate feature
+                model.UserRate = new liriksi.Model.UsersSongRate();
+            }
         }
 
         private async void Rate_Clicked(object sender, EventArgs e)
         {
             await model.RateSong();
+            //call onAppearing to refresh rateFeature(to disable it)
+            OnAppearing();
         }
 
         private void PickerRate_SelectedIndexChanged(object sender, EventArgs e)

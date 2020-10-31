@@ -34,6 +34,7 @@
                     <Picker x:Name="PickerRate" 
                         Title="Rate this song: "
                         TitleColor="Black"
+                        SelectedIndex="{Binding UserRate.Rate}"
                         SelectedIndexChanged="PickerRate_SelectedIndexChanged">
                         <Picker.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
@@ -45,8 +46,8 @@
                             </x:Array>
                         </Picker.ItemsSource>
                     </Picker>
-                    <Editor Text="{Binding UserRate.Comment}" x:Name="Comment"  HeightRequest="20"></Editor>
-                    <Button Command="{Binding SongDetail.RateSongCommand}" Clicked="Rate_Clicked" Grid.Row="3" Text="Rate" x:Name="Rate"/>
+                    <Editor Text="{Binding UserRate.Comment}" x:Name="Comment" ></Editor>
+                    <Button Clicked="Rate_Clicked" Grid.Row="3" Text="Rate" x:Name="Rate"/>
                 </StackLayout>
             </Grid>
         </ScrollView>

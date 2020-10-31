@@ -11,16 +11,11 @@ namespace lirksi.Mobile.ViewModels
 {
     public class AlbumViewModel : BaseViewModel
     {
+        /* services */
         private readonly APIService _albumService = new APIService("album");
         private readonly APIService _performerService = new APIService("performer");
 
-        public AlbumViewModel()
-        {
-            //InitCommand = new Command(async() => await Init());        
-        }
-        public ObservableCollection<Album> AlbumList { get; set; } = new ObservableCollection<Album>();
-        public ObservableCollection<Performer> PerformerList { get; set; } = new ObservableCollection<Performer>();
-        
+       /* ViewModels */
         Performer _selectedPerformer;
         public Performer SelectedPerformer
         {
@@ -29,11 +24,12 @@ namespace lirksi.Mobile.ViewModels
             
         }
 
-        //public ICommand InitCommand { get; set; }
-        public async Task Init()
-        {
-            await GetPerformers();
-        }
+        /* Album and Performer list */
+        public ObservableCollection<Album> AlbumList { get; set; } = new ObservableCollection<Album>();
+        public ObservableCollection<Performer> PerformerList { get; set; } = new ObservableCollection<Performer>();
+
+
+        /*---------------------------------------- METHODS ------------------------------------------- */
 
         public async Task GetPerformers()
         {

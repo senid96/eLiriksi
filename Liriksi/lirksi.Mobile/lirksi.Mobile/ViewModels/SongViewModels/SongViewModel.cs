@@ -15,6 +15,7 @@ namespace lirksi.Mobile.ViewModels
     {
         private readonly APIService _songService = new APIService("song");
 
+        /* ViewModels */
         string _title = string.Empty;
         public string Title
         {
@@ -29,15 +30,12 @@ namespace lirksi.Mobile.ViewModels
             set { SetProperty(ref _text, value); }
         }
 
-        public SongViewModel()
-        {
-            SearchCommand = new Command(async () => await Search());
-        }
+        /* Song list */
         public ObservableCollection<SongGetRequest> SongList { get; set; } = new ObservableCollection<SongGetRequest>();
 
-        public ICommand SearchCommand { get; set; }
 
-        async Task Search()
+        /*---------------------------------------- METHODS ------------------------------------------- */
+        public async Task SearchSongs()
         {
             SongSearchRequest req = new SongSearchRequest()
             {
@@ -45,6 +43,11 @@ namespace lirksi.Mobile.ViewModels
                 Text = Text
             };
 
+            await GetSongsBySearchParams(req);
+        }
+
+        public async Task GetSongsBySearchParams(SongSearchRequest req)
+        {
             SongList.Clear();
             List<SongGetRequest> list = await _songService.Get<List<SongGetRequest>>(req, null);
             if (list.Count != 0)
@@ -54,7 +57,8 @@ namespace lirksi.Mobile.ViewModels
                     SongList.Add(item);
                 }
             }
-
         }
+
+
     }
 }
