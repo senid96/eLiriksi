@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:vm="clr-namespace:lirksi.Mobile.ViewModels"
              mc:Ignorable="d"
-             x:Class="lirksi.Mobile.Views.AlbumPage">
+             x:Class="lirksi.Mobile.Views.AlbumPage"
+             Title="{Binding Title}">
     <ContentPage.BindingContext>
         <vm:AlbumViewModel />
     </ContentPage.BindingContext>
@@ -15,7 +16,7 @@
             <Picker 
                 x:Name="PerformerPicker"
                 ItemsSource="{Binding PerformerList}" 
-                ItemDisplayBinding="{Binding Name}" 
+                ItemDisplayBinding="{Binding ArtisticName}" 
                 SelectedItem="{Binding SelectedPerformer}"
                 SelectedIndexChanged="PerformerPicker_SelectedIndexChanged"
                 />

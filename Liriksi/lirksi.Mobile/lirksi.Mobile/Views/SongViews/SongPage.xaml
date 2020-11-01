@@ -6,7 +6,8 @@
              xmlns:vm="clr-namespace:lirksi.Mobile.ViewModels" 
              xmlns:converters="clr-namespace:lirksi.Mobile.Converters"
              mc:Ignorable="d"
-             x:Class="lirksi.Mobile.Views.SongPage">
+             x:Class="lirksi.Mobile.Views.SongPage"
+             Title="{Binding Title}">
     <ContentPage.BindingContext>
         <vm:SongViewModel />
     </ContentPage.BindingContext>
@@ -15,7 +16,7 @@
         <ScrollView>
             <StackLayout Padding="10" >
             <Label Text="Title:" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
-            <Entry Text="{Binding Title}"></Entry>
+            <Entry Text="{Binding SongTitle}"></Entry>
             <Label Text="Keyword:" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
             <Entry Text="{Binding Text}"></Entry>
             <Button x:Name="SearchButton" Text="Search" Clicked="SearchButton_Clicked" Padding="0,0,0,10"></Button>

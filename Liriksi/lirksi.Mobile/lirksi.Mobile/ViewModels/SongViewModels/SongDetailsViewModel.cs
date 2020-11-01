@@ -33,6 +33,11 @@ namespace lirksi.Mobile.ViewModels
             set { SetProperty(ref _userRate, value); }
         }
 
+        public SongDetailsViewModel()
+        {
+            Title = "Song details";
+        }
+
         /*---------------------------------------- METHODS ------------------------------------------- */
 
         public async Task Init()

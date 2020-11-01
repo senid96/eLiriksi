@@ -23,7 +23,9 @@ namespace lirksi.Mobile.Views
                 new HomeMenuItem {Id = MenuItemType.MyProfile, Title="MyProfile" },
                 new HomeMenuItem {Id = MenuItemType.Songs, Title="Songs" },
                 new HomeMenuItem {Id = MenuItemType.Albums, Title="Albums" },
-                new HomeMenuItem {Id = MenuItemType.Ratings, Title="Rating" }
+                new HomeMenuItem {Id = MenuItemType.Ratings, Title="Rating" },
+                new HomeMenuItem {Id = MenuItemType.Performers, Title="Performers" },
+                new HomeMenuItem {Id = MenuItemType.About, Title="About" }
             };
 
             ListViewMenu.ItemsSource = menuItems;

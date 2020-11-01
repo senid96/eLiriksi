@@ -29,7 +29,10 @@ namespace lirksi.Mobile.ViewModels
         /* song list */
         public ObservableCollection<SongGetRequest> SongList { get; set; } = new ObservableCollection<SongGetRequest>();
 
-
+        public AlbumDetailsViewModel()
+        {
+            Title = "Album details";
+        }
 
         /*---------------------------------------- METHODS ------------------------------------------- */
 

@@ -12,5 +12,10 @@ namespace lirksi.Mobile.ViewModels
     public class MyProfileViewModel: BaseViewModel
     {
         public User User { get; set; }
+
+        public MyProfileViewModel()
+        {
+            Title = "My profile";
+        }
     }
 }

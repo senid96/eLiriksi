@@ -21,6 +21,10 @@ namespace lirksi.Mobile.ViewModels.RatingViewModels
         public ObservableCollection<AverageRate> SongRateList { get; set; } = new ObservableCollection<AverageRate>();
         public ObservableCollection<AverageRate> AlbumRateList { get; set; } = new ObservableCollection<AverageRate>();
 
+        public RatingViewModel()
+        {
+            Title = "Ratings";
+        }
 
         /*---------------------------------------- METHODS ------------------------------------------- */
 

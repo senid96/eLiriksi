@@ -6,7 +6,8 @@
              xmlns:converters="clr-namespace:lirksi.Mobile.Converters"
              xmlns:vm="clr-namespace:lirksi.Mobile.ViewModels"              
              mc:Ignorable="d"
-             x:Class="lirksi.Mobile.Views.SongDetails">
+             x:Class="lirksi.Mobile.Views.SongDetails"
+             Title="{Binding Title}">
     <ContentPage.BindingContext>
         <vm:SongDetailsViewModel />
     </ContentPage.BindingContext>

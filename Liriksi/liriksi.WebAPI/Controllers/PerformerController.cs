@@ -21,7 +21,7 @@ namespace liriksi.WebAPI.Controllers
         {
             _service = service;
         }
-        [HttpGet]
+        [HttpGet("GetPerformers")]
         public ActionResult<List<Performer>> Get([FromQuery]PerformerSearchRequest obj)
         {
             return _service.Get(obj);

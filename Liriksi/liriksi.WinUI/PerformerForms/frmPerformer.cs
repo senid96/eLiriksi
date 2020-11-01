@@ -24,7 +24,7 @@ namespace liriksi.WinUI.PerformerForms
 
         private async void frmPerformer_Load(object sender, EventArgs e)
         {
-            dgvPerformer.DataSource = await _performerService.Get<List<Performer>>(null, null);
+            dgvPerformer.DataSource = await _performerService.Get<List<Performer>>(null, "GetPerformers");
         }
 
         private async void btnSearchPerformer_Click(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace liriksi.WinUI.PerformerForms
                 ArtisticName = txtboxArtisticName.Text
             };
 
-            dgvPerformer.DataSource = await _performerService.Get<List<Performer>>(searchObj, null);
+            dgvPerformer.DataSource = await _performerService.Get<List<Performer>>(searchObj, "GetPerformers");
         }
     }
 }

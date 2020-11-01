@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:lirksi.Mobile.Converters"
+             x:Class="lirksi.Mobile.Views.PerformerViews.PerformerDetails"
+             Title="{Binding Title}">
+    <ContentPage.Resources>
+        <converters:ImageConverter x:Key="imgConv"></converters:ImageConverter>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="{Binding PerformerDetails.Image, Converter={StaticResource imgConv}}" Aspect="AspectFit" VerticalOptions="Start" HorizontalOptions="Start" ></Image>
+            <Label Text="Performer details:" FontSize="Title" ></Label>
+            <Label Text="Name:" Style="{DynamicResource ListItemTextStyle}" TextColor="Black"></Label>
+            <Label Text="{Binding PerformerDetails.ArtisticName}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
+            <Label Text="{Binding PerformerDetails.About}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

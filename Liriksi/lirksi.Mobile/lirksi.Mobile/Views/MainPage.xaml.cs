@@ -43,6 +43,12 @@ namespace lirksi.Mobile.Views
                     case (int)MenuItemType.Ratings:
                         MenuPages.Add(id, new NavigationPage(new Ratings()));
                         break;
+                    case (int)MenuItemType.Performers:
+                        MenuPages.Add(id, new NavigationPage(new PerformerViews.PerformerPage()));
+                        break;
+                    case (int)MenuItemType.About:
+                        MenuPages.Add(id, new NavigationPage(new AboutPage()));
+                        break;
                 }
             }
 

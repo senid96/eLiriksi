@@ -4,15 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:converters="clr-namespace:lirksi.Mobile.Converters" 
-             xmlns:vm="clr-namespace:lirksi.Mobile.ViewModels"
              mc:Ignorable="d"
-             x:Class="lirksi.Mobile.Views.AlbumDetails">
+             x:Class="lirksi.Mobile.Views.AlbumDetails"
+             Title="{Binding Title}">
     <ContentPage.Resources>
         <converters:ImageConverter x:Key="imgConv"></converters:ImageConverter>
     </ContentPage.Resources>
-    <ContentPage.BindingContext>
-        <vm:AlbumDetailsViewModel />
-    </ContentPage.BindingContext>
+  
     <ContentPage.Content>
         <ScrollView>
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="10">

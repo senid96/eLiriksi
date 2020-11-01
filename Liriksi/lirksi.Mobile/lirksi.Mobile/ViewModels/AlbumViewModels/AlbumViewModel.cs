@@ -28,12 +28,16 @@ namespace lirksi.Mobile.ViewModels
         public ObservableCollection<Album> AlbumList { get; set; } = new ObservableCollection<Album>();
         public ObservableCollection<Performer> PerformerList { get; set; } = new ObservableCollection<Performer>();
 
+        public AlbumViewModel()
+        {
+            Title = "Album";
+        }
 
         /*---------------------------------------- METHODS ------------------------------------------- */
 
         public async Task GetPerformers()
         {
-            var performerList = await _performerService.Get<IEnumerable<Performer>>(null, null);
+            var performerList = await _performerService.Get<IEnumerable<Performer>>(null, "GetPerformers");
             PerformerList.Clear();
             foreach (var item in performerList)
             {

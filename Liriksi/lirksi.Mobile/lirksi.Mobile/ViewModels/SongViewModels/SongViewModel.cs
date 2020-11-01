@@ -16,11 +16,11 @@ namespace lirksi.Mobile.ViewModels
         private readonly APIService _songService = new APIService("song");
 
         /* ViewModels */
-        string _title = string.Empty;
-        public string Title
+        string _songTitle = string.Empty;
+        public string SongTitle
         {
-            get { return _title; }
-            set { SetProperty(ref _title, value); }
+            get { return _songTitle; }
+            set { SetProperty(ref _songTitle, value); }
         }
 
         string _text = string.Empty;
@@ -33,13 +33,17 @@ namespace lirksi.Mobile.ViewModels
         /* Song list */
         public ObservableCollection<SongGetRequest> SongList { get; set; } = new ObservableCollection<SongGetRequest>();
 
+        public SongViewModel()
+        {
+            Title = "Songs";
+        }
 
         /*---------------------------------------- METHODS ------------------------------------------- */
         public async Task SearchSongs()
         {
             SongSearchRequest req = new SongSearchRequest()
             {
-                Title = Title,
+                Title = SongTitle,
                 Text = Text
             };
 

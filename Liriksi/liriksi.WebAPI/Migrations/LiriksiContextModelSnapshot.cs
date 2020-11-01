@@ -96,6 +96,8 @@ namespace liriksi.WebAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("About");
+
                     b.Property<string>("ArtisticName");
 
                     b.Property<byte[]>("Image");

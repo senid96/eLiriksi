@@ -28,7 +28,7 @@ namespace liriksi.WinUI.AlbumForms
 
         private async void frmAlbumDetails_Load(object sender, EventArgs e)
         {
-            Album album = await _albumService.GetById<Album>(_id, null);
+            Album album = await _albumService.GetById<Album>(_id, "GetAlbumById");
             txtTitle.Text = album.Name;
             txtYearRelease.Text = album.YearRelease.ToString();
             txtGenre.Text = album.Genre.Name;
