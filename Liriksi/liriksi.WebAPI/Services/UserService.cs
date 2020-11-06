@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 using System.Text;
+using liriksi.Model.Requests.user;
 
 namespace liriksi.WebAPI.Services
 {
@@ -62,7 +63,7 @@ namespace liriksi.WebAPI.Services
             return _mapper.Map<UserGetRequest>(_context.User.Last());
         }
 
-        public UserGetRequest Update(int id, UserInsertRequest obj)
+        public UserGetRequest Update(int id, UserUpdateRequest obj)
         {
             var entity = _context.User.Find(id);
             if (obj != null)
@@ -70,9 +71,9 @@ namespace liriksi.WebAPI.Services
                 entity.Username = obj.Username;
                 entity.Name = obj.Name;
                 entity.PhoneNumber = obj.PhoneNumber;
-                entity.Status = obj.Status;
                 entity.Surname = obj.Surname;
                 entity.Email = obj.Email;
+                entity.Image = obj.Image;
                 _context.SaveChanges();
                 return _mapper.Map<UserGetRequest>(entity);
             }

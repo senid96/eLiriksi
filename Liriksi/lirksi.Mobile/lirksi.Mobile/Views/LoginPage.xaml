@@ -3,12 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:vm="clr-namespace:lirksi.Mobile.ViewModels"
              mc:Ignorable="d"
              x:Class="lirksi.Mobile.Views.LoginPage">
-    <ContentPage.BindingContext>
-        <vm:LoginViewModel />
-    </ContentPage.BindingContext>
 
     <ContentPage.Content>
         <StackLayout Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
@@ -16,7 +12,7 @@
             <Entry Text="{Binding Username}"></Entry>
             <Label Text="Password:"/>
             <Entry Text="{Binding Password}"></Entry>
-            <Button Command="{Binding LoginCommand}" Text="Login"></Button>
+            <Button x:Name="Login" Text="Login" Clicked="Login_Clicked"></Button>
             <Label Text="{Binding Username}"></Label>
         </StackLayout>
     </ContentPage.Content>

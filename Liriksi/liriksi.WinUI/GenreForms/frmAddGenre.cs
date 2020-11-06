@@ -27,6 +27,7 @@ namespace liriksi.WinUI.UtilForms
             this.Close();
         }
 
+        
         private void frmAddGenre_Load(object sender, EventArgs e)
         {
 

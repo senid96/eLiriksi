@@ -7,7 +7,7 @@ using Xamarin.Forms;
 
 namespace lirksi.Mobile.Converters
 {
-    class ImageConverter : IValueConverter
+    public class ImageConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {

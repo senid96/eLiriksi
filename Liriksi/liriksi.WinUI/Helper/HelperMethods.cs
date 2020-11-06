@@ -28,5 +28,12 @@ namespace liriksi.WinUI.Helper
 
             
         }
+
+        public static void OpenForm(string frmName, string frmNamespace)
+        {
+            //genericko otvaranje formi jednom metodom
+            var form = Activator.CreateInstance(Type.GetType(frmNamespace + "."+ frmName)) as Form;
+            form.Show();
+        }
     }
 }

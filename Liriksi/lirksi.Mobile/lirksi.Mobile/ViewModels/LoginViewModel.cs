@@ -1,4 +1,5 @@
-﻿using lirksi.Mobile.Views;
+﻿using liriksi.Model.Requests;
+using lirksi.Mobile.Views;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,11 +11,10 @@ namespace lirksi.Mobile.ViewModels
 {
     public class LoginViewModel : BaseViewModel
     {
-        private readonly APIService _loginService = new APIService("User");
-        public LoginViewModel()
-        {
-            LoginCommand = new Command(async () => await Login());
-        }
+        /* service */
+        private readonly APIService _userService = new APIService("User");
+
+        /* ViewModels */
         string _username = string.Empty;
         public string Username
         {
@@ -29,10 +29,9 @@ namespace lirksi.Mobile.ViewModels
             set { SetProperty(ref _password, value); }
         }
 
-        public ICommand LoginCommand { get; set; }
-        async Task Login()
+        /* Methods */
+        public async Task Login()
         {
-            IsBusy = true;
             //APIService._username = Username;     
             //APIService._password = Password;
 
@@ -41,7 +40,7 @@ namespace lirksi.Mobile.ViewModels
             APIService._password = "testiranje";
             try
             {
-                APIService._currentUser = await _loginService.Get<liriksi.Model.User>(null, "GetMyProfile");
+                APIService._currentUser = await _userService.Get<UserGetRequest>(null, "GetMyProfile");
                 if (APIService._currentUser != null)
                 {
                     Application.Current.MainPage = new MainPage();

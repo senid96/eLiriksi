@@ -150,6 +150,7 @@ class MonoPackageManager_Resources {
 		"Microsoft.Extensions.WebEncoders.dll",
 		"Microsoft.Net.Http.Headers.dll",
 		"Newtonsoft.Json.dll",
+		"Plugin.Media.dll",
 		"Swashbuckle.AspNetCore.dll",
 		"Swashbuckle.AspNetCore.Swagger.dll",
 		"Swashbuckle.AspNetCore.SwaggerGen.dll",

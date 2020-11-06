@@ -8,17 +8,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("lirksi.Mobile.Views.MyProfile.xaml", "Views/MyProfile.xaml", typeof(global::lirksi.Mobile.Views.MyProfile))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("lirksi.Mobile.Views.MyProfileViews.MyProfile.xaml", "Views/MyProfileViews/MyProfile.xaml", typeof(global::lirksi.Mobile.Views.MyProfile))]
 
 namespace lirksi.Mobile.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\MyProfile.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\MyProfileViews\\MyProfile.xaml")]
     public partial class MyProfile : global::Xamarin.Forms.ContentPage {
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Button EditProfile;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MyProfile));
+            EditProfile = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "EditProfile");
         }
     }
 }

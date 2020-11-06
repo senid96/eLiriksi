@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:lirksi.Mobile.Converters"
+             x:Class="lirksi.Mobile.Views.MyProfile"
+             Title="{Binding Title}">
+    <ContentPage.Resources>
+        <converters:ImageConverter x:Key="imgConv"></converters:ImageConverter>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView >
+            <StackLayout>
+                <Image Source="{Binding User.Image, Converter={StaticResource imgConv}}" WidthRequest="300" HeightRequest="300"></Image>
+                <Label Text="Name: "></Label>
+                <Label Text="{Binding User.Name}" ></Label>
+                <Label Text="Surname: "></Label>
+                <Label Text="{Binding User.Surname}" ></Label>
+                <Label Text="Email: "></Label>
+                <Label Text="{Binding User.Email}"></Label>
+                <Label Text="Phone:"></Label>
+                <Label Text="{Binding User.PhoneNumber}"></Label>
+                <Label Text="City: "></Label>
+                <Label Text="{Binding User.City.Name}"></Label>
+                <Button Text="Edit profile" x:Name="EditProfile" Clicked="EditProfile_Clicked"></Button>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

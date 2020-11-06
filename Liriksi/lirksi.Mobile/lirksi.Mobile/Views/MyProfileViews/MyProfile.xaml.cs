@@ -1,7 +1,10 @@
 ﻿using liriksi.Model.Requests;
 using lirksi.Mobile.ViewModels;
+using lirksi.Mobile.Views.MyProfileViews;
+using Plugin.Media;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,10 +21,17 @@ namespace lirksi.Mobile.Views
         public MyProfile ()
 		{
 			InitializeComponent ();
-            BindingContext = model = new MyProfileViewModel()
-            {
-                User = APIService._currentUser
-            };
+            BindingContext = model = new MyProfileViewModel();
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            model.LoadUser();
+        }
+
+        private void EditProfile_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new EditProfile());
         }
     }
 }

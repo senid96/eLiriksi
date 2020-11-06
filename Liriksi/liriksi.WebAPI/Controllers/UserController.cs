@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using liriksi.Model;
 using liriksi.Model.Requests;
+using liriksi.Model.Requests.user;
 using liriksi.WebAPI.Services;
 using liriksi.WebAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
@@ -44,7 +45,7 @@ namespace liriksi.WebAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public UserGetRequest Update(int id, UserInsertRequest obj)
+        public UserGetRequest Update(int id, UserUpdateRequest obj)
         {
            return _service.Update(id, obj);
         }

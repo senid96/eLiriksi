@@ -11,7 +11,7 @@ public class APIService
 {
     public static string _username { get; set; }
     public static string _password { get; set; }
-    public static User _currentUser { get; set; }
+    public static UserGetRequest _currentUser { get; set; }
     public string _route { get; set; }
 #if DEBUG
     //android

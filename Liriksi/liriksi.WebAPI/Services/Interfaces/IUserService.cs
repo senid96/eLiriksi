@@ -1,5 +1,6 @@
 ﻿using liriksi.Model;
 using liriksi.Model.Requests;
+using liriksi.Model.Requests.user;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace liriksi.WebAPI.Services
         List<UserGetRequest> Get(UserSearchRequest obj);
         UserGetRequest Get(int id);
         UserGetRequest Insert(UserInsertRequest obj);
-        UserGetRequest Update(int id, UserInsertRequest obj);
+        UserGetRequest Update(int id, UserUpdateRequest obj);
         bool ChangeUserStatus(int id, bool status);
         List<UserType> GetUserTypes();
         User Authenticate(string username, string pass);

@@ -202,5 +202,7 @@ namespace liriksi.WinUI
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }
+
+       
     }
 }

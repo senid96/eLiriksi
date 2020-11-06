@@ -11,11 +11,21 @@ namespace lirksi.Mobile.ViewModels
 {
     public class MyProfileViewModel: BaseViewModel
     {
-        public User User { get; set; }
+        private UserGetRequest _user;
+        public UserGetRequest User
+        {
+            get { return _user; }
+            set { SetProperty(ref _user, value); }
+        }
 
         public MyProfileViewModel()
         {
             Title = "My profile";
+        }
+
+        public void LoadUser()
+        {
+            User =  APIService._currentUser;
         }
     }
 }

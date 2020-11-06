@@ -1,4 +1,5 @@
-﻿using System;
+﻿using lirksi.Mobile.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,16 @@ namespace lirksi.Mobile.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
+        LoginViewModel model { get; set; }
         public LoginPage()
         {
             InitializeComponent();
+            BindingContext = model = new LoginViewModel();
+        }
+
+        private async void Login_Clicked(object sender, EventArgs e)
+        {
+            await model.Login();
         }
     }
 }

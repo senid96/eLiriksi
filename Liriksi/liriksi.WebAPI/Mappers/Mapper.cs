@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using liriksi.Model;
 using liriksi.Model.Requests;
+using liriksi.Model.Requests.user;
 
 namespace liriksi.WebAPI.Mappers
 {
@@ -13,6 +14,7 @@ namespace liriksi.WebAPI.Mappers
             CreateMap<User, UserInsertRequest>().ReverseMap();
             CreateMap<UserInsertRequest, UserGetRequest>().ReverseMap();
             CreateMap<User, UserSearchRequest>().ReverseMap();
+            CreateMap<UserGetRequest, UserUpdateRequest>().ReverseMap();
           
             //song
             CreateMap<Song, SongInsertRequest > ().ReverseMap();
