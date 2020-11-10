@@ -1,5 +1,6 @@
 ﻿using liriksi.Model.Requests;
 using lirksi.Mobile.ViewModels;
+using lirksi.Mobile.Views.SongViews;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,12 @@ namespace lirksi.Mobile.Views
             BindingContext = model = new SongViewModel();
         }
 
+        protected async override void OnAppearing()
+        {
+            base.OnAppearing();
+            await model.GetSongsBySearchParams(null);
+        }
+
         /* on song list click, open song details */
         private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
@@ -31,6 +38,11 @@ namespace lirksi.Mobile.Views
         private async void SearchButton_Clicked(object sender, EventArgs e)
         {
             await model.SearchSongs();
+        }
+
+        private async void AddSongBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AddSong());
         }
     }
 }

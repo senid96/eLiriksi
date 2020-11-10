@@ -14,7 +14,7 @@
 
     <ContentPage.Content >
         <ScrollView>
-            <StackLayout Padding="10" >
+            <StackLayout>
             <Label Text="Title:" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
             <Entry Text="{Binding SongTitle}"></Entry>
             <Label Text="Keyword:" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
@@ -33,6 +33,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Button x:Name="AddSongBtn" Text="Add new" Clicked="AddSongBtn_Clicked"></Button>
         </StackLayout>
         </ScrollView>
     </ContentPage.Content>

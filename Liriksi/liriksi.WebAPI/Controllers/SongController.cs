@@ -42,7 +42,7 @@ namespace liriksi.WebAPI.Controllers
             return _songService.GetSongsByAlbum(id);
         }
 
-        [HttpPost]
+        [HttpPost("AddSong")]
         public ActionResult<SongGetRequest> Insert(SongInsertRequest song)
         {
             return _songService.Insert(song);
