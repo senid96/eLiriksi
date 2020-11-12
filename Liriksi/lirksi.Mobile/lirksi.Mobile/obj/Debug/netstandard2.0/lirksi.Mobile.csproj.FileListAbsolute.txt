@@ -31,3 +31,5 @@ C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\ref\lirksi.Mobile.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\lirksi.Mobile.pdb
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\SongViews\AddSong.xaml.g.cs
+C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\AlbumViews\AddAlbum.xaml.g.cs
+C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\PerformerViews\AddPerformer.xaml.g.cs

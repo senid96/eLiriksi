@@ -33,7 +33,7 @@ namespace liriksi.WebAPI.Controllers
             return _service.GetById(id);
         }
 
-        [HttpPost]
+        [HttpPost("AddPerformer")]
         public ActionResult<Performer>Insert(PerformerInsertRequest obj)
         {
             return _service.Insert(obj);

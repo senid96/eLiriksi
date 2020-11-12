@@ -31,6 +31,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Button Text="Add new" x:Name="AddAlbumBtn" Clicked="AddAlbumBtn_Clicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

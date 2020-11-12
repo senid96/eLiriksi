@@ -35,7 +35,7 @@ namespace liriksi.WebAPI.Controllers
             return _service.GetById(id);
         }
 
-        [HttpPost]
+        [HttpPost("InsertAlbum")]
         public ActionResult<Album> Insert([FromBody]AlbumInsertRequest album)
         {
             return _service.Insert(album);

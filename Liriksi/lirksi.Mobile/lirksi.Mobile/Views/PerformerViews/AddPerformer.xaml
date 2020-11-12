@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:lirksi.Mobile.Converters"
+             x:Class="lirksi.Mobile.Views.PerformerViews.AddPerformer"
+             Title="{Binding Title}">
+    <ContentPage.Resources>
+        <converters:ImageConverter x:Key="imgConv"></converters:ImageConverter>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Label Text="Name"></Label>
+            <Entry x:Name="Name" Text="{Binding PerformerReq.Name}"></Entry>
+
+            <Label Text="Surname"></Label>
+            <Entry x:Name="Surname" Text="{Binding PerformerReq.Surname}"></Entry>
+
+            <Label Text="ArtisticName"></Label>
+            <Entry x:Name="ArtisticName" Text="{Binding PerformerReq.ArtisticName}"></Entry>
+
+            <Label Text="About"></Label>
+            <Editor x:Name="About" HeightRequest="150" Text="{Binding PerformerReq.About}"></Editor>
+
+            <Image x:Name="AlbumImage" Source="{Binding PerformerReq.Image, Converter={StaticResource imgConv}}" WidthRequest="200" HeightRequest="200"></Image>
+            <Button x:Name="UploadImage" Text="Upload image" Clicked="UploadImage_Clicked"></Button>
+
+            <Button Text="Save" x:Name="SavePerformerBtn" Clicked="SavePerformerBtn_Clicked"></Button>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

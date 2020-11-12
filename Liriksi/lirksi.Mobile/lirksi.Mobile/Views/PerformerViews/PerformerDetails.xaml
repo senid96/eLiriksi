@@ -9,7 +9,7 @@
     </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
-            <Image Source="{Binding PerformerDetails.Image, Converter={StaticResource imgConv}}" Aspect="AspectFit" VerticalOptions="Start" HorizontalOptions="Start" ></Image>
+            <Image Source="{Binding PerformerDetails.Image, Converter={StaticResource imgConv}}" WidthRequest="200" HeightRequest="200"></Image>
             <Label Text="Performer details:" FontSize="Title" ></Label>
             <Label Text="Name:" Style="{DynamicResource ListItemTextStyle}" TextColor="Black"></Label>
             <Label Text="{Binding PerformerDetails.ArtisticName}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>

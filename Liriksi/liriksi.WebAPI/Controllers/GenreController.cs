@@ -21,7 +21,7 @@ namespace liriksi.WebAPI.Controllers
             _genreService = service;
         }
 
-        [HttpGet]
+        [HttpGet("GetGenres")]
         public ActionResult<List<Genre>> Get([FromQuery]string genre)
         {
             return _genreService.Get(genre);

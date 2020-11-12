@@ -1,5 +1,6 @@
 ﻿using liriksi.Model;
 using lirksi.Mobile.ViewModels;
+using lirksi.Mobile.Views.AlbumViews;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,6 +46,11 @@ namespace lirksi.Mobile.Views
             {
                 await model.GetAlbums();
             }
+        }
+
+        private void AddAlbumBtn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AddAlbum());
         }
     }
 }

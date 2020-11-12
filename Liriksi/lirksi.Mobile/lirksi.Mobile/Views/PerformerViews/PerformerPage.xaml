@@ -6,6 +6,15 @@
     
     <ContentPage.Content>
         <StackLayout>
+            <Label Text="Name"></Label>
+            <Entry x:Name="PerformerName" Text="{Binding PerformerSearchReq.Name}" TextChanged="PerformerName_TextChanged" ></Entry>
+            
+            <Label Text="Surname"></Label>
+            <Entry x:Name="PerformerSurname" Text="{Binding PerformerSearchReq.Surname}" TextChanged="PerformerSurname_TextChanged"></Entry>
+
+            <Label Text="Artistic name"></Label>
+            <Entry x:Name="PerformerArtisticName" Text="{Binding PerformerSearchReq.ArtisticName}" TextChanged="PerformerArtisticName_TextChanged"></Entry>
+
             <ListView ItemsSource="{Binding PerformerList}" x:Name="PerformerList" ItemSelected="PerformerList_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -17,7 +26,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
+            <Button Text="Add new" x:Name="AddPerformerBtn" Clicked="AddPerformerBtn_Clicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

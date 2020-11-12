@@ -32,5 +32,26 @@ namespace lirksi.Mobile.Views.PerformerViews
             var item = e.SelectedItem as Performer;
             await Navigation.PushAsync(new PerformerDetails(item.Id));
         }
+
+        private async void PerformerName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            await model.GetPerformersBySearchObj();
+        }
+
+        private async void PerformerSurname_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            await model.GetPerformersBySearchObj();
+
+        }
+
+        private async void PerformerArtisticName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            await model.GetPerformersBySearchObj();
+        }
+
+        private void AddPerformerBtn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AddPerformer());
+        }
     }
 }
