@@ -1,5 +1,6 @@
 ﻿using liriksi.Model;
 using liriksi.Model.Requests;
+using liriksi.Model.Requests.rates;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -15,6 +16,7 @@ namespace lirksi.Mobile.ViewModels
         /* services */
         private readonly APIService _songService = new APIService("song");
         private readonly APIService _albumService = new APIService("album");
+        private readonly APIService _ratingService = new APIService("rating");
 
         public int _albumId { get; set; }
 
@@ -24,6 +26,13 @@ namespace lirksi.Mobile.ViewModels
         {
             get { return _album; }
             set { SetProperty(ref _album, value); }
+        }
+
+        private UsersAlbumRate _userRate;
+        public UsersAlbumRate UserRate
+        {
+            get { return _userRate; }
+            set { SetProperty(ref _userRate, value); }
         }
 
         /* song list */
@@ -40,6 +49,7 @@ namespace lirksi.Mobile.ViewModels
         {
             await GetAlbumById();
             await GetSongs();
+            await GetAlbumRatings();
         }
 
         public async Task GetAlbumById()
@@ -55,6 +65,27 @@ namespace lirksi.Mobile.ViewModels
                 {
                     SongList.Add(item);
                 }
+        }
+
+        public async Task GetAlbumRatings()
+        {
+            //search object (userId, albumId)
+            HasUserRatedRequest searchObj = new HasUserRatedRequest()
+            {
+                UserId = APIService._currentUser.Id,
+                Id = _albumId
+            };
+
+            //set UserRate VM.. so if its already rated, it will display
+            UserRate = await _ratingService.Get<UsersAlbumRate>(searchObj, "GetRateByAlbumByUser");
+
+        }
+
+        public async Task RateAlbum()
+        {
+            UserRate.AlbumId = _albumId;
+            UserRate.UserId = APIService._currentUser.Id;
+            await _ratingService.Insert<bool>(UserRate, "RateAlbum");
         }
 
     }

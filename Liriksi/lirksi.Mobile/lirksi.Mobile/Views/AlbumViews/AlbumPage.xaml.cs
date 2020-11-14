@@ -16,6 +16,7 @@ namespace lirksi.Mobile.Views
     public partial class AlbumPage : ContentPage
     {
         public AlbumViewModel model { get; set; }
+
         public AlbumPage()
         {
             InitializeComponent();
@@ -52,5 +53,6 @@ namespace lirksi.Mobile.Views
         {
             Navigation.PushAsync(new AddAlbum());
         }
+        
     }
 }

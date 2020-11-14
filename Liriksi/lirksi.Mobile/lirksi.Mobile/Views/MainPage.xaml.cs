@@ -6,7 +6,6 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 using lirksi.Mobile.Models;
-using lirksi.Mobile.Views.RatingViews;
 
 namespace lirksi.Mobile.Views
 {
@@ -40,14 +39,20 @@ namespace lirksi.Mobile.Views
                     case (int)MenuItemType.MyProfile:
                         MenuPages.Add(id, new NavigationPage(new MyProfile()));
                         break;
-                    case (int)MenuItemType.Ratings:
-                        MenuPages.Add(id, new NavigationPage(new Ratings()));
-                        break;
                     case (int)MenuItemType.Performers:
                         MenuPages.Add(id, new NavigationPage(new PerformerViews.PerformerPage()));
                         break;
                     case (int)MenuItemType.About:
                         MenuPages.Add(id, new NavigationPage(new AboutPage()));
+                        break;
+                    case (int)MenuItemType.AlbumRatings:
+                        MenuPages.Add(id, new NavigationPage(new AlbumRatingsViews.AlbumRatings()));
+                        break;
+                    case (int)MenuItemType.SongRatings:
+                        MenuPages.Add(id, new NavigationPage(new SongRatingsViews.SongRatings()));
+                        break;
+                    case (int)MenuItemType.Recommend:
+                        MenuPages.Add(id, new NavigationPage(new Recommend()));
                         break;
                 }
             }

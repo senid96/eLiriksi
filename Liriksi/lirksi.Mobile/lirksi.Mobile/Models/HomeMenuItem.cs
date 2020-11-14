@@ -9,9 +9,11 @@ namespace lirksi.Mobile.Models
         Songs,
         Albums,
         MyProfile,
-        Ratings,
         Performers,
-        About
+        About,
+        AlbumRatings,
+        SongRatings,
+        Recommend
     }
     public class HomeMenuItem
     {

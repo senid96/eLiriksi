@@ -83,5 +83,11 @@ namespace liriksi.WebAPI.Controllers
             return _service.GetRateBySongByUser(obj);
         }
 
+        [HttpGet("GetRateByAlbumByUser")]
+        public UsersAlbumRate GetRateByAlbumByUser([FromQuery]HasUserRatedRequest obj)
+        {
+            return _service.GetRateByAlbumByUser(obj);
+        }
+
     }
 }

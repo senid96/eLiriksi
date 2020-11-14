@@ -44,7 +44,23 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                
+                <Picker x:Name="PickerRate" 
+                        Title="Rate this album: "
+                        TitleColor="Black"
+                        SelectedIndex="{Binding UserRate.Rate}"
+                        SelectedIndexChanged="PickerRate_SelectedIndexChanged">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>1</x:String>
+                            <x:String>2</x:String>
+                            <x:String>3</x:String>
+                            <x:String>4</x:String>
+                            <x:String>5</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Editor Text="{Binding UserRate.Comment}" x:Name="Comment" ></Editor>
+                <Button Clicked="Rate_Clicked" Text="Rate" x:Name="Rate"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

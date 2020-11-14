@@ -107,15 +107,18 @@ namespace liriksi.WebAPI.Services
         //get top 10
         public List<AverageRate> GetSongRates()
         {
+
+            //
             List<AverageRate> list = _context.UsersSongRates
-                .Join(_context.Song,
+                .Join(
+                _context.Song,
                 rate => rate.SongId,
                 song => song.Id,
                 (rate, song) => new 
                 {
                     song.Title,
                     rate.Rate,
-                    rate.SongId
+                    rate.SongId,
                 })
                 .GroupBy(p => p.SongId)
                 .Select(g => new AverageRate{ Id = g.First().SongId, Title = g.First().Title , AvgRate = Math.Round(Convert.ToDouble(g.Sum(x => x.Rate)) / g.Count(), 1) }).OrderByDescending(x=>x.AvgRate).Take(10).ToList();
@@ -160,6 +163,11 @@ namespace liriksi.WebAPI.Services
         public UsersSongRate GetRateBySongByUser(HasUserRatedRequest obj)
         {
             return _context.UsersSongRates.Where(x => x.SongId == obj.Id).Where(x=>x.UserId == obj.UserId).FirstOrDefault();
+        }
+
+        public UsersAlbumRate GetRateByAlbumByUser(HasUserRatedRequest obj)
+        {
+            return _context.UsersAlbumRates.Where(x => x.AlbumId == obj.Id).Where(x => x.UserId == obj.UserId).FirstOrDefault();
         }
 
     }
