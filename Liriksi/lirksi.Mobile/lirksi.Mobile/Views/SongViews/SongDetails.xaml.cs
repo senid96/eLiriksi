@@ -3,6 +3,7 @@ using lirksi.Mobile.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -30,6 +31,8 @@ namespace lirksi.Mobile.Views
         {
             base.OnAppearing();
             await model.Init();
+            await model.GetRecommendedSongs();
+            
 
             //if its already rated, disable rate feature
             if(model.UserRate != null)
@@ -63,5 +66,7 @@ namespace lirksi.Mobile.Views
                 model.UserRate.Rate = Convert.ToInt32(PickerRate.SelectedItem);
             }
         }
+
+        
     }
 }

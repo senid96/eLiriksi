@@ -3,6 +3,7 @@ using liriksi.Model.Requests;
 using liriksi.Model.Requests.rates;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -33,12 +34,15 @@ namespace lirksi.Mobile.ViewModels
             set { SetProperty(ref _userRate, value); }
         }
 
+        public ObservableCollection<SongGetRequest> RecommendedList { get; set; } = new ObservableCollection<SongGetRequest>();
+
+
+
+        /*---------------------------------------- METHODS ------------------------------------------- */
         public SongDetailsViewModel()
         {
             Title = "Song details";
         }
-
-        /*---------------------------------------- METHODS ------------------------------------------- */
 
         public async Task Init()
         {
@@ -70,6 +74,21 @@ namespace lirksi.Mobile.ViewModels
             UserRate.SongId = _songId;
             UserRate.UserId = APIService._currentUser.Id;
             await _ratingService.Insert<bool>(UserRate, "RateSong");
+        }
+
+        public async Task GetRecommendedSongs()
+        {
+            string id = _songId.ToString();
+            RecommendedList.Clear();
+            List<SongGetRequest> list = await _songService.GetById<List<SongGetRequest>>(id, "GetRecommendedSongs");
+            if (list.Count != 0)
+            {
+                foreach (var item in list)
+                {
+                    RecommendedList.Add(item);
+                }
+            }
+           
         }
     }
 }

@@ -36,6 +36,15 @@ namespace liriksi.WebAPI.Controllers
             return _songService.GetById(id);
         }
 
+        //recommender: get by songId
+        [HttpGet("GetRecommendedSongs/{id}")]
+        public List<SongGetRequest> GetRecommendedSongs(int id)
+        {
+            //Recommender r = new Recommender();
+            //r.GetSimilarSongs(id);
+            return _songService.GetSimilarSongs(id);
+        }
+
         [HttpGet("GetSongsByAlbum/{id}")]
         public ActionResult<List<SongGetRequest>> GetSongsByAlbum(int id)
         {
