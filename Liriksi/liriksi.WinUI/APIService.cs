@@ -43,21 +43,25 @@ namespace liriksi.WinUI
             if (String.IsNullOrEmpty(method))
                 url = $"{Properties.Settings.Default.APIUrl}/{_route}/{id}"; //pravi se ruta.. u setingsu je definisan api
             else
-                url = $"{Properties.Settings.Default.APIUrl}/{_route}/{method}/{id}"; //pravi se ruta.. u setingsu je definisan api
+                url = $"{Properties.Settings.Default.APIUrl}/{_route}/{method}/{id}"; 
 
             var result = url.WithBasicAuth(_username, _password).GetJsonAsync<T>();
             return await result; 
         }
-        public async Task<T> Insert<T>(object obj)
+        public async Task<T> Insert<T>(object obj, string method)
         {
-            var url = $"{Properties.Settings.Default.APIUrl}/{_route}"; //pravi se ruta.. u setingsu je definisan api
+            var url = "";
+            if(string.IsNullOrEmpty(method))
+                url = $"{Properties.Settings.Default.APIUrl}/{_route}"; 
+            else
+                url = $"{Properties.Settings.Default.APIUrl}/{_route}/{method}"; 
 
             var result = await url.WithBasicAuth(_username, _password).PostJsonAsync(obj).ReceiveJson<T>();
             return result;
         }
         public async Task<T> Update<T>(object id, object obj)
         {
-            var url = $"{Properties.Settings.Default.APIUrl}/{_route}/{id}"; //pravi se ruta.. u setingsu je definisan api
+            var url = $"{Properties.Settings.Default.APIUrl}/{_route}/{id}"; 
             
             var result = await url.WithBasicAuth(_username, _password).PutJsonAsync(obj).ReceiveJson<T>();
             return result;

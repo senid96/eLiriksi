@@ -36,7 +36,7 @@ namespace liriksi.WinUI.SongForms.SongUtilForms
         {
             byte[] img = ImageHelperMethods.PrepareImgForDB(picBoxPerformer.Image);
             Performer obj = new Performer() { Name = txtName.Text, Surname = txtSurname.Text, ArtisticName = txtArtisticName.Text, Image = img };
-            await _performerService.Insert<Performer>(obj);
+            await _performerService.Insert<Performer>(obj, "AddPerformer");
             this.Close();
         }
 

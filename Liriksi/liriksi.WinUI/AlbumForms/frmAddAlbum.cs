@@ -38,12 +38,12 @@ namespace liriksi.WinUI.UtilForms
         private async void frmAddAlbum_Load(object sender, EventArgs e)
         {
             cmbYear.DataSource = Enumerable.Range(1900, 130).ToList();
-            var genres = await _genreService.Get<List<Genre>>(null, null);
+            var genres = await _genreService.Get<List<Genre>>(null, "GetGenres");
             cmbGenre.DataSource = genres;
             cmbGenre.DisplayMember = "Name";
             cmbGenre.ValueMember = "Id";
 
-            var performers = await _performerService.Get<List<Performer>>(null, null);
+            var performers = await _performerService.Get<List<Performer>>(null, "GetPerformers");
             cmbPerformer.DataSource = performers;
             cmbPerformer.DisplayMember = "ArtisticName";
             cmbPerformer.ValueMember = "Id";
@@ -54,7 +54,7 @@ namespace liriksi.WinUI.UtilForms
             byte[] ImageData = ImageHelperMethods.PrepareImgForDB(picboxAlbum.Image);
 
             AlbumInsertRequest obj = new AlbumInsertRequest() { Name = txtTitle.Text, GenreId = (int)cmbGenre.SelectedValue, YearRelease = (int)cmbYear.SelectedValue, Image = ImageData, PerformerId = (int)cmbPerformer.SelectedValue };
-            await _albumService.Insert<AlbumInsertRequest>(obj);
+            await _albumService.Insert<AlbumInsertRequest>(obj, "InsertAlbum");
             this.Close();
         }
 

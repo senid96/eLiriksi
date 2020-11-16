@@ -62,7 +62,7 @@ namespace liriksi.WinUI.User
                 else
                 {
                     //radimo insert
-                    _ = await _userService.Insert<UserGetRequest>(user);
+                    _ = await _userService.Insert<UserGetRequest>(user, "InsertUser");
                     this.Close();
                 }
             }

@@ -23,8 +23,13 @@ namespace liriksi.WinUI
         {
             try
             {
-                APIService._username = txtboxUsername.Text;
-                APIService._password = txtboxPassword.Text;
+                //APIService._username = txtboxUsername.Text;
+                //APIService._password = txtboxPassword.Text;
+
+                //za testiranje todo, vratiti kasnije
+                APIService._username = "testiranje";
+                APIService._password = "testiranje";
+
                 APIService._currentUser = await _userService.Get<Model.User>(null, "GetMyProfile");
                 if (APIService._currentUser != null)
                 {

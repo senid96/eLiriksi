@@ -82,7 +82,7 @@ namespace liriksi.WinUI.UserForms
                 Status = true //active by default
             };
 
-                await _userService.Insert<UserInsertRequest>(obj);
+                await _userService.Insert<UserInsertRequest>(obj, "InsertUser");
                 this.Close();
         }
 

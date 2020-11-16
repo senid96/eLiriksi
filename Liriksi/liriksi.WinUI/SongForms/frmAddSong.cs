@@ -43,7 +43,7 @@ namespace liriksi.WinUI.SongForms
             req.Text = txtLyrics.Text;
             req.AlbumId = (int)cmbAlbum.SelectedValue;
 
-            await _songService.Insert<SongInsertRequest>(req);
+            await _songService.Insert<SongInsertRequest>(req, "AddSong");
             this.Close();
             frmSong frm = new frmSong();
             frm.Show();
@@ -53,7 +53,7 @@ namespace liriksi.WinUI.SongForms
 
         private async void frmAddSong_Load(object sender, EventArgs e)
         {
-            cmbPerformer.DataSource = await _performerService.Get<List<Performer>>(null, null);
+            cmbPerformer.DataSource = await _performerService.Get<List<Performer>>(null, "GetPerformers");
             cmbPerformer.DisplayMember = "ArtisticName";
             cmbPerformer.ValueMember = "Id";
 

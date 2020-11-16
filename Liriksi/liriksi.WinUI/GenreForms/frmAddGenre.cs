@@ -23,7 +23,7 @@ namespace liriksi.WinUI.UtilForms
         private async void btnAddGenre_Click(object sender, EventArgs e)
         {
             Genre obj = new Genre { Name = txtGenreName.Text };
-            await _genreService.Insert<Genre>(obj);
+            await _genreService.Insert<Genre>(obj, "AddGenre");
             this.Close();
         }
 
