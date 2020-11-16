@@ -67,6 +67,10 @@ namespace lirksi.Mobile.Views
             }
         }
 
-        
+        private async void RecommendedList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var item = e.SelectedItem as SongGetRequest;
+            await Navigation.PushAsync(new SongDetails(item.Id));
+        }
     }
 }

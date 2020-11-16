@@ -22,7 +22,6 @@ C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\PerformerViews\AddPerformer.xaml.g.cs
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\PerformerViews\PerformerDetails.xaml.g.cs
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\PerformerViews\PerformerPage.xaml.g.cs
-C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\Recommend.xaml.g.cs
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\SongRatingsViews\SongRatings.xaml.g.cs
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\SongViews\AddSong.xaml.g.cs
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\SongViews\SongDetails.xaml.g.cs

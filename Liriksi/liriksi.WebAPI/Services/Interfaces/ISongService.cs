@@ -15,6 +15,5 @@ namespace liriksi.WebAPI.Services
         SongGetRequest Insert(SongInsertRequest song);
         SongGetRequest Update(int id, SongInsertRequest song);
         bool Delete(int id);
-        List<SongGetRequest> GetSimilarSongs(int songId);
     }
 }

@@ -8,6 +8,7 @@ using liriksi.Model;
 using liriksi.WebAPI.Services;
 using liriksi.Model.Requests;
 using Microsoft.AspNetCore.Authorization;
+using liriksi.WebAPI.Services.Interfaces;
 
 namespace liriksi.WebAPI.Controllers
 {
@@ -17,11 +18,13 @@ namespace liriksi.WebAPI.Controllers
     public class SongController : ControllerBase
     {
         private readonly ISongService _songService;
+        private readonly IRecommender _recommenderService;
 
         //dependency injection (defined in startup.cs : configureservices)
-        public SongController(ISongService songService)
+        public SongController(ISongService songService, IRecommender recommenderService)
         {
             _songService = songService;
+            _recommenderService = recommenderService;
         }
 
         [HttpGet]
@@ -40,9 +43,7 @@ namespace liriksi.WebAPI.Controllers
         [HttpGet("GetRecommendedSongs/{id}")]
         public List<SongGetRequest> GetRecommendedSongs(int id)
         {
-            //Recommender r = new Recommender();
-            //r.GetSimilarSongs(id);
-            return _songService.GetSimilarSongs(id);
+            return _recommenderService.GetRecommendedSongs(id);
         }
 
         [HttpGet("GetSongsByAlbum/{id}")]

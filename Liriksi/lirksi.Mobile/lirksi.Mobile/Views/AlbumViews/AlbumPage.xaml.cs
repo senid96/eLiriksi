@@ -29,6 +29,7 @@ namespace lirksi.Mobile.Views
             await model.GetPerformers();
             PerformerPicker.SelectedIndex = 0;
             await model.GetAlbums();
+           
         }
 
         private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)

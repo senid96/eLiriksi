@@ -51,9 +51,7 @@ namespace lirksi.Mobile.Views
                     case (int)MenuItemType.SongRatings:
                         MenuPages.Add(id, new NavigationPage(new SongRatingsViews.SongRatings()));
                         break;
-                    case (int)MenuItemType.Recommend:
-                        MenuPages.Add(id, new NavigationPage(new Recommend()));
-                        break;
+                   
                 }
             }
 

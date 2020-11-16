@@ -40,7 +40,7 @@
 
                 <!-- recommender view -->
                 <Label Text="Recommended songs:"></Label>
-                <ListView x:Name="RecommendedList" ItemsSource="{Binding RecommendedList}">
+                <ListView x:Name="RecommendedList" ItemsSource="{Binding RecommendedList}" ItemSelected="RecommendedList_ItemSelected">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>

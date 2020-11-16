@@ -53,6 +53,7 @@ namespace liriksi.WebAPI
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IRatingService, RatingService>();
             services.AddScoped<ILocationService, LocationService>();
+            services.AddScoped<IRecommender, RecommenderService>();
 
             services.AddSwaggerGen(c =>
             {
