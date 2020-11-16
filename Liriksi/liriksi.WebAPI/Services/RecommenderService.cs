@@ -58,7 +58,7 @@ namespace liriksi.WebAPI.Services
                 List<AverageRate> avgRatesHigherThanPosRating = new List<AverageRate>();
                 foreach (AverageRate item in averageRates)
                 {
-                    if (item.AvgRate > 3)
+                    if (item.AvgRate > positiveRating)
                         avgRatesHigherThanPosRating.Add(item);
                 }
 

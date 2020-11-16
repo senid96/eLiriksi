@@ -6,6 +6,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 using lirksi.Mobile.Models;
+using Xamarin.Essentials;
 
 namespace lirksi.Mobile.Views
 {
@@ -51,7 +52,11 @@ namespace lirksi.Mobile.Views
                     case (int)MenuItemType.SongRatings:
                         MenuPages.Add(id, new NavigationPage(new SongRatingsViews.SongRatings()));
                         break;
-                   
+                    case (int)MenuItemType.Logout:
+                        SecureStorage.RemoveAll();
+                        MenuPages.Add(id, new NavigationPage(new LoginPage()));
+                        break;
+
                 }
             }
 

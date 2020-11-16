@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace lirksi.Mobile.ViewModels
@@ -38,12 +39,21 @@ namespace lirksi.Mobile.ViewModels
             //za brzi razvoj samo TODO obrisati kasnije
             APIService._username = "testiranje"; 
             APIService._password = "testiranje";
+
+            if(Connectivity.NetworkAccess < NetworkAccess.Local)
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", "You need to be connected to the WLAN", "OK");
+                return;
+            }
+
             try
             {
                 APIService._currentUser = await _userService.Get<UserGetRequest>(null, "GetMyProfile");
                 if (APIService._currentUser != null)
                 {
                     Application.Current.MainPage = new MainPage();
+                    await SecureStorage.SetAsync("username", Username);
+                    await SecureStorage.SetAsync("password", Password);
                 }
                 else
                 {
