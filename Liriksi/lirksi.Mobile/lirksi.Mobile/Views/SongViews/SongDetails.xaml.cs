@@ -1,4 +1,5 @@
 ﻿using liriksi.Model.Requests;
+using lirksi.Mobile.Services.OfflineModeServices;
 using lirksi.Mobile.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -16,8 +17,7 @@ namespace lirksi.Mobile.Views
     public partial class SongDetails : ContentPage
     {
 
-        private SongDetailsViewModel model = null;
-      
+        private SongDetailsViewModel model { get; set; }
         public SongDetails(int songId)
         {
             InitializeComponent();
@@ -71,6 +71,21 @@ namespace lirksi.Mobile.Views
         {
             var item = e.SelectedItem as SongGetRequest;
             await Navigation.PushAsync(new SongDetails(item.Id));
+        }
+
+        private async void DownloadSongBtn_Clicked(object sender, EventArgs e)
+        {
+            SongGetRequest obj = model.GetSongByIdOffline(model._songId);
+            if(obj != null)
+            {
+                await Application.Current.MainPage.DisplayAlert("Warning", "You have already downloaded this song.", "OK");
+                return;
+            }
+            else
+            {
+                await model.DownloadSongOffline();
+                await Application.Current.MainPage.DisplayAlert("Success", "Successfully downloaded!", "OK");
+            }
         }
     }
 }

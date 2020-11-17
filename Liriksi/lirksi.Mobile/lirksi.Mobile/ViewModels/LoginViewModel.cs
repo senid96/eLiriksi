@@ -1,7 +1,9 @@
 ﻿using liriksi.Model.Requests;
+using lirksi.Mobile.ValidationHelpers;
 using lirksi.Mobile.Views;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -31,8 +33,13 @@ namespace lirksi.Mobile.ViewModels
         }
 
         /* Methods */
+        public LoginViewModel()
+        {
+        }
+
         public async Task Login()
         {
+
             //APIService._username = Username;     
             //APIService._password = Password;
 
@@ -65,5 +72,7 @@ namespace lirksi.Mobile.ViewModels
                 await Application.Current.MainPage.DisplayAlert("Exception Autentikacija", "Username or password incorect", "Ok");
             }
         }
+
+      
     }
 }

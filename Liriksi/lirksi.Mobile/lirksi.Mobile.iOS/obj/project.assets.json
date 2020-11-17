@@ -544,6 +544,15 @@
           "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {}
         }
       },
+      "MvvmValidation/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/MvvmValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/MvvmValidation.dll": {}
+        }
+      },
       "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
@@ -1559,6 +1568,15 @@
           "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {}
         }
       },
+      "MvvmValidation/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/MvvmValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/MvvmValidation.dll": {}
+        }
+      },
       "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
@@ -2558,6 +2576,15 @@
           "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {}
         }
       },
+      "MvvmValidation/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/MvvmValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/MvvmValidation.dll": {}
+        }
+      },
       "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
@@ -3555,6 +3582,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {}
+        }
+      },
+      "MvvmValidation/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/MvvmValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/MvvmValidation.dll": {}
         }
       },
       "Newtonsoft.Json/11.0.2": {
@@ -4624,6 +4660,20 @@
         "lib/netstandard2.0/Microsoft.Net.Http.Headers.xml",
         "microsoft.net.http.headers.2.0.0.nupkg.sha512",
         "microsoft.net.http.headers.nuspec"
+      ]
+    },
+    "MvvmValidation/3.1.1": {
+      "sha512": "pq3s5e08IZgzf5YetcHX6Q67IoMFDF8qKQ6wMlV1jEvc3IEaEnYxlHxtUz6fvx/mneYREuYfkD0BCor/mHMFYw==",
+      "type": "package",
+      "path": "mvvmvalidation/3.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.0/MvvmValidation.deps.json",
+        "lib/netstandard1.0/MvvmValidation.dll",
+        "lib/netstandard1.0/MvvmValidation.xml",
+        "mvvmvalidation.3.1.1.nupkg.sha512",
+        "mvvmvalidation.nuspec"
       ]
     },
     "Newtonsoft.Json/11.0.2": {
@@ -6427,6 +6477,7 @@
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
+      "MvvmValidation >= 3.1.1",
       "Xamarin.Essentials >= 1.5.3.2",
       "Xamarin.Forms >= 4.8.0.1269",
       "lirksi.Mobile >= 1.0.0"
@@ -6474,6 +6525,10 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
+          "MvvmValidation": {
+            "target": "Package",
+            "version": "[3.1.1, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.5.3.2, )"

@@ -6,15 +6,15 @@
              >
     <ContentPage.Content>
         <StackLayout>
+
             <Label Text="Title"></Label>
-            <Entry x:Name="TitleEntry" Text="{Binding SongReq.Title}"></Entry>
+            <Entry x:Name="Title" Text="{Binding SongReq.Title}"></Entry>
 
             <Label x:Name="Performer" Text="Select performer"></Label>
             <Picker  x:Name="PerformerPicker" ItemsSource="{Binding PerformerList}" ItemDisplayBinding="{Binding ArtisticName}" SelectedItem="{Binding SelectedPerformer}"  SelectedIndexChanged="PerformerPicker_SelectedIndexChanged"/>
 
             <Label x:Name="Album" Text="Select album"></Label>
             <Picker x:Name="AlbumPicker" ItemsSource="{Binding AlbumList}" ItemDisplayBinding="{Binding Name}" SelectedItem="{Binding SelectedAlbum}"/>
-
 
             <Label Text="Lyrcis"></Label>
             <Editor x:Name="LyricsEntry" HeightRequest="150" Text="{Binding SongReq.Text}"></Editor>

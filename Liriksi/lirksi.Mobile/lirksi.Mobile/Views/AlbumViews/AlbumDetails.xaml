@@ -17,7 +17,7 @@
                 <Label Text="{Binding Album.Name}" FontSize="Header"></Label>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="{Binding Album.Description}" ></Label>
-                    <Image Source="{Binding Album.Image, Converter={StaticResource imgConv}}" Aspect="AspectFit" VerticalOptions="Start" HorizontalOptions="Start" ></Image>
+                    <Image Source="{Binding Album.Image, Converter={StaticResource imgConv}}" WidthRequest="300" HeightRequest="300" Aspect="AspectFit" VerticalOptions="Start" HorizontalOptions="Start" ></Image>
                 </StackLayout>
                 <Label Text="Details:" FontSize="Title" ></Label>
                 <StackLayout >

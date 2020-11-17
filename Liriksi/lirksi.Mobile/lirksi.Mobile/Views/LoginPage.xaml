@@ -11,7 +11,7 @@
             <Label Text="Username:"/>
             <Entry Text="{Binding Username}"></Entry>
             <Label Text="Password:"/>
-            <Entry Text="{Binding Password}"></Entry>
+            <Entry IsPassword="True" Text="{Binding Password}"></Entry>
             <Button x:Name="Login" Text="Login" Clicked="Login_Clicked"></Button>
             <Label Text="{Binding Username}"></Label>
         </StackLayout>

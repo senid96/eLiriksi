@@ -1,10 +1,12 @@
 ﻿using liriksi.Model;
 using liriksi.Model.Requests;
+using lirksi.Mobile.ValidationHelpers;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace lirksi.Mobile.ViewModels.SongViewModels
 {

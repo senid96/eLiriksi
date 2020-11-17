@@ -1,6 +1,7 @@
 ﻿using liriksi.Model;
 using liriksi.Model.Requests;
 using liriksi.Model.Requests.rates;
+using lirksi.Mobile.Services.OfflineModeServices;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -89,6 +90,16 @@ namespace lirksi.Mobile.ViewModels
                 }
             }
            
+        }
+
+        public async Task DownloadSongOffline()
+        {
+            await SongServiceOffline.DownloadSong(SongDetail);
+        }
+
+        public SongGetRequest GetSongByIdOffline(int songId)
+        {
+            return SongServiceOffline.GetDownloadedSongById(songId);
         }
     }
 }

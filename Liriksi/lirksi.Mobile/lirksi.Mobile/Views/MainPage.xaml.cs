@@ -7,6 +7,7 @@ using Xamarin.Forms.Xaml;
 
 using lirksi.Mobile.Models;
 using Xamarin.Essentials;
+using lirksi.Mobile.Views.OfflineModeViews;
 
 namespace lirksi.Mobile.Views
 {
@@ -52,8 +53,12 @@ namespace lirksi.Mobile.Views
                     case (int)MenuItemType.SongRatings:
                         MenuPages.Add(id, new NavigationPage(new SongRatingsViews.SongRatings()));
                         break;
+                    case (int)MenuItemType.Downloaded:
+                        MenuPages.Add(id, new NavigationPage(new SongPageOffline()));
+                        break;
                     case (int)MenuItemType.Logout:
-                        SecureStorage.RemoveAll();
+                        SecureStorage.Remove("username");
+                        SecureStorage.Remove("password");
                         MenuPages.Add(id, new NavigationPage(new LoginPage()));
                         break;
 

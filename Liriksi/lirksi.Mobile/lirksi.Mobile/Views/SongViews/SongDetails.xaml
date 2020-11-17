@@ -51,6 +51,7 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+                <Button x:Name="DownloadSongBtn" Text="Download song" Clicked="DownloadSongBtn_Clicked" ></Button>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

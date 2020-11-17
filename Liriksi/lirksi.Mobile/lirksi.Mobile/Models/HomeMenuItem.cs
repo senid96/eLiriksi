@@ -14,7 +14,8 @@ namespace lirksi.Mobile.Models
         AlbumRatings,
         SongRatings,
         Recommend,
-        Logout
+        Logout,
+        Downloaded
     }
     public class HomeMenuItem
     {
