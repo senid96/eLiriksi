@@ -1,4 +1,5 @@
-﻿using lirksi.Mobile.ViewModels.PerformerViewModels;
+﻿using Acr.UserDialogs;
+using lirksi.Mobile.ViewModels.PerformerViewModels;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 using System;
@@ -50,6 +51,12 @@ namespace lirksi.Mobile.Views.PerformerViews
 
         private async void SavePerformerBtn_Clicked(object sender, EventArgs e)
         {
+            if (ValidationHelpers.ValidationHelper.IsAnyNullOrEmpty(model.PerformerReq))
+            {
+               
+                UserDialogs.Instance.Toast(ValidationHelpers.MessagesResource.all_fields_required);
+                return;
+            }
             await model.SaveNewPerformer();
             await Navigation.PushAsync(new PerformerPage());
         }

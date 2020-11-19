@@ -1,4 +1,5 @@
-﻿using liriksi.Model;
+﻿using Acr.UserDialogs;
+using liriksi.Model;
 using liriksi.Model.Requests;
 using lirksi.Mobile.ViewModels;
 using System;
@@ -52,6 +53,11 @@ namespace lirksi.Mobile.Views
 
         private async void Rate_Clicked(object sender, EventArgs e)
         {
+            if (ValidationHelpers.ValidationHelper.IsAnyNullOrEmpty(model.UserRate))
+            {
+                UserDialogs.Instance.Toast(ValidationHelpers.MessagesResource.rate_required);
+                return;
+            }
             await model.RateAlbum();
             //call onAppearing to refresh rateFeature(to disable it)
             OnAppearing();

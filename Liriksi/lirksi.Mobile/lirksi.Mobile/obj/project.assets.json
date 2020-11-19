@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "Acr.UserDialogs/7.1.0.466": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Acr.UserDialogs.dll": {}
+        }
+      },
       "AutoMapper/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -1186,6 +1195,41 @@
     }
   },
   "libraries": {
+    "Acr.UserDialogs/7.1.0.466": {
+      "sha512": "vZdR+M0cvrNNQUNDKSmCtY4jg3JTDJ6VxpE3+id+DePwKtwGVGTWYkvOxFywZAbkqqRMSMhc904zz66XE95gNQ==",
+      "type": "package",
+      "path": "acr.userdialogs/7.1.0.466",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "acr.userdialogs.7.1.0.466.nupkg.sha512",
+        "acr.userdialogs.nuspec",
+        "lib/monoandroid10.0/Acr.UserDialogs.dll",
+        "lib/monoandroid10.0/Acr.UserDialogs.pdb",
+        "lib/monoandroid10.0/Acr.UserDialogs.xml",
+        "lib/monoandroid90/Acr.UserDialogs.dll",
+        "lib/monoandroid90/Acr.UserDialogs.pdb",
+        "lib/monoandroid90/Acr.UserDialogs.xml",
+        "lib/netstandard2.0/Acr.UserDialogs.dll",
+        "lib/netstandard2.0/Acr.UserDialogs.pdb",
+        "lib/netstandard2.0/Acr.UserDialogs.xml",
+        "lib/uap10.0.16299/Acr.UserDialogs.dll",
+        "lib/uap10.0.16299/Acr.UserDialogs.pdb",
+        "lib/uap10.0.16299/Acr.UserDialogs.pri",
+        "lib/uap10.0.16299/Acr.UserDialogs.xml",
+        "lib/uap10.0.16299/Acr.UserDialogs/Acr.UserDialogs.xr.xml",
+        "lib/xamarinios10/Acr.UserDialogs.dll",
+        "lib/xamarinios10/Acr.UserDialogs.pdb",
+        "lib/xamarinios10/Acr.UserDialogs.xml",
+        "lib/xamarinmac20/Acr.UserDialogs.dll",
+        "lib/xamarinmac20/Acr.UserDialogs.pdb",
+        "lib/xamarinmac20/Acr.UserDialogs.xml",
+        "lib/xamarintvos10/Acr.UserDialogs.dll",
+        "lib/xamarintvos10/Acr.UserDialogs.pdb",
+        "lib/xamarintvos10/Acr.UserDialogs.xml",
+        "readme.txt"
+      ]
+    },
     "AutoMapper/8.0.0": {
       "sha512": "px8ZMtIq84dxciB29V+ZYOtsRLZP4JlflDDMW13LyeRdwsnIInzlcSHSxpWmVD6U3bbOl2FeLlgomnVtm0jvXw==",
       "type": "package",
@@ -4481,6 +4525,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Acr.UserDialogs >= 7.1.0.466",
       "Flurl >= 2.8.1",
       "Flurl.Http >= 2.4.1",
       "NETStandard.Library >= 2.0.3",
@@ -4538,6 +4583,10 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "Acr.UserDialogs": {
+            "target": "Package",
+            "version": "[7.1.0.466, )"
+          },
           "Flurl": {
             "target": "Package",
             "version": "[2.8.1, )"

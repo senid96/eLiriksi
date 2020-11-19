@@ -28,11 +28,20 @@
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\bin\x86\Debug\lirksi.Mobile.UWP.exe">
       <PackagePath>entrypoint\lirksi.Mobile.UWP.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\acr.userdialogs\7.1.0.466\lib\uap10.0.16299\Acr.UserDialogs.dll">
+      <PackagePath>Acr.UserDialogs.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\automapper\8.0.0\lib\netstandard2.0\AutoMapper.dll">
       <PackagePath>AutoMapper.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\automapper.extensions.microsoft.dependencyinjection\6.0.0\lib\netstandard2.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll">
       <PackagePath>AutoMapper.Extensions.Microsoft.DependencyInjection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\coding4fun.toolkit.controls\2.1.8\lib\netcore451\Coding4Fun.Toolkit.Controls.dll">
+      <PackagePath>Coding4Fun.Toolkit.Controls.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\coding4fun.toolkit.controls\2.1.8\lib\netcore451\Coding4Fun.Toolkit.dll">
+      <PackagePath>Coding4Fun.Toolkit.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\flurl\2.8.1\lib\netstandard2.0\Flurl.dll">
       <PackagePath>Flurl.dll</PackagePath>
@@ -342,6 +351,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\microsoft.ui.xaml\2.4.2\build\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\acr.userdialogs\7.1.0.466\lib\uap10.0.16299\Acr.UserDialogs\Acr.UserDialogs.xr.xml">
+      <PackagePath>Acr.UserDialogs\Acr.UserDialogs.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\coding4fun.toolkit.controls\2.1.8\lib\netcore451\Coding4Fun.Toolkit.Controls\Coding4Fun.Toolkit.Controls.xr.xml">
+      <PackagePath>Coding4Fun.Toolkit.Controls\Coding4Fun.Toolkit.Controls.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\coding4fun.toolkit.controls\2.1.8\lib\netcore451\Coding4Fun.Toolkit.Controls\Themes\Generic.xbf">
+      <PackagePath>Coding4Fun.Toolkit.Controls\Themes\Generic.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\xamarin.forms\4.8.0.1269\lib\uap10.0.16299\Xamarin.Forms.Platform.UAP\FormsAutoSuggestBoxStyle.xaml">
       <PackagePath>Xamarin.Forms.Platform.UAP\FormsAutoSuggestBoxStyle.xaml</PackagePath>

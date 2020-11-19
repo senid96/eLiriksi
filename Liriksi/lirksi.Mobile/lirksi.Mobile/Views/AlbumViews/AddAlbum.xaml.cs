@@ -1,4 +1,6 @@
-﻿using lirksi.Mobile.ViewModels.AlbumViewModels;
+﻿using Acr.UserDialogs;
+using lirksi.Mobile.ValidationHelpers;
+using lirksi.Mobile.ViewModels.AlbumViewModels;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 using System;
@@ -6,6 +8,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -19,7 +22,7 @@ namespace lirksi.Mobile.Views.AlbumViews
         public AddAlbumViewModel model { get; set; }
         public AddAlbum ()
 		{
-			InitializeComponent ();
+            InitializeComponent();
             BindingContext = model = new AddAlbumViewModel();
 		}
 
@@ -30,6 +33,15 @@ namespace lirksi.Mobile.Views.AlbumViews
             PerformerPicker.SelectedIndex = 0;
             await model.GetGenres();
             GenrePicker.SelectedIndex = 0;
+
+            //populate yearlist picker
+            for (int i = 1970; i < DateTime.Now.Year; i++)
+            {
+                model.YearList.Add(i);
+            }
+            PickerYear.SelectedIndex = 0;
+
+
         }
 
         private async void UploadImage_Clicked(object sender, EventArgs e)
@@ -59,6 +71,12 @@ namespace lirksi.Mobile.Views.AlbumViews
 
         private async void Save_Clicked(object sender, EventArgs e)
         {
+            if (ValidationHelper.IsAnyNullOrEmpty(model.AlbumReq))
+            {
+                UserDialogs.Instance.Toast(ValidationHelpers.MessagesResource.all_fields_required);
+                return;
+            }
+
             await model.AddAlbum();
             await Navigation.PushAsync(new AlbumPage());
         }

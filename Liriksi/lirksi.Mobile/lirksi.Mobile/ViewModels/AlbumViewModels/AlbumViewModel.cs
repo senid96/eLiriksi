@@ -9,8 +9,7 @@ using Xamarin.Forms;
 
 namespace lirksi.Mobile.ViewModels
 {
-    public class AlbumViewModel : BaseViewModel
-    {
+    public class AlbumViewModel:BaseViewModel { 
         /* services */
         private readonly APIService _albumService = new APIService("album");
         private readonly APIService _performerService = new APIService("performer");
@@ -28,13 +27,13 @@ namespace lirksi.Mobile.ViewModels
         public ObservableCollection<Album> AlbumList { get; set; } = new ObservableCollection<Album>();
         public ObservableCollection<Performer> PerformerList { get; set; } = new ObservableCollection<Performer>();
 
+       
+
+        /*---------------------------------------- METHODS ------------------------------------------- */
         public AlbumViewModel()
         {
             Title = "Album";
         }
-
-        /*---------------------------------------- METHODS ------------------------------------------- */
-
         public async Task GetPerformers()
         {
             var performerList = await _performerService.Get<IEnumerable<Performer>>(null, "GetPerformers");

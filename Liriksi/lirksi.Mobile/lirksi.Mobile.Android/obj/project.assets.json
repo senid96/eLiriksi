@@ -2,6 +2,31 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v9.0": {
+      "Acr.UserDialogs/7.1.0.466": {
+        "type": "package",
+        "dependencies": {
+          "AndHUD": "1.4.2",
+          "Xamarin.Android.Support.Design": "28.0.0.3"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Acr.UserDialogs.dll": {}
+        }
+      },
+      "AndHUD/1.4.2": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid81/AndHUD.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid81/AndHUD.dll": {}
+        }
+      },
       "AutoMapper/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -1650,6 +1675,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Acr.UserDialogs": "7.1.0.466",
           "Flurl": "2.8.1",
           "Flurl.Http": "2.4.1",
           "Xam.Plugin.Media": "5.0.1",
@@ -1667,6 +1693,53 @@
     }
   },
   "libraries": {
+    "Acr.UserDialogs/7.1.0.466": {
+      "sha512": "vZdR+M0cvrNNQUNDKSmCtY4jg3JTDJ6VxpE3+id+DePwKtwGVGTWYkvOxFywZAbkqqRMSMhc904zz66XE95gNQ==",
+      "type": "package",
+      "path": "acr.userdialogs/7.1.0.466",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "acr.userdialogs.7.1.0.466.nupkg.sha512",
+        "acr.userdialogs.nuspec",
+        "lib/monoandroid10.0/Acr.UserDialogs.dll",
+        "lib/monoandroid10.0/Acr.UserDialogs.pdb",
+        "lib/monoandroid10.0/Acr.UserDialogs.xml",
+        "lib/monoandroid90/Acr.UserDialogs.dll",
+        "lib/monoandroid90/Acr.UserDialogs.pdb",
+        "lib/monoandroid90/Acr.UserDialogs.xml",
+        "lib/netstandard2.0/Acr.UserDialogs.dll",
+        "lib/netstandard2.0/Acr.UserDialogs.pdb",
+        "lib/netstandard2.0/Acr.UserDialogs.xml",
+        "lib/uap10.0.16299/Acr.UserDialogs.dll",
+        "lib/uap10.0.16299/Acr.UserDialogs.pdb",
+        "lib/uap10.0.16299/Acr.UserDialogs.pri",
+        "lib/uap10.0.16299/Acr.UserDialogs.xml",
+        "lib/uap10.0.16299/Acr.UserDialogs/Acr.UserDialogs.xr.xml",
+        "lib/xamarinios10/Acr.UserDialogs.dll",
+        "lib/xamarinios10/Acr.UserDialogs.pdb",
+        "lib/xamarinios10/Acr.UserDialogs.xml",
+        "lib/xamarinmac20/Acr.UserDialogs.dll",
+        "lib/xamarinmac20/Acr.UserDialogs.pdb",
+        "lib/xamarinmac20/Acr.UserDialogs.xml",
+        "lib/xamarintvos10/Acr.UserDialogs.dll",
+        "lib/xamarintvos10/Acr.UserDialogs.pdb",
+        "lib/xamarintvos10/Acr.UserDialogs.xml",
+        "readme.txt"
+      ]
+    },
+    "AndHUD/1.4.2": {
+      "sha512": "talAByCb4/g2hXaFXuWFqb/bxvpUecX3V04WO1D3l11ghR0R2eNMi1GhP4u+36tOgKk738+78UxyugQNyPP7Vw==",
+      "type": "package",
+      "path": "andhud/1.4.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "andhud.1.4.2.nupkg.sha512",
+        "andhud.nuspec",
+        "lib/MonoAndroid81/AndHUD.dll"
+      ]
+    },
     "AutoMapper/8.0.0": {
       "sha512": "px8ZMtIq84dxciB29V+ZYOtsRLZP4JlflDDMW13LyeRdwsnIInzlcSHSxpWmVD6U3bbOl2FeLlgomnVtm0jvXw==",
       "type": "package",

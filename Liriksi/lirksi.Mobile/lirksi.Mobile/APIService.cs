@@ -17,8 +17,7 @@ public class APIService
     //android
     //private string _apiUrl = "http://192.168.1.17:65113/api"; //xiaomi
     //private string _apiUrl = "http://10.0.2.2:65113/api"; //emulator
-    //uwp
-    private string _apiUrl = "http://localhost:65113/api";
+      private string _apiUrl = "http://localhost:65113/api"; //uwp
 #endif
 #if RELEASE
     private string _apiUrl = "https://mywebsite.com/api/";

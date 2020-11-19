@@ -1,7 +1,11 @@
-﻿using lirksi.Mobile.ViewModels.SongViewModels;
+﻿using Acr.UserDialogs;
+using lirksi.Mobile.ViewModels.SongViewModels;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Reflection;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -39,6 +43,11 @@ namespace lirksi.Mobile.Views.SongViews
 
         private async void SaveSongBtn_Clicked(object sender, EventArgs e)
         {
+            if (ValidationHelpers.ValidationHelper.IsAnyNullOrEmpty(model.SongReq))
+            {
+                UserDialogs.Instance.Toast(ValidationHelpers.MessagesResource.all_fields_required);
+                return;
+            }
             await model.AddSong();
             await Navigation.PushAsync(new SongPage());
         }

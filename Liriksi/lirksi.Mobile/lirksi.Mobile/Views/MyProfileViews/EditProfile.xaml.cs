@@ -1,4 +1,5 @@
-﻿using liriksi.Model.Requests;
+﻿using Acr.UserDialogs;
+using liriksi.Model.Requests;
 using lirksi.Mobile.Converters;
 using lirksi.Mobile.ViewModels.MyProfileViewModels;
 using Plugin.Media;
@@ -58,6 +59,11 @@ namespace lirksi.Mobile.Views.MyProfileViews
 
         private async void SaveProfileChanges_Clicked(object sender, EventArgs e)
         {
+            if (ValidationHelpers.ValidationHelper.IsAnyNullOrEmpty(model.User))
+            {
+                UserDialogs.Instance.Toast(ValidationHelpers.MessagesResource.all_fields_required);
+                return;
+            }
             await model.SaveChanges();
             await Navigation.PushAsync(new MyProfile());
         }

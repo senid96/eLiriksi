@@ -41,6 +41,7 @@ namespace lirksi.Mobile.ViewModels.AlbumViewModels
 
         public ObservableCollection<Performer> PerformerList { get; set; } = new ObservableCollection<Performer>();
         public ObservableCollection<Genre> GenreList { get; set; } = new ObservableCollection<Genre>();
+        public ObservableCollection<int> YearList { get; set; } = new ObservableCollection<int>();
 
         /* methods */
 

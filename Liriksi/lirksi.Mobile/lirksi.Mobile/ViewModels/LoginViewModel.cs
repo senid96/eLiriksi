@@ -64,13 +64,14 @@ namespace lirksi.Mobile.ViewModels
                 }
                 else
                 {
-                    await Application.Current.MainPage.DisplayAlert("Autentikacija", "Username or password incorect", "Ok");
+                    await Application.Current.MainPage.DisplayAlert("Authentication", "Username or password incorrect", "Ok");
                 }
             }
             catch (Exception ex)
             {
-                await Application.Current.MainPage.DisplayAlert("Exception Autentikacija", "Username or password incorect", "Ok");
+                await Application.Current.MainPage.DisplayAlert("Exception authentication", "Username or password incorect", "Ok");
             }
+
         }
 
       

@@ -1,4 +1,5 @@
-﻿using lirksi.Mobile.ViewModels;
+﻿using Acr.UserDialogs;
+using lirksi.Mobile.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,13 @@ namespace lirksi.Mobile.Views
 
         private async void Login_Clicked(object sender, EventArgs e)
         {
+            if(string.IsNullOrEmpty(model.Password)|| string.IsNullOrEmpty(model.Username))
+            {
+                UserDialogs.Instance.Toast(ValidationHelpers.MessagesResource.login_required);
+                return;
+            }
             await model.Login();
+
         }
     }
 }

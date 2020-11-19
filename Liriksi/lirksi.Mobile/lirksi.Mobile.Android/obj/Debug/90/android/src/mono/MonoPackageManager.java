@@ -107,6 +107,8 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "lirksi.Mobile.Android.dll" comes first in this list. */
 		"lirksi.Mobile.Android.dll",
+		"Acr.UserDialogs.dll",
+		"AndHUD.dll",
 		"AutoMapper.dll",
 		"AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
 		"Flurl.dll",

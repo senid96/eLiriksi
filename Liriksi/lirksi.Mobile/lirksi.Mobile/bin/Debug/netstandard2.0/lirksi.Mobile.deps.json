@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "2d87b9f339f996e874dea8fb6b128f03a120ef40"
+    "signature": "9b6ab2b437f100ba3c820357cc207f2afbe70a5a"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "lirksi.Mobile/1.0.0": {
         "dependencies": {
+          "Acr.UserDialogs": "7.1.0.466",
           "Flurl": "2.8.1",
           "Flurl.Http": "2.4.1",
           "NETStandard.Library": "2.0.3",
@@ -16,10 +17,19 @@
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.8.0.1269",
           "liriksi.Model": "1.0.0",
-          "Mono.Android": "0.0.0.0"
+          "Mono.Android": "0.0.0.0",
+          "System.Windows.Forms": "4.0.0.0"
         },
         "runtime": {
           "lirksi.Mobile.dll": {}
+        }
+      },
+      "Acr.UserDialogs/7.1.0.466": {
+        "runtime": {
+          "lib/netstandard2.0/Acr.UserDialogs.dll": {
+            "assemblyVersion": "7.1.0.466",
+            "fileVersion": "7.1.0.466"
+          }
         }
       },
       "AutoMapper/8.0.0": {
@@ -1021,6 +1031,54 @@
             "fileVersion": "0.0.0.0"
           }
         }
+      },
+      "System.Windows.Forms/4.0.0.0": {
+        "runtime": {
+          "System.Windows.Forms.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.3062.0"
+          }
+        }
+      },
+      "System.Security/4.0.0.0": {
+        "runtime": {
+          "System.Security.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.3062.0"
+          }
+        }
+      },
+      "System.Configuration/4.0.0.0": {
+        "runtime": {
+          "System.Configuration.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.3062.0"
+          }
+        }
+      },
+      "Accessibility/4.0.0.0": {
+        "runtime": {
+          "Accessibility.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.3062.0"
+          }
+        }
+      },
+      "System.Deployment/4.0.0.0": {
+        "runtime": {
+          "System.Deployment.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.3062.0"
+          }
+        }
+      },
+      "System.Runtime.Serialization.Formatters.Soap/4.0.0.0": {
+        "runtime": {
+          "System.Runtime.Serialization.Formatters.Soap.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.3062.0"
+          }
+        }
       }
     }
   },
@@ -1029,6 +1087,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Acr.UserDialogs/7.1.0.466": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vZdR+M0cvrNNQUNDKSmCtY4jg3JTDJ6VxpE3+id+DePwKtwGVGTWYkvOxFywZAbkqqRMSMhc904zz66XE95gNQ==",
+      "path": "acr.userdialogs/7.1.0.466",
+      "hashPath": "acr.userdialogs.7.1.0.466.nupkg.sha512"
     },
     "AutoMapper/8.0.0": {
       "type": "package",
@@ -1652,6 +1717,36 @@
       "sha512": ""
     },
     "Mono.Android/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Windows.Forms/4.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security/4.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Configuration/4.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Accessibility/4.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Deployment/4.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.Serialization.Formatters.Soap/4.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

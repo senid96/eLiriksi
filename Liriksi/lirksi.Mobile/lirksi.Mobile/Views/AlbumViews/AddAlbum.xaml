@@ -8,15 +8,20 @@
         <converters:ImageConverter x:Key="imgConv"></converters:ImageConverter>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <ScrollView>        
+        <ScrollView>
             <StackLayout>
                 <Label Text="Title"></Label>
                 <Entry x:Name="Title" Text="{Binding AlbumReq.Name}"></Entry>
 
                 <Label Text="Year release"></Label>
-                <Entry x:Name="YearRelease" Text="{Binding AlbumReq.YearRelease}"></Entry>
-
-                 <Label x:Name="Performer" Text="Select performer"></Label>
+                <Picker x:Name="PickerYear" 
+                        Title="Select year:"
+                        TitleColor="Black"
+                        ItemsSource="{Binding YearList}"
+                        SelectedItem="{Binding AlbumReq.YearRelease}">
+                </Picker>
+                
+            <Label x:Name="Performer" Text="Select performer"></Label>
                  <Picker  x:Name="PerformerPicker" ItemsSource="{Binding PerformerList}" ItemDisplayBinding="{Binding ArtisticName}" SelectedItem="{Binding SelectedPerformer}"/>
 
                  <Label x:Name="Genre" Text="Select genre"></Label>
@@ -30,6 +35,6 @@
 
                  <Button x:Name="Save" Text="Save" Clicked="Save_Clicked"></Button>
         </StackLayout>
-     </ScrollView>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

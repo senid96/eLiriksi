@@ -12,7 +12,7 @@
                 <Image x:Name="NewImage" Source="{Binding User.Image, Converter={StaticResource imgConv}}" WidthRequest="300" HeightRequest="300"></Image>
                 <Button x:Name="ChangeImage" Text="Change image" Clicked="ChangeImage_Clicked"></Button>
                 <Label VerticalOptions="Center" Text="Username: "></Label>
-                <Entry Text="{Binding User.Username}"></Entry>
+                <Entry IsEnabled="False" Text="{Binding User.Username}"></Entry>
                 <Label Text="Name: " ></Label>
                 <Entry Text="{Binding User.Name}" ></Entry>
                 <Label Text="Surname: "></Label>

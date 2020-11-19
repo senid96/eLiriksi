@@ -6,13 +6,15 @@ using lirksi.Mobile.Views;
 using Xamarin.Essentials;
 using liriksi.Model;
 using liriksi.Model.Requests;
+using Acr.UserDialogs;
+using System.Resources;
+using System.Reflection;
 
 namespace lirksi.Mobile
 {
     public partial class App : Application
     {
         private readonly APIService _userService = new APIService("user");
-
         public App()
         {
             InitializeComponent();
@@ -21,6 +23,9 @@ namespace lirksi.Mobile
 
         protected async override void OnStart()
         {
+            Acr.UserDialogs.ToastConfig.DefaultPosition = ToastPosition.Top;
+            Acr.UserDialogs.ToastConfig.DefaultDuration =  new TimeSpan(0,0,1);
+
             try
             {
                 string username = await SecureStorage.GetAsync("username");

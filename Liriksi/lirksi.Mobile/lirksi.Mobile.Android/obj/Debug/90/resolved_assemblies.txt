@@ -1,4 +1,6 @@
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\lirksi.Mobile.Android.dll
+C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\Acr.UserDialogs.dll
+C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\AndHUD.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\AutoMapper.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\Flurl.dll
@@ -46,6 +48,7 @@ C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Andr
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\Mono.Android.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\mscorlib.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\Newtonsoft.Json.dll
+C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\Plugin.Media.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\Swashbuckle.AspNetCore.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -102,6 +105,7 @@ C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Andr
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\Xamarin.Forms.Platform.Android.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\Xamarin.Forms.Platform.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\Xamarin.Forms.Xaml.dll
+C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\System.Drawing.Common.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\netstandard.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\System.Data.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.Android\obj\Debug\90\android\assets\System.Transactions.dll

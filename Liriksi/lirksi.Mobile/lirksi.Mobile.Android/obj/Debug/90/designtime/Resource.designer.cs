@@ -26,6 +26,2566 @@ namespace lirksi.Mobile.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Acr.UserDialogs.Resource.Animation.abc_fade_in = global::lirksi.Mobile.Droid.Resource.Animation.abc_fade_in;
+			global::Acr.UserDialogs.Resource.Animation.abc_fade_out = global::lirksi.Mobile.Droid.Resource.Animation.abc_fade_out;
+			global::Acr.UserDialogs.Resource.Animation.abc_grow_fade_in_from_bottom = global::lirksi.Mobile.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Acr.UserDialogs.Resource.Animation.abc_popup_enter = global::lirksi.Mobile.Droid.Resource.Animation.abc_popup_enter;
+			global::Acr.UserDialogs.Resource.Animation.abc_popup_exit = global::lirksi.Mobile.Droid.Resource.Animation.abc_popup_exit;
+			global::Acr.UserDialogs.Resource.Animation.abc_shrink_fade_out_from_bottom = global::lirksi.Mobile.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Acr.UserDialogs.Resource.Animation.abc_slide_in_bottom = global::lirksi.Mobile.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Acr.UserDialogs.Resource.Animation.abc_slide_in_top = global::lirksi.Mobile.Droid.Resource.Animation.abc_slide_in_top;
+			global::Acr.UserDialogs.Resource.Animation.abc_slide_out_bottom = global::lirksi.Mobile.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Acr.UserDialogs.Resource.Animation.abc_slide_out_top = global::lirksi.Mobile.Droid.Resource.Animation.abc_slide_out_top;
+			global::Acr.UserDialogs.Resource.Animation.abc_tooltip_enter = global::lirksi.Mobile.Droid.Resource.Animation.abc_tooltip_enter;
+			global::Acr.UserDialogs.Resource.Animation.abc_tooltip_exit = global::lirksi.Mobile.Droid.Resource.Animation.abc_tooltip_exit;
+			global::Acr.UserDialogs.Resource.Animation.design_bottom_sheet_slide_in = global::lirksi.Mobile.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Acr.UserDialogs.Resource.Animation.design_bottom_sheet_slide_out = global::lirksi.Mobile.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Acr.UserDialogs.Resource.Animation.design_snackbar_in = global::lirksi.Mobile.Droid.Resource.Animation.design_snackbar_in;
+			global::Acr.UserDialogs.Resource.Animation.design_snackbar_out = global::lirksi.Mobile.Droid.Resource.Animation.design_snackbar_out;
+			global::Acr.UserDialogs.Resource.Animator.design_appbar_state_list_animator = global::lirksi.Mobile.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::Acr.UserDialogs.Resource.Animator.design_fab_hide_motion_spec = global::lirksi.Mobile.Droid.Resource.Animator.design_fab_hide_motion_spec;
+			global::Acr.UserDialogs.Resource.Animator.design_fab_show_motion_spec = global::lirksi.Mobile.Droid.Resource.Animator.design_fab_show_motion_spec;
+			global::Acr.UserDialogs.Resource.Animator.mtrl_btn_state_list_anim = global::lirksi.Mobile.Droid.Resource.Animator.mtrl_btn_state_list_anim;
+			global::Acr.UserDialogs.Resource.Animator.mtrl_btn_unelevated_state_list_anim = global::lirksi.Mobile.Droid.Resource.Animator.mtrl_btn_unelevated_state_list_anim;
+			global::Acr.UserDialogs.Resource.Animator.mtrl_chip_state_list_anim = global::lirksi.Mobile.Droid.Resource.Animator.mtrl_chip_state_list_anim;
+			global::Acr.UserDialogs.Resource.Animator.mtrl_fab_hide_motion_spec = global::lirksi.Mobile.Droid.Resource.Animator.mtrl_fab_hide_motion_spec;
+			global::Acr.UserDialogs.Resource.Animator.mtrl_fab_show_motion_spec = global::lirksi.Mobile.Droid.Resource.Animator.mtrl_fab_show_motion_spec;
+			global::Acr.UserDialogs.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec = global::lirksi.Mobile.Droid.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec;
+			global::Acr.UserDialogs.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec = global::lirksi.Mobile.Droid.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarDivider = global::lirksi.Mobile.Droid.Resource.Attribute.actionBarDivider;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarItemBackground = global::lirksi.Mobile.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarPopupTheme = global::lirksi.Mobile.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarSize = global::lirksi.Mobile.Droid.Resource.Attribute.actionBarSize;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarSplitStyle = global::lirksi.Mobile.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarStyle = global::lirksi.Mobile.Droid.Resource.Attribute.actionBarStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarTabBarStyle = global::lirksi.Mobile.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarTabStyle = global::lirksi.Mobile.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarTabTextStyle = global::lirksi.Mobile.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarTheme = global::lirksi.Mobile.Droid.Resource.Attribute.actionBarTheme;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarWidgetTheme = global::lirksi.Mobile.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Acr.UserDialogs.Resource.Attribute.actionButtonStyle = global::lirksi.Mobile.Droid.Resource.Attribute.actionButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionDropDownStyle = global::lirksi.Mobile.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionLayout = global::lirksi.Mobile.Droid.Resource.Attribute.actionLayout;
+			global::Acr.UserDialogs.Resource.Attribute.actionMenuTextAppearance = global::lirksi.Mobile.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.actionMenuTextColor = global::lirksi.Mobile.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeBackground = global::lirksi.Mobile.Droid.Resource.Attribute.actionModeBackground;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeCloseButtonStyle = global::lirksi.Mobile.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeCloseDrawable = global::lirksi.Mobile.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeCopyDrawable = global::lirksi.Mobile.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeCutDrawable = global::lirksi.Mobile.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeFindDrawable = global::lirksi.Mobile.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.actionModePasteDrawable = global::lirksi.Mobile.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.actionModePopupWindowStyle = global::lirksi.Mobile.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeSelectAllDrawable = global::lirksi.Mobile.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeShareDrawable = global::lirksi.Mobile.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeSplitBackground = global::lirksi.Mobile.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeStyle = global::lirksi.Mobile.Droid.Resource.Attribute.actionModeStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeWebSearchDrawable = global::lirksi.Mobile.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.actionOverflowButtonStyle = global::lirksi.Mobile.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionOverflowMenuStyle = global::lirksi.Mobile.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionProviderClass = global::lirksi.Mobile.Droid.Resource.Attribute.actionProviderClass;
+			global::Acr.UserDialogs.Resource.Attribute.actionViewClass = global::lirksi.Mobile.Droid.Resource.Attribute.actionViewClass;
+			global::Acr.UserDialogs.Resource.Attribute.activityChooserViewStyle = global::lirksi.Mobile.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Acr.UserDialogs.Resource.Attribute.ahBarColor = global::lirksi.Mobile.Droid.Resource.Attribute.ahBarColor;
+			global::Acr.UserDialogs.Resource.Attribute.ahBarLength = global::lirksi.Mobile.Droid.Resource.Attribute.ahBarLength;
+			global::Acr.UserDialogs.Resource.Attribute.ahBarWidth = global::lirksi.Mobile.Droid.Resource.Attribute.ahBarWidth;
+			global::Acr.UserDialogs.Resource.Attribute.ahCircleColor = global::lirksi.Mobile.Droid.Resource.Attribute.ahCircleColor;
+			global::Acr.UserDialogs.Resource.Attribute.ahDelayMillis = global::lirksi.Mobile.Droid.Resource.Attribute.ahDelayMillis;
+			global::Acr.UserDialogs.Resource.Attribute.ahRadius = global::lirksi.Mobile.Droid.Resource.Attribute.ahRadius;
+			global::Acr.UserDialogs.Resource.Attribute.ahRimColor = global::lirksi.Mobile.Droid.Resource.Attribute.ahRimColor;
+			global::Acr.UserDialogs.Resource.Attribute.ahRimWidth = global::lirksi.Mobile.Droid.Resource.Attribute.ahRimWidth;
+			global::Acr.UserDialogs.Resource.Attribute.ahSpinSpeed = global::lirksi.Mobile.Droid.Resource.Attribute.ahSpinSpeed;
+			global::Acr.UserDialogs.Resource.Attribute.ahText = global::lirksi.Mobile.Droid.Resource.Attribute.ahText;
+			global::Acr.UserDialogs.Resource.Attribute.ahTextColor = global::lirksi.Mobile.Droid.Resource.Attribute.ahTextColor;
+			global::Acr.UserDialogs.Resource.Attribute.ahTextSize = global::lirksi.Mobile.Droid.Resource.Attribute.ahTextSize;
+			global::Acr.UserDialogs.Resource.Attribute.alertDialogButtonGroupStyle = global::lirksi.Mobile.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Acr.UserDialogs.Resource.Attribute.alertDialogCenterButtons = global::lirksi.Mobile.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Acr.UserDialogs.Resource.Attribute.alertDialogStyle = global::lirksi.Mobile.Droid.Resource.Attribute.alertDialogStyle;
+			global::Acr.UserDialogs.Resource.Attribute.alertDialogTheme = global::lirksi.Mobile.Droid.Resource.Attribute.alertDialogTheme;
+			global::Acr.UserDialogs.Resource.Attribute.allowStacking = global::lirksi.Mobile.Droid.Resource.Attribute.allowStacking;
+			global::Acr.UserDialogs.Resource.Attribute.alpha = global::lirksi.Mobile.Droid.Resource.Attribute.alpha;
+			global::Acr.UserDialogs.Resource.Attribute.alphabeticModifiers = global::lirksi.Mobile.Droid.Resource.Attribute.alphabeticModifiers;
+			global::Acr.UserDialogs.Resource.Attribute.arrowHeadLength = global::lirksi.Mobile.Droid.Resource.Attribute.arrowHeadLength;
+			global::Acr.UserDialogs.Resource.Attribute.arrowShaftLength = global::lirksi.Mobile.Droid.Resource.Attribute.arrowShaftLength;
+			global::Acr.UserDialogs.Resource.Attribute.autoCompleteTextViewStyle = global::lirksi.Mobile.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Acr.UserDialogs.Resource.Attribute.autoSizeMaxTextSize = global::lirksi.Mobile.Droid.Resource.Attribute.autoSizeMaxTextSize;
+			global::Acr.UserDialogs.Resource.Attribute.autoSizeMinTextSize = global::lirksi.Mobile.Droid.Resource.Attribute.autoSizeMinTextSize;
+			global::Acr.UserDialogs.Resource.Attribute.autoSizePresetSizes = global::lirksi.Mobile.Droid.Resource.Attribute.autoSizePresetSizes;
+			global::Acr.UserDialogs.Resource.Attribute.autoSizeStepGranularity = global::lirksi.Mobile.Droid.Resource.Attribute.autoSizeStepGranularity;
+			global::Acr.UserDialogs.Resource.Attribute.autoSizeTextType = global::lirksi.Mobile.Droid.Resource.Attribute.autoSizeTextType;
+			global::Acr.UserDialogs.Resource.Attribute.background = global::lirksi.Mobile.Droid.Resource.Attribute.background;
+			global::Acr.UserDialogs.Resource.Attribute.backgroundSplit = global::lirksi.Mobile.Droid.Resource.Attribute.backgroundSplit;
+			global::Acr.UserDialogs.Resource.Attribute.backgroundStacked = global::lirksi.Mobile.Droid.Resource.Attribute.backgroundStacked;
+			global::Acr.UserDialogs.Resource.Attribute.backgroundTint = global::lirksi.Mobile.Droid.Resource.Attribute.backgroundTint;
+			global::Acr.UserDialogs.Resource.Attribute.backgroundTintMode = global::lirksi.Mobile.Droid.Resource.Attribute.backgroundTintMode;
+			global::Acr.UserDialogs.Resource.Attribute.barLength = global::lirksi.Mobile.Droid.Resource.Attribute.barLength;
+			global::Acr.UserDialogs.Resource.Attribute.behavior_autoHide = global::lirksi.Mobile.Droid.Resource.Attribute.behavior_autoHide;
+			global::Acr.UserDialogs.Resource.Attribute.behavior_fitToContents = global::lirksi.Mobile.Droid.Resource.Attribute.behavior_fitToContents;
+			global::Acr.UserDialogs.Resource.Attribute.behavior_hideable = global::lirksi.Mobile.Droid.Resource.Attribute.behavior_hideable;
+			global::Acr.UserDialogs.Resource.Attribute.behavior_overlapTop = global::lirksi.Mobile.Droid.Resource.Attribute.behavior_overlapTop;
+			global::Acr.UserDialogs.Resource.Attribute.behavior_peekHeight = global::lirksi.Mobile.Droid.Resource.Attribute.behavior_peekHeight;
+			global::Acr.UserDialogs.Resource.Attribute.behavior_skipCollapsed = global::lirksi.Mobile.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::Acr.UserDialogs.Resource.Attribute.borderlessButtonStyle = global::lirksi.Mobile.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.borderWidth = global::lirksi.Mobile.Droid.Resource.Attribute.borderWidth;
+			global::Acr.UserDialogs.Resource.Attribute.bottomAppBarStyle = global::lirksi.Mobile.Droid.Resource.Attribute.bottomAppBarStyle;
+			global::Acr.UserDialogs.Resource.Attribute.bottomNavigationStyle = global::lirksi.Mobile.Droid.Resource.Attribute.bottomNavigationStyle;
+			global::Acr.UserDialogs.Resource.Attribute.bottomSheetDialogTheme = global::lirksi.Mobile.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::Acr.UserDialogs.Resource.Attribute.bottomSheetStyle = global::lirksi.Mobile.Droid.Resource.Attribute.bottomSheetStyle;
+			global::Acr.UserDialogs.Resource.Attribute.boxBackgroundColor = global::lirksi.Mobile.Droid.Resource.Attribute.boxBackgroundColor;
+			global::Acr.UserDialogs.Resource.Attribute.boxBackgroundMode = global::lirksi.Mobile.Droid.Resource.Attribute.boxBackgroundMode;
+			global::Acr.UserDialogs.Resource.Attribute.boxCollapsedPaddingTop = global::lirksi.Mobile.Droid.Resource.Attribute.boxCollapsedPaddingTop;
+			global::Acr.UserDialogs.Resource.Attribute.boxCornerRadiusBottomEnd = global::lirksi.Mobile.Droid.Resource.Attribute.boxCornerRadiusBottomEnd;
+			global::Acr.UserDialogs.Resource.Attribute.boxCornerRadiusBottomStart = global::lirksi.Mobile.Droid.Resource.Attribute.boxCornerRadiusBottomStart;
+			global::Acr.UserDialogs.Resource.Attribute.boxCornerRadiusTopEnd = global::lirksi.Mobile.Droid.Resource.Attribute.boxCornerRadiusTopEnd;
+			global::Acr.UserDialogs.Resource.Attribute.boxCornerRadiusTopStart = global::lirksi.Mobile.Droid.Resource.Attribute.boxCornerRadiusTopStart;
+			global::Acr.UserDialogs.Resource.Attribute.boxStrokeColor = global::lirksi.Mobile.Droid.Resource.Attribute.boxStrokeColor;
+			global::Acr.UserDialogs.Resource.Attribute.boxStrokeWidth = global::lirksi.Mobile.Droid.Resource.Attribute.boxStrokeWidth;
+			global::Acr.UserDialogs.Resource.Attribute.buttonBarButtonStyle = global::lirksi.Mobile.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.buttonBarNegativeButtonStyle = global::lirksi.Mobile.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.buttonBarNeutralButtonStyle = global::lirksi.Mobile.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.buttonBarPositiveButtonStyle = global::lirksi.Mobile.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.buttonBarStyle = global::lirksi.Mobile.Droid.Resource.Attribute.buttonBarStyle;
+			global::Acr.UserDialogs.Resource.Attribute.buttonGravity = global::lirksi.Mobile.Droid.Resource.Attribute.buttonGravity;
+			global::Acr.UserDialogs.Resource.Attribute.buttonIconDimen = global::lirksi.Mobile.Droid.Resource.Attribute.buttonIconDimen;
+			global::Acr.UserDialogs.Resource.Attribute.buttonPanelSideLayout = global::lirksi.Mobile.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Acr.UserDialogs.Resource.Attribute.buttonStyle = global::lirksi.Mobile.Droid.Resource.Attribute.buttonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.buttonStyleSmall = global::lirksi.Mobile.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Acr.UserDialogs.Resource.Attribute.buttonTint = global::lirksi.Mobile.Droid.Resource.Attribute.buttonTint;
+			global::Acr.UserDialogs.Resource.Attribute.buttonTintMode = global::lirksi.Mobile.Droid.Resource.Attribute.buttonTintMode;
+			global::Acr.UserDialogs.Resource.Attribute.cardBackgroundColor = global::lirksi.Mobile.Droid.Resource.Attribute.cardBackgroundColor;
+			global::Acr.UserDialogs.Resource.Attribute.cardCornerRadius = global::lirksi.Mobile.Droid.Resource.Attribute.cardCornerRadius;
+			global::Acr.UserDialogs.Resource.Attribute.cardElevation = global::lirksi.Mobile.Droid.Resource.Attribute.cardElevation;
+			global::Acr.UserDialogs.Resource.Attribute.cardMaxElevation = global::lirksi.Mobile.Droid.Resource.Attribute.cardMaxElevation;
+			global::Acr.UserDialogs.Resource.Attribute.cardPreventCornerOverlap = global::lirksi.Mobile.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::Acr.UserDialogs.Resource.Attribute.cardUseCompatPadding = global::lirksi.Mobile.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::Acr.UserDialogs.Resource.Attribute.cardViewStyle = global::lirksi.Mobile.Droid.Resource.Attribute.cardViewStyle;
+			global::Acr.UserDialogs.Resource.Attribute.checkboxStyle = global::lirksi.Mobile.Droid.Resource.Attribute.checkboxStyle;
+			global::Acr.UserDialogs.Resource.Attribute.checkedChip = global::lirksi.Mobile.Droid.Resource.Attribute.checkedChip;
+			global::Acr.UserDialogs.Resource.Attribute.checkedIcon = global::lirksi.Mobile.Droid.Resource.Attribute.checkedIcon;
+			global::Acr.UserDialogs.Resource.Attribute.checkedIconEnabled = global::lirksi.Mobile.Droid.Resource.Attribute.checkedIconEnabled;
+			global::Acr.UserDialogs.Resource.Attribute.checkedIconVisible = global::lirksi.Mobile.Droid.Resource.Attribute.checkedIconVisible;
+			global::Acr.UserDialogs.Resource.Attribute.checkedTextViewStyle = global::lirksi.Mobile.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Acr.UserDialogs.Resource.Attribute.chipBackgroundColor = global::lirksi.Mobile.Droid.Resource.Attribute.chipBackgroundColor;
+			global::Acr.UserDialogs.Resource.Attribute.chipCornerRadius = global::lirksi.Mobile.Droid.Resource.Attribute.chipCornerRadius;
+			global::Acr.UserDialogs.Resource.Attribute.chipEndPadding = global::lirksi.Mobile.Droid.Resource.Attribute.chipEndPadding;
+			global::Acr.UserDialogs.Resource.Attribute.chipGroupStyle = global::lirksi.Mobile.Droid.Resource.Attribute.chipGroupStyle;
+			global::Acr.UserDialogs.Resource.Attribute.chipIcon = global::lirksi.Mobile.Droid.Resource.Attribute.chipIcon;
+			global::Acr.UserDialogs.Resource.Attribute.chipIconEnabled = global::lirksi.Mobile.Droid.Resource.Attribute.chipIconEnabled;
+			global::Acr.UserDialogs.Resource.Attribute.chipIconSize = global::lirksi.Mobile.Droid.Resource.Attribute.chipIconSize;
+			global::Acr.UserDialogs.Resource.Attribute.chipIconTint = global::lirksi.Mobile.Droid.Resource.Attribute.chipIconTint;
+			global::Acr.UserDialogs.Resource.Attribute.chipIconVisible = global::lirksi.Mobile.Droid.Resource.Attribute.chipIconVisible;
+			global::Acr.UserDialogs.Resource.Attribute.chipMinHeight = global::lirksi.Mobile.Droid.Resource.Attribute.chipMinHeight;
+			global::Acr.UserDialogs.Resource.Attribute.chipSpacing = global::lirksi.Mobile.Droid.Resource.Attribute.chipSpacing;
+			global::Acr.UserDialogs.Resource.Attribute.chipSpacingHorizontal = global::lirksi.Mobile.Droid.Resource.Attribute.chipSpacingHorizontal;
+			global::Acr.UserDialogs.Resource.Attribute.chipSpacingVertical = global::lirksi.Mobile.Droid.Resource.Attribute.chipSpacingVertical;
+			global::Acr.UserDialogs.Resource.Attribute.chipStandaloneStyle = global::lirksi.Mobile.Droid.Resource.Attribute.chipStandaloneStyle;
+			global::Acr.UserDialogs.Resource.Attribute.chipStartPadding = global::lirksi.Mobile.Droid.Resource.Attribute.chipStartPadding;
+			global::Acr.UserDialogs.Resource.Attribute.chipStrokeColor = global::lirksi.Mobile.Droid.Resource.Attribute.chipStrokeColor;
+			global::Acr.UserDialogs.Resource.Attribute.chipStrokeWidth = global::lirksi.Mobile.Droid.Resource.Attribute.chipStrokeWidth;
+			global::Acr.UserDialogs.Resource.Attribute.chipStyle = global::lirksi.Mobile.Droid.Resource.Attribute.chipStyle;
+			global::Acr.UserDialogs.Resource.Attribute.closeIcon = global::lirksi.Mobile.Droid.Resource.Attribute.closeIcon;
+			global::Acr.UserDialogs.Resource.Attribute.closeIconEnabled = global::lirksi.Mobile.Droid.Resource.Attribute.closeIconEnabled;
+			global::Acr.UserDialogs.Resource.Attribute.closeIconEndPadding = global::lirksi.Mobile.Droid.Resource.Attribute.closeIconEndPadding;
+			global::Acr.UserDialogs.Resource.Attribute.closeIconSize = global::lirksi.Mobile.Droid.Resource.Attribute.closeIconSize;
+			global::Acr.UserDialogs.Resource.Attribute.closeIconStartPadding = global::lirksi.Mobile.Droid.Resource.Attribute.closeIconStartPadding;
+			global::Acr.UserDialogs.Resource.Attribute.closeIconTint = global::lirksi.Mobile.Droid.Resource.Attribute.closeIconTint;
+			global::Acr.UserDialogs.Resource.Attribute.closeIconVisible = global::lirksi.Mobile.Droid.Resource.Attribute.closeIconVisible;
+			global::Acr.UserDialogs.Resource.Attribute.closeItemLayout = global::lirksi.Mobile.Droid.Resource.Attribute.closeItemLayout;
+			global::Acr.UserDialogs.Resource.Attribute.collapseContentDescription = global::lirksi.Mobile.Droid.Resource.Attribute.collapseContentDescription;
+			global::Acr.UserDialogs.Resource.Attribute.collapsedTitleGravity = global::lirksi.Mobile.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::Acr.UserDialogs.Resource.Attribute.collapsedTitleTextAppearance = global::lirksi.Mobile.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.collapseIcon = global::lirksi.Mobile.Droid.Resource.Attribute.collapseIcon;
+			global::Acr.UserDialogs.Resource.Attribute.color = global::lirksi.Mobile.Droid.Resource.Attribute.color;
+			global::Acr.UserDialogs.Resource.Attribute.colorAccent = global::lirksi.Mobile.Droid.Resource.Attribute.colorAccent;
+			global::Acr.UserDialogs.Resource.Attribute.colorBackgroundFloating = global::lirksi.Mobile.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::Acr.UserDialogs.Resource.Attribute.colorButtonNormal = global::lirksi.Mobile.Droid.Resource.Attribute.colorButtonNormal;
+			global::Acr.UserDialogs.Resource.Attribute.colorControlActivated = global::lirksi.Mobile.Droid.Resource.Attribute.colorControlActivated;
+			global::Acr.UserDialogs.Resource.Attribute.colorControlHighlight = global::lirksi.Mobile.Droid.Resource.Attribute.colorControlHighlight;
+			global::Acr.UserDialogs.Resource.Attribute.colorControlNormal = global::lirksi.Mobile.Droid.Resource.Attribute.colorControlNormal;
+			global::Acr.UserDialogs.Resource.Attribute.colorError = global::lirksi.Mobile.Droid.Resource.Attribute.colorError;
+			global::Acr.UserDialogs.Resource.Attribute.colorPrimary = global::lirksi.Mobile.Droid.Resource.Attribute.colorPrimary;
+			global::Acr.UserDialogs.Resource.Attribute.colorPrimaryDark = global::lirksi.Mobile.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Acr.UserDialogs.Resource.Attribute.colorSecondary = global::lirksi.Mobile.Droid.Resource.Attribute.colorSecondary;
+			global::Acr.UserDialogs.Resource.Attribute.colorSwitchThumbNormal = global::lirksi.Mobile.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Acr.UserDialogs.Resource.Attribute.commitIcon = global::lirksi.Mobile.Droid.Resource.Attribute.commitIcon;
+			global::Acr.UserDialogs.Resource.Attribute.contentDescription = global::lirksi.Mobile.Droid.Resource.Attribute.contentDescription;
+			global::Acr.UserDialogs.Resource.Attribute.contentInsetEnd = global::lirksi.Mobile.Droid.Resource.Attribute.contentInsetEnd;
+			global::Acr.UserDialogs.Resource.Attribute.contentInsetEndWithActions = global::lirksi.Mobile.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::Acr.UserDialogs.Resource.Attribute.contentInsetLeft = global::lirksi.Mobile.Droid.Resource.Attribute.contentInsetLeft;
+			global::Acr.UserDialogs.Resource.Attribute.contentInsetRight = global::lirksi.Mobile.Droid.Resource.Attribute.contentInsetRight;
+			global::Acr.UserDialogs.Resource.Attribute.contentInsetStart = global::lirksi.Mobile.Droid.Resource.Attribute.contentInsetStart;
+			global::Acr.UserDialogs.Resource.Attribute.contentInsetStartWithNavigation = global::lirksi.Mobile.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::Acr.UserDialogs.Resource.Attribute.contentPadding = global::lirksi.Mobile.Droid.Resource.Attribute.contentPadding;
+			global::Acr.UserDialogs.Resource.Attribute.contentPaddingBottom = global::lirksi.Mobile.Droid.Resource.Attribute.contentPaddingBottom;
+			global::Acr.UserDialogs.Resource.Attribute.contentPaddingLeft = global::lirksi.Mobile.Droid.Resource.Attribute.contentPaddingLeft;
+			global::Acr.UserDialogs.Resource.Attribute.contentPaddingRight = global::lirksi.Mobile.Droid.Resource.Attribute.contentPaddingRight;
+			global::Acr.UserDialogs.Resource.Attribute.contentPaddingTop = global::lirksi.Mobile.Droid.Resource.Attribute.contentPaddingTop;
+			global::Acr.UserDialogs.Resource.Attribute.contentScrim = global::lirksi.Mobile.Droid.Resource.Attribute.contentScrim;
+			global::Acr.UserDialogs.Resource.Attribute.controlBackground = global::lirksi.Mobile.Droid.Resource.Attribute.controlBackground;
+			global::Acr.UserDialogs.Resource.Attribute.coordinatorLayoutStyle = global::lirksi.Mobile.Droid.Resource.Attribute.coordinatorLayoutStyle;
+			global::Acr.UserDialogs.Resource.Attribute.cornerRadius = global::lirksi.Mobile.Droid.Resource.Attribute.cornerRadius;
+			global::Acr.UserDialogs.Resource.Attribute.counterEnabled = global::lirksi.Mobile.Droid.Resource.Attribute.counterEnabled;
+			global::Acr.UserDialogs.Resource.Attribute.counterMaxLength = global::lirksi.Mobile.Droid.Resource.Attribute.counterMaxLength;
+			global::Acr.UserDialogs.Resource.Attribute.counterOverflowTextAppearance = global::lirksi.Mobile.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.counterTextAppearance = global::lirksi.Mobile.Droid.Resource.Attribute.counterTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.customNavigationLayout = global::lirksi.Mobile.Droid.Resource.Attribute.customNavigationLayout;
+			global::Acr.UserDialogs.Resource.Attribute.defaultQueryHint = global::lirksi.Mobile.Droid.Resource.Attribute.defaultQueryHint;
+			global::Acr.UserDialogs.Resource.Attribute.dialogCornerRadius = global::lirksi.Mobile.Droid.Resource.Attribute.dialogCornerRadius;
+			global::Acr.UserDialogs.Resource.Attribute.dialogPreferredPadding = global::lirksi.Mobile.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Acr.UserDialogs.Resource.Attribute.dialogTheme = global::lirksi.Mobile.Droid.Resource.Attribute.dialogTheme;
+			global::Acr.UserDialogs.Resource.Attribute.displayOptions = global::lirksi.Mobile.Droid.Resource.Attribute.displayOptions;
+			global::Acr.UserDialogs.Resource.Attribute.divider = global::lirksi.Mobile.Droid.Resource.Attribute.divider;
+			global::Acr.UserDialogs.Resource.Attribute.dividerHorizontal = global::lirksi.Mobile.Droid.Resource.Attribute.dividerHorizontal;
+			global::Acr.UserDialogs.Resource.Attribute.dividerPadding = global::lirksi.Mobile.Droid.Resource.Attribute.dividerPadding;
+			global::Acr.UserDialogs.Resource.Attribute.dividerVertical = global::lirksi.Mobile.Droid.Resource.Attribute.dividerVertical;
+			global::Acr.UserDialogs.Resource.Attribute.drawableSize = global::lirksi.Mobile.Droid.Resource.Attribute.drawableSize;
+			global::Acr.UserDialogs.Resource.Attribute.drawerArrowStyle = global::lirksi.Mobile.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Acr.UserDialogs.Resource.Attribute.dropdownListPreferredItemHeight = global::lirksi.Mobile.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Acr.UserDialogs.Resource.Attribute.dropDownListViewStyle = global::lirksi.Mobile.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Acr.UserDialogs.Resource.Attribute.editTextBackground = global::lirksi.Mobile.Droid.Resource.Attribute.editTextBackground;
+			global::Acr.UserDialogs.Resource.Attribute.editTextColor = global::lirksi.Mobile.Droid.Resource.Attribute.editTextColor;
+			global::Acr.UserDialogs.Resource.Attribute.editTextStyle = global::lirksi.Mobile.Droid.Resource.Attribute.editTextStyle;
+			global::Acr.UserDialogs.Resource.Attribute.elevation = global::lirksi.Mobile.Droid.Resource.Attribute.elevation;
+			global::Acr.UserDialogs.Resource.Attribute.enforceMaterialTheme = global::lirksi.Mobile.Droid.Resource.Attribute.enforceMaterialTheme;
+			global::Acr.UserDialogs.Resource.Attribute.enforceTextAppearance = global::lirksi.Mobile.Droid.Resource.Attribute.enforceTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.errorEnabled = global::lirksi.Mobile.Droid.Resource.Attribute.errorEnabled;
+			global::Acr.UserDialogs.Resource.Attribute.errorTextAppearance = global::lirksi.Mobile.Droid.Resource.Attribute.errorTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.expandActivityOverflowButtonDrawable = global::lirksi.Mobile.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.expanded = global::lirksi.Mobile.Droid.Resource.Attribute.expanded;
+			global::Acr.UserDialogs.Resource.Attribute.expandedTitleGravity = global::lirksi.Mobile.Droid.Resource.Attribute.expandedTitleGravity;
+			global::Acr.UserDialogs.Resource.Attribute.expandedTitleMargin = global::lirksi.Mobile.Droid.Resource.Attribute.expandedTitleMargin;
+			global::Acr.UserDialogs.Resource.Attribute.expandedTitleMarginBottom = global::lirksi.Mobile.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::Acr.UserDialogs.Resource.Attribute.expandedTitleMarginEnd = global::lirksi.Mobile.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::Acr.UserDialogs.Resource.Attribute.expandedTitleMarginStart = global::lirksi.Mobile.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::Acr.UserDialogs.Resource.Attribute.expandedTitleMarginTop = global::lirksi.Mobile.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::Acr.UserDialogs.Resource.Attribute.expandedTitleTextAppearance = global::lirksi.Mobile.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.fabAlignmentMode = global::lirksi.Mobile.Droid.Resource.Attribute.fabAlignmentMode;
+			global::Acr.UserDialogs.Resource.Attribute.fabCradleMargin = global::lirksi.Mobile.Droid.Resource.Attribute.fabCradleMargin;
+			global::Acr.UserDialogs.Resource.Attribute.fabCradleRoundedCornerRadius = global::lirksi.Mobile.Droid.Resource.Attribute.fabCradleRoundedCornerRadius;
+			global::Acr.UserDialogs.Resource.Attribute.fabCradleVerticalOffset = global::lirksi.Mobile.Droid.Resource.Attribute.fabCradleVerticalOffset;
+			global::Acr.UserDialogs.Resource.Attribute.fabCustomSize = global::lirksi.Mobile.Droid.Resource.Attribute.fabCustomSize;
+			global::Acr.UserDialogs.Resource.Attribute.fabSize = global::lirksi.Mobile.Droid.Resource.Attribute.fabSize;
+			global::Acr.UserDialogs.Resource.Attribute.fastScrollEnabled = global::lirksi.Mobile.Droid.Resource.Attribute.fastScrollEnabled;
+			global::Acr.UserDialogs.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::lirksi.Mobile.Droid.Resource.Attribute.fastScrollHorizontalThumbDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::lirksi.Mobile.Droid.Resource.Attribute.fastScrollHorizontalTrackDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.fastScrollVerticalThumbDrawable = global::lirksi.Mobile.Droid.Resource.Attribute.fastScrollVerticalThumbDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.fastScrollVerticalTrackDrawable = global::lirksi.Mobile.Droid.Resource.Attribute.fastScrollVerticalTrackDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.firstBaselineToTopHeight = global::lirksi.Mobile.Droid.Resource.Attribute.firstBaselineToTopHeight;
+			global::Acr.UserDialogs.Resource.Attribute.floatingActionButtonStyle = global::lirksi.Mobile.Droid.Resource.Attribute.floatingActionButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.font = global::lirksi.Mobile.Droid.Resource.Attribute.font;
+			global::Acr.UserDialogs.Resource.Attribute.fontFamily = global::lirksi.Mobile.Droid.Resource.Attribute.fontFamily;
+			global::Acr.UserDialogs.Resource.Attribute.fontProviderAuthority = global::lirksi.Mobile.Droid.Resource.Attribute.fontProviderAuthority;
+			global::Acr.UserDialogs.Resource.Attribute.fontProviderCerts = global::lirksi.Mobile.Droid.Resource.Attribute.fontProviderCerts;
+			global::Acr.UserDialogs.Resource.Attribute.fontProviderFetchStrategy = global::lirksi.Mobile.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Acr.UserDialogs.Resource.Attribute.fontProviderFetchTimeout = global::lirksi.Mobile.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Acr.UserDialogs.Resource.Attribute.fontProviderPackage = global::lirksi.Mobile.Droid.Resource.Attribute.fontProviderPackage;
+			global::Acr.UserDialogs.Resource.Attribute.fontProviderQuery = global::lirksi.Mobile.Droid.Resource.Attribute.fontProviderQuery;
+			global::Acr.UserDialogs.Resource.Attribute.fontStyle = global::lirksi.Mobile.Droid.Resource.Attribute.fontStyle;
+			global::Acr.UserDialogs.Resource.Attribute.fontVariationSettings = global::lirksi.Mobile.Droid.Resource.Attribute.fontVariationSettings;
+			global::Acr.UserDialogs.Resource.Attribute.fontWeight = global::lirksi.Mobile.Droid.Resource.Attribute.fontWeight;
+			global::Acr.UserDialogs.Resource.Attribute.foregroundInsidePadding = global::lirksi.Mobile.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::Acr.UserDialogs.Resource.Attribute.gapBetweenBars = global::lirksi.Mobile.Droid.Resource.Attribute.gapBetweenBars;
+			global::Acr.UserDialogs.Resource.Attribute.goIcon = global::lirksi.Mobile.Droid.Resource.Attribute.goIcon;
+			global::Acr.UserDialogs.Resource.Attribute.headerLayout = global::lirksi.Mobile.Droid.Resource.Attribute.headerLayout;
+			global::Acr.UserDialogs.Resource.Attribute.height = global::lirksi.Mobile.Droid.Resource.Attribute.height;
+			global::Acr.UserDialogs.Resource.Attribute.helperText = global::lirksi.Mobile.Droid.Resource.Attribute.helperText;
+			global::Acr.UserDialogs.Resource.Attribute.helperTextEnabled = global::lirksi.Mobile.Droid.Resource.Attribute.helperTextEnabled;
+			global::Acr.UserDialogs.Resource.Attribute.helperTextTextAppearance = global::lirksi.Mobile.Droid.Resource.Attribute.helperTextTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.hideMotionSpec = global::lirksi.Mobile.Droid.Resource.Attribute.hideMotionSpec;
+			global::Acr.UserDialogs.Resource.Attribute.hideOnContentScroll = global::lirksi.Mobile.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Acr.UserDialogs.Resource.Attribute.hideOnScroll = global::lirksi.Mobile.Droid.Resource.Attribute.hideOnScroll;
+			global::Acr.UserDialogs.Resource.Attribute.hintAnimationEnabled = global::lirksi.Mobile.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::Acr.UserDialogs.Resource.Attribute.hintEnabled = global::lirksi.Mobile.Droid.Resource.Attribute.hintEnabled;
+			global::Acr.UserDialogs.Resource.Attribute.hintTextAppearance = global::lirksi.Mobile.Droid.Resource.Attribute.hintTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.homeAsUpIndicator = global::lirksi.Mobile.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Acr.UserDialogs.Resource.Attribute.homeLayout = global::lirksi.Mobile.Droid.Resource.Attribute.homeLayout;
+			global::Acr.UserDialogs.Resource.Attribute.hoveredFocusedTranslationZ = global::lirksi.Mobile.Droid.Resource.Attribute.hoveredFocusedTranslationZ;
+			global::Acr.UserDialogs.Resource.Attribute.icon = global::lirksi.Mobile.Droid.Resource.Attribute.icon;
+			global::Acr.UserDialogs.Resource.Attribute.iconEndPadding = global::lirksi.Mobile.Droid.Resource.Attribute.iconEndPadding;
+			global::Acr.UserDialogs.Resource.Attribute.iconGravity = global::lirksi.Mobile.Droid.Resource.Attribute.iconGravity;
+			global::Acr.UserDialogs.Resource.Attribute.iconifiedByDefault = global::lirksi.Mobile.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Acr.UserDialogs.Resource.Attribute.iconPadding = global::lirksi.Mobile.Droid.Resource.Attribute.iconPadding;
+			global::Acr.UserDialogs.Resource.Attribute.iconSize = global::lirksi.Mobile.Droid.Resource.Attribute.iconSize;
+			global::Acr.UserDialogs.Resource.Attribute.iconStartPadding = global::lirksi.Mobile.Droid.Resource.Attribute.iconStartPadding;
+			global::Acr.UserDialogs.Resource.Attribute.iconTint = global::lirksi.Mobile.Droid.Resource.Attribute.iconTint;
+			global::Acr.UserDialogs.Resource.Attribute.iconTintMode = global::lirksi.Mobile.Droid.Resource.Attribute.iconTintMode;
+			global::Acr.UserDialogs.Resource.Attribute.imageButtonStyle = global::lirksi.Mobile.Droid.Resource.Attribute.imageButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.indeterminateProgressStyle = global::lirksi.Mobile.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Acr.UserDialogs.Resource.Attribute.initialActivityCount = global::lirksi.Mobile.Droid.Resource.Attribute.initialActivityCount;
+			global::Acr.UserDialogs.Resource.Attribute.insetForeground = global::lirksi.Mobile.Droid.Resource.Attribute.insetForeground;
+			global::Acr.UserDialogs.Resource.Attribute.isLightTheme = global::lirksi.Mobile.Droid.Resource.Attribute.isLightTheme;
+			global::Acr.UserDialogs.Resource.Attribute.itemBackground = global::lirksi.Mobile.Droid.Resource.Attribute.itemBackground;
+			global::Acr.UserDialogs.Resource.Attribute.itemHorizontalPadding = global::lirksi.Mobile.Droid.Resource.Attribute.itemHorizontalPadding;
+			global::Acr.UserDialogs.Resource.Attribute.itemHorizontalTranslationEnabled = global::lirksi.Mobile.Droid.Resource.Attribute.itemHorizontalTranslationEnabled;
+			global::Acr.UserDialogs.Resource.Attribute.itemIconPadding = global::lirksi.Mobile.Droid.Resource.Attribute.itemIconPadding;
+			global::Acr.UserDialogs.Resource.Attribute.itemIconSize = global::lirksi.Mobile.Droid.Resource.Attribute.itemIconSize;
+			global::Acr.UserDialogs.Resource.Attribute.itemIconTint = global::lirksi.Mobile.Droid.Resource.Attribute.itemIconTint;
+			global::Acr.UserDialogs.Resource.Attribute.itemPadding = global::lirksi.Mobile.Droid.Resource.Attribute.itemPadding;
+			global::Acr.UserDialogs.Resource.Attribute.itemSpacing = global::lirksi.Mobile.Droid.Resource.Attribute.itemSpacing;
+			global::Acr.UserDialogs.Resource.Attribute.itemTextAppearance = global::lirksi.Mobile.Droid.Resource.Attribute.itemTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.itemTextAppearanceActive = global::lirksi.Mobile.Droid.Resource.Attribute.itemTextAppearanceActive;
+			global::Acr.UserDialogs.Resource.Attribute.itemTextAppearanceInactive = global::lirksi.Mobile.Droid.Resource.Attribute.itemTextAppearanceInactive;
+			global::Acr.UserDialogs.Resource.Attribute.itemTextColor = global::lirksi.Mobile.Droid.Resource.Attribute.itemTextColor;
+			global::Acr.UserDialogs.Resource.Attribute.keylines = global::lirksi.Mobile.Droid.Resource.Attribute.keylines;
+			global::Acr.UserDialogs.Resource.Attribute.labelVisibilityMode = global::lirksi.Mobile.Droid.Resource.Attribute.labelVisibilityMode;
+			global::Acr.UserDialogs.Resource.Attribute.lastBaselineToBottomHeight = global::lirksi.Mobile.Droid.Resource.Attribute.lastBaselineToBottomHeight;
+			global::Acr.UserDialogs.Resource.Attribute.layout = global::lirksi.Mobile.Droid.Resource.Attribute.layout;
+			global::Acr.UserDialogs.Resource.Attribute.layoutManager = global::lirksi.Mobile.Droid.Resource.Attribute.layoutManager;
+			global::Acr.UserDialogs.Resource.Attribute.layout_anchor = global::lirksi.Mobile.Droid.Resource.Attribute.layout_anchor;
+			global::Acr.UserDialogs.Resource.Attribute.layout_anchorGravity = global::lirksi.Mobile.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Acr.UserDialogs.Resource.Attribute.layout_behavior = global::lirksi.Mobile.Droid.Resource.Attribute.layout_behavior;
+			global::Acr.UserDialogs.Resource.Attribute.layout_collapseMode = global::lirksi.Mobile.Droid.Resource.Attribute.layout_collapseMode;
+			global::Acr.UserDialogs.Resource.Attribute.layout_collapseParallaxMultiplier = global::lirksi.Mobile.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Acr.UserDialogs.Resource.Attribute.layout_dodgeInsetEdges = global::lirksi.Mobile.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Acr.UserDialogs.Resource.Attribute.layout_insetEdge = global::lirksi.Mobile.Droid.Resource.Attribute.layout_insetEdge;
+			global::Acr.UserDialogs.Resource.Attribute.layout_keyline = global::lirksi.Mobile.Droid.Resource.Attribute.layout_keyline;
+			global::Acr.UserDialogs.Resource.Attribute.layout_scrollFlags = global::lirksi.Mobile.Droid.Resource.Attribute.layout_scrollFlags;
+			global::Acr.UserDialogs.Resource.Attribute.layout_scrollInterpolator = global::lirksi.Mobile.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::Acr.UserDialogs.Resource.Attribute.liftOnScroll = global::lirksi.Mobile.Droid.Resource.Attribute.liftOnScroll;
+			global::Acr.UserDialogs.Resource.Attribute.lineHeight = global::lirksi.Mobile.Droid.Resource.Attribute.lineHeight;
+			global::Acr.UserDialogs.Resource.Attribute.lineSpacing = global::lirksi.Mobile.Droid.Resource.Attribute.lineSpacing;
+			global::Acr.UserDialogs.Resource.Attribute.listChoiceBackgroundIndicator = global::lirksi.Mobile.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Acr.UserDialogs.Resource.Attribute.listDividerAlertDialog = global::lirksi.Mobile.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Acr.UserDialogs.Resource.Attribute.listItemLayout = global::lirksi.Mobile.Droid.Resource.Attribute.listItemLayout;
+			global::Acr.UserDialogs.Resource.Attribute.listLayout = global::lirksi.Mobile.Droid.Resource.Attribute.listLayout;
+			global::Acr.UserDialogs.Resource.Attribute.listMenuViewStyle = global::lirksi.Mobile.Droid.Resource.Attribute.listMenuViewStyle;
+			global::Acr.UserDialogs.Resource.Attribute.listPopupWindowStyle = global::lirksi.Mobile.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Acr.UserDialogs.Resource.Attribute.listPreferredItemHeight = global::lirksi.Mobile.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Acr.UserDialogs.Resource.Attribute.listPreferredItemHeightLarge = global::lirksi.Mobile.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Acr.UserDialogs.Resource.Attribute.listPreferredItemHeightSmall = global::lirksi.Mobile.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Acr.UserDialogs.Resource.Attribute.listPreferredItemPaddingLeft = global::lirksi.Mobile.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Acr.UserDialogs.Resource.Attribute.listPreferredItemPaddingRight = global::lirksi.Mobile.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Acr.UserDialogs.Resource.Attribute.logo = global::lirksi.Mobile.Droid.Resource.Attribute.logo;
+			global::Acr.UserDialogs.Resource.Attribute.logoDescription = global::lirksi.Mobile.Droid.Resource.Attribute.logoDescription;
+			global::Acr.UserDialogs.Resource.Attribute.materialButtonStyle = global::lirksi.Mobile.Droid.Resource.Attribute.materialButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.materialCardViewStyle = global::lirksi.Mobile.Droid.Resource.Attribute.materialCardViewStyle;
+			global::Acr.UserDialogs.Resource.Attribute.maxActionInlineWidth = global::lirksi.Mobile.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::Acr.UserDialogs.Resource.Attribute.maxButtonHeight = global::lirksi.Mobile.Droid.Resource.Attribute.maxButtonHeight;
+			global::Acr.UserDialogs.Resource.Attribute.maxImageSize = global::lirksi.Mobile.Droid.Resource.Attribute.maxImageSize;
+			global::Acr.UserDialogs.Resource.Attribute.measureWithLargestChild = global::lirksi.Mobile.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Acr.UserDialogs.Resource.Attribute.menu = global::lirksi.Mobile.Droid.Resource.Attribute.menu;
+			global::Acr.UserDialogs.Resource.Attribute.multiChoiceItemLayout = global::lirksi.Mobile.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Acr.UserDialogs.Resource.Attribute.navigationContentDescription = global::lirksi.Mobile.Droid.Resource.Attribute.navigationContentDescription;
+			global::Acr.UserDialogs.Resource.Attribute.navigationIcon = global::lirksi.Mobile.Droid.Resource.Attribute.navigationIcon;
+			global::Acr.UserDialogs.Resource.Attribute.navigationMode = global::lirksi.Mobile.Droid.Resource.Attribute.navigationMode;
+			global::Acr.UserDialogs.Resource.Attribute.navigationViewStyle = global::lirksi.Mobile.Droid.Resource.Attribute.navigationViewStyle;
+			global::Acr.UserDialogs.Resource.Attribute.numericModifiers = global::lirksi.Mobile.Droid.Resource.Attribute.numericModifiers;
+			global::Acr.UserDialogs.Resource.Attribute.overlapAnchor = global::lirksi.Mobile.Droid.Resource.Attribute.overlapAnchor;
+			global::Acr.UserDialogs.Resource.Attribute.paddingBottomNoButtons = global::lirksi.Mobile.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::Acr.UserDialogs.Resource.Attribute.paddingEnd = global::lirksi.Mobile.Droid.Resource.Attribute.paddingEnd;
+			global::Acr.UserDialogs.Resource.Attribute.paddingStart = global::lirksi.Mobile.Droid.Resource.Attribute.paddingStart;
+			global::Acr.UserDialogs.Resource.Attribute.paddingTopNoTitle = global::lirksi.Mobile.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::Acr.UserDialogs.Resource.Attribute.panelBackground = global::lirksi.Mobile.Droid.Resource.Attribute.panelBackground;
+			global::Acr.UserDialogs.Resource.Attribute.panelMenuListTheme = global::lirksi.Mobile.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Acr.UserDialogs.Resource.Attribute.panelMenuListWidth = global::lirksi.Mobile.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Acr.UserDialogs.Resource.Attribute.passwordToggleContentDescription = global::lirksi.Mobile.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::Acr.UserDialogs.Resource.Attribute.passwordToggleDrawable = global::lirksi.Mobile.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.passwordToggleEnabled = global::lirksi.Mobile.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::Acr.UserDialogs.Resource.Attribute.passwordToggleTint = global::lirksi.Mobile.Droid.Resource.Attribute.passwordToggleTint;
+			global::Acr.UserDialogs.Resource.Attribute.passwordToggleTintMode = global::lirksi.Mobile.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::Acr.UserDialogs.Resource.Attribute.popupMenuStyle = global::lirksi.Mobile.Droid.Resource.Attribute.popupMenuStyle;
+			global::Acr.UserDialogs.Resource.Attribute.popupTheme = global::lirksi.Mobile.Droid.Resource.Attribute.popupTheme;
+			global::Acr.UserDialogs.Resource.Attribute.popupWindowStyle = global::lirksi.Mobile.Droid.Resource.Attribute.popupWindowStyle;
+			global::Acr.UserDialogs.Resource.Attribute.preserveIconSpacing = global::lirksi.Mobile.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Acr.UserDialogs.Resource.Attribute.pressedTranslationZ = global::lirksi.Mobile.Droid.Resource.Attribute.pressedTranslationZ;
+			global::Acr.UserDialogs.Resource.Attribute.progressBarPadding = global::lirksi.Mobile.Droid.Resource.Attribute.progressBarPadding;
+			global::Acr.UserDialogs.Resource.Attribute.progressBarStyle = global::lirksi.Mobile.Droid.Resource.Attribute.progressBarStyle;
+			global::Acr.UserDialogs.Resource.Attribute.queryBackground = global::lirksi.Mobile.Droid.Resource.Attribute.queryBackground;
+			global::Acr.UserDialogs.Resource.Attribute.queryHint = global::lirksi.Mobile.Droid.Resource.Attribute.queryHint;
+			global::Acr.UserDialogs.Resource.Attribute.radioButtonStyle = global::lirksi.Mobile.Droid.Resource.Attribute.radioButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.ratingBarStyle = global::lirksi.Mobile.Droid.Resource.Attribute.ratingBarStyle;
+			global::Acr.UserDialogs.Resource.Attribute.ratingBarStyleIndicator = global::lirksi.Mobile.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Acr.UserDialogs.Resource.Attribute.ratingBarStyleSmall = global::lirksi.Mobile.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Acr.UserDialogs.Resource.Attribute.reverseLayout = global::lirksi.Mobile.Droid.Resource.Attribute.reverseLayout;
+			global::Acr.UserDialogs.Resource.Attribute.rippleColor = global::lirksi.Mobile.Droid.Resource.Attribute.rippleColor;
+			global::Acr.UserDialogs.Resource.Attribute.scrimAnimationDuration = global::lirksi.Mobile.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::Acr.UserDialogs.Resource.Attribute.scrimBackground = global::lirksi.Mobile.Droid.Resource.Attribute.scrimBackground;
+			global::Acr.UserDialogs.Resource.Attribute.scrimVisibleHeightTrigger = global::lirksi.Mobile.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Acr.UserDialogs.Resource.Attribute.searchHintIcon = global::lirksi.Mobile.Droid.Resource.Attribute.searchHintIcon;
+			global::Acr.UserDialogs.Resource.Attribute.searchIcon = global::lirksi.Mobile.Droid.Resource.Attribute.searchIcon;
+			global::Acr.UserDialogs.Resource.Attribute.searchViewStyle = global::lirksi.Mobile.Droid.Resource.Attribute.searchViewStyle;
+			global::Acr.UserDialogs.Resource.Attribute.seekBarStyle = global::lirksi.Mobile.Droid.Resource.Attribute.seekBarStyle;
+			global::Acr.UserDialogs.Resource.Attribute.selectableItemBackground = global::lirksi.Mobile.Droid.Resource.Attribute.selectableItemBackground;
+			global::Acr.UserDialogs.Resource.Attribute.selectableItemBackgroundBorderless = global::lirksi.Mobile.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Acr.UserDialogs.Resource.Attribute.showAsAction = global::lirksi.Mobile.Droid.Resource.Attribute.showAsAction;
+			global::Acr.UserDialogs.Resource.Attribute.showDividers = global::lirksi.Mobile.Droid.Resource.Attribute.showDividers;
+			global::Acr.UserDialogs.Resource.Attribute.showMotionSpec = global::lirksi.Mobile.Droid.Resource.Attribute.showMotionSpec;
+			global::Acr.UserDialogs.Resource.Attribute.showText = global::lirksi.Mobile.Droid.Resource.Attribute.showText;
+			global::Acr.UserDialogs.Resource.Attribute.showTitle = global::lirksi.Mobile.Droid.Resource.Attribute.showTitle;
+			global::Acr.UserDialogs.Resource.Attribute.singleChoiceItemLayout = global::lirksi.Mobile.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Acr.UserDialogs.Resource.Attribute.singleLine = global::lirksi.Mobile.Droid.Resource.Attribute.singleLine;
+			global::Acr.UserDialogs.Resource.Attribute.singleSelection = global::lirksi.Mobile.Droid.Resource.Attribute.singleSelection;
+			global::Acr.UserDialogs.Resource.Attribute.snackbarButtonStyle = global::lirksi.Mobile.Droid.Resource.Attribute.snackbarButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.snackbarStyle = global::lirksi.Mobile.Droid.Resource.Attribute.snackbarStyle;
+			global::Acr.UserDialogs.Resource.Attribute.spanCount = global::lirksi.Mobile.Droid.Resource.Attribute.spanCount;
+			global::Acr.UserDialogs.Resource.Attribute.spinBars = global::lirksi.Mobile.Droid.Resource.Attribute.spinBars;
+			global::Acr.UserDialogs.Resource.Attribute.spinnerDropDownItemStyle = global::lirksi.Mobile.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Acr.UserDialogs.Resource.Attribute.spinnerStyle = global::lirksi.Mobile.Droid.Resource.Attribute.spinnerStyle;
+			global::Acr.UserDialogs.Resource.Attribute.splitTrack = global::lirksi.Mobile.Droid.Resource.Attribute.splitTrack;
+			global::Acr.UserDialogs.Resource.Attribute.srcCompat = global::lirksi.Mobile.Droid.Resource.Attribute.srcCompat;
+			global::Acr.UserDialogs.Resource.Attribute.stackFromEnd = global::lirksi.Mobile.Droid.Resource.Attribute.stackFromEnd;
+			global::Acr.UserDialogs.Resource.Attribute.state_above_anchor = global::lirksi.Mobile.Droid.Resource.Attribute.state_above_anchor;
+			global::Acr.UserDialogs.Resource.Attribute.state_collapsed = global::lirksi.Mobile.Droid.Resource.Attribute.state_collapsed;
+			global::Acr.UserDialogs.Resource.Attribute.state_collapsible = global::lirksi.Mobile.Droid.Resource.Attribute.state_collapsible;
+			global::Acr.UserDialogs.Resource.Attribute.state_liftable = global::lirksi.Mobile.Droid.Resource.Attribute.state_liftable;
+			global::Acr.UserDialogs.Resource.Attribute.state_lifted = global::lirksi.Mobile.Droid.Resource.Attribute.state_lifted;
+			global::Acr.UserDialogs.Resource.Attribute.statusBarBackground = global::lirksi.Mobile.Droid.Resource.Attribute.statusBarBackground;
+			global::Acr.UserDialogs.Resource.Attribute.statusBarScrim = global::lirksi.Mobile.Droid.Resource.Attribute.statusBarScrim;
+			global::Acr.UserDialogs.Resource.Attribute.strokeColor = global::lirksi.Mobile.Droid.Resource.Attribute.strokeColor;
+			global::Acr.UserDialogs.Resource.Attribute.strokeWidth = global::lirksi.Mobile.Droid.Resource.Attribute.strokeWidth;
+			global::Acr.UserDialogs.Resource.Attribute.subMenuArrow = global::lirksi.Mobile.Droid.Resource.Attribute.subMenuArrow;
+			global::Acr.UserDialogs.Resource.Attribute.submitBackground = global::lirksi.Mobile.Droid.Resource.Attribute.submitBackground;
+			global::Acr.UserDialogs.Resource.Attribute.subtitle = global::lirksi.Mobile.Droid.Resource.Attribute.subtitle;
+			global::Acr.UserDialogs.Resource.Attribute.subtitleTextAppearance = global::lirksi.Mobile.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.subtitleTextColor = global::lirksi.Mobile.Droid.Resource.Attribute.subtitleTextColor;
+			global::Acr.UserDialogs.Resource.Attribute.subtitleTextStyle = global::lirksi.Mobile.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Acr.UserDialogs.Resource.Attribute.suggestionRowLayout = global::lirksi.Mobile.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Acr.UserDialogs.Resource.Attribute.switchMinWidth = global::lirksi.Mobile.Droid.Resource.Attribute.switchMinWidth;
+			global::Acr.UserDialogs.Resource.Attribute.switchPadding = global::lirksi.Mobile.Droid.Resource.Attribute.switchPadding;
+			global::Acr.UserDialogs.Resource.Attribute.switchStyle = global::lirksi.Mobile.Droid.Resource.Attribute.switchStyle;
+			global::Acr.UserDialogs.Resource.Attribute.switchTextAppearance = global::lirksi.Mobile.Droid.Resource.Attribute.switchTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.tabBackground = global::lirksi.Mobile.Droid.Resource.Attribute.tabBackground;
+			global::Acr.UserDialogs.Resource.Attribute.tabContentStart = global::lirksi.Mobile.Droid.Resource.Attribute.tabContentStart;
+			global::Acr.UserDialogs.Resource.Attribute.tabGravity = global::lirksi.Mobile.Droid.Resource.Attribute.tabGravity;
+			global::Acr.UserDialogs.Resource.Attribute.tabIconTint = global::lirksi.Mobile.Droid.Resource.Attribute.tabIconTint;
+			global::Acr.UserDialogs.Resource.Attribute.tabIconTintMode = global::lirksi.Mobile.Droid.Resource.Attribute.tabIconTintMode;
+			global::Acr.UserDialogs.Resource.Attribute.tabIndicator = global::lirksi.Mobile.Droid.Resource.Attribute.tabIndicator;
+			global::Acr.UserDialogs.Resource.Attribute.tabIndicatorAnimationDuration = global::lirksi.Mobile.Droid.Resource.Attribute.tabIndicatorAnimationDuration;
+			global::Acr.UserDialogs.Resource.Attribute.tabIndicatorColor = global::lirksi.Mobile.Droid.Resource.Attribute.tabIndicatorColor;
+			global::Acr.UserDialogs.Resource.Attribute.tabIndicatorFullWidth = global::lirksi.Mobile.Droid.Resource.Attribute.tabIndicatorFullWidth;
+			global::Acr.UserDialogs.Resource.Attribute.tabIndicatorGravity = global::lirksi.Mobile.Droid.Resource.Attribute.tabIndicatorGravity;
+			global::Acr.UserDialogs.Resource.Attribute.tabIndicatorHeight = global::lirksi.Mobile.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::Acr.UserDialogs.Resource.Attribute.tabInlineLabel = global::lirksi.Mobile.Droid.Resource.Attribute.tabInlineLabel;
+			global::Acr.UserDialogs.Resource.Attribute.tabMaxWidth = global::lirksi.Mobile.Droid.Resource.Attribute.tabMaxWidth;
+			global::Acr.UserDialogs.Resource.Attribute.tabMinWidth = global::lirksi.Mobile.Droid.Resource.Attribute.tabMinWidth;
+			global::Acr.UserDialogs.Resource.Attribute.tabMode = global::lirksi.Mobile.Droid.Resource.Attribute.tabMode;
+			global::Acr.UserDialogs.Resource.Attribute.tabPadding = global::lirksi.Mobile.Droid.Resource.Attribute.tabPadding;
+			global::Acr.UserDialogs.Resource.Attribute.tabPaddingBottom = global::lirksi.Mobile.Droid.Resource.Attribute.tabPaddingBottom;
+			global::Acr.UserDialogs.Resource.Attribute.tabPaddingEnd = global::lirksi.Mobile.Droid.Resource.Attribute.tabPaddingEnd;
+			global::Acr.UserDialogs.Resource.Attribute.tabPaddingStart = global::lirksi.Mobile.Droid.Resource.Attribute.tabPaddingStart;
+			global::Acr.UserDialogs.Resource.Attribute.tabPaddingTop = global::lirksi.Mobile.Droid.Resource.Attribute.tabPaddingTop;
+			global::Acr.UserDialogs.Resource.Attribute.tabRippleColor = global::lirksi.Mobile.Droid.Resource.Attribute.tabRippleColor;
+			global::Acr.UserDialogs.Resource.Attribute.tabSelectedTextColor = global::lirksi.Mobile.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::Acr.UserDialogs.Resource.Attribute.tabStyle = global::lirksi.Mobile.Droid.Resource.Attribute.tabStyle;
+			global::Acr.UserDialogs.Resource.Attribute.tabTextAppearance = global::lirksi.Mobile.Droid.Resource.Attribute.tabTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.tabTextColor = global::lirksi.Mobile.Droid.Resource.Attribute.tabTextColor;
+			global::Acr.UserDialogs.Resource.Attribute.tabUnboundedRipple = global::lirksi.Mobile.Droid.Resource.Attribute.tabUnboundedRipple;
+			global::Acr.UserDialogs.Resource.Attribute.textAllCaps = global::lirksi.Mobile.Droid.Resource.Attribute.textAllCaps;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceBody1 = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceBody1;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceBody2 = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceBody2;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceButton = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceButton;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceCaption = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceCaption;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceHeadline1 = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceHeadline1;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceHeadline2 = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceHeadline2;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceHeadline3 = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceHeadline3;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceHeadline4 = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceHeadline4;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceHeadline5 = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceHeadline5;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceHeadline6 = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceHeadline6;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceLargePopupMenu = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceListItem = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceListItemSecondary = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceListItemSmall = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceOverline = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceOverline;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearancePopupMenuHeader = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceSearchResultSubtitle = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceSearchResultTitle = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceSmallPopupMenu = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceSubtitle1 = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceSubtitle1;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceSubtitle2 = global::lirksi.Mobile.Droid.Resource.Attribute.textAppearanceSubtitle2;
+			global::Acr.UserDialogs.Resource.Attribute.textColorAlertDialogListItem = global::lirksi.Mobile.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Acr.UserDialogs.Resource.Attribute.textColorSearchUrl = global::lirksi.Mobile.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Acr.UserDialogs.Resource.Attribute.textEndPadding = global::lirksi.Mobile.Droid.Resource.Attribute.textEndPadding;
+			global::Acr.UserDialogs.Resource.Attribute.textInputStyle = global::lirksi.Mobile.Droid.Resource.Attribute.textInputStyle;
+			global::Acr.UserDialogs.Resource.Attribute.textStartPadding = global::lirksi.Mobile.Droid.Resource.Attribute.textStartPadding;
+			global::Acr.UserDialogs.Resource.Attribute.theme = global::lirksi.Mobile.Droid.Resource.Attribute.theme;
+			global::Acr.UserDialogs.Resource.Attribute.thickness = global::lirksi.Mobile.Droid.Resource.Attribute.thickness;
+			global::Acr.UserDialogs.Resource.Attribute.thumbTextPadding = global::lirksi.Mobile.Droid.Resource.Attribute.thumbTextPadding;
+			global::Acr.UserDialogs.Resource.Attribute.thumbTint = global::lirksi.Mobile.Droid.Resource.Attribute.thumbTint;
+			global::Acr.UserDialogs.Resource.Attribute.thumbTintMode = global::lirksi.Mobile.Droid.Resource.Attribute.thumbTintMode;
+			global::Acr.UserDialogs.Resource.Attribute.tickMark = global::lirksi.Mobile.Droid.Resource.Attribute.tickMark;
+			global::Acr.UserDialogs.Resource.Attribute.tickMarkTint = global::lirksi.Mobile.Droid.Resource.Attribute.tickMarkTint;
+			global::Acr.UserDialogs.Resource.Attribute.tickMarkTintMode = global::lirksi.Mobile.Droid.Resource.Attribute.tickMarkTintMode;
+			global::Acr.UserDialogs.Resource.Attribute.tint = global::lirksi.Mobile.Droid.Resource.Attribute.tint;
+			global::Acr.UserDialogs.Resource.Attribute.tintMode = global::lirksi.Mobile.Droid.Resource.Attribute.tintMode;
+			global::Acr.UserDialogs.Resource.Attribute.title = global::lirksi.Mobile.Droid.Resource.Attribute.title;
+			global::Acr.UserDialogs.Resource.Attribute.titleEnabled = global::lirksi.Mobile.Droid.Resource.Attribute.titleEnabled;
+			global::Acr.UserDialogs.Resource.Attribute.titleMargin = global::lirksi.Mobile.Droid.Resource.Attribute.titleMargin;
+			global::Acr.UserDialogs.Resource.Attribute.titleMarginBottom = global::lirksi.Mobile.Droid.Resource.Attribute.titleMarginBottom;
+			global::Acr.UserDialogs.Resource.Attribute.titleMarginEnd = global::lirksi.Mobile.Droid.Resource.Attribute.titleMarginEnd;
+			global::Acr.UserDialogs.Resource.Attribute.titleMargins = global::lirksi.Mobile.Droid.Resource.Attribute.titleMargins;
+			global::Acr.UserDialogs.Resource.Attribute.titleMarginStart = global::lirksi.Mobile.Droid.Resource.Attribute.titleMarginStart;
+			global::Acr.UserDialogs.Resource.Attribute.titleMarginTop = global::lirksi.Mobile.Droid.Resource.Attribute.titleMarginTop;
+			global::Acr.UserDialogs.Resource.Attribute.titleTextAppearance = global::lirksi.Mobile.Droid.Resource.Attribute.titleTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.titleTextColor = global::lirksi.Mobile.Droid.Resource.Attribute.titleTextColor;
+			global::Acr.UserDialogs.Resource.Attribute.titleTextStyle = global::lirksi.Mobile.Droid.Resource.Attribute.titleTextStyle;
+			global::Acr.UserDialogs.Resource.Attribute.toolbarId = global::lirksi.Mobile.Droid.Resource.Attribute.toolbarId;
+			global::Acr.UserDialogs.Resource.Attribute.toolbarNavigationButtonStyle = global::lirksi.Mobile.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.toolbarStyle = global::lirksi.Mobile.Droid.Resource.Attribute.toolbarStyle;
+			global::Acr.UserDialogs.Resource.Attribute.tooltipForegroundColor = global::lirksi.Mobile.Droid.Resource.Attribute.tooltipForegroundColor;
+			global::Acr.UserDialogs.Resource.Attribute.tooltipFrameBackground = global::lirksi.Mobile.Droid.Resource.Attribute.tooltipFrameBackground;
+			global::Acr.UserDialogs.Resource.Attribute.tooltipText = global::lirksi.Mobile.Droid.Resource.Attribute.tooltipText;
+			global::Acr.UserDialogs.Resource.Attribute.track = global::lirksi.Mobile.Droid.Resource.Attribute.track;
+			global::Acr.UserDialogs.Resource.Attribute.trackTint = global::lirksi.Mobile.Droid.Resource.Attribute.trackTint;
+			global::Acr.UserDialogs.Resource.Attribute.trackTintMode = global::lirksi.Mobile.Droid.Resource.Attribute.trackTintMode;
+			global::Acr.UserDialogs.Resource.Attribute.ttcIndex = global::lirksi.Mobile.Droid.Resource.Attribute.ttcIndex;
+			global::Acr.UserDialogs.Resource.Attribute.useCompatPadding = global::lirksi.Mobile.Droid.Resource.Attribute.useCompatPadding;
+			global::Acr.UserDialogs.Resource.Attribute.viewInflaterClass = global::lirksi.Mobile.Droid.Resource.Attribute.viewInflaterClass;
+			global::Acr.UserDialogs.Resource.Attribute.voiceIcon = global::lirksi.Mobile.Droid.Resource.Attribute.voiceIcon;
+			global::Acr.UserDialogs.Resource.Attribute.windowActionBar = global::lirksi.Mobile.Droid.Resource.Attribute.windowActionBar;
+			global::Acr.UserDialogs.Resource.Attribute.windowActionBarOverlay = global::lirksi.Mobile.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Acr.UserDialogs.Resource.Attribute.windowActionModeOverlay = global::lirksi.Mobile.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Acr.UserDialogs.Resource.Attribute.windowFixedHeightMajor = global::lirksi.Mobile.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Acr.UserDialogs.Resource.Attribute.windowFixedHeightMinor = global::lirksi.Mobile.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Acr.UserDialogs.Resource.Attribute.windowFixedWidthMajor = global::lirksi.Mobile.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Acr.UserDialogs.Resource.Attribute.windowFixedWidthMinor = global::lirksi.Mobile.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Acr.UserDialogs.Resource.Attribute.windowMinWidthMajor = global::lirksi.Mobile.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Acr.UserDialogs.Resource.Attribute.windowMinWidthMinor = global::lirksi.Mobile.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Acr.UserDialogs.Resource.Attribute.windowNoTitle = global::lirksi.Mobile.Droid.Resource.Attribute.windowNoTitle;
+			global::Acr.UserDialogs.Resource.Boolean.abc_action_bar_embed_tabs = global::lirksi.Mobile.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Acr.UserDialogs.Resource.Boolean.abc_allow_stacked_button_bar = global::lirksi.Mobile.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Acr.UserDialogs.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::lirksi.Mobile.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Acr.UserDialogs.Resource.Boolean.mtrl_btn_textappearance_all_caps = global::lirksi.Mobile.Droid.Resource.Boolean.mtrl_btn_textappearance_all_caps;
+			global::Acr.UserDialogs.Resource.Color.abc_background_cache_hint_selector_material_dark = global::lirksi.Mobile.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Acr.UserDialogs.Resource.Color.abc_background_cache_hint_selector_material_light = global::lirksi.Mobile.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Acr.UserDialogs.Resource.Color.abc_btn_colored_borderless_text_material = global::lirksi.Mobile.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::Acr.UserDialogs.Resource.Color.abc_btn_colored_text_material = global::lirksi.Mobile.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::Acr.UserDialogs.Resource.Color.abc_color_highlight_material = global::lirksi.Mobile.Droid.Resource.Color.abc_color_highlight_material;
+			global::Acr.UserDialogs.Resource.Color.abc_hint_foreground_material_dark = global::lirksi.Mobile.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::Acr.UserDialogs.Resource.Color.abc_hint_foreground_material_light = global::lirksi.Mobile.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::Acr.UserDialogs.Resource.Color.abc_input_method_navigation_guard = global::lirksi.Mobile.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::Acr.UserDialogs.Resource.Color.abc_primary_text_disable_only_material_dark = global::lirksi.Mobile.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Acr.UserDialogs.Resource.Color.abc_primary_text_disable_only_material_light = global::lirksi.Mobile.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Acr.UserDialogs.Resource.Color.abc_primary_text_material_dark = global::lirksi.Mobile.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Acr.UserDialogs.Resource.Color.abc_primary_text_material_light = global::lirksi.Mobile.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Acr.UserDialogs.Resource.Color.abc_search_url_text = global::lirksi.Mobile.Droid.Resource.Color.abc_search_url_text;
+			global::Acr.UserDialogs.Resource.Color.abc_search_url_text_normal = global::lirksi.Mobile.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Acr.UserDialogs.Resource.Color.abc_search_url_text_pressed = global::lirksi.Mobile.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Acr.UserDialogs.Resource.Color.abc_search_url_text_selected = global::lirksi.Mobile.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Acr.UserDialogs.Resource.Color.abc_secondary_text_material_dark = global::lirksi.Mobile.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Acr.UserDialogs.Resource.Color.abc_secondary_text_material_light = global::lirksi.Mobile.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Acr.UserDialogs.Resource.Color.abc_tint_btn_checkable = global::lirksi.Mobile.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::Acr.UserDialogs.Resource.Color.abc_tint_default = global::lirksi.Mobile.Droid.Resource.Color.abc_tint_default;
+			global::Acr.UserDialogs.Resource.Color.abc_tint_edittext = global::lirksi.Mobile.Droid.Resource.Color.abc_tint_edittext;
+			global::Acr.UserDialogs.Resource.Color.abc_tint_seek_thumb = global::lirksi.Mobile.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::Acr.UserDialogs.Resource.Color.abc_tint_spinner = global::lirksi.Mobile.Droid.Resource.Color.abc_tint_spinner;
+			global::Acr.UserDialogs.Resource.Color.abc_tint_switch_track = global::lirksi.Mobile.Droid.Resource.Color.abc_tint_switch_track;
+			global::Acr.UserDialogs.Resource.Color.accent_material_dark = global::lirksi.Mobile.Droid.Resource.Color.accent_material_dark;
+			global::Acr.UserDialogs.Resource.Color.accent_material_light = global::lirksi.Mobile.Droid.Resource.Color.accent_material_light;
+			global::Acr.UserDialogs.Resource.Color.background_floating_material_dark = global::lirksi.Mobile.Droid.Resource.Color.background_floating_material_dark;
+			global::Acr.UserDialogs.Resource.Color.background_floating_material_light = global::lirksi.Mobile.Droid.Resource.Color.background_floating_material_light;
+			global::Acr.UserDialogs.Resource.Color.background_material_dark = global::lirksi.Mobile.Droid.Resource.Color.background_material_dark;
+			global::Acr.UserDialogs.Resource.Color.background_material_light = global::lirksi.Mobile.Droid.Resource.Color.background_material_light;
+			global::Acr.UserDialogs.Resource.Color.bright_foreground_disabled_material_dark = global::lirksi.Mobile.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Acr.UserDialogs.Resource.Color.bright_foreground_disabled_material_light = global::lirksi.Mobile.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Acr.UserDialogs.Resource.Color.bright_foreground_inverse_material_dark = global::lirksi.Mobile.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Acr.UserDialogs.Resource.Color.bright_foreground_inverse_material_light = global::lirksi.Mobile.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Acr.UserDialogs.Resource.Color.bright_foreground_material_dark = global::lirksi.Mobile.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Acr.UserDialogs.Resource.Color.bright_foreground_material_light = global::lirksi.Mobile.Droid.Resource.Color.bright_foreground_material_light;
+			global::Acr.UserDialogs.Resource.Color.button_material_dark = global::lirksi.Mobile.Droid.Resource.Color.button_material_dark;
+			global::Acr.UserDialogs.Resource.Color.button_material_light = global::lirksi.Mobile.Droid.Resource.Color.button_material_light;
+			global::Acr.UserDialogs.Resource.Color.cardview_dark_background = global::lirksi.Mobile.Droid.Resource.Color.cardview_dark_background;
+			global::Acr.UserDialogs.Resource.Color.cardview_light_background = global::lirksi.Mobile.Droid.Resource.Color.cardview_light_background;
+			global::Acr.UserDialogs.Resource.Color.cardview_shadow_end_color = global::lirksi.Mobile.Droid.Resource.Color.cardview_shadow_end_color;
+			global::Acr.UserDialogs.Resource.Color.cardview_shadow_start_color = global::lirksi.Mobile.Droid.Resource.Color.cardview_shadow_start_color;
+			global::Acr.UserDialogs.Resource.Color.design_bottom_navigation_shadow_color = global::lirksi.Mobile.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::Acr.UserDialogs.Resource.Color.design_default_color_primary = global::lirksi.Mobile.Droid.Resource.Color.design_default_color_primary;
+			global::Acr.UserDialogs.Resource.Color.design_default_color_primary_dark = global::lirksi.Mobile.Droid.Resource.Color.design_default_color_primary_dark;
+			global::Acr.UserDialogs.Resource.Color.design_error = global::lirksi.Mobile.Droid.Resource.Color.design_error;
+			global::Acr.UserDialogs.Resource.Color.design_fab_shadow_end_color = global::lirksi.Mobile.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::Acr.UserDialogs.Resource.Color.design_fab_shadow_mid_color = global::lirksi.Mobile.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::Acr.UserDialogs.Resource.Color.design_fab_shadow_start_color = global::lirksi.Mobile.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::Acr.UserDialogs.Resource.Color.design_fab_stroke_end_inner_color = global::lirksi.Mobile.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Acr.UserDialogs.Resource.Color.design_fab_stroke_end_outer_color = global::lirksi.Mobile.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Acr.UserDialogs.Resource.Color.design_fab_stroke_top_inner_color = global::lirksi.Mobile.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Acr.UserDialogs.Resource.Color.design_fab_stroke_top_outer_color = global::lirksi.Mobile.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Acr.UserDialogs.Resource.Color.design_snackbar_background_color = global::lirksi.Mobile.Droid.Resource.Color.design_snackbar_background_color;
+			global::Acr.UserDialogs.Resource.Color.design_tint_password_toggle = global::lirksi.Mobile.Droid.Resource.Color.design_tint_password_toggle;
+			global::Acr.UserDialogs.Resource.Color.dim_foreground_disabled_material_dark = global::lirksi.Mobile.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Acr.UserDialogs.Resource.Color.dim_foreground_disabled_material_light = global::lirksi.Mobile.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Acr.UserDialogs.Resource.Color.dim_foreground_material_dark = global::lirksi.Mobile.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Acr.UserDialogs.Resource.Color.dim_foreground_material_light = global::lirksi.Mobile.Droid.Resource.Color.dim_foreground_material_light;
+			global::Acr.UserDialogs.Resource.Color.error_color_material_dark = global::lirksi.Mobile.Droid.Resource.Color.error_color_material_dark;
+			global::Acr.UserDialogs.Resource.Color.error_color_material_light = global::lirksi.Mobile.Droid.Resource.Color.error_color_material_light;
+			global::Acr.UserDialogs.Resource.Color.foreground_material_dark = global::lirksi.Mobile.Droid.Resource.Color.foreground_material_dark;
+			global::Acr.UserDialogs.Resource.Color.foreground_material_light = global::lirksi.Mobile.Droid.Resource.Color.foreground_material_light;
+			global::Acr.UserDialogs.Resource.Color.highlighted_text_material_dark = global::lirksi.Mobile.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Acr.UserDialogs.Resource.Color.highlighted_text_material_light = global::lirksi.Mobile.Droid.Resource.Color.highlighted_text_material_light;
+			global::Acr.UserDialogs.Resource.Color.material_blue_grey_800 = global::lirksi.Mobile.Droid.Resource.Color.material_blue_grey_800;
+			global::Acr.UserDialogs.Resource.Color.material_blue_grey_900 = global::lirksi.Mobile.Droid.Resource.Color.material_blue_grey_900;
+			global::Acr.UserDialogs.Resource.Color.material_blue_grey_950 = global::lirksi.Mobile.Droid.Resource.Color.material_blue_grey_950;
+			global::Acr.UserDialogs.Resource.Color.material_deep_teal_200 = global::lirksi.Mobile.Droid.Resource.Color.material_deep_teal_200;
+			global::Acr.UserDialogs.Resource.Color.material_deep_teal_500 = global::lirksi.Mobile.Droid.Resource.Color.material_deep_teal_500;
+			global::Acr.UserDialogs.Resource.Color.material_grey_100 = global::lirksi.Mobile.Droid.Resource.Color.material_grey_100;
+			global::Acr.UserDialogs.Resource.Color.material_grey_300 = global::lirksi.Mobile.Droid.Resource.Color.material_grey_300;
+			global::Acr.UserDialogs.Resource.Color.material_grey_50 = global::lirksi.Mobile.Droid.Resource.Color.material_grey_50;
+			global::Acr.UserDialogs.Resource.Color.material_grey_600 = global::lirksi.Mobile.Droid.Resource.Color.material_grey_600;
+			global::Acr.UserDialogs.Resource.Color.material_grey_800 = global::lirksi.Mobile.Droid.Resource.Color.material_grey_800;
+			global::Acr.UserDialogs.Resource.Color.material_grey_850 = global::lirksi.Mobile.Droid.Resource.Color.material_grey_850;
+			global::Acr.UserDialogs.Resource.Color.material_grey_900 = global::lirksi.Mobile.Droid.Resource.Color.material_grey_900;
+			global::Acr.UserDialogs.Resource.Color.mtrl_bottom_nav_colored_item_tint = global::lirksi.Mobile.Droid.Resource.Color.mtrl_bottom_nav_colored_item_tint;
+			global::Acr.UserDialogs.Resource.Color.mtrl_bottom_nav_item_tint = global::lirksi.Mobile.Droid.Resource.Color.mtrl_bottom_nav_item_tint;
+			global::Acr.UserDialogs.Resource.Color.mtrl_btn_bg_color_disabled = global::lirksi.Mobile.Droid.Resource.Color.mtrl_btn_bg_color_disabled;
+			global::Acr.UserDialogs.Resource.Color.mtrl_btn_bg_color_selector = global::lirksi.Mobile.Droid.Resource.Color.mtrl_btn_bg_color_selector;
+			global::Acr.UserDialogs.Resource.Color.mtrl_btn_ripple_color = global::lirksi.Mobile.Droid.Resource.Color.mtrl_btn_ripple_color;
+			global::Acr.UserDialogs.Resource.Color.mtrl_btn_stroke_color_selector = global::lirksi.Mobile.Droid.Resource.Color.mtrl_btn_stroke_color_selector;
+			global::Acr.UserDialogs.Resource.Color.mtrl_btn_text_btn_ripple_color = global::lirksi.Mobile.Droid.Resource.Color.mtrl_btn_text_btn_ripple_color;
+			global::Acr.UserDialogs.Resource.Color.mtrl_btn_text_color_disabled = global::lirksi.Mobile.Droid.Resource.Color.mtrl_btn_text_color_disabled;
+			global::Acr.UserDialogs.Resource.Color.mtrl_btn_text_color_selector = global::lirksi.Mobile.Droid.Resource.Color.mtrl_btn_text_color_selector;
+			global::Acr.UserDialogs.Resource.Color.mtrl_btn_transparent_bg_color = global::lirksi.Mobile.Droid.Resource.Color.mtrl_btn_transparent_bg_color;
+			global::Acr.UserDialogs.Resource.Color.mtrl_chip_background_color = global::lirksi.Mobile.Droid.Resource.Color.mtrl_chip_background_color;
+			global::Acr.UserDialogs.Resource.Color.mtrl_chip_close_icon_tint = global::lirksi.Mobile.Droid.Resource.Color.mtrl_chip_close_icon_tint;
+			global::Acr.UserDialogs.Resource.Color.mtrl_chip_ripple_color = global::lirksi.Mobile.Droid.Resource.Color.mtrl_chip_ripple_color;
+			global::Acr.UserDialogs.Resource.Color.mtrl_chip_text_color = global::lirksi.Mobile.Droid.Resource.Color.mtrl_chip_text_color;
+			global::Acr.UserDialogs.Resource.Color.mtrl_fab_ripple_color = global::lirksi.Mobile.Droid.Resource.Color.mtrl_fab_ripple_color;
+			global::Acr.UserDialogs.Resource.Color.mtrl_scrim_color = global::lirksi.Mobile.Droid.Resource.Color.mtrl_scrim_color;
+			global::Acr.UserDialogs.Resource.Color.mtrl_tabs_colored_ripple_color = global::lirksi.Mobile.Droid.Resource.Color.mtrl_tabs_colored_ripple_color;
+			global::Acr.UserDialogs.Resource.Color.mtrl_tabs_icon_color_selector = global::lirksi.Mobile.Droid.Resource.Color.mtrl_tabs_icon_color_selector;
+			global::Acr.UserDialogs.Resource.Color.mtrl_tabs_icon_color_selector_colored = global::lirksi.Mobile.Droid.Resource.Color.mtrl_tabs_icon_color_selector_colored;
+			global::Acr.UserDialogs.Resource.Color.mtrl_tabs_legacy_text_color_selector = global::lirksi.Mobile.Droid.Resource.Color.mtrl_tabs_legacy_text_color_selector;
+			global::Acr.UserDialogs.Resource.Color.mtrl_tabs_ripple_color = global::lirksi.Mobile.Droid.Resource.Color.mtrl_tabs_ripple_color;
+			global::Acr.UserDialogs.Resource.Color.mtrl_textinput_default_box_stroke_color = global::lirksi.Mobile.Droid.Resource.Color.mtrl_textinput_default_box_stroke_color;
+			global::Acr.UserDialogs.Resource.Color.mtrl_textinput_disabled_color = global::lirksi.Mobile.Droid.Resource.Color.mtrl_textinput_disabled_color;
+			global::Acr.UserDialogs.Resource.Color.mtrl_textinput_filled_box_default_background_color = global::lirksi.Mobile.Droid.Resource.Color.mtrl_textinput_filled_box_default_background_color;
+			global::Acr.UserDialogs.Resource.Color.mtrl_textinput_hovered_box_stroke_color = global::lirksi.Mobile.Droid.Resource.Color.mtrl_textinput_hovered_box_stroke_color;
+			global::Acr.UserDialogs.Resource.Color.mtrl_text_btn_text_color_selector = global::lirksi.Mobile.Droid.Resource.Color.mtrl_text_btn_text_color_selector;
+			global::Acr.UserDialogs.Resource.Color.notification_action_color_filter = global::lirksi.Mobile.Droid.Resource.Color.notification_action_color_filter;
+			global::Acr.UserDialogs.Resource.Color.notification_icon_bg_color = global::lirksi.Mobile.Droid.Resource.Color.notification_icon_bg_color;
+			global::Acr.UserDialogs.Resource.Color.primary_dark_material_dark = global::lirksi.Mobile.Droid.Resource.Color.primary_dark_material_dark;
+			global::Acr.UserDialogs.Resource.Color.primary_dark_material_light = global::lirksi.Mobile.Droid.Resource.Color.primary_dark_material_light;
+			global::Acr.UserDialogs.Resource.Color.primary_material_dark = global::lirksi.Mobile.Droid.Resource.Color.primary_material_dark;
+			global::Acr.UserDialogs.Resource.Color.primary_material_light = global::lirksi.Mobile.Droid.Resource.Color.primary_material_light;
+			global::Acr.UserDialogs.Resource.Color.primary_text_default_material_dark = global::lirksi.Mobile.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Acr.UserDialogs.Resource.Color.primary_text_default_material_light = global::lirksi.Mobile.Droid.Resource.Color.primary_text_default_material_light;
+			global::Acr.UserDialogs.Resource.Color.primary_text_disabled_material_dark = global::lirksi.Mobile.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Acr.UserDialogs.Resource.Color.primary_text_disabled_material_light = global::lirksi.Mobile.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Acr.UserDialogs.Resource.Color.ripple_material_dark = global::lirksi.Mobile.Droid.Resource.Color.ripple_material_dark;
+			global::Acr.UserDialogs.Resource.Color.ripple_material_light = global::lirksi.Mobile.Droid.Resource.Color.ripple_material_light;
+			global::Acr.UserDialogs.Resource.Color.secondary_text_default_material_dark = global::lirksi.Mobile.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Acr.UserDialogs.Resource.Color.secondary_text_default_material_light = global::lirksi.Mobile.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Acr.UserDialogs.Resource.Color.secondary_text_disabled_material_dark = global::lirksi.Mobile.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Acr.UserDialogs.Resource.Color.secondary_text_disabled_material_light = global::lirksi.Mobile.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Acr.UserDialogs.Resource.Color.switch_thumb_disabled_material_dark = global::lirksi.Mobile.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Acr.UserDialogs.Resource.Color.switch_thumb_disabled_material_light = global::lirksi.Mobile.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Acr.UserDialogs.Resource.Color.switch_thumb_material_dark = global::lirksi.Mobile.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Acr.UserDialogs.Resource.Color.switch_thumb_material_light = global::lirksi.Mobile.Droid.Resource.Color.switch_thumb_material_light;
+			global::Acr.UserDialogs.Resource.Color.switch_thumb_normal_material_dark = global::lirksi.Mobile.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Acr.UserDialogs.Resource.Color.switch_thumb_normal_material_light = global::lirksi.Mobile.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Acr.UserDialogs.Resource.Color.tooltip_background_dark = global::lirksi.Mobile.Droid.Resource.Color.tooltip_background_dark;
+			global::Acr.UserDialogs.Resource.Color.tooltip_background_light = global::lirksi.Mobile.Droid.Resource.Color.tooltip_background_light;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_content_inset_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::lirksi.Mobile.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_default_height_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_default_padding_end_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_default_padding_start_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_elevation_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_stacked_max_height = global::lirksi.Mobile.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::lirksi.Mobile.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_button_min_height_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_button_min_width_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_button_min_width_overflow_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_alert_dialog_button_bar_height = global::lirksi.Mobile.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Acr.UserDialogs.Resource.Dimension.abc_alert_dialog_button_dimen = global::lirksi.Mobile.Droid.Resource.Dimension.abc_alert_dialog_button_dimen;
+			global::Acr.UserDialogs.Resource.Dimension.abc_button_inset_horizontal_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_button_inset_vertical_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_button_padding_horizontal_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_button_padding_vertical_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::lirksi.Mobile.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::Acr.UserDialogs.Resource.Dimension.abc_config_prefDialogWidth = global::lirksi.Mobile.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Acr.UserDialogs.Resource.Dimension.abc_control_corner_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_control_inset_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_control_padding_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_corner_radius_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_dialog_corner_radius_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_fixed_height_major = global::lirksi.Mobile.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_fixed_height_minor = global::lirksi.Mobile.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_fixed_width_major = global::lirksi.Mobile.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_fixed_width_minor = global::lirksi.Mobile.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::lirksi.Mobile.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::lirksi.Mobile.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_min_width_major = global::lirksi.Mobile.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_min_width_minor = global::lirksi.Mobile.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_padding_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_padding_top_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_title_divider_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_disabled_alpha_material_dark = global::lirksi.Mobile.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Acr.UserDialogs.Resource.Dimension.abc_disabled_alpha_material_light = global::lirksi.Mobile.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dropdownitem_icon_width = global::lirksi.Mobile.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dropdownitem_text_padding_left = global::lirksi.Mobile.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dropdownitem_text_padding_right = global::lirksi.Mobile.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Acr.UserDialogs.Resource.Dimension.abc_edit_text_inset_bottom_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_edit_text_inset_top_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_floating_window_z = global::lirksi.Mobile.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Acr.UserDialogs.Resource.Dimension.abc_list_item_padding_horizontal_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_panel_menu_list_width = global::lirksi.Mobile.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Acr.UserDialogs.Resource.Dimension.abc_progress_bar_height_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_search_view_preferred_height = global::lirksi.Mobile.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::Acr.UserDialogs.Resource.Dimension.abc_search_view_preferred_width = global::lirksi.Mobile.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Acr.UserDialogs.Resource.Dimension.abc_seekbar_track_background_height_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_seekbar_track_progress_height_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_select_dialog_padding_start_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_switch_padding = global::lirksi.Mobile.Droid.Resource.Dimension.abc_switch_padding;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_body_1_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_body_2_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_button_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_caption_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_display_1_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_display_2_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_display_3_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_display_4_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_headline_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_large_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_medium_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_menu_header_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_menu_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_small_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_subhead_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::lirksi.Mobile.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_title_material = global::lirksi.Mobile.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_title_material_toolbar = global::lirksi.Mobile.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Acr.UserDialogs.Resource.Dimension.cardview_compat_inset_shadow = global::lirksi.Mobile.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::Acr.UserDialogs.Resource.Dimension.cardview_default_elevation = global::lirksi.Mobile.Droid.Resource.Dimension.cardview_default_elevation;
+			global::Acr.UserDialogs.Resource.Dimension.cardview_default_radius = global::lirksi.Mobile.Droid.Resource.Dimension.cardview_default_radius;
+			global::Acr.UserDialogs.Resource.Dimension.compat_button_inset_horizontal_material = global::lirksi.Mobile.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Acr.UserDialogs.Resource.Dimension.compat_button_inset_vertical_material = global::lirksi.Mobile.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Acr.UserDialogs.Resource.Dimension.compat_button_padding_horizontal_material = global::lirksi.Mobile.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Acr.UserDialogs.Resource.Dimension.compat_button_padding_vertical_material = global::lirksi.Mobile.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Acr.UserDialogs.Resource.Dimension.compat_control_corner_material = global::lirksi.Mobile.Droid.Resource.Dimension.compat_control_corner_material;
+			global::Acr.UserDialogs.Resource.Dimension.compat_notification_large_icon_max_height = global::lirksi.Mobile.Droid.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::Acr.UserDialogs.Resource.Dimension.compat_notification_large_icon_max_width = global::lirksi.Mobile.Droid.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_appbar_elevation = global::lirksi.Mobile.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::lirksi.Mobile.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_active_item_min_width = global::lirksi.Mobile.Droid.Resource.Dimension.design_bottom_navigation_active_item_min_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_active_text_size = global::lirksi.Mobile.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_elevation = global::lirksi.Mobile.Droid.Resource.Dimension.design_bottom_navigation_elevation;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_height = global::lirksi.Mobile.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_icon_size = global::lirksi.Mobile.Droid.Resource.Dimension.design_bottom_navigation_icon_size;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_item_max_width = global::lirksi.Mobile.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_item_min_width = global::lirksi.Mobile.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_margin = global::lirksi.Mobile.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_shadow_height = global::lirksi.Mobile.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_text_size = global::lirksi.Mobile.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_sheet_modal_elevation = global::lirksi.Mobile.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_sheet_peek_height_min = global::lirksi.Mobile.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::Acr.UserDialogs.Resource.Dimension.design_fab_border_width = global::lirksi.Mobile.Droid.Resource.Dimension.design_fab_border_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_fab_elevation = global::lirksi.Mobile.Droid.Resource.Dimension.design_fab_elevation;
+			global::Acr.UserDialogs.Resource.Dimension.design_fab_image_size = global::lirksi.Mobile.Droid.Resource.Dimension.design_fab_image_size;
+			global::Acr.UserDialogs.Resource.Dimension.design_fab_size_mini = global::lirksi.Mobile.Droid.Resource.Dimension.design_fab_size_mini;
+			global::Acr.UserDialogs.Resource.Dimension.design_fab_size_normal = global::lirksi.Mobile.Droid.Resource.Dimension.design_fab_size_normal;
+			global::Acr.UserDialogs.Resource.Dimension.design_fab_translation_z_hovered_focused = global::lirksi.Mobile.Droid.Resource.Dimension.design_fab_translation_z_hovered_focused;
+			global::Acr.UserDialogs.Resource.Dimension.design_fab_translation_z_pressed = global::lirksi.Mobile.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Acr.UserDialogs.Resource.Dimension.design_navigation_elevation = global::lirksi.Mobile.Droid.Resource.Dimension.design_navigation_elevation;
+			global::Acr.UserDialogs.Resource.Dimension.design_navigation_icon_padding = global::lirksi.Mobile.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::Acr.UserDialogs.Resource.Dimension.design_navigation_icon_size = global::lirksi.Mobile.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::Acr.UserDialogs.Resource.Dimension.design_navigation_item_horizontal_padding = global::lirksi.Mobile.Droid.Resource.Dimension.design_navigation_item_horizontal_padding;
+			global::Acr.UserDialogs.Resource.Dimension.design_navigation_item_icon_padding = global::lirksi.Mobile.Droid.Resource.Dimension.design_navigation_item_icon_padding;
+			global::Acr.UserDialogs.Resource.Dimension.design_navigation_max_width = global::lirksi.Mobile.Droid.Resource.Dimension.design_navigation_max_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_navigation_padding_bottom = global::lirksi.Mobile.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::Acr.UserDialogs.Resource.Dimension.design_navigation_separator_vertical_padding = global::lirksi.Mobile.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_action_inline_max_width = global::lirksi.Mobile.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_background_corner_radius = global::lirksi.Mobile.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_elevation = global::lirksi.Mobile.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::lirksi.Mobile.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_max_width = global::lirksi.Mobile.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_min_width = global::lirksi.Mobile.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_padding_horizontal = global::lirksi.Mobile.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_padding_vertical = global::lirksi.Mobile.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::lirksi.Mobile.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_text_size = global::lirksi.Mobile.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::Acr.UserDialogs.Resource.Dimension.design_tab_max_width = global::lirksi.Mobile.Droid.Resource.Dimension.design_tab_max_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_tab_scrollable_min_width = global::lirksi.Mobile.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_tab_text_size = global::lirksi.Mobile.Droid.Resource.Dimension.design_tab_text_size;
+			global::Acr.UserDialogs.Resource.Dimension.design_tab_text_size_2line = global::lirksi.Mobile.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::Acr.UserDialogs.Resource.Dimension.design_textinput_caption_translate_y = global::lirksi.Mobile.Droid.Resource.Dimension.design_textinput_caption_translate_y;
+			global::Acr.UserDialogs.Resource.Dimension.disabled_alpha_material_dark = global::lirksi.Mobile.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Acr.UserDialogs.Resource.Dimension.disabled_alpha_material_light = global::lirksi.Mobile.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Acr.UserDialogs.Resource.Dimension.fastscroll_default_thickness = global::lirksi.Mobile.Droid.Resource.Dimension.fastscroll_default_thickness;
+			global::Acr.UserDialogs.Resource.Dimension.fastscroll_margin = global::lirksi.Mobile.Droid.Resource.Dimension.fastscroll_margin;
+			global::Acr.UserDialogs.Resource.Dimension.fastscroll_minimum_range = global::lirksi.Mobile.Droid.Resource.Dimension.fastscroll_minimum_range;
+			global::Acr.UserDialogs.Resource.Dimension.highlight_alpha_material_colored = global::lirksi.Mobile.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Acr.UserDialogs.Resource.Dimension.highlight_alpha_material_dark = global::lirksi.Mobile.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Acr.UserDialogs.Resource.Dimension.highlight_alpha_material_light = global::lirksi.Mobile.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Acr.UserDialogs.Resource.Dimension.hint_alpha_material_dark = global::lirksi.Mobile.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::Acr.UserDialogs.Resource.Dimension.hint_alpha_material_light = global::lirksi.Mobile.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::Acr.UserDialogs.Resource.Dimension.hint_pressed_alpha_material_dark = global::lirksi.Mobile.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::Acr.UserDialogs.Resource.Dimension.hint_pressed_alpha_material_light = global::lirksi.Mobile.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::Acr.UserDialogs.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::lirksi.Mobile.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Acr.UserDialogs.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::lirksi.Mobile.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Acr.UserDialogs.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::lirksi.Mobile.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_bottomappbar_height = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_bottomappbar_height;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_corner_radius = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_corner_radius;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_dialog_btn_min_width = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_dialog_btn_min_width;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_disabled_elevation = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_disabled_elevation;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_disabled_z = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_disabled_z;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_elevation = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_elevation;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_focused_z = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_focused_z;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_hovered_z = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_hovered_z;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_icon_btn_padding_left = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_icon_btn_padding_left;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_icon_padding = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_icon_padding;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_inset = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_inset;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_letter_spacing = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_letter_spacing;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_padding_bottom = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_padding_bottom;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_padding_left = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_padding_left;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_padding_right = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_padding_right;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_padding_top = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_padding_top;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_pressed_z = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_pressed_z;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_stroke_size = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_stroke_size;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_text_btn_icon_padding = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_text_btn_icon_padding;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_text_btn_padding_left = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_left;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_text_btn_padding_right = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_right;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_text_size = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_text_size;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_btn_z = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_btn_z;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_card_elevation = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_card_elevation;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_card_spacing = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_card_spacing;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_chip_pressed_translation_z = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_chip_pressed_translation_z;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_chip_text_size = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_chip_text_size;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_fab_elevation = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_fab_elevation;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_fab_translation_z_hovered_focused = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_fab_translation_z_hovered_focused;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_fab_translation_z_pressed = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_fab_translation_z_pressed;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_navigation_elevation = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_navigation_elevation;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_navigation_item_horizontal_padding = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_navigation_item_horizontal_padding;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_navigation_item_icon_padding = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_navigation_item_icon_padding;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_snackbar_background_corner_radius = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_snackbar_background_corner_radius;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_snackbar_margin = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_snackbar_margin;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_textinput_box_bottom_offset = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_textinput_box_bottom_offset;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_textinput_box_corner_radius_medium = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_medium;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_textinput_box_corner_radius_small = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_small;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_textinput_box_label_cutout_padding = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_textinput_box_label_cutout_padding;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_textinput_box_padding_end = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_textinput_box_padding_end;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_textinput_box_stroke_width_default = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_default;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_textinput_box_stroke_width_focused = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_focused;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding;
+			global::Acr.UserDialogs.Resource.Dimension.mtrl_toolbar_default_height = global::lirksi.Mobile.Droid.Resource.Dimension.mtrl_toolbar_default_height;
+			global::Acr.UserDialogs.Resource.Dimension.notification_action_icon_size = global::lirksi.Mobile.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Acr.UserDialogs.Resource.Dimension.notification_action_text_size = global::lirksi.Mobile.Droid.Resource.Dimension.notification_action_text_size;
+			global::Acr.UserDialogs.Resource.Dimension.notification_big_circle_margin = global::lirksi.Mobile.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Acr.UserDialogs.Resource.Dimension.notification_content_margin_start = global::lirksi.Mobile.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Acr.UserDialogs.Resource.Dimension.notification_large_icon_height = global::lirksi.Mobile.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Acr.UserDialogs.Resource.Dimension.notification_large_icon_width = global::lirksi.Mobile.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Acr.UserDialogs.Resource.Dimension.notification_main_column_padding_top = global::lirksi.Mobile.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Acr.UserDialogs.Resource.Dimension.notification_media_narrow_margin = global::lirksi.Mobile.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Acr.UserDialogs.Resource.Dimension.notification_right_icon_size = global::lirksi.Mobile.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Acr.UserDialogs.Resource.Dimension.notification_right_side_padding_top = global::lirksi.Mobile.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Acr.UserDialogs.Resource.Dimension.notification_small_icon_background_padding = global::lirksi.Mobile.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Acr.UserDialogs.Resource.Dimension.notification_small_icon_size_as_large = global::lirksi.Mobile.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Acr.UserDialogs.Resource.Dimension.notification_subtext_size = global::lirksi.Mobile.Droid.Resource.Dimension.notification_subtext_size;
+			global::Acr.UserDialogs.Resource.Dimension.notification_top_pad = global::lirksi.Mobile.Droid.Resource.Dimension.notification_top_pad;
+			global::Acr.UserDialogs.Resource.Dimension.notification_top_pad_large_text = global::lirksi.Mobile.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Acr.UserDialogs.Resource.Dimension.tooltip_corner_radius = global::lirksi.Mobile.Droid.Resource.Dimension.tooltip_corner_radius;
+			global::Acr.UserDialogs.Resource.Dimension.tooltip_horizontal_padding = global::lirksi.Mobile.Droid.Resource.Dimension.tooltip_horizontal_padding;
+			global::Acr.UserDialogs.Resource.Dimension.tooltip_margin = global::lirksi.Mobile.Droid.Resource.Dimension.tooltip_margin;
+			global::Acr.UserDialogs.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::lirksi.Mobile.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::Acr.UserDialogs.Resource.Dimension.tooltip_precise_anchor_threshold = global::lirksi.Mobile.Droid.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::Acr.UserDialogs.Resource.Dimension.tooltip_vertical_padding = global::lirksi.Mobile.Droid.Resource.Dimension.tooltip_vertical_padding;
+			global::Acr.UserDialogs.Resource.Dimension.tooltip_y_offset_non_touch = global::lirksi.Mobile.Droid.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::Acr.UserDialogs.Resource.Dimension.tooltip_y_offset_touch = global::lirksi.Mobile.Droid.Resource.Dimension.tooltip_y_offset_touch;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_action_bar_item_background_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_borderless_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_check_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::lirksi.Mobile.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::lirksi.Mobile.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_colored_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_default_mtrl_shape = global::lirksi.Mobile.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_radio_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::lirksi.Mobile.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::lirksi.Mobile.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::lirksi.Mobile.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::lirksi.Mobile.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Acr.UserDialogs.Resource.Drawable.abc_cab_background_internal_bg = global::lirksi.Mobile.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Acr.UserDialogs.Resource.Drawable.abc_cab_background_top_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::lirksi.Mobile.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_control_background_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_control_background_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_dialog_material_background = global::lirksi.Mobile.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::Acr.UserDialogs.Resource.Drawable.abc_edit_text_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_ab_back_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_clear_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_go_search_api_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_menu_overflow_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_search_api_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_star_black_16dp = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_star_black_36dp = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_star_black_48dp = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_star_half_black_16dp = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_star_half_black_36dp = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_star_half_black_48dp = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_voice_search_api_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_item_background_holo_dark = global::lirksi.Mobile.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Acr.UserDialogs.Resource.Drawable.abc_item_background_holo_light = global::lirksi.Mobile.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_divider_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_list_divider_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_divider_mtrl_alpha = global::lirksi.Mobile.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_focused_holo = global::lirksi.Mobile.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_longpressed_holo = global::lirksi.Mobile.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_pressed_holo_dark = global::lirksi.Mobile.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_pressed_holo_light = global::lirksi.Mobile.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::lirksi.Mobile.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::lirksi.Mobile.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::lirksi.Mobile.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_selector_disabled_holo_light = global::lirksi.Mobile.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_selector_holo_dark = global::lirksi.Mobile.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_selector_holo_light = global::lirksi.Mobile.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Acr.UserDialogs.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::lirksi.Mobile.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Acr.UserDialogs.Resource.Drawable.abc_popup_background_mtrl_mult = global::lirksi.Mobile.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ratingbar_indicator_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ratingbar_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ratingbar_small_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::lirksi.Mobile.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::lirksi.Mobile.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Acr.UserDialogs.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::lirksi.Mobile.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Acr.UserDialogs.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::lirksi.Mobile.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::lirksi.Mobile.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_seekbar_thumb_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_seekbar_tick_mark_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_seekbar_track_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::lirksi.Mobile.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_spinner_textfield_background_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_switch_thumb_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_switch_track_mtrl_alpha = global::lirksi.Mobile.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_tab_indicator_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::lirksi.Mobile.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::lirksi.Mobile.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::lirksi.Mobile.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::lirksi.Mobile.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::lirksi.Mobile.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_textfield_search_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_text_cursor_material = global::lirksi.Mobile.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::lirksi.Mobile.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::Acr.UserDialogs.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::lirksi.Mobile.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::Acr.UserDialogs.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::lirksi.Mobile.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::Acr.UserDialogs.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::lirksi.Mobile.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::Acr.UserDialogs.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::lirksi.Mobile.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::Acr.UserDialogs.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::lirksi.Mobile.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::Acr.UserDialogs.Resource.Drawable.abc_vector_test = global::lirksi.Mobile.Droid.Resource.Drawable.abc_vector_test;
+			global::Acr.UserDialogs.Resource.Drawable.avd_hide_password = global::lirksi.Mobile.Droid.Resource.Drawable.avd_hide_password;
+			global::Acr.UserDialogs.Resource.Drawable.avd_show_password = global::lirksi.Mobile.Droid.Resource.Drawable.avd_show_password;
+			global::Acr.UserDialogs.Resource.Drawable.design_bottom_navigation_item_background = global::lirksi.Mobile.Droid.Resource.Drawable.design_bottom_navigation_item_background;
+			global::Acr.UserDialogs.Resource.Drawable.design_fab_background = global::lirksi.Mobile.Droid.Resource.Drawable.design_fab_background;
+			global::Acr.UserDialogs.Resource.Drawable.design_ic_visibility = global::lirksi.Mobile.Droid.Resource.Drawable.design_ic_visibility;
+			global::Acr.UserDialogs.Resource.Drawable.design_ic_visibility_off = global::lirksi.Mobile.Droid.Resource.Drawable.design_ic_visibility_off;
+			global::Acr.UserDialogs.Resource.Drawable.design_password_eye = global::lirksi.Mobile.Droid.Resource.Drawable.design_password_eye;
+			global::Acr.UserDialogs.Resource.Drawable.design_snackbar_background = global::lirksi.Mobile.Droid.Resource.Drawable.design_snackbar_background;
+			global::Acr.UserDialogs.Resource.Drawable.ic_errorstatus = global::lirksi.Mobile.Droid.Resource.Drawable.ic_errorstatus;
+			global::Acr.UserDialogs.Resource.Drawable.ic_mtrl_chip_checked_black = global::lirksi.Mobile.Droid.Resource.Drawable.ic_mtrl_chip_checked_black;
+			global::Acr.UserDialogs.Resource.Drawable.ic_mtrl_chip_checked_circle = global::lirksi.Mobile.Droid.Resource.Drawable.ic_mtrl_chip_checked_circle;
+			global::Acr.UserDialogs.Resource.Drawable.ic_mtrl_chip_close_circle = global::lirksi.Mobile.Droid.Resource.Drawable.ic_mtrl_chip_close_circle;
+			global::Acr.UserDialogs.Resource.Drawable.ic_successstatus = global::lirksi.Mobile.Droid.Resource.Drawable.ic_successstatus;
+			global::Acr.UserDialogs.Resource.Drawable.mtrl_snackbar_background = global::lirksi.Mobile.Droid.Resource.Drawable.mtrl_snackbar_background;
+			global::Acr.UserDialogs.Resource.Drawable.mtrl_tabs_default_indicator = global::lirksi.Mobile.Droid.Resource.Drawable.mtrl_tabs_default_indicator;
+			global::Acr.UserDialogs.Resource.Drawable.navigation_empty_icon = global::lirksi.Mobile.Droid.Resource.Drawable.navigation_empty_icon;
+			global::Acr.UserDialogs.Resource.Drawable.notification_action_background = global::lirksi.Mobile.Droid.Resource.Drawable.notification_action_background;
+			global::Acr.UserDialogs.Resource.Drawable.notification_bg = global::lirksi.Mobile.Droid.Resource.Drawable.notification_bg;
+			global::Acr.UserDialogs.Resource.Drawable.notification_bg_low = global::lirksi.Mobile.Droid.Resource.Drawable.notification_bg_low;
+			global::Acr.UserDialogs.Resource.Drawable.notification_bg_low_normal = global::lirksi.Mobile.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Acr.UserDialogs.Resource.Drawable.notification_bg_low_pressed = global::lirksi.Mobile.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Acr.UserDialogs.Resource.Drawable.notification_bg_normal = global::lirksi.Mobile.Droid.Resource.Drawable.notification_bg_normal;
+			global::Acr.UserDialogs.Resource.Drawable.notification_bg_normal_pressed = global::lirksi.Mobile.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Acr.UserDialogs.Resource.Drawable.notification_icon_background = global::lirksi.Mobile.Droid.Resource.Drawable.notification_icon_background;
+			global::Acr.UserDialogs.Resource.Drawable.notification_template_icon_bg = global::lirksi.Mobile.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Acr.UserDialogs.Resource.Drawable.notification_template_icon_low_bg = global::lirksi.Mobile.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Acr.UserDialogs.Resource.Drawable.notification_tile_bg = global::lirksi.Mobile.Droid.Resource.Drawable.notification_tile_bg;
+			global::Acr.UserDialogs.Resource.Drawable.notify_panel_notification_icon_bg = global::lirksi.Mobile.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Acr.UserDialogs.Resource.Drawable.roundedbg = global::lirksi.Mobile.Droid.Resource.Drawable.roundedbg;
+			global::Acr.UserDialogs.Resource.Drawable.roundedbgdark = global::lirksi.Mobile.Droid.Resource.Drawable.roundedbgdark;
+			global::Acr.UserDialogs.Resource.Drawable.tooltip_frame_dark = global::lirksi.Mobile.Droid.Resource.Drawable.tooltip_frame_dark;
+			global::Acr.UserDialogs.Resource.Drawable.tooltip_frame_light = global::lirksi.Mobile.Droid.Resource.Drawable.tooltip_frame_light;
+			global::Acr.UserDialogs.Resource.Id.actions = global::lirksi.Mobile.Droid.Resource.Id.actions;
+			global::Acr.UserDialogs.Resource.Id.action_bar = global::lirksi.Mobile.Droid.Resource.Id.action_bar;
+			global::Acr.UserDialogs.Resource.Id.action_bar_activity_content = global::lirksi.Mobile.Droid.Resource.Id.action_bar_activity_content;
+			global::Acr.UserDialogs.Resource.Id.action_bar_container = global::lirksi.Mobile.Droid.Resource.Id.action_bar_container;
+			global::Acr.UserDialogs.Resource.Id.action_bar_root = global::lirksi.Mobile.Droid.Resource.Id.action_bar_root;
+			global::Acr.UserDialogs.Resource.Id.action_bar_spinner = global::lirksi.Mobile.Droid.Resource.Id.action_bar_spinner;
+			global::Acr.UserDialogs.Resource.Id.action_bar_subtitle = global::lirksi.Mobile.Droid.Resource.Id.action_bar_subtitle;
+			global::Acr.UserDialogs.Resource.Id.action_bar_title = global::lirksi.Mobile.Droid.Resource.Id.action_bar_title;
+			global::Acr.UserDialogs.Resource.Id.action_container = global::lirksi.Mobile.Droid.Resource.Id.action_container;
+			global::Acr.UserDialogs.Resource.Id.action_context_bar = global::lirksi.Mobile.Droid.Resource.Id.action_context_bar;
+			global::Acr.UserDialogs.Resource.Id.action_divider = global::lirksi.Mobile.Droid.Resource.Id.action_divider;
+			global::Acr.UserDialogs.Resource.Id.action_image = global::lirksi.Mobile.Droid.Resource.Id.action_image;
+			global::Acr.UserDialogs.Resource.Id.action_menu_divider = global::lirksi.Mobile.Droid.Resource.Id.action_menu_divider;
+			global::Acr.UserDialogs.Resource.Id.action_menu_presenter = global::lirksi.Mobile.Droid.Resource.Id.action_menu_presenter;
+			global::Acr.UserDialogs.Resource.Id.action_mode_bar = global::lirksi.Mobile.Droid.Resource.Id.action_mode_bar;
+			global::Acr.UserDialogs.Resource.Id.action_mode_bar_stub = global::lirksi.Mobile.Droid.Resource.Id.action_mode_bar_stub;
+			global::Acr.UserDialogs.Resource.Id.action_mode_close_button = global::lirksi.Mobile.Droid.Resource.Id.action_mode_close_button;
+			global::Acr.UserDialogs.Resource.Id.action_text = global::lirksi.Mobile.Droid.Resource.Id.action_text;
+			global::Acr.UserDialogs.Resource.Id.activity_chooser_view_content = global::lirksi.Mobile.Droid.Resource.Id.activity_chooser_view_content;
+			global::Acr.UserDialogs.Resource.Id.add = global::lirksi.Mobile.Droid.Resource.Id.add;
+			global::Acr.UserDialogs.Resource.Id.alertTitle = global::lirksi.Mobile.Droid.Resource.Id.alertTitle;
+			global::Acr.UserDialogs.Resource.Id.async = global::lirksi.Mobile.Droid.Resource.Id.async;
+			global::Acr.UserDialogs.Resource.Id.auto = global::lirksi.Mobile.Droid.Resource.Id.auto;
+			global::Acr.UserDialogs.Resource.Id.blocking = global::lirksi.Mobile.Droid.Resource.Id.blocking;
+			global::Acr.UserDialogs.Resource.Id.bottom = global::lirksi.Mobile.Droid.Resource.Id.bottom;
+			global::Acr.UserDialogs.Resource.Id.buttonPanel = global::lirksi.Mobile.Droid.Resource.Id.buttonPanel;
+			global::Acr.UserDialogs.Resource.Id.center = global::lirksi.Mobile.Droid.Resource.Id.center;
+			global::Acr.UserDialogs.Resource.Id.checkbox = global::lirksi.Mobile.Droid.Resource.Id.checkbox;
+			global::Acr.UserDialogs.Resource.Id.chronometer = global::lirksi.Mobile.Droid.Resource.Id.chronometer;
+			global::Acr.UserDialogs.Resource.Id.container = global::lirksi.Mobile.Droid.Resource.Id.container;
+			global::Acr.UserDialogs.Resource.Id.content = global::lirksi.Mobile.Droid.Resource.Id.content;
+			global::Acr.UserDialogs.Resource.Id.contentPanel = global::lirksi.Mobile.Droid.Resource.Id.contentPanel;
+			global::Acr.UserDialogs.Resource.Id.coordinator = global::lirksi.Mobile.Droid.Resource.Id.coordinator;
+			global::Acr.UserDialogs.Resource.Id.custom = global::lirksi.Mobile.Droid.Resource.Id.custom;
+			global::Acr.UserDialogs.Resource.Id.customPanel = global::lirksi.Mobile.Droid.Resource.Id.customPanel;
+			global::Acr.UserDialogs.Resource.Id.decor_content_parent = global::lirksi.Mobile.Droid.Resource.Id.decor_content_parent;
+			global::Acr.UserDialogs.Resource.Id.default_activity_button = global::lirksi.Mobile.Droid.Resource.Id.default_activity_button;
+			global::Acr.UserDialogs.Resource.Id.design_bottom_sheet = global::lirksi.Mobile.Droid.Resource.Id.design_bottom_sheet;
+			global::Acr.UserDialogs.Resource.Id.design_menu_item_action_area = global::lirksi.Mobile.Droid.Resource.Id.design_menu_item_action_area;
+			global::Acr.UserDialogs.Resource.Id.design_menu_item_action_area_stub = global::lirksi.Mobile.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::Acr.UserDialogs.Resource.Id.design_menu_item_text = global::lirksi.Mobile.Droid.Resource.Id.design_menu_item_text;
+			global::Acr.UserDialogs.Resource.Id.design_navigation_view = global::lirksi.Mobile.Droid.Resource.Id.design_navigation_view;
+			global::Acr.UserDialogs.Resource.Id.edit_query = global::lirksi.Mobile.Droid.Resource.Id.edit_query;
+			global::Acr.UserDialogs.Resource.Id.end = global::lirksi.Mobile.Droid.Resource.Id.end;
+			global::Acr.UserDialogs.Resource.Id.expanded_menu = global::lirksi.Mobile.Droid.Resource.Id.expanded_menu;
+			global::Acr.UserDialogs.Resource.Id.expand_activities_button = global::lirksi.Mobile.Droid.Resource.Id.expand_activities_button;
+			global::Acr.UserDialogs.Resource.Id.fill = global::lirksi.Mobile.Droid.Resource.Id.fill;
+			global::Acr.UserDialogs.Resource.Id.filled = global::lirksi.Mobile.Droid.Resource.Id.filled;
+			global::Acr.UserDialogs.Resource.Id.@fixed = global::lirksi.Mobile.Droid.Resource.Id.@fixed;
+			global::Acr.UserDialogs.Resource.Id.forever = global::lirksi.Mobile.Droid.Resource.Id.forever;
+			global::Acr.UserDialogs.Resource.Id.ghost_view = global::lirksi.Mobile.Droid.Resource.Id.ghost_view;
+			global::Acr.UserDialogs.Resource.Id.group_divider = global::lirksi.Mobile.Droid.Resource.Id.group_divider;
+			global::Acr.UserDialogs.Resource.Id.home = global::lirksi.Mobile.Droid.Resource.Id.home;
+			global::Acr.UserDialogs.Resource.Id.icon = global::lirksi.Mobile.Droid.Resource.Id.icon;
+			global::Acr.UserDialogs.Resource.Id.icon_group = global::lirksi.Mobile.Droid.Resource.Id.icon_group;
+			global::Acr.UserDialogs.Resource.Id.image = global::lirksi.Mobile.Droid.Resource.Id.image;
+			global::Acr.UserDialogs.Resource.Id.info = global::lirksi.Mobile.Droid.Resource.Id.info;
+			global::Acr.UserDialogs.Resource.Id.italic = global::lirksi.Mobile.Droid.Resource.Id.italic;
+			global::Acr.UserDialogs.Resource.Id.item_touch_helper_previous_elevation = global::lirksi.Mobile.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Acr.UserDialogs.Resource.Id.labeled = global::lirksi.Mobile.Droid.Resource.Id.labeled;
+			global::Acr.UserDialogs.Resource.Id.largeLabel = global::lirksi.Mobile.Droid.Resource.Id.largeLabel;
+			global::Acr.UserDialogs.Resource.Id.left = global::lirksi.Mobile.Droid.Resource.Id.left;
+			global::Acr.UserDialogs.Resource.Id.line1 = global::lirksi.Mobile.Droid.Resource.Id.line1;
+			global::Acr.UserDialogs.Resource.Id.line3 = global::lirksi.Mobile.Droid.Resource.Id.line3;
+			global::Acr.UserDialogs.Resource.Id.listMode = global::lirksi.Mobile.Droid.Resource.Id.listMode;
+			global::Acr.UserDialogs.Resource.Id.list_item = global::lirksi.Mobile.Droid.Resource.Id.list_item;
+			global::Acr.UserDialogs.Resource.Id.loadingImage = global::lirksi.Mobile.Droid.Resource.Id.loadingImage;
+			global::Acr.UserDialogs.Resource.Id.loadingProgressBar = global::lirksi.Mobile.Droid.Resource.Id.loadingProgressBar;
+			global::Acr.UserDialogs.Resource.Id.loadingProgressWheel = global::lirksi.Mobile.Droid.Resource.Id.loadingProgressWheel;
+			global::Acr.UserDialogs.Resource.Id.masked = global::lirksi.Mobile.Droid.Resource.Id.masked;
+			global::Acr.UserDialogs.Resource.Id.message = global::lirksi.Mobile.Droid.Resource.Id.message;
+			global::Acr.UserDialogs.Resource.Id.mini = global::lirksi.Mobile.Droid.Resource.Id.mini;
+			global::Acr.UserDialogs.Resource.Id.mtrl_child_content_container = global::lirksi.Mobile.Droid.Resource.Id.mtrl_child_content_container;
+			global::Acr.UserDialogs.Resource.Id.mtrl_internal_children_alpha_tag = global::lirksi.Mobile.Droid.Resource.Id.mtrl_internal_children_alpha_tag;
+			global::Acr.UserDialogs.Resource.Id.multiply = global::lirksi.Mobile.Droid.Resource.Id.multiply;
+			global::Acr.UserDialogs.Resource.Id.navigation_header_container = global::lirksi.Mobile.Droid.Resource.Id.navigation_header_container;
+			global::Acr.UserDialogs.Resource.Id.none = global::lirksi.Mobile.Droid.Resource.Id.none;
+			global::Acr.UserDialogs.Resource.Id.normal = global::lirksi.Mobile.Droid.Resource.Id.normal;
+			global::Acr.UserDialogs.Resource.Id.notification_background = global::lirksi.Mobile.Droid.Resource.Id.notification_background;
+			global::Acr.UserDialogs.Resource.Id.notification_main_column = global::lirksi.Mobile.Droid.Resource.Id.notification_main_column;
+			global::Acr.UserDialogs.Resource.Id.notification_main_column_container = global::lirksi.Mobile.Droid.Resource.Id.notification_main_column_container;
+			global::Acr.UserDialogs.Resource.Id.outline = global::lirksi.Mobile.Droid.Resource.Id.outline;
+			global::Acr.UserDialogs.Resource.Id.parallax = global::lirksi.Mobile.Droid.Resource.Id.parallax;
+			global::Acr.UserDialogs.Resource.Id.parentPanel = global::lirksi.Mobile.Droid.Resource.Id.parentPanel;
+			global::Acr.UserDialogs.Resource.Id.parent_matrix = global::lirksi.Mobile.Droid.Resource.Id.parent_matrix;
+			global::Acr.UserDialogs.Resource.Id.pin = global::lirksi.Mobile.Droid.Resource.Id.pin;
+			global::Acr.UserDialogs.Resource.Id.progress_circular = global::lirksi.Mobile.Droid.Resource.Id.progress_circular;
+			global::Acr.UserDialogs.Resource.Id.progress_horizontal = global::lirksi.Mobile.Droid.Resource.Id.progress_horizontal;
+			global::Acr.UserDialogs.Resource.Id.radio = global::lirksi.Mobile.Droid.Resource.Id.radio;
+			global::Acr.UserDialogs.Resource.Id.right = global::lirksi.Mobile.Droid.Resource.Id.right;
+			global::Acr.UserDialogs.Resource.Id.right_icon = global::lirksi.Mobile.Droid.Resource.Id.right_icon;
+			global::Acr.UserDialogs.Resource.Id.right_side = global::lirksi.Mobile.Droid.Resource.Id.right_side;
+			global::Acr.UserDialogs.Resource.Id.save_image_matrix = global::lirksi.Mobile.Droid.Resource.Id.save_image_matrix;
+			global::Acr.UserDialogs.Resource.Id.save_non_transition_alpha = global::lirksi.Mobile.Droid.Resource.Id.save_non_transition_alpha;
+			global::Acr.UserDialogs.Resource.Id.save_scale_type = global::lirksi.Mobile.Droid.Resource.Id.save_scale_type;
+			global::Acr.UserDialogs.Resource.Id.screen = global::lirksi.Mobile.Droid.Resource.Id.screen;
+			global::Acr.UserDialogs.Resource.Id.scrollable = global::lirksi.Mobile.Droid.Resource.Id.scrollable;
+			global::Acr.UserDialogs.Resource.Id.scrollIndicatorDown = global::lirksi.Mobile.Droid.Resource.Id.scrollIndicatorDown;
+			global::Acr.UserDialogs.Resource.Id.scrollIndicatorUp = global::lirksi.Mobile.Droid.Resource.Id.scrollIndicatorUp;
+			global::Acr.UserDialogs.Resource.Id.scrollView = global::lirksi.Mobile.Droid.Resource.Id.scrollView;
+			global::Acr.UserDialogs.Resource.Id.search_badge = global::lirksi.Mobile.Droid.Resource.Id.search_badge;
+			global::Acr.UserDialogs.Resource.Id.search_bar = global::lirksi.Mobile.Droid.Resource.Id.search_bar;
+			global::Acr.UserDialogs.Resource.Id.search_button = global::lirksi.Mobile.Droid.Resource.Id.search_button;
+			global::Acr.UserDialogs.Resource.Id.search_close_btn = global::lirksi.Mobile.Droid.Resource.Id.search_close_btn;
+			global::Acr.UserDialogs.Resource.Id.search_edit_frame = global::lirksi.Mobile.Droid.Resource.Id.search_edit_frame;
+			global::Acr.UserDialogs.Resource.Id.search_go_btn = global::lirksi.Mobile.Droid.Resource.Id.search_go_btn;
+			global::Acr.UserDialogs.Resource.Id.search_mag_icon = global::lirksi.Mobile.Droid.Resource.Id.search_mag_icon;
+			global::Acr.UserDialogs.Resource.Id.search_plate = global::lirksi.Mobile.Droid.Resource.Id.search_plate;
+			global::Acr.UserDialogs.Resource.Id.search_src_text = global::lirksi.Mobile.Droid.Resource.Id.search_src_text;
+			global::Acr.UserDialogs.Resource.Id.search_voice_btn = global::lirksi.Mobile.Droid.Resource.Id.search_voice_btn;
+			global::Acr.UserDialogs.Resource.Id.selected = global::lirksi.Mobile.Droid.Resource.Id.selected;
+			global::Acr.UserDialogs.Resource.Id.select_dialog_listview = global::lirksi.Mobile.Droid.Resource.Id.select_dialog_listview;
+			global::Acr.UserDialogs.Resource.Id.shortcut = global::lirksi.Mobile.Droid.Resource.Id.shortcut;
+			global::Acr.UserDialogs.Resource.Id.smallLabel = global::lirksi.Mobile.Droid.Resource.Id.smallLabel;
+			global::Acr.UserDialogs.Resource.Id.snackbar_action = global::lirksi.Mobile.Droid.Resource.Id.snackbar_action;
+			global::Acr.UserDialogs.Resource.Id.snackbar_text = global::lirksi.Mobile.Droid.Resource.Id.snackbar_text;
+			global::Acr.UserDialogs.Resource.Id.spacer = global::lirksi.Mobile.Droid.Resource.Id.spacer;
+			global::Acr.UserDialogs.Resource.Id.split_action_bar = global::lirksi.Mobile.Droid.Resource.Id.split_action_bar;
+			global::Acr.UserDialogs.Resource.Id.src_atop = global::lirksi.Mobile.Droid.Resource.Id.src_atop;
+			global::Acr.UserDialogs.Resource.Id.src_in = global::lirksi.Mobile.Droid.Resource.Id.src_in;
+			global::Acr.UserDialogs.Resource.Id.src_over = global::lirksi.Mobile.Droid.Resource.Id.src_over;
+			global::Acr.UserDialogs.Resource.Id.start = global::lirksi.Mobile.Droid.Resource.Id.start;
+			global::Acr.UserDialogs.Resource.Id.stretch = global::lirksi.Mobile.Droid.Resource.Id.stretch;
+			global::Acr.UserDialogs.Resource.Id.submenuarrow = global::lirksi.Mobile.Droid.Resource.Id.submenuarrow;
+			global::Acr.UserDialogs.Resource.Id.submit_area = global::lirksi.Mobile.Droid.Resource.Id.submit_area;
+			global::Acr.UserDialogs.Resource.Id.tabMode = global::lirksi.Mobile.Droid.Resource.Id.tabMode;
+			global::Acr.UserDialogs.Resource.Id.tag_transition_group = global::lirksi.Mobile.Droid.Resource.Id.tag_transition_group;
+			global::Acr.UserDialogs.Resource.Id.tag_unhandled_key_event_manager = global::lirksi.Mobile.Droid.Resource.Id.tag_unhandled_key_event_manager;
+			global::Acr.UserDialogs.Resource.Id.tag_unhandled_key_listeners = global::lirksi.Mobile.Droid.Resource.Id.tag_unhandled_key_listeners;
+			global::Acr.UserDialogs.Resource.Id.text = global::lirksi.Mobile.Droid.Resource.Id.text;
+			global::Acr.UserDialogs.Resource.Id.text2 = global::lirksi.Mobile.Droid.Resource.Id.text2;
+			global::Acr.UserDialogs.Resource.Id.textinput_counter = global::lirksi.Mobile.Droid.Resource.Id.textinput_counter;
+			global::Acr.UserDialogs.Resource.Id.textinput_error = global::lirksi.Mobile.Droid.Resource.Id.textinput_error;
+			global::Acr.UserDialogs.Resource.Id.textinput_helper_text = global::lirksi.Mobile.Droid.Resource.Id.textinput_helper_text;
+			global::Acr.UserDialogs.Resource.Id.textSpacerNoButtons = global::lirksi.Mobile.Droid.Resource.Id.textSpacerNoButtons;
+			global::Acr.UserDialogs.Resource.Id.textSpacerNoTitle = global::lirksi.Mobile.Droid.Resource.Id.textSpacerNoTitle;
+			global::Acr.UserDialogs.Resource.Id.textViewStatus = global::lirksi.Mobile.Droid.Resource.Id.textViewStatus;
+			global::Acr.UserDialogs.Resource.Id.text_input_password_toggle = global::lirksi.Mobile.Droid.Resource.Id.text_input_password_toggle;
+			global::Acr.UserDialogs.Resource.Id.time = global::lirksi.Mobile.Droid.Resource.Id.time;
+			global::Acr.UserDialogs.Resource.Id.title = global::lirksi.Mobile.Droid.Resource.Id.title;
+			global::Acr.UserDialogs.Resource.Id.titleDividerNoCustom = global::lirksi.Mobile.Droid.Resource.Id.titleDividerNoCustom;
+			global::Acr.UserDialogs.Resource.Id.title_template = global::lirksi.Mobile.Droid.Resource.Id.title_template;
+			global::Acr.UserDialogs.Resource.Id.top = global::lirksi.Mobile.Droid.Resource.Id.top;
+			global::Acr.UserDialogs.Resource.Id.topPanel = global::lirksi.Mobile.Droid.Resource.Id.topPanel;
+			global::Acr.UserDialogs.Resource.Id.touch_outside = global::lirksi.Mobile.Droid.Resource.Id.touch_outside;
+			global::Acr.UserDialogs.Resource.Id.transition_current_scene = global::lirksi.Mobile.Droid.Resource.Id.transition_current_scene;
+			global::Acr.UserDialogs.Resource.Id.transition_layout_save = global::lirksi.Mobile.Droid.Resource.Id.transition_layout_save;
+			global::Acr.UserDialogs.Resource.Id.transition_position = global::lirksi.Mobile.Droid.Resource.Id.transition_position;
+			global::Acr.UserDialogs.Resource.Id.transition_scene_layoutid_cache = global::lirksi.Mobile.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::Acr.UserDialogs.Resource.Id.transition_transform = global::lirksi.Mobile.Droid.Resource.Id.transition_transform;
+			global::Acr.UserDialogs.Resource.Id.uniform = global::lirksi.Mobile.Droid.Resource.Id.uniform;
+			global::Acr.UserDialogs.Resource.Id.unlabeled = global::lirksi.Mobile.Droid.Resource.Id.unlabeled;
+			global::Acr.UserDialogs.Resource.Id.up = global::lirksi.Mobile.Droid.Resource.Id.up;
+			global::Acr.UserDialogs.Resource.Id.view_offset_helper = global::lirksi.Mobile.Droid.Resource.Id.view_offset_helper;
+			global::Acr.UserDialogs.Resource.Id.visible = global::lirksi.Mobile.Droid.Resource.Id.visible;
+			global::Acr.UserDialogs.Resource.Id.wrap_content = global::lirksi.Mobile.Droid.Resource.Id.wrap_content;
+			global::Acr.UserDialogs.Resource.Integer.abc_config_activityDefaultDur = global::lirksi.Mobile.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Acr.UserDialogs.Resource.Integer.abc_config_activityShortDur = global::lirksi.Mobile.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Acr.UserDialogs.Resource.Integer.app_bar_elevation_anim_duration = global::lirksi.Mobile.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::Acr.UserDialogs.Resource.Integer.bottom_sheet_slide_duration = global::lirksi.Mobile.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::Acr.UserDialogs.Resource.Integer.cancel_button_image_alpha = global::lirksi.Mobile.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Acr.UserDialogs.Resource.Integer.config_tooltipAnimTime = global::lirksi.Mobile.Droid.Resource.Integer.config_tooltipAnimTime;
+			global::Acr.UserDialogs.Resource.Integer.design_snackbar_text_max_lines = global::lirksi.Mobile.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::Acr.UserDialogs.Resource.Integer.design_tab_indicator_anim_duration_ms = global::lirksi.Mobile.Droid.Resource.Integer.design_tab_indicator_anim_duration_ms;
+			global::Acr.UserDialogs.Resource.Integer.hide_password_duration = global::lirksi.Mobile.Droid.Resource.Integer.hide_password_duration;
+			global::Acr.UserDialogs.Resource.Integer.mtrl_btn_anim_delay_ms = global::lirksi.Mobile.Droid.Resource.Integer.mtrl_btn_anim_delay_ms;
+			global::Acr.UserDialogs.Resource.Integer.mtrl_btn_anim_duration_ms = global::lirksi.Mobile.Droid.Resource.Integer.mtrl_btn_anim_duration_ms;
+			global::Acr.UserDialogs.Resource.Integer.mtrl_chip_anim_duration = global::lirksi.Mobile.Droid.Resource.Integer.mtrl_chip_anim_duration;
+			global::Acr.UserDialogs.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::lirksi.Mobile.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
+			global::Acr.UserDialogs.Resource.Integer.show_password_duration = global::lirksi.Mobile.Droid.Resource.Integer.show_password_duration;
+			global::Acr.UserDialogs.Resource.Integer.status_bar_notification_info_maxnum = global::lirksi.Mobile.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Acr.UserDialogs.Resource.Interpolator.mtrl_fast_out_linear_in = global::lirksi.Mobile.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
+			global::Acr.UserDialogs.Resource.Interpolator.mtrl_fast_out_slow_in = global::lirksi.Mobile.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
+			global::Acr.UserDialogs.Resource.Interpolator.mtrl_linear = global::lirksi.Mobile.Droid.Resource.Interpolator.mtrl_linear;
+			global::Acr.UserDialogs.Resource.Interpolator.mtrl_linear_out_slow_in = global::lirksi.Mobile.Droid.Resource.Interpolator.mtrl_linear_out_slow_in;
+			global::Acr.UserDialogs.Resource.Layout.abc_action_bar_title_item = global::lirksi.Mobile.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Acr.UserDialogs.Resource.Layout.abc_action_bar_up_container = global::lirksi.Mobile.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Acr.UserDialogs.Resource.Layout.abc_action_menu_item_layout = global::lirksi.Mobile.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Acr.UserDialogs.Resource.Layout.abc_action_menu_layout = global::lirksi.Mobile.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Acr.UserDialogs.Resource.Layout.abc_action_mode_bar = global::lirksi.Mobile.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Acr.UserDialogs.Resource.Layout.abc_action_mode_close_item_material = global::lirksi.Mobile.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Acr.UserDialogs.Resource.Layout.abc_activity_chooser_view = global::lirksi.Mobile.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Acr.UserDialogs.Resource.Layout.abc_activity_chooser_view_list_item = global::lirksi.Mobile.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Acr.UserDialogs.Resource.Layout.abc_alert_dialog_button_bar_material = global::lirksi.Mobile.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Acr.UserDialogs.Resource.Layout.abc_alert_dialog_material = global::lirksi.Mobile.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Acr.UserDialogs.Resource.Layout.abc_alert_dialog_title_material = global::lirksi.Mobile.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::Acr.UserDialogs.Resource.Layout.abc_cascading_menu_item_layout = global::lirksi.Mobile.Droid.Resource.Layout.abc_cascading_menu_item_layout;
+			global::Acr.UserDialogs.Resource.Layout.abc_dialog_title_material = global::lirksi.Mobile.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Acr.UserDialogs.Resource.Layout.abc_expanded_menu_layout = global::lirksi.Mobile.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Acr.UserDialogs.Resource.Layout.abc_list_menu_item_checkbox = global::lirksi.Mobile.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Acr.UserDialogs.Resource.Layout.abc_list_menu_item_icon = global::lirksi.Mobile.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Acr.UserDialogs.Resource.Layout.abc_list_menu_item_layout = global::lirksi.Mobile.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Acr.UserDialogs.Resource.Layout.abc_list_menu_item_radio = global::lirksi.Mobile.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Acr.UserDialogs.Resource.Layout.abc_popup_menu_header_item_layout = global::lirksi.Mobile.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::Acr.UserDialogs.Resource.Layout.abc_popup_menu_item_layout = global::lirksi.Mobile.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Acr.UserDialogs.Resource.Layout.abc_screen_content_include = global::lirksi.Mobile.Droid.Resource.Layout.abc_screen_content_include;
+			global::Acr.UserDialogs.Resource.Layout.abc_screen_simple = global::lirksi.Mobile.Droid.Resource.Layout.abc_screen_simple;
+			global::Acr.UserDialogs.Resource.Layout.abc_screen_simple_overlay_action_mode = global::lirksi.Mobile.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Acr.UserDialogs.Resource.Layout.abc_screen_toolbar = global::lirksi.Mobile.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Acr.UserDialogs.Resource.Layout.abc_search_dropdown_item_icons_2line = global::lirksi.Mobile.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Acr.UserDialogs.Resource.Layout.abc_search_view = global::lirksi.Mobile.Droid.Resource.Layout.abc_search_view;
+			global::Acr.UserDialogs.Resource.Layout.abc_select_dialog_material = global::lirksi.Mobile.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Acr.UserDialogs.Resource.Layout.abc_tooltip = global::lirksi.Mobile.Droid.Resource.Layout.abc_tooltip;
+			global::Acr.UserDialogs.Resource.Layout.design_bottom_navigation_item = global::lirksi.Mobile.Droid.Resource.Layout.design_bottom_navigation_item;
+			global::Acr.UserDialogs.Resource.Layout.design_bottom_sheet_dialog = global::lirksi.Mobile.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::Acr.UserDialogs.Resource.Layout.design_layout_snackbar = global::lirksi.Mobile.Droid.Resource.Layout.design_layout_snackbar;
+			global::Acr.UserDialogs.Resource.Layout.design_layout_snackbar_include = global::lirksi.Mobile.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::Acr.UserDialogs.Resource.Layout.design_layout_tab_icon = global::lirksi.Mobile.Droid.Resource.Layout.design_layout_tab_icon;
+			global::Acr.UserDialogs.Resource.Layout.design_layout_tab_text = global::lirksi.Mobile.Droid.Resource.Layout.design_layout_tab_text;
+			global::Acr.UserDialogs.Resource.Layout.design_menu_item_action_area = global::lirksi.Mobile.Droid.Resource.Layout.design_menu_item_action_area;
+			global::Acr.UserDialogs.Resource.Layout.design_navigation_item = global::lirksi.Mobile.Droid.Resource.Layout.design_navigation_item;
+			global::Acr.UserDialogs.Resource.Layout.design_navigation_item_header = global::lirksi.Mobile.Droid.Resource.Layout.design_navigation_item_header;
+			global::Acr.UserDialogs.Resource.Layout.design_navigation_item_separator = global::lirksi.Mobile.Droid.Resource.Layout.design_navigation_item_separator;
+			global::Acr.UserDialogs.Resource.Layout.design_navigation_item_subheader = global::lirksi.Mobile.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::Acr.UserDialogs.Resource.Layout.design_navigation_menu = global::lirksi.Mobile.Droid.Resource.Layout.design_navigation_menu;
+			global::Acr.UserDialogs.Resource.Layout.design_navigation_menu_item = global::lirksi.Mobile.Droid.Resource.Layout.design_navigation_menu_item;
+			global::Acr.UserDialogs.Resource.Layout.design_text_input_password_icon = global::lirksi.Mobile.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Acr.UserDialogs.Resource.Layout.loading = global::lirksi.Mobile.Droid.Resource.Layout.loading;
+			global::Acr.UserDialogs.Resource.Layout.loadingimage = global::lirksi.Mobile.Droid.Resource.Layout.loadingimage;
+			global::Acr.UserDialogs.Resource.Layout.loadingprogress = global::lirksi.Mobile.Droid.Resource.Layout.loadingprogress;
+			global::Acr.UserDialogs.Resource.Layout.mtrl_layout_snackbar = global::lirksi.Mobile.Droid.Resource.Layout.mtrl_layout_snackbar;
+			global::Acr.UserDialogs.Resource.Layout.mtrl_layout_snackbar_include = global::lirksi.Mobile.Droid.Resource.Layout.mtrl_layout_snackbar_include;
+			global::Acr.UserDialogs.Resource.Layout.notification_action = global::lirksi.Mobile.Droid.Resource.Layout.notification_action;
+			global::Acr.UserDialogs.Resource.Layout.notification_action_tombstone = global::lirksi.Mobile.Droid.Resource.Layout.notification_action_tombstone;
+			global::Acr.UserDialogs.Resource.Layout.notification_template_custom_big = global::lirksi.Mobile.Droid.Resource.Layout.notification_template_custom_big;
+			global::Acr.UserDialogs.Resource.Layout.notification_template_icon_group = global::lirksi.Mobile.Droid.Resource.Layout.notification_template_icon_group;
+			global::Acr.UserDialogs.Resource.Layout.notification_template_part_chronometer = global::lirksi.Mobile.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Acr.UserDialogs.Resource.Layout.notification_template_part_time = global::lirksi.Mobile.Droid.Resource.Layout.notification_template_part_time;
+			global::Acr.UserDialogs.Resource.Layout.select_dialog_item_material = global::lirksi.Mobile.Droid.Resource.Layout.select_dialog_item_material;
+			global::Acr.UserDialogs.Resource.Layout.select_dialog_multichoice_material = global::lirksi.Mobile.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Acr.UserDialogs.Resource.Layout.select_dialog_singlechoice_material = global::lirksi.Mobile.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Acr.UserDialogs.Resource.Layout.support_simple_spinner_dropdown_item = global::lirksi.Mobile.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Acr.UserDialogs.Resource.String.abc_action_bar_home_description = global::lirksi.Mobile.Droid.Resource.String.abc_action_bar_home_description;
+			global::Acr.UserDialogs.Resource.String.abc_action_bar_up_description = global::lirksi.Mobile.Droid.Resource.String.abc_action_bar_up_description;
+			global::Acr.UserDialogs.Resource.String.abc_action_menu_overflow_description = global::lirksi.Mobile.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Acr.UserDialogs.Resource.String.abc_action_mode_done = global::lirksi.Mobile.Droid.Resource.String.abc_action_mode_done;
+			global::Acr.UserDialogs.Resource.String.abc_activitychooserview_choose_application = global::lirksi.Mobile.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Acr.UserDialogs.Resource.String.abc_activity_chooser_view_see_all = global::lirksi.Mobile.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Acr.UserDialogs.Resource.String.abc_capital_off = global::lirksi.Mobile.Droid.Resource.String.abc_capital_off;
+			global::Acr.UserDialogs.Resource.String.abc_capital_on = global::lirksi.Mobile.Droid.Resource.String.abc_capital_on;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_body_1_material = global::lirksi.Mobile.Droid.Resource.String.abc_font_family_body_1_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_body_2_material = global::lirksi.Mobile.Droid.Resource.String.abc_font_family_body_2_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_button_material = global::lirksi.Mobile.Droid.Resource.String.abc_font_family_button_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_caption_material = global::lirksi.Mobile.Droid.Resource.String.abc_font_family_caption_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_display_1_material = global::lirksi.Mobile.Droid.Resource.String.abc_font_family_display_1_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_display_2_material = global::lirksi.Mobile.Droid.Resource.String.abc_font_family_display_2_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_display_3_material = global::lirksi.Mobile.Droid.Resource.String.abc_font_family_display_3_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_display_4_material = global::lirksi.Mobile.Droid.Resource.String.abc_font_family_display_4_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_headline_material = global::lirksi.Mobile.Droid.Resource.String.abc_font_family_headline_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_menu_material = global::lirksi.Mobile.Droid.Resource.String.abc_font_family_menu_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_subhead_material = global::lirksi.Mobile.Droid.Resource.String.abc_font_family_subhead_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_title_material = global::lirksi.Mobile.Droid.Resource.String.abc_font_family_title_material;
+			global::Acr.UserDialogs.Resource.String.abc_menu_alt_shortcut_label = global::lirksi.Mobile.Droid.Resource.String.abc_menu_alt_shortcut_label;
+			global::Acr.UserDialogs.Resource.String.abc_menu_ctrl_shortcut_label = global::lirksi.Mobile.Droid.Resource.String.abc_menu_ctrl_shortcut_label;
+			global::Acr.UserDialogs.Resource.String.abc_menu_delete_shortcut_label = global::lirksi.Mobile.Droid.Resource.String.abc_menu_delete_shortcut_label;
+			global::Acr.UserDialogs.Resource.String.abc_menu_enter_shortcut_label = global::lirksi.Mobile.Droid.Resource.String.abc_menu_enter_shortcut_label;
+			global::Acr.UserDialogs.Resource.String.abc_menu_function_shortcut_label = global::lirksi.Mobile.Droid.Resource.String.abc_menu_function_shortcut_label;
+			global::Acr.UserDialogs.Resource.String.abc_menu_meta_shortcut_label = global::lirksi.Mobile.Droid.Resource.String.abc_menu_meta_shortcut_label;
+			global::Acr.UserDialogs.Resource.String.abc_menu_shift_shortcut_label = global::lirksi.Mobile.Droid.Resource.String.abc_menu_shift_shortcut_label;
+			global::Acr.UserDialogs.Resource.String.abc_menu_space_shortcut_label = global::lirksi.Mobile.Droid.Resource.String.abc_menu_space_shortcut_label;
+			global::Acr.UserDialogs.Resource.String.abc_menu_sym_shortcut_label = global::lirksi.Mobile.Droid.Resource.String.abc_menu_sym_shortcut_label;
+			global::Acr.UserDialogs.Resource.String.abc_prepend_shortcut_label = global::lirksi.Mobile.Droid.Resource.String.abc_prepend_shortcut_label;
+			global::Acr.UserDialogs.Resource.String.abc_searchview_description_clear = global::lirksi.Mobile.Droid.Resource.String.abc_searchview_description_clear;
+			global::Acr.UserDialogs.Resource.String.abc_searchview_description_query = global::lirksi.Mobile.Droid.Resource.String.abc_searchview_description_query;
+			global::Acr.UserDialogs.Resource.String.abc_searchview_description_search = global::lirksi.Mobile.Droid.Resource.String.abc_searchview_description_search;
+			global::Acr.UserDialogs.Resource.String.abc_searchview_description_submit = global::lirksi.Mobile.Droid.Resource.String.abc_searchview_description_submit;
+			global::Acr.UserDialogs.Resource.String.abc_searchview_description_voice = global::lirksi.Mobile.Droid.Resource.String.abc_searchview_description_voice;
+			global::Acr.UserDialogs.Resource.String.abc_search_hint = global::lirksi.Mobile.Droid.Resource.String.abc_search_hint;
+			global::Acr.UserDialogs.Resource.String.abc_shareactionprovider_share_with = global::lirksi.Mobile.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Acr.UserDialogs.Resource.String.abc_shareactionprovider_share_with_application = global::lirksi.Mobile.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Acr.UserDialogs.Resource.String.abc_toolbar_collapse_description = global::lirksi.Mobile.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Acr.UserDialogs.Resource.String.appbar_scrolling_view_behavior = global::lirksi.Mobile.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Acr.UserDialogs.Resource.String.bottom_sheet_behavior = global::lirksi.Mobile.Droid.Resource.String.bottom_sheet_behavior;
+			global::Acr.UserDialogs.Resource.String.character_counter_content_description = global::lirksi.Mobile.Droid.Resource.String.character_counter_content_description;
+			global::Acr.UserDialogs.Resource.String.character_counter_pattern = global::lirksi.Mobile.Droid.Resource.String.character_counter_pattern;
+			global::Acr.UserDialogs.Resource.String.fab_transformation_scrim_behavior = global::lirksi.Mobile.Droid.Resource.String.fab_transformation_scrim_behavior;
+			global::Acr.UserDialogs.Resource.String.fab_transformation_sheet_behavior = global::lirksi.Mobile.Droid.Resource.String.fab_transformation_sheet_behavior;
+			global::Acr.UserDialogs.Resource.String.hide_bottom_view_on_scroll_behavior = global::lirksi.Mobile.Droid.Resource.String.hide_bottom_view_on_scroll_behavior;
+			global::Acr.UserDialogs.Resource.String.library_name = global::lirksi.Mobile.Droid.Resource.String.library_name;
+			global::Acr.UserDialogs.Resource.String.mtrl_chip_close_icon_content_description = global::lirksi.Mobile.Droid.Resource.String.mtrl_chip_close_icon_content_description;
+			global::Acr.UserDialogs.Resource.String.password_toggle_content_description = global::lirksi.Mobile.Droid.Resource.String.password_toggle_content_description;
+			global::Acr.UserDialogs.Resource.String.path_password_eye = global::lirksi.Mobile.Droid.Resource.String.path_password_eye;
+			global::Acr.UserDialogs.Resource.String.path_password_eye_mask_strike_through = global::lirksi.Mobile.Droid.Resource.String.path_password_eye_mask_strike_through;
+			global::Acr.UserDialogs.Resource.String.path_password_eye_mask_visible = global::lirksi.Mobile.Droid.Resource.String.path_password_eye_mask_visible;
+			global::Acr.UserDialogs.Resource.String.path_password_strike_through = global::lirksi.Mobile.Droid.Resource.String.path_password_strike_through;
+			global::Acr.UserDialogs.Resource.String.search_menu_title = global::lirksi.Mobile.Droid.Resource.String.search_menu_title;
+			global::Acr.UserDialogs.Resource.String.status_bar_notification_info_overflow = global::lirksi.Mobile.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Acr.UserDialogs.Resource.Style.AlertDialog_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.AlertDialog_AppCompat_Light = global::lirksi.Mobile.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Animation_AppCompat_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Animation_AppCompat_DropDownUp = global::lirksi.Mobile.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Acr.UserDialogs.Resource.Style.Animation_AppCompat_Tooltip = global::lirksi.Mobile.Droid.Resource.Style.Animation_AppCompat_Tooltip;
+			global::Acr.UserDialogs.Resource.Style.Animation_Design_BottomSheetDialog = global::lirksi.Mobile.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Acr.UserDialogs.Resource.Style.Base_AlertDialog_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_AlertDialog_AppCompat_Light = global::lirksi.Mobile.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Base_Animation_AppCompat_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::lirksi.Mobile.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Acr.UserDialogs.Resource.Style.Base_Animation_AppCompat_Tooltip = global::lirksi.Mobile.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::Acr.UserDialogs.Resource.Style.Base_CardView = global::lirksi.Mobile.Droid.Resource.Style.Base_CardView;
+			global::Acr.UserDialogs.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_DialogWindowTitle_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Button = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Large = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Small = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Title = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::lirksi.Mobile.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Acr.UserDialogs.Resource.Style.Base_ThemeOverlay_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::lirksi.Mobile.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::lirksi.Mobile.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Acr.UserDialogs.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::lirksi.Mobile.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::lirksi.Mobile.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::lirksi.Mobile.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert = global::lirksi.Mobile.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Light = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_MaterialComponents = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_MaterialComponents;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_MaterialComponents_Bridge = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_MaterialComponents_CompactMenu = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_MaterialComponents_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_MaterialComponents_Light = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_MaterialComponents_Light;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth = global::lirksi.Mobile.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::Acr.UserDialogs.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = global::lirksi.Mobile.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.Base_V14_Theme_MaterialComponents = global::lirksi.Mobile.Droid.Resource.Style.Base_V14_Theme_MaterialComponents;
+			global::Acr.UserDialogs.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge = global::lirksi.Mobile.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge;
+			global::Acr.UserDialogs.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_V14_Theme_MaterialComponents_Light = global::lirksi.Mobile.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light;
+			global::Acr.UserDialogs.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge = global::lirksi.Mobile.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge;
+			global::Acr.UserDialogs.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::lirksi.Mobile.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Acr.UserDialogs.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_V21_Theme_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_V21_Theme_AppCompat_Light = global::lirksi.Mobile.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_V22_Theme_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_V22_Theme_AppCompat_Light = global::lirksi.Mobile.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Base_V23_Theme_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_V23_Theme_AppCompat_Light = global::lirksi.Mobile.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Base_V26_Theme_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.Base_V26_Theme_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_V26_Theme_AppCompat_Light = global::lirksi.Mobile.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::lirksi.Mobile.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::Acr.UserDialogs.Resource.Style.Base_V28_Theme_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.Base_V28_Theme_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_V28_Theme_AppCompat_Light = global::lirksi.Mobile.Droid.Resource.Style.Base_V28_Theme_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_V7_Theme_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_V7_Theme_AppCompat_Light = global::lirksi.Mobile.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::lirksi.Mobile.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Acr.UserDialogs.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::lirksi.Mobile.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Acr.UserDialogs.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::lirksi.Mobile.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActionBar = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActionButton = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActionMode = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Button = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Button_Small = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_EditText = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ImageButton = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ListView = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_RatingBar = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_SearchView = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_SeekBar = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Spinner = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Toolbar = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_Design_TabLayout = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_MaterialComponents_Chip = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_MaterialComponents_Chip;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout = global::lirksi.Mobile.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout;
+			global::Acr.UserDialogs.Resource.Style.CardView = global::lirksi.Mobile.Droid.Resource.Style.CardView;
+			global::Acr.UserDialogs.Resource.Style.CardView_Dark = global::lirksi.Mobile.Droid.Resource.Style.CardView_Dark;
+			global::Acr.UserDialogs.Resource.Style.CardView_Light = global::lirksi.Mobile.Droid.Resource.Style.CardView_Light;
+			global::Acr.UserDialogs.Resource.Style.Platform_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.Platform_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Platform_AppCompat_Light = global::lirksi.Mobile.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Platform_MaterialComponents = global::lirksi.Mobile.Droid.Resource.Style.Platform_MaterialComponents;
+			global::Acr.UserDialogs.Resource.Style.Platform_MaterialComponents_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Platform_MaterialComponents_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Platform_MaterialComponents_Light = global::lirksi.Mobile.Droid.Resource.Style.Platform_MaterialComponents_Light;
+			global::Acr.UserDialogs.Resource.Style.Platform_MaterialComponents_Light_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Platform_MaterialComponents_Light_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Platform_ThemeOverlay_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::lirksi.Mobile.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Acr.UserDialogs.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::lirksi.Mobile.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Platform_V21_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Platform_V21_AppCompat_Light = global::lirksi.Mobile.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Platform_V25_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Platform_V25_AppCompat_Light = global::lirksi.Mobile.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Platform_Widget_AppCompat_Spinner = global::lirksi.Mobile.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::lirksi.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::lirksi.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::lirksi.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::lirksi.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = global::lirksi.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = global::lirksi.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::lirksi.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = global::lirksi.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::lirksi.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::lirksi.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::lirksi.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::lirksi.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::lirksi.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::lirksi.Mobile.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Acr.UserDialogs.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::lirksi.Mobile.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Acr.UserDialogs.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::lirksi.Mobile.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Body1 = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Body2 = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Button = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Caption = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Display1 = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Display2 = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Display3 = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Display4 = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Headline = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Inverse = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Large = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Medium = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Menu = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Small = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Subhead = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Title = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Tooltip = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Compat_Notification = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Compat_Notification_Info = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Compat_Notification_Time = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Compat_Notification_Title = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Design_Counter = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Design_Counter_Overflow = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Design_Error = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Design_HelperText = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_Design_HelperText;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Design_Hint = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Design_Snackbar_Message = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Design_Tab = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_MaterialComponents_Body1 = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_MaterialComponents_Body1;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_MaterialComponents_Body2 = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_MaterialComponents_Body2;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_MaterialComponents_Button = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_MaterialComponents_Button;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_MaterialComponents_Caption = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_MaterialComponents_Caption;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_MaterialComponents_Chip = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_MaterialComponents_Chip;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_MaterialComponents_Headline1 = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline1;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_MaterialComponents_Headline2 = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline2;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_MaterialComponents_Headline3 = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline3;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_MaterialComponents_Headline4 = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline4;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_MaterialComponents_Headline5 = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline5;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_MaterialComponents_Headline6 = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline6;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_MaterialComponents_Overline = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_MaterialComponents_Overline;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_MaterialComponents_Subtitle1 = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle1;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_MaterialComponents_Subtitle2 = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle2;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_MaterialComponents_Tab = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_MaterialComponents_Tab;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::lirksi.Mobile.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::lirksi.Mobile.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_Dark = global::lirksi.Mobile.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::lirksi.Mobile.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::lirksi.Mobile.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::lirksi.Mobile.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_Light = global::lirksi.Mobile.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_MaterialComponents = global::lirksi.Mobile.Droid.Resource.Style.ThemeOverlay_MaterialComponents;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar = global::lirksi.Mobile.Droid.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_MaterialComponents_Dark = global::lirksi.Mobile.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar = global::lirksi.Mobile.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_MaterialComponents_Dialog = global::lirksi.Mobile.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert = global::lirksi.Mobile.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_MaterialComponents_Light = global::lirksi.Mobile.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Light;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText = global::lirksi.Mobile.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = global::lirksi.Mobile.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = global::lirksi.Mobile.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = global::lirksi.Mobile.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::lirksi.Mobile.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_CompactMenu = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_DayNight = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Dialog_Alert = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Light = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Light_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_NoActionBar = global::lirksi.Mobile.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Acr.UserDialogs.Resource.Style.Theme_Design = global::lirksi.Mobile.Droid.Resource.Style.Theme_Design;
+			global::Acr.UserDialogs.Resource.Style.Theme_Design_BottomSheetDialog = global::lirksi.Mobile.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Acr.UserDialogs.Resource.Style.Theme_Design_Light = global::lirksi.Mobile.Droid.Resource.Style.Theme_Design_Light;
+			global::Acr.UserDialogs.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::lirksi.Mobile.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Acr.UserDialogs.Resource.Style.Theme_Design_Light_NoActionBar = global::lirksi.Mobile.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Acr.UserDialogs.Resource.Style.Theme_Design_NoActionBar = global::lirksi.Mobile.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_BottomSheetDialog = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_Bridge = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_Bridge;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_CompactMenu = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_DialogWhenLarge = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_Dialog_Alert = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_Light = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_Light;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_Light_Bridge = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_Light_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_Light_NoActionBar = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_NoActionBar = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar;
+			global::Acr.UserDialogs.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge = global::lirksi.Mobile.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActionBar = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActionButton = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActionMode = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActivityChooserView = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Button = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ButtonBar = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Button_Borderless = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Button_Colored = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Button_Small = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_EditText = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ImageButton = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionBar = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionButton = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_SearchView = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ListMenuView = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ListPopupWindow = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ListView = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ListView_DropDown = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ListView_Menu = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_PopupMenu = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_PopupWindow = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ProgressBar = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_RatingBar = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_RatingBar_Small = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_SearchView = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_SeekBar = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Spinner = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Toolbar = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::lirksi.Mobile.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Acr.UserDialogs.Resource.Style.Widget_Compat_NotificationActionContainer = global::lirksi.Mobile.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Acr.UserDialogs.Resource.Style.Widget_Compat_NotificationActionText = global::lirksi.Mobile.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_AppBarLayout = global::lirksi.Mobile.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_BottomNavigationView = global::lirksi.Mobile.Droid.Resource.Style.Widget_Design_BottomNavigationView;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_BottomSheet_Modal = global::lirksi.Mobile.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_CollapsingToolbar = global::lirksi.Mobile.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_FloatingActionButton = global::lirksi.Mobile.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_NavigationView = global::lirksi.Mobile.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::lirksi.Mobile.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_Snackbar = global::lirksi.Mobile.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_TabLayout = global::lirksi.Mobile.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_TextInputLayout = global::lirksi.Mobile.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_BottomAppBar = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_BottomNavigationView = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_Button = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_Button;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_Button_Icon = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_Button_Icon;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_Button_TextButton = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_CardView = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_CardView;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_ChipGroup = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_Chip_Action = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_Chip_Action;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_Chip_Choice = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_Chip_Choice;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_Chip_Entry = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_Chip_Entry;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_Chip_Filter = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_Chip_Filter;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_FloatingActionButton = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_FloatingActionButton;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_NavigationView = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_NavigationView;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_Snackbar = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_Snackbar;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_TabLayout = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_TabLayout;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_TabLayout_Colored = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_TabLayout_Colored;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense;
+			global::Acr.UserDialogs.Resource.Style.Widget_MaterialComponents_Toolbar = global::lirksi.Mobile.Droid.Resource.Style.Widget_MaterialComponents_Toolbar;
+			global::Acr.UserDialogs.Resource.Style.Widget_Support_CoordinatorLayout = global::lirksi.Mobile.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBarLayout = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBarLayout;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_background = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_background;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_backgroundSplit = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_backgroundStacked = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_contentInsetEnd = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_contentInsetLeft = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_contentInsetRight = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_contentInsetStart = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_customNavigationLayout = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_displayOptions = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_divider = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_divider;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_elevation = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_height = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_height;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_hideOnContentScroll = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_homeAsUpIndicator = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_homeLayout = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_icon = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_icon;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_itemPadding = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_logo = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_logo;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_navigationMode = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_popupTheme = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_progressBarPadding = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_progressBarStyle = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_subtitle = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_subtitleTextStyle = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_title = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_title;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_titleTextStyle = global::lirksi.Mobile.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMenuItemView = global::lirksi.Mobile.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMenuItemView_android_minWidth = global::lirksi.Mobile.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMenuView = global::lirksi.Mobile.Droid.Resource.Styleable.ActionMenuView;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMode = global::lirksi.Mobile.Droid.Resource.Styleable.ActionMode;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMode_background = global::lirksi.Mobile.Droid.Resource.Styleable.ActionMode_background;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMode_backgroundSplit = global::lirksi.Mobile.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMode_closeItemLayout = global::lirksi.Mobile.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMode_height = global::lirksi.Mobile.Droid.Resource.Styleable.ActionMode_height;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMode_subtitleTextStyle = global::lirksi.Mobile.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMode_titleTextStyle = global::lirksi.Mobile.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Acr.UserDialogs.Resource.Styleable.ActivityChooserView = global::lirksi.Mobile.Droid.Resource.Styleable.ActivityChooserView;
+			global::Acr.UserDialogs.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::lirksi.Mobile.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.ActivityChooserView_initialActivityCount = global::lirksi.Mobile.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Acr.UserDialogs.Resource.Styleable.AlertDialog = global::lirksi.Mobile.Droid.Resource.Styleable.AlertDialog;
+			global::Acr.UserDialogs.Resource.Styleable.AlertDialog_android_layout = global::lirksi.Mobile.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Acr.UserDialogs.Resource.Styleable.AlertDialog_buttonIconDimen = global::lirksi.Mobile.Droid.Resource.Styleable.AlertDialog_buttonIconDimen;
+			global::Acr.UserDialogs.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::lirksi.Mobile.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Acr.UserDialogs.Resource.Styleable.AlertDialog_listItemLayout = global::lirksi.Mobile.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Acr.UserDialogs.Resource.Styleable.AlertDialog_listLayout = global::lirksi.Mobile.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Acr.UserDialogs.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::lirksi.Mobile.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Acr.UserDialogs.Resource.Styleable.AlertDialog_showTitle = global::lirksi.Mobile.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::Acr.UserDialogs.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::lirksi.Mobile.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Acr.UserDialogs.Resource.Styleable.AnimatedStateListDrawableCompat = global::lirksi.Mobile.Droid.Resource.Styleable.AnimatedStateListDrawableCompat;
+			global::Acr.UserDialogs.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize = global::lirksi.Mobile.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize;
+			global::Acr.UserDialogs.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither = global::lirksi.Mobile.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither;
+			global::Acr.UserDialogs.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration = global::lirksi.Mobile.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration;
+			global::Acr.UserDialogs.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration = global::lirksi.Mobile.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration;
+			global::Acr.UserDialogs.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding = global::lirksi.Mobile.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding;
+			global::Acr.UserDialogs.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible = global::lirksi.Mobile.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible;
+			global::Acr.UserDialogs.Resource.Styleable.AnimatedStateListDrawableItem = global::lirksi.Mobile.Droid.Resource.Styleable.AnimatedStateListDrawableItem;
+			global::Acr.UserDialogs.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable = global::lirksi.Mobile.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable;
+			global::Acr.UserDialogs.Resource.Styleable.AnimatedStateListDrawableItem_android_id = global::lirksi.Mobile.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_id;
+			global::Acr.UserDialogs.Resource.Styleable.AnimatedStateListDrawableTransition = global::lirksi.Mobile.Droid.Resource.Styleable.AnimatedStateListDrawableTransition;
+			global::Acr.UserDialogs.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable = global::lirksi.Mobile.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable;
+			global::Acr.UserDialogs.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId = global::lirksi.Mobile.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId;
+			global::Acr.UserDialogs.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible = global::lirksi.Mobile.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible;
+			global::Acr.UserDialogs.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId = global::lirksi.Mobile.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayout = global::lirksi.Mobile.Droid.Resource.Styleable.AppBarLayout;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayoutStates = global::lirksi.Mobile.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::lirksi.Mobile.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::lirksi.Mobile.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayoutStates_state_liftable = global::lirksi.Mobile.Droid.Resource.Styleable.AppBarLayoutStates_state_liftable;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayoutStates_state_lifted = global::lirksi.Mobile.Droid.Resource.Styleable.AppBarLayoutStates_state_lifted;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayout_android_background = global::lirksi.Mobile.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::lirksi.Mobile.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::lirksi.Mobile.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayout_elevation = global::lirksi.Mobile.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayout_expanded = global::lirksi.Mobile.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayout_Layout = global::lirksi.Mobile.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::lirksi.Mobile.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::lirksi.Mobile.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayout_liftOnScroll = global::lirksi.Mobile.Droid.Resource.Styleable.AppBarLayout_liftOnScroll;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatImageView = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatImageView;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatImageView_android_src = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatImageView_srcCompat = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatImageView_tint = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatImageView_tintMode = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatSeekBar = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatSeekBar_android_thumb = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatSeekBar_tickMark = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextHelper = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextView;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_android_textAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_fontFamily = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_lineHeight = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_textAllCaps = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarDivider = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarSize = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarTheme = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeBackground = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_buttonStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_checkboxStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorAccent = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorControlActivated = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorControlNormal = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorError = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_colorError;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorPrimary = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_controlBackground = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_dialogCornerRadius = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_dialogCornerRadius;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_dialogTheme = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_dividerVertical = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_editTextBackground = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_editTextColor = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_editTextStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_panelBackground = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_searchViewStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_seekBarStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_spinnerStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_switchStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_toolbarStyle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_viewInflaterClass = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_viewInflaterClass;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowActionBar = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowNoTitle = global::lirksi.Mobile.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Acr.UserDialogs.Resource.Styleable.BottomAppBar = global::lirksi.Mobile.Droid.Resource.Styleable.BottomAppBar;
+			global::Acr.UserDialogs.Resource.Styleable.BottomAppBar_backgroundTint = global::lirksi.Mobile.Droid.Resource.Styleable.BottomAppBar_backgroundTint;
+			global::Acr.UserDialogs.Resource.Styleable.BottomAppBar_fabAlignmentMode = global::lirksi.Mobile.Droid.Resource.Styleable.BottomAppBar_fabAlignmentMode;
+			global::Acr.UserDialogs.Resource.Styleable.BottomAppBar_fabCradleMargin = global::lirksi.Mobile.Droid.Resource.Styleable.BottomAppBar_fabCradleMargin;
+			global::Acr.UserDialogs.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius = global::lirksi.Mobile.Droid.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius;
+			global::Acr.UserDialogs.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset = global::lirksi.Mobile.Droid.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset;
+			global::Acr.UserDialogs.Resource.Styleable.BottomAppBar_hideOnScroll = global::lirksi.Mobile.Droid.Resource.Styleable.BottomAppBar_hideOnScroll;
+			global::Acr.UserDialogs.Resource.Styleable.BottomNavigationView = global::lirksi.Mobile.Droid.Resource.Styleable.BottomNavigationView;
+			global::Acr.UserDialogs.Resource.Styleable.BottomNavigationView_elevation = global::lirksi.Mobile.Droid.Resource.Styleable.BottomNavigationView_elevation;
+			global::Acr.UserDialogs.Resource.Styleable.BottomNavigationView_itemBackground = global::lirksi.Mobile.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::Acr.UserDialogs.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled = global::lirksi.Mobile.Droid.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled;
+			global::Acr.UserDialogs.Resource.Styleable.BottomNavigationView_itemIconSize = global::lirksi.Mobile.Droid.Resource.Styleable.BottomNavigationView_itemIconSize;
+			global::Acr.UserDialogs.Resource.Styleable.BottomNavigationView_itemIconTint = global::lirksi.Mobile.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::Acr.UserDialogs.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive = global::lirksi.Mobile.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive;
+			global::Acr.UserDialogs.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive = global::lirksi.Mobile.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive;
+			global::Acr.UserDialogs.Resource.Styleable.BottomNavigationView_itemTextColor = global::lirksi.Mobile.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::Acr.UserDialogs.Resource.Styleable.BottomNavigationView_labelVisibilityMode = global::lirksi.Mobile.Droid.Resource.Styleable.BottomNavigationView_labelVisibilityMode;
+			global::Acr.UserDialogs.Resource.Styleable.BottomNavigationView_menu = global::lirksi.Mobile.Droid.Resource.Styleable.BottomNavigationView_menu;
+			global::Acr.UserDialogs.Resource.Styleable.BottomSheetBehavior_Layout = global::lirksi.Mobile.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::Acr.UserDialogs.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents = global::lirksi.Mobile.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents;
+			global::Acr.UserDialogs.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::lirksi.Mobile.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::Acr.UserDialogs.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::lirksi.Mobile.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::Acr.UserDialogs.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::lirksi.Mobile.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::Acr.UserDialogs.Resource.Styleable.ButtonBarLayout = global::lirksi.Mobile.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Acr.UserDialogs.Resource.Styleable.ButtonBarLayout_allowStacking = global::lirksi.Mobile.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Acr.UserDialogs.Resource.Styleable.CardView = global::lirksi.Mobile.Droid.Resource.Styleable.CardView;
+			global::Acr.UserDialogs.Resource.Styleable.CardView_android_minHeight = global::lirksi.Mobile.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::Acr.UserDialogs.Resource.Styleable.CardView_android_minWidth = global::lirksi.Mobile.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::Acr.UserDialogs.Resource.Styleable.CardView_cardBackgroundColor = global::lirksi.Mobile.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::Acr.UserDialogs.Resource.Styleable.CardView_cardCornerRadius = global::lirksi.Mobile.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::Acr.UserDialogs.Resource.Styleable.CardView_cardElevation = global::lirksi.Mobile.Droid.Resource.Styleable.CardView_cardElevation;
+			global::Acr.UserDialogs.Resource.Styleable.CardView_cardMaxElevation = global::lirksi.Mobile.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::Acr.UserDialogs.Resource.Styleable.CardView_cardPreventCornerOverlap = global::lirksi.Mobile.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::Acr.UserDialogs.Resource.Styleable.CardView_cardUseCompatPadding = global::lirksi.Mobile.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::Acr.UserDialogs.Resource.Styleable.CardView_contentPadding = global::lirksi.Mobile.Droid.Resource.Styleable.CardView_contentPadding;
+			global::Acr.UserDialogs.Resource.Styleable.CardView_contentPaddingBottom = global::lirksi.Mobile.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::Acr.UserDialogs.Resource.Styleable.CardView_contentPaddingLeft = global::lirksi.Mobile.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::Acr.UserDialogs.Resource.Styleable.CardView_contentPaddingRight = global::lirksi.Mobile.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::Acr.UserDialogs.Resource.Styleable.CardView_contentPaddingTop = global::lirksi.Mobile.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::Acr.UserDialogs.Resource.Styleable.Chip = global::lirksi.Mobile.Droid.Resource.Styleable.Chip;
+			global::Acr.UserDialogs.Resource.Styleable.ChipGroup = global::lirksi.Mobile.Droid.Resource.Styleable.ChipGroup;
+			global::Acr.UserDialogs.Resource.Styleable.ChipGroup_checkedChip = global::lirksi.Mobile.Droid.Resource.Styleable.ChipGroup_checkedChip;
+			global::Acr.UserDialogs.Resource.Styleable.ChipGroup_chipSpacing = global::lirksi.Mobile.Droid.Resource.Styleable.ChipGroup_chipSpacing;
+			global::Acr.UserDialogs.Resource.Styleable.ChipGroup_chipSpacingHorizontal = global::lirksi.Mobile.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal;
+			global::Acr.UserDialogs.Resource.Styleable.ChipGroup_chipSpacingVertical = global::lirksi.Mobile.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical;
+			global::Acr.UserDialogs.Resource.Styleable.ChipGroup_singleLine = global::lirksi.Mobile.Droid.Resource.Styleable.ChipGroup_singleLine;
+			global::Acr.UserDialogs.Resource.Styleable.ChipGroup_singleSelection = global::lirksi.Mobile.Droid.Resource.Styleable.ChipGroup_singleSelection;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_android_checkable = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_android_checkable;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_android_ellipsize = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_android_ellipsize;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_android_maxWidth = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_android_maxWidth;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_android_text = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_android_text;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_android_textAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_android_textAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_checkedIcon = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_checkedIcon;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_checkedIconEnabled = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_checkedIconEnabled;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_checkedIconVisible = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_checkedIconVisible;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_chipBackgroundColor = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_chipBackgroundColor;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_chipCornerRadius = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_chipCornerRadius;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_chipEndPadding = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_chipEndPadding;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_chipIcon = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_chipIcon;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_chipIconEnabled = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_chipIconEnabled;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_chipIconSize = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_chipIconSize;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_chipIconTint = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_chipIconTint;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_chipIconVisible = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_chipIconVisible;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_chipMinHeight = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_chipMinHeight;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_chipStartPadding = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_chipStartPadding;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_chipStrokeColor = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_chipStrokeColor;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_chipStrokeWidth = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_chipStrokeWidth;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_closeIcon = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_closeIcon;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_closeIconEnabled = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_closeIconEnabled;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_closeIconEndPadding = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_closeIconEndPadding;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_closeIconSize = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_closeIconSize;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_closeIconStartPadding = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_closeIconStartPadding;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_closeIconTint = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_closeIconTint;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_closeIconVisible = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_closeIconVisible;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_hideMotionSpec = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_hideMotionSpec;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_iconEndPadding = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_iconEndPadding;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_iconStartPadding = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_iconStartPadding;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_rippleColor = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_rippleColor;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_showMotionSpec = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_showMotionSpec;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_textEndPadding = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_textEndPadding;
+			global::Acr.UserDialogs.Resource.Styleable.Chip_textStartPadding = global::lirksi.Mobile.Droid.Resource.Styleable.Chip_textStartPadding;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_Layout = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_title = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::lirksi.Mobile.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Acr.UserDialogs.Resource.Styleable.ColorStateListItem = global::lirksi.Mobile.Droid.Resource.Styleable.ColorStateListItem;
+			global::Acr.UserDialogs.Resource.Styleable.ColorStateListItem_alpha = global::lirksi.Mobile.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Acr.UserDialogs.Resource.Styleable.ColorStateListItem_android_alpha = global::lirksi.Mobile.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Acr.UserDialogs.Resource.Styleable.ColorStateListItem_android_color = global::lirksi.Mobile.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Acr.UserDialogs.Resource.Styleable.CompoundButton = global::lirksi.Mobile.Droid.Resource.Styleable.CompoundButton;
+			global::Acr.UserDialogs.Resource.Styleable.CompoundButton_android_button = global::lirksi.Mobile.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Acr.UserDialogs.Resource.Styleable.CompoundButton_buttonTint = global::lirksi.Mobile.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Acr.UserDialogs.Resource.Styleable.CompoundButton_buttonTintMode = global::lirksi.Mobile.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout = global::lirksi.Mobile.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_keylines = global::lirksi.Mobile.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_Layout = global::lirksi.Mobile.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::lirksi.Mobile.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::lirksi.Mobile.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::lirksi.Mobile.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::lirksi.Mobile.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::lirksi.Mobile.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::lirksi.Mobile.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::lirksi.Mobile.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::lirksi.Mobile.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Acr.UserDialogs.Resource.Styleable.DesignTheme = global::lirksi.Mobile.Droid.Resource.Styleable.DesignTheme;
+			global::Acr.UserDialogs.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::lirksi.Mobile.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::Acr.UserDialogs.Resource.Styleable.DesignTheme_bottomSheetStyle = global::lirksi.Mobile.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::Acr.UserDialogs.Resource.Styleable.DrawerArrowToggle = global::lirksi.Mobile.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Acr.UserDialogs.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::lirksi.Mobile.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Acr.UserDialogs.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::lirksi.Mobile.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Acr.UserDialogs.Resource.Styleable.DrawerArrowToggle_barLength = global::lirksi.Mobile.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Acr.UserDialogs.Resource.Styleable.DrawerArrowToggle_color = global::lirksi.Mobile.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Acr.UserDialogs.Resource.Styleable.DrawerArrowToggle_drawableSize = global::lirksi.Mobile.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Acr.UserDialogs.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::lirksi.Mobile.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Acr.UserDialogs.Resource.Styleable.DrawerArrowToggle_spinBars = global::lirksi.Mobile.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Acr.UserDialogs.Resource.Styleable.DrawerArrowToggle_thickness = global::lirksi.Mobile.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton = global::lirksi.Mobile.Droid.Resource.Styleable.FloatingActionButton;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_backgroundTint = global::lirksi.Mobile.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::lirksi.Mobile.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::lirksi.Mobile.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::lirksi.Mobile.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_borderWidth = global::lirksi.Mobile.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_elevation = global::lirksi.Mobile.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_fabCustomSize = global::lirksi.Mobile.Droid.Resource.Styleable.FloatingActionButton_fabCustomSize;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_fabSize = global::lirksi.Mobile.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_hideMotionSpec = global::lirksi.Mobile.Droid.Resource.Styleable.FloatingActionButton_hideMotionSpec;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ = global::lirksi.Mobile.Droid.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_maxImageSize = global::lirksi.Mobile.Droid.Resource.Styleable.FloatingActionButton_maxImageSize;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::lirksi.Mobile.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_rippleColor = global::lirksi.Mobile.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_showMotionSpec = global::lirksi.Mobile.Droid.Resource.Styleable.FloatingActionButton_showMotionSpec;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_useCompatPadding = global::lirksi.Mobile.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Acr.UserDialogs.Resource.Styleable.FlowLayout = global::lirksi.Mobile.Droid.Resource.Styleable.FlowLayout;
+			global::Acr.UserDialogs.Resource.Styleable.FlowLayout_itemSpacing = global::lirksi.Mobile.Droid.Resource.Styleable.FlowLayout_itemSpacing;
+			global::Acr.UserDialogs.Resource.Styleable.FlowLayout_lineSpacing = global::lirksi.Mobile.Droid.Resource.Styleable.FlowLayout_lineSpacing;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamily = global::lirksi.Mobile.Droid.Resource.Styleable.FontFamily;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamilyFont = global::lirksi.Mobile.Droid.Resource.Styleable.FontFamilyFont;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamilyFont_android_font = global::lirksi.Mobile.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamilyFont_android_fontStyle = global::lirksi.Mobile.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::lirksi.Mobile.Droid.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamilyFont_android_fontWeight = global::lirksi.Mobile.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::lirksi.Mobile.Droid.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamilyFont_font = global::lirksi.Mobile.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamilyFont_fontStyle = global::lirksi.Mobile.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::lirksi.Mobile.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamilyFont_fontWeight = global::lirksi.Mobile.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamilyFont_ttcIndex = global::lirksi.Mobile.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamily_fontProviderAuthority = global::lirksi.Mobile.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamily_fontProviderCerts = global::lirksi.Mobile.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::lirksi.Mobile.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::lirksi.Mobile.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamily_fontProviderPackage = global::lirksi.Mobile.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamily_fontProviderQuery = global::lirksi.Mobile.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Acr.UserDialogs.Resource.Styleable.ForegroundLinearLayout = global::lirksi.Mobile.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::Acr.UserDialogs.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::lirksi.Mobile.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Acr.UserDialogs.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::lirksi.Mobile.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Acr.UserDialogs.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::lirksi.Mobile.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Acr.UserDialogs.Resource.Styleable.GradientColor = global::lirksi.Mobile.Droid.Resource.Styleable.GradientColor;
+			global::Acr.UserDialogs.Resource.Styleable.GradientColorItem = global::lirksi.Mobile.Droid.Resource.Styleable.GradientColorItem;
+			global::Acr.UserDialogs.Resource.Styleable.GradientColorItem_android_color = global::lirksi.Mobile.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::Acr.UserDialogs.Resource.Styleable.GradientColorItem_android_offset = global::lirksi.Mobile.Droid.Resource.Styleable.GradientColorItem_android_offset;
+			global::Acr.UserDialogs.Resource.Styleable.GradientColor_android_centerColor = global::lirksi.Mobile.Droid.Resource.Styleable.GradientColor_android_centerColor;
+			global::Acr.UserDialogs.Resource.Styleable.GradientColor_android_centerX = global::lirksi.Mobile.Droid.Resource.Styleable.GradientColor_android_centerX;
+			global::Acr.UserDialogs.Resource.Styleable.GradientColor_android_centerY = global::lirksi.Mobile.Droid.Resource.Styleable.GradientColor_android_centerY;
+			global::Acr.UserDialogs.Resource.Styleable.GradientColor_android_endColor = global::lirksi.Mobile.Droid.Resource.Styleable.GradientColor_android_endColor;
+			global::Acr.UserDialogs.Resource.Styleable.GradientColor_android_endX = global::lirksi.Mobile.Droid.Resource.Styleable.GradientColor_android_endX;
+			global::Acr.UserDialogs.Resource.Styleable.GradientColor_android_endY = global::lirksi.Mobile.Droid.Resource.Styleable.GradientColor_android_endY;
+			global::Acr.UserDialogs.Resource.Styleable.GradientColor_android_gradientRadius = global::lirksi.Mobile.Droid.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::Acr.UserDialogs.Resource.Styleable.GradientColor_android_startColor = global::lirksi.Mobile.Droid.Resource.Styleable.GradientColor_android_startColor;
+			global::Acr.UserDialogs.Resource.Styleable.GradientColor_android_startX = global::lirksi.Mobile.Droid.Resource.Styleable.GradientColor_android_startX;
+			global::Acr.UserDialogs.Resource.Styleable.GradientColor_android_startY = global::lirksi.Mobile.Droid.Resource.Styleable.GradientColor_android_startY;
+			global::Acr.UserDialogs.Resource.Styleable.GradientColor_android_tileMode = global::lirksi.Mobile.Droid.Resource.Styleable.GradientColor_android_tileMode;
+			global::Acr.UserDialogs.Resource.Styleable.GradientColor_android_type = global::lirksi.Mobile.Droid.Resource.Styleable.GradientColor_android_type;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat = global::lirksi.Mobile.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::lirksi.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::lirksi.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_android_gravity = global::lirksi.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_android_orientation = global::lirksi.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::lirksi.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_divider = global::lirksi.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::lirksi.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_Layout = global::lirksi.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::lirksi.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::lirksi.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::lirksi.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::lirksi.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::lirksi.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_showDividers = global::lirksi.Mobile.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Acr.UserDialogs.Resource.Styleable.ListPopupWindow = global::lirksi.Mobile.Droid.Resource.Styleable.ListPopupWindow;
+			global::Acr.UserDialogs.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::lirksi.Mobile.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Acr.UserDialogs.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::lirksi.Mobile.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialButton = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialButton;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialButton_android_insetBottom = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialButton_android_insetBottom;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialButton_android_insetLeft = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialButton_android_insetLeft;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialButton_android_insetRight = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialButton_android_insetRight;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialButton_android_insetTop = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialButton_android_insetTop;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialButton_backgroundTint = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialButton_backgroundTint;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialButton_backgroundTintMode = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialButton_backgroundTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialButton_cornerRadius = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialButton_cornerRadius;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialButton_icon = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialButton_icon;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialButton_iconGravity = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialButton_iconGravity;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialButton_iconPadding = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialButton_iconPadding;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialButton_iconSize = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialButton_iconSize;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialButton_iconTint = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialButton_iconTint;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialButton_iconTintMode = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialButton_iconTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialButton_rippleColor = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialButton_rippleColor;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialButton_strokeColor = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialButton_strokeColor;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialButton_strokeWidth = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialButton_strokeWidth;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialCardView = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialCardView;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialCardView_strokeColor = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialCardView_strokeColor;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialCardView_strokeWidth = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialCardView_strokeWidth;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_bottomSheetDialogTheme = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetDialogTheme;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_bottomSheetStyle = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetStyle;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_chipGroupStyle = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_chipGroupStyle;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_chipStandaloneStyle = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_chipStandaloneStyle;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_chipStyle = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_chipStyle;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_colorAccent = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_colorAccent;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_colorBackgroundFloating = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_colorBackgroundFloating;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_colorPrimary = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimary;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_colorPrimaryDark = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimaryDark;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_colorSecondary = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_colorSecondary;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_editTextStyle = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_editTextStyle;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_floatingActionButtonStyle = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_floatingActionButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_materialButtonStyle = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_materialButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_materialCardViewStyle = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_materialCardViewStyle;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_navigationViewStyle = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_navigationViewStyle;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_scrimBackground = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_scrimBackground;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_snackbarButtonStyle = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_snackbarButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_tabStyle = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_tabStyle;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody1 = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody1;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody2 = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody2;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceButton = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceButton;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceCaption = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceCaption;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline1 = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline1;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline2 = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline2;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline3 = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline3;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline4 = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline4;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline5 = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline5;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline6 = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline6;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceOverline = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceOverline;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1 = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2 = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2;
+			global::Acr.UserDialogs.Resource.Styleable.MaterialComponentsTheme_textInputStyle = global::lirksi.Mobile.Droid.Resource.Styleable.MaterialComponentsTheme_textInputStyle;
+			global::Acr.UserDialogs.Resource.Styleable.MenuGroup = global::lirksi.Mobile.Droid.Resource.Styleable.MenuGroup;
+			global::Acr.UserDialogs.Resource.Styleable.MenuGroup_android_checkableBehavior = global::lirksi.Mobile.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Acr.UserDialogs.Resource.Styleable.MenuGroup_android_enabled = global::lirksi.Mobile.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Acr.UserDialogs.Resource.Styleable.MenuGroup_android_id = global::lirksi.Mobile.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Acr.UserDialogs.Resource.Styleable.MenuGroup_android_menuCategory = global::lirksi.Mobile.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Acr.UserDialogs.Resource.Styleable.MenuGroup_android_orderInCategory = global::lirksi.Mobile.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Acr.UserDialogs.Resource.Styleable.MenuGroup_android_visible = global::lirksi.Mobile.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_actionLayout = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_actionProviderClass = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_actionViewClass = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_alphabeticModifiers = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_checkable = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_checked = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_enabled = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_icon = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_id = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_menuCategory = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_numericShortcut = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_onClick = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_orderInCategory = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_title = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_titleCondensed = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_visible = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_contentDescription = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_contentDescription;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_iconTint = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_iconTint;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_iconTintMode = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_iconTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_numericModifiers = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_numericModifiers;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_showAsAction = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_tooltipText = global::lirksi.Mobile.Droid.Resource.Styleable.MenuItem_tooltipText;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView = global::lirksi.Mobile.Droid.Resource.Styleable.MenuView;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView_android_headerBackground = global::lirksi.Mobile.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView_android_horizontalDivider = global::lirksi.Mobile.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView_android_itemBackground = global::lirksi.Mobile.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::lirksi.Mobile.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView_android_itemTextAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView_android_verticalDivider = global::lirksi.Mobile.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView_android_windowAnimationStyle = global::lirksi.Mobile.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView_preserveIconSpacing = global::lirksi.Mobile.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView_subMenuArrow = global::lirksi.Mobile.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView = global::lirksi.Mobile.Droid.Resource.Styleable.NavigationView;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_android_background = global::lirksi.Mobile.Droid.Resource.Styleable.NavigationView_android_background;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::lirksi.Mobile.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_android_maxWidth = global::lirksi.Mobile.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_elevation = global::lirksi.Mobile.Droid.Resource.Styleable.NavigationView_elevation;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_headerLayout = global::lirksi.Mobile.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_itemBackground = global::lirksi.Mobile.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_itemHorizontalPadding = global::lirksi.Mobile.Droid.Resource.Styleable.NavigationView_itemHorizontalPadding;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_itemIconPadding = global::lirksi.Mobile.Droid.Resource.Styleable.NavigationView_itemIconPadding;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_itemIconTint = global::lirksi.Mobile.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_itemTextAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_itemTextColor = global::lirksi.Mobile.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_menu = global::lirksi.Mobile.Droid.Resource.Styleable.NavigationView_menu;
+			global::Acr.UserDialogs.Resource.Styleable.PopupWindow = global::lirksi.Mobile.Droid.Resource.Styleable.PopupWindow;
+			global::Acr.UserDialogs.Resource.Styleable.PopupWindowBackgroundState = global::lirksi.Mobile.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Acr.UserDialogs.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::lirksi.Mobile.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Acr.UserDialogs.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::lirksi.Mobile.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::Acr.UserDialogs.Resource.Styleable.PopupWindow_android_popupBackground = global::lirksi.Mobile.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Acr.UserDialogs.Resource.Styleable.PopupWindow_overlapAnchor = global::lirksi.Mobile.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahBarColor = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahBarColor;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahBarLength = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahBarLength;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahBarWidth = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahBarWidth;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahCircleColor = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahCircleColor;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahDelayMillis = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahDelayMillis;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahRadius = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahRadius;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahRimColor = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahRimColor;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahRimWidth = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahRimWidth;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahSpinSpeed = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahSpinSpeed;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahText = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahText;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahTextColor = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahTextSize = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
+			global::Acr.UserDialogs.Resource.Styleable.RecycleListView = global::lirksi.Mobile.Droid.Resource.Styleable.RecycleListView;
+			global::Acr.UserDialogs.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::lirksi.Mobile.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::Acr.UserDialogs.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::lirksi.Mobile.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView = global::lirksi.Mobile.Droid.Resource.Styleable.RecyclerView;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_android_descendantFocusability = global::lirksi.Mobile.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_android_orientation = global::lirksi.Mobile.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_fastScrollEnabled = global::lirksi.Mobile.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::lirksi.Mobile.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::lirksi.Mobile.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::lirksi.Mobile.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::lirksi.Mobile.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_layoutManager = global::lirksi.Mobile.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_reverseLayout = global::lirksi.Mobile.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_spanCount = global::lirksi.Mobile.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_stackFromEnd = global::lirksi.Mobile.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Acr.UserDialogs.Resource.Styleable.ScrimInsetsFrameLayout = global::lirksi.Mobile.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Acr.UserDialogs.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::lirksi.Mobile.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Acr.UserDialogs.Resource.Styleable.ScrollingViewBehavior_Layout = global::lirksi.Mobile.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::Acr.UserDialogs.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::lirksi.Mobile.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView = global::lirksi.Mobile.Droid.Resource.Styleable.SearchView;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_android_focusable = global::lirksi.Mobile.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_android_imeOptions = global::lirksi.Mobile.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_android_inputType = global::lirksi.Mobile.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_android_maxWidth = global::lirksi.Mobile.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_closeIcon = global::lirksi.Mobile.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_commitIcon = global::lirksi.Mobile.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_defaultQueryHint = global::lirksi.Mobile.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_goIcon = global::lirksi.Mobile.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_iconifiedByDefault = global::lirksi.Mobile.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_layout = global::lirksi.Mobile.Droid.Resource.Styleable.SearchView_layout;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_queryBackground = global::lirksi.Mobile.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_queryHint = global::lirksi.Mobile.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_searchHintIcon = global::lirksi.Mobile.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_searchIcon = global::lirksi.Mobile.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_submitBackground = global::lirksi.Mobile.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_suggestionRowLayout = global::lirksi.Mobile.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_voiceIcon = global::lirksi.Mobile.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Acr.UserDialogs.Resource.Styleable.Snackbar = global::lirksi.Mobile.Droid.Resource.Styleable.Snackbar;
+			global::Acr.UserDialogs.Resource.Styleable.SnackbarLayout = global::lirksi.Mobile.Droid.Resource.Styleable.SnackbarLayout;
+			global::Acr.UserDialogs.Resource.Styleable.SnackbarLayout_android_maxWidth = global::lirksi.Mobile.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Acr.UserDialogs.Resource.Styleable.SnackbarLayout_elevation = global::lirksi.Mobile.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::Acr.UserDialogs.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::lirksi.Mobile.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Acr.UserDialogs.Resource.Styleable.Snackbar_snackbarButtonStyle = global::lirksi.Mobile.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.Snackbar_snackbarStyle = global::lirksi.Mobile.Droid.Resource.Styleable.Snackbar_snackbarStyle;
+			global::Acr.UserDialogs.Resource.Styleable.Spinner = global::lirksi.Mobile.Droid.Resource.Styleable.Spinner;
+			global::Acr.UserDialogs.Resource.Styleable.Spinner_android_dropDownWidth = global::lirksi.Mobile.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Acr.UserDialogs.Resource.Styleable.Spinner_android_entries = global::lirksi.Mobile.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Acr.UserDialogs.Resource.Styleable.Spinner_android_popupBackground = global::lirksi.Mobile.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Acr.UserDialogs.Resource.Styleable.Spinner_android_prompt = global::lirksi.Mobile.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Acr.UserDialogs.Resource.Styleable.Spinner_popupTheme = global::lirksi.Mobile.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Acr.UserDialogs.Resource.Styleable.StateListDrawable = global::lirksi.Mobile.Droid.Resource.Styleable.StateListDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.StateListDrawableItem = global::lirksi.Mobile.Droid.Resource.Styleable.StateListDrawableItem;
+			global::Acr.UserDialogs.Resource.Styleable.StateListDrawableItem_android_drawable = global::lirksi.Mobile.Droid.Resource.Styleable.StateListDrawableItem_android_drawable;
+			global::Acr.UserDialogs.Resource.Styleable.StateListDrawable_android_constantSize = global::lirksi.Mobile.Droid.Resource.Styleable.StateListDrawable_android_constantSize;
+			global::Acr.UserDialogs.Resource.Styleable.StateListDrawable_android_dither = global::lirksi.Mobile.Droid.Resource.Styleable.StateListDrawable_android_dither;
+			global::Acr.UserDialogs.Resource.Styleable.StateListDrawable_android_enterFadeDuration = global::lirksi.Mobile.Droid.Resource.Styleable.StateListDrawable_android_enterFadeDuration;
+			global::Acr.UserDialogs.Resource.Styleable.StateListDrawable_android_exitFadeDuration = global::lirksi.Mobile.Droid.Resource.Styleable.StateListDrawable_android_exitFadeDuration;
+			global::Acr.UserDialogs.Resource.Styleable.StateListDrawable_android_variablePadding = global::lirksi.Mobile.Droid.Resource.Styleable.StateListDrawable_android_variablePadding;
+			global::Acr.UserDialogs.Resource.Styleable.StateListDrawable_android_visible = global::lirksi.Mobile.Droid.Resource.Styleable.StateListDrawable_android_visible;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat = global::lirksi.Mobile.Droid.Resource.Styleable.SwitchCompat;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_android_textOff = global::lirksi.Mobile.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_android_textOn = global::lirksi.Mobile.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_android_thumb = global::lirksi.Mobile.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_showText = global::lirksi.Mobile.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_splitTrack = global::lirksi.Mobile.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_switchMinWidth = global::lirksi.Mobile.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_switchPadding = global::lirksi.Mobile.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_switchTextAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_thumbTextPadding = global::lirksi.Mobile.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_thumbTint = global::lirksi.Mobile.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_thumbTintMode = global::lirksi.Mobile.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_track = global::lirksi.Mobile.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_trackTint = global::lirksi.Mobile.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_trackTintMode = global::lirksi.Mobile.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.TabItem = global::lirksi.Mobile.Droid.Resource.Styleable.TabItem;
+			global::Acr.UserDialogs.Resource.Styleable.TabItem_android_icon = global::lirksi.Mobile.Droid.Resource.Styleable.TabItem_android_icon;
+			global::Acr.UserDialogs.Resource.Styleable.TabItem_android_layout = global::lirksi.Mobile.Droid.Resource.Styleable.TabItem_android_layout;
+			global::Acr.UserDialogs.Resource.Styleable.TabItem_android_text = global::lirksi.Mobile.Droid.Resource.Styleable.TabItem_android_text;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabBackground = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabContentStart = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabGravity = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabIconTint = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabIconTint;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabIconTintMode = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabIconTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabIndicator = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabIndicator;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabIndicatorColor = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabIndicatorFullWidth = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabIndicatorFullWidth;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabIndicatorGravity = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabIndicatorGravity;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabIndicatorHeight = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabInlineLabel = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabInlineLabel;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabMaxWidth = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabMinWidth = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabMode = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabPadding = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabPaddingBottom = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabPaddingEnd = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabPaddingStart = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabPaddingTop = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabRippleColor = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabRippleColor;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabSelectedTextColor = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabTextAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabTextColor = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabUnboundedRipple = global::lirksi.Mobile.Droid.Resource.Styleable.TabLayout_tabUnboundedRipple;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.TextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_fontFamily = global::lirksi.Mobile.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_shadowColor = global::lirksi.Mobile.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_shadowDx = global::lirksi.Mobile.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_shadowDy = global::lirksi.Mobile.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_shadowRadius = global::lirksi.Mobile.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_textColor = global::lirksi.Mobile.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_textColorHint = global::lirksi.Mobile.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_textColorLink = global::lirksi.Mobile.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_textSize = global::lirksi.Mobile.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_textStyle = global::lirksi.Mobile.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_typeface = global::lirksi.Mobile.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_fontFamily = global::lirksi.Mobile.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_textAllCaps = global::lirksi.Mobile.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_android_hint = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_android_textColorHint = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_boxBackgroundColor = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_boxBackgroundColor;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_boxBackgroundMode = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_boxBackgroundMode;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_boxStrokeColor = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_boxStrokeColor;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_boxStrokeWidth = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_boxStrokeWidth;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_counterEnabled = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_counterMaxLength = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_counterTextAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_errorEnabled = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_errorTextAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_helperText = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_helperText;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_helperTextEnabled = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_helperTextEnabled;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_helperTextTextAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_helperTextTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_hintEnabled = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_hintTextAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_passwordToggleTint = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::lirksi.Mobile.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.ThemeEnforcement = global::lirksi.Mobile.Droid.Resource.Styleable.ThemeEnforcement;
+			global::Acr.UserDialogs.Resource.Styleable.ThemeEnforcement_android_textAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.ThemeEnforcement_android_textAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme = global::lirksi.Mobile.Droid.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme;
+			global::Acr.UserDialogs.Resource.Styleable.ThemeEnforcement_enforceTextAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.ThemeEnforcement_enforceTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_android_gravity = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_android_minHeight = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_buttonGravity = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_collapseContentDescription = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_collapseIcon = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_contentInsetEnd = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_contentInsetLeft = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_contentInsetRight = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_contentInsetStart = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_logo = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_logo;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_logoDescription = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_maxButtonHeight = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_navigationContentDescription = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_navigationIcon = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_popupTheme = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_subtitle = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_subtitleTextAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_subtitleTextColor = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_title = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_title;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_titleMargin = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_titleMarginBottom = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_titleMarginEnd = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_titleMargins = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_titleMarginStart = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_titleMarginTop = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_titleTextAppearance = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_titleTextColor = global::lirksi.Mobile.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Acr.UserDialogs.Resource.Styleable.View = global::lirksi.Mobile.Droid.Resource.Styleable.View;
+			global::Acr.UserDialogs.Resource.Styleable.ViewBackgroundHelper = global::lirksi.Mobile.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Acr.UserDialogs.Resource.Styleable.ViewBackgroundHelper_android_background = global::lirksi.Mobile.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Acr.UserDialogs.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::lirksi.Mobile.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Acr.UserDialogs.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::lirksi.Mobile.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.ViewStubCompat = global::lirksi.Mobile.Droid.Resource.Styleable.ViewStubCompat;
+			global::Acr.UserDialogs.Resource.Styleable.ViewStubCompat_android_id = global::lirksi.Mobile.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Acr.UserDialogs.Resource.Styleable.ViewStubCompat_android_inflatedId = global::lirksi.Mobile.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Acr.UserDialogs.Resource.Styleable.ViewStubCompat_android_layout = global::lirksi.Mobile.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Acr.UserDialogs.Resource.Styleable.View_android_focusable = global::lirksi.Mobile.Droid.Resource.Styleable.View_android_focusable;
+			global::Acr.UserDialogs.Resource.Styleable.View_android_theme = global::lirksi.Mobile.Droid.Resource.Styleable.View_android_theme;
+			global::Acr.UserDialogs.Resource.Styleable.View_paddingEnd = global::lirksi.Mobile.Droid.Resource.Styleable.View_paddingEnd;
+			global::Acr.UserDialogs.Resource.Styleable.View_paddingStart = global::lirksi.Mobile.Droid.Resource.Styleable.View_paddingStart;
+			global::Acr.UserDialogs.Resource.Styleable.View_theme = global::lirksi.Mobile.Droid.Resource.Styleable.View_theme;
+			global::AndroidHUD.Resource.Attribute.ahBarColor = global::lirksi.Mobile.Droid.Resource.Attribute.ahBarColor;
+			global::AndroidHUD.Resource.Attribute.ahBarLength = global::lirksi.Mobile.Droid.Resource.Attribute.ahBarLength;
+			global::AndroidHUD.Resource.Attribute.ahBarWidth = global::lirksi.Mobile.Droid.Resource.Attribute.ahBarWidth;
+			global::AndroidHUD.Resource.Attribute.ahCircleColor = global::lirksi.Mobile.Droid.Resource.Attribute.ahCircleColor;
+			global::AndroidHUD.Resource.Attribute.ahDelayMillis = global::lirksi.Mobile.Droid.Resource.Attribute.ahDelayMillis;
+			global::AndroidHUD.Resource.Attribute.ahRadius = global::lirksi.Mobile.Droid.Resource.Attribute.ahRadius;
+			global::AndroidHUD.Resource.Attribute.ahRimColor = global::lirksi.Mobile.Droid.Resource.Attribute.ahRimColor;
+			global::AndroidHUD.Resource.Attribute.ahRimWidth = global::lirksi.Mobile.Droid.Resource.Attribute.ahRimWidth;
+			global::AndroidHUD.Resource.Attribute.ahSpinSpeed = global::lirksi.Mobile.Droid.Resource.Attribute.ahSpinSpeed;
+			global::AndroidHUD.Resource.Attribute.ahText = global::lirksi.Mobile.Droid.Resource.Attribute.ahText;
+			global::AndroidHUD.Resource.Attribute.ahTextColor = global::lirksi.Mobile.Droid.Resource.Attribute.ahTextColor;
+			global::AndroidHUD.Resource.Attribute.ahTextSize = global::lirksi.Mobile.Droid.Resource.Attribute.ahTextSize;
+			global::AndroidHUD.Resource.Drawable.ic_errorstatus = global::lirksi.Mobile.Droid.Resource.Drawable.ic_errorstatus;
+			global::AndroidHUD.Resource.Drawable.ic_successstatus = global::lirksi.Mobile.Droid.Resource.Drawable.ic_successstatus;
+			global::AndroidHUD.Resource.Drawable.roundedbg = global::lirksi.Mobile.Droid.Resource.Drawable.roundedbg;
+			global::AndroidHUD.Resource.Drawable.roundedbgdark = global::lirksi.Mobile.Droid.Resource.Drawable.roundedbgdark;
+			global::AndroidHUD.Resource.Id.loadingImage = global::lirksi.Mobile.Droid.Resource.Id.loadingImage;
+			global::AndroidHUD.Resource.Id.loadingProgressBar = global::lirksi.Mobile.Droid.Resource.Id.loadingProgressBar;
+			global::AndroidHUD.Resource.Id.loadingProgressWheel = global::lirksi.Mobile.Droid.Resource.Id.loadingProgressWheel;
+			global::AndroidHUD.Resource.Id.textViewStatus = global::lirksi.Mobile.Droid.Resource.Id.textViewStatus;
+			global::AndroidHUD.Resource.Layout.loading = global::lirksi.Mobile.Droid.Resource.Layout.loading;
+			global::AndroidHUD.Resource.Layout.loadingimage = global::lirksi.Mobile.Droid.Resource.Layout.loadingimage;
+			global::AndroidHUD.Resource.Layout.loadingprogress = global::lirksi.Mobile.Droid.Resource.Layout.loadingprogress;
+			global::AndroidHUD.Resource.String.library_name = global::lirksi.Mobile.Droid.Resource.String.library_name;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarColor = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahBarColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarLength = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahBarLength;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarWidth = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahBarWidth;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahCircleColor = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahCircleColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahDelayMillis = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahDelayMillis;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRadius = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahRadius;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRimColor = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahRimColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRimWidth = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahRimWidth;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahSpinSpeed = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahSpinSpeed;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahText = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahText;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::lirksi.Mobile.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
 			global::Plugin.Media.Resource.Attribute.alpha = global::lirksi.Mobile.Droid.Resource.Attribute.alpha;
 			global::Plugin.Media.Resource.Attribute.coordinatorLayoutStyle = global::lirksi.Mobile.Droid.Resource.Attribute.coordinatorLayoutStyle;
 			global::Plugin.Media.Resource.Attribute.font = global::lirksi.Mobile.Droid.Resource.Attribute.font;
@@ -5487,17 +8047,17 @@ namespace lirksi.Mobile.Droid
 			// aapt resource value: 0x7F010010
 			public const int design_snackbar_out = 2130771984;
 			
-			// aapt resource value: 0x7F090018
-			public const int EnterFromLeft = 2131296280;
+			// aapt resource value: 0x7F110018
+			public const int EnterFromLeft = 2131820568;
 			
-			// aapt resource value: 0x7F090019
-			public const int EnterFromRight = 2131296281;
+			// aapt resource value: 0x7F110019
+			public const int EnterFromRight = 2131820569;
 			
-			// aapt resource value: 0x7F090020
-			public const int ExitToLeft = 2131296288;
+			// aapt resource value: 0x7F110020
+			public const int ExitToLeft = 2131820576;
 			
-			// aapt resource value: 0x7F090021
-			public const int ExitToRight = 2131296289;
+			// aapt resource value: 0x7F110021
+			public const int ExitToRight = 2131820577;
 			
 			static Animation()
 			{
@@ -5656,6 +8216,42 @@ namespace lirksi.Mobile.Droid
 			
 			// aapt resource value: 0x7F040022
 			public const int activityChooserViewStyle = 2130968610;
+			
+			// aapt resource value: 0x7F080005
+			public const int ahBarColor = 2131230725;
+			
+			// aapt resource value: 0x7F080013
+			public const int ahBarLength = 2131230739;
+			
+			// aapt resource value: 0x7F080012
+			public const int ahBarWidth = 2131230738;
+			
+			// aapt resource value: 0x7F080010
+			public const int ahCircleColor = 2131230736;
+			
+			// aapt resource value: 0x7F080009
+			public const int ahDelayMillis = 2131230729;
+			
+			// aapt resource value: 0x7F080011
+			public const int ahRadius = 2131230737;
+			
+			// aapt resource value: 0x7F080006
+			public const int ahRimColor = 2131230726;
+			
+			// aapt resource value: 0x7F080007
+			public const int ahRimWidth = 2131230727;
+			
+			// aapt resource value: 0x7F080008
+			public const int ahSpinSpeed = 2131230728;
+			
+			// aapt resource value: 0x7F080002
+			public const int ahText = 2131230722;
+			
+			// aapt resource value: 0x7F080003
+			public const int ahTextColor = 2131230723;
+			
+			// aapt resource value: 0x7F080004
+			public const int ahTextSize = 2131230724;
 			
 			// aapt resource value: 0x7F040023
 			public const int alertDialogButtonGroupStyle = 2130968611;
@@ -5948,8 +8544,8 @@ namespace lirksi.Mobile.Droid
 			// aapt resource value: 0x7F040081
 			public const int collapseIcon = 2130968705;
 			
-			// aapt resource value: 0x7F100479
-			public const int collectionViewStyle = 2131756153;
+			// aapt resource value: 0x7F080491
+			public const int collectionViewStyle = 2131231889;
 			
 			// aapt resource value: 0x7F040084
 			public const int color = 2130968708;
@@ -8400,6 +10996,9 @@ namespace lirksi.Mobile.Droid
 			// aapt resource value: 0x7F09005C
 			public const int design_snackbar_background = 2131296348;
 			
+			// aapt resource value: 0x7F010005
+			public const int ic_errorstatus = 2130771973;
+			
 			// aapt resource value: 0x7F09005D
 			public const int ic_mtrl_chip_checked_black = 2131296349;
 			
@@ -8408,6 +11007,9 @@ namespace lirksi.Mobile.Droid
 			
 			// aapt resource value: 0x7F09005F
 			public const int ic_mtrl_chip_close_circle = 2131296351;
+			
+			// aapt resource value: 0x7F010006
+			public const int ic_successstatus = 2130771974;
 			
 			// aapt resource value: 0x7F090060
 			public const int mtrl_snackbar_background = 2131296352;
@@ -8453,6 +11055,12 @@ namespace lirksi.Mobile.Droid
 			
 			// aapt resource value: 0x7F09000C
 			public const int notify_panel_notification_icon_bg = 2131296268;
+			
+			// aapt resource value: 0x7F010003
+			public const int roundedbg = 2130771971;
+			
+			// aapt resource value: 0x7F010004
+			public const int roundedbgdark = 2130771972;
 			
 			// aapt resource value: 0x7F09006F
 			public const int tooltip_frame_dark = 2131296367;
@@ -8554,11 +11162,11 @@ namespace lirksi.Mobile.Droid
 			// aapt resource value: 0x7F0C0008
 			public const int bottom = 2131492872;
 			
-			// aapt resource value: 0x7F020166
-			public const int bottomtab.navarea = 2130837862;
+			// aapt resource value: 0x7F020170
+			public const int bottomtab.navarea = 2130837872;
 			
-			// aapt resource value: 0x7F020167
-			public const int bottomtab.tabbar = 2130837863;
+			// aapt resource value: 0x7F020171
+			public const int bottomtab.tabbar = 2130837873;
 			
 			// aapt resource value: 0x7F0C0009
 			public const int browser_actions_header_text = 2131492873;
@@ -8653,11 +11261,11 @@ namespace lirksi.Mobile.Droid
 			// aapt resource value: 0x7F0C0031
 			public const int @fixed = 2131492913;
 			
-			// aapt resource value: 0x7F020168
-			public const int flyoutcontent_appbar = 2130837864;
+			// aapt resource value: 0x7F020172
+			public const int flyoutcontent_appbar = 2130837874;
 			
-			// aapt resource value: 0x7F020169
-			public const int flyoutcontent_recycler = 2130837865;
+			// aapt resource value: 0x7F020173
+			public const int flyoutcontent_recycler = 2130837875;
 			
 			// aapt resource value: 0x7F0C0009
 			public const int forever = 2131492873;
@@ -8710,17 +11318,26 @@ namespace lirksi.Mobile.Droid
 			// aapt resource value: 0x7F0C0042
 			public const int list_item = 2131492930;
 			
-			// aapt resource value: 0x7F020170
-			public const int main.appbar = 2130837872;
+			// aapt resource value: 0x7F020006
+			public const int loadingImage = 2130837510;
 			
-			// aapt resource value: 0x7F020172
-			public const int main.tablayout = 2130837874;
+			// aapt resource value: 0x7F020004
+			public const int loadingProgressBar = 2130837508;
 			
-			// aapt resource value: 0x7F020171
-			public const int main.toolbar = 2130837873;
+			// aapt resource value: 0x7F020007
+			public const int loadingProgressWheel = 2130837511;
 			
-			// aapt resource value: 0x7F020173
-			public const int main.viewpager = 2130837875;
+			// aapt resource value: 0x7F020174
+			public const int main.appbar = 2130837876;
+			
+			// aapt resource value: 0x7F020176
+			public const int main.tablayout = 2130837878;
+			
+			// aapt resource value: 0x7F020175
+			public const int main.toolbar = 2130837877;
+			
+			// aapt resource value: 0x7F020177
+			public const int main.viewpager = 2130837879;
 			
 			// aapt resource value: 0x7F0C0043
 			public const int masked = 2131492931;
@@ -8854,11 +11471,11 @@ namespace lirksi.Mobile.Droid
 			// aapt resource value: 0x7F0C006C
 			public const int select_dialog_listview = 2131492972;
 			
-			// aapt resource value: 0x7F020174
-			public const int shellcontent.appbar = 2130837876;
+			// aapt resource value: 0x7F020178
+			public const int shellcontent.appbar = 2130837880;
 			
-			// aapt resource value: 0x7F020175
-			public const int shellcontent.toolbar = 2130837877;
+			// aapt resource value: 0x7F020179
+			public const int shellcontent.toolbar = 2130837881;
 			
 			// aapt resource value: 0x7F0C006E
 			public const int shortcut = 2131492974;
@@ -8937,6 +11554,9 @@ namespace lirksi.Mobile.Droid
 			
 			// aapt resource value: 0x7F0C0082
 			public const int textSpacerNoTitle = 2131492994;
+			
+			// aapt resource value: 0x7F020005
+			public const int textViewStatus = 2130837509;
 			
 			// aapt resource value: 0x7F0C0083
 			public const int text_input_password_toggle = 2131492995;
@@ -9178,8 +11798,8 @@ namespace lirksi.Mobile.Droid
 			// aapt resource value: 0x7F0F001C
 			public const int abc_tooltip = 2131689500;
 			
-			// aapt resource value: 0x7F030069
-			public const int BottomTabLayout = 2130903145;
+			// aapt resource value: 0x7F030072
+			public const int BottomTabLayout = 2130903154;
 			
 			// aapt resource value: 0x7F0F0001
 			public const int browser_actions_context_menu_page = 2131689473;
@@ -9229,8 +11849,17 @@ namespace lirksi.Mobile.Droid
 			// aapt resource value: 0x7F0F002A
 			public const int design_text_input_password_icon = 2131689514;
 			
-			// aapt resource value: 0x7F030070
-			public const int FlyoutContent = 2130903152;
+			// aapt resource value: 0x7F030073
+			public const int FlyoutContent = 2130903155;
+			
+			// aapt resource value: 0x7F030004
+			public const int loading = 2130903044;
+			
+			// aapt resource value: 0x7F030005
+			public const int loadingimage = 2130903045;
+			
+			// aapt resource value: 0x7F030006
+			public const int loadingprogress = 2130903046;
 			
 			// aapt resource value: 0x7F0F002B
 			public const int mtrl_layout_snackbar = 2131689515;
@@ -9283,8 +11912,8 @@ namespace lirksi.Mobile.Droid
 			// aapt resource value: 0x7F0F0006
 			public const int notification_template_part_time = 2131689478;
 			
-			// aapt resource value: 0x7F030071
-			public const int RootLayout = 2130903153;
+			// aapt resource value: 0x7F030074
+			public const int RootLayout = 2130903156;
 			
 			// aapt resource value: 0x7F0F0033
 			public const int select_dialog_item_material = 2131689523;
@@ -9295,8 +11924,8 @@ namespace lirksi.Mobile.Droid
 			// aapt resource value: 0x7F0F0035
 			public const int select_dialog_singlechoice_material = 2131689525;
 			
-			// aapt resource value: 0x7F030072
-			public const int ShellContent = 2130903154;
+			// aapt resource value: 0x7F030075
+			public const int ShellContent = 2130903157;
 			
 			// aapt resource value: 0x7F0F0036
 			public const int support_simple_spinner_dropdown_item = 2131689526;
@@ -9480,11 +12109,14 @@ namespace lirksi.Mobile.Droid
 			// aapt resource value: 0x7F15002E
 			public const int hide_bottom_view_on_scroll_behavior = 2132082734;
 			
+			// aapt resource value: 0x7F090002
+			public const int library_name = 2131296258;
+			
 			// aapt resource value: 0x7F15002F
 			public const int mtrl_chip_close_icon_content_description = 2132082735;
 			
-			// aapt resource value: 0x7F110056
-			public const int overflow_tab_title = 2131820630;
+			// aapt resource value: 0x7F090057
+			public const int overflow_tab_title = 2131296343;
 			
 			// aapt resource value: 0x7F150030
 			public const int password_toggle_content_description = 2132082736;
@@ -11082,11 +13714,11 @@ namespace lirksi.Mobile.Droid
 			public static int[] ActionBarLayout = new int[] {
 					16842931};
 			
-			// aapt resource value: 0x7F070082
-			public const int ActionBarLayout_android_layout_gravity = 2131165314;
+			// aapt resource value: 0x7F070095
+			public const int ActionBarLayout_android_layout_gravity = 2131165333;
 			
-			// aapt resource value: 0x7F070052
-			public const int ActionBar_background = 2131165266;
+			// aapt resource value: 0x7F070065
+			public const int ActionBar_background = 2131165285;
 			
 			// aapt resource value: 0x1
 			public const int ActionBar_backgroundSplit = 1;
@@ -11175,8 +13807,8 @@ namespace lirksi.Mobile.Droid
 			public static int[] ActionMenuItemView = new int[] {
 					16843071};
 			
-			// aapt resource value: 0x7F070084
-			public const int ActionMenuItemView_android_minWidth = 2131165316;
+			// aapt resource value: 0x7F070097
+			public const int ActionMenuItemView_android_minWidth = 2131165335;
 			
 			public static int[] ActionMenuView = new int[] {
 					0};
@@ -11189,8 +13821,8 @@ namespace lirksi.Mobile.Droid
 					2130968951,
 					2130969030};
 			
-			// aapt resource value: 0x7F070086
-			public const int ActionMode_background = 2131165318;
+			// aapt resource value: 0x7F070099
+			public const int ActionMode_background = 2131165337;
 			
 			// aapt resource value: 0x1
 			public const int ActionMode_backgroundSplit = 1;
@@ -11211,8 +13843,8 @@ namespace lirksi.Mobile.Droid
 					2130968763,
 					2130968824};
 			
-			// aapt resource value: 0x7F070093
-			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 2131165331;
+			// aapt resource value: 0x7F070106
+			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 2131165446;
 			
 			// aapt resource value: 0x1
 			public const int ActivityChooserView_initialActivityCount = 1;
@@ -11227,8 +13859,8 @@ namespace lirksi.Mobile.Droid
 					2130968924,
 					2130968925};
 			
-			// aapt resource value: 0x7F070096
-			public const int AlertDialog_android_layout = 2131165334;
+			// aapt resource value: 0x7F070109
+			public const int AlertDialog_android_layout = 2131165449;
 			
 			// aapt resource value: 0x1
 			public const int AlertDialog_buttonIconDimen = 1;
@@ -11259,8 +13891,8 @@ namespace lirksi.Mobile.Droid
 					16843157,
 					16843156};
 			
-			// aapt resource value: 0x7F070730
-			public const int AnimatedStateListDrawableCompat_android_constantSize = 2131167024;
+			// aapt resource value: 0x7F070743
+			public const int AnimatedStateListDrawableCompat_android_constantSize = 2131167043;
 			
 			// aapt resource value: 0x1
 			public const int AnimatedStateListDrawableCompat_android_dither = 1;
@@ -11281,8 +13913,8 @@ namespace lirksi.Mobile.Droid
 					16843161,
 					16842960};
 			
-			// aapt resource value: 0x7F070737
-			public const int AnimatedStateListDrawableItem_android_drawable = 2131167031;
+			// aapt resource value: 0x7F070750
+			public const int AnimatedStateListDrawableItem_android_drawable = 2131167056;
 			
 			// aapt resource value: 0x1
 			public const int AnimatedStateListDrawableItem_android_id = 1;
@@ -11293,8 +13925,8 @@ namespace lirksi.Mobile.Droid
 					16843851,
 					16843849};
 			
-			// aapt resource value: 0x7F070740
-			public const int AnimatedStateListDrawableTransition_android_drawable = 2131167040;
+			// aapt resource value: 0x7F070753
+			public const int AnimatedStateListDrawableTransition_android_drawable = 2131167059;
 			
 			// aapt resource value: 0x1
 			public const int AnimatedStateListDrawableTransition_android_fromId = 1;
@@ -11319,8 +13951,8 @@ namespace lirksi.Mobile.Droid
 					2130968940,
 					2130968941};
 			
-			// aapt resource value: 0x7F070112
-			public const int AppBarLayoutStates_state_collapsed = 2131165458;
+			// aapt resource value: 0x7F070125
+			public const int AppBarLayoutStates_state_collapsed = 2131165477;
 			
 			// aapt resource value: 0x1
 			public const int AppBarLayoutStates_state_collapsible = 1;
@@ -11331,8 +13963,8 @@ namespace lirksi.Mobile.Droid
 			// aapt resource value: 0x3
 			public const int AppBarLayoutStates_state_lifted = 3;
 			
-			// aapt resource value: 0x7F070105
-			public const int AppBarLayout_android_background = 2131165445;
+			// aapt resource value: 0x7F070118
+			public const int AppBarLayout_android_background = 2131165464;
 			
 			// aapt resource value: 0x1
 			public const int AppBarLayout_android_keyboardNavigationCluster = 1;
@@ -11350,8 +13982,8 @@ namespace lirksi.Mobile.Droid
 					2130968852,
 					2130968853};
 			
-			// aapt resource value: 0x7F070117
-			public const int AppBarLayout_Layout_layout_scrollFlags = 2131165463;
+			// aapt resource value: 0x7F070130
+			public const int AppBarLayout_Layout_layout_scrollFlags = 2131165488;
 			
 			// aapt resource value: 0x1
 			public const int AppBarLayout_Layout_layout_scrollInterpolator = 1;
@@ -11365,8 +13997,8 @@ namespace lirksi.Mobile.Droid
 					2130969018,
 					2130969019};
 			
-			// aapt resource value: 0x7F070120
-			public const int AppCompatImageView_android_src = 2131165472;
+			// aapt resource value: 0x7F070133
+			public const int AppCompatImageView_android_src = 2131165491;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatImageView_srcCompat = 1;
@@ -11383,8 +14015,8 @@ namespace lirksi.Mobile.Droid
 					2130969016,
 					2130969017};
 			
-			// aapt resource value: 0x7F070125
-			public const int AppCompatSeekBar_android_thumb = 2131165477;
+			// aapt resource value: 0x7F070138
+			public const int AppCompatSeekBar_android_thumb = 2131165496;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatSeekBar_tickMark = 1;
@@ -11404,8 +14036,8 @@ namespace lirksi.Mobile.Droid
 					16843117,
 					16842804};
 			
-			// aapt resource value: 0x7F070130
-			public const int AppCompatTextHelper_android_drawableBottom = 2131165488;
+			// aapt resource value: 0x7F070143
+			public const int AppCompatTextHelper_android_drawableBottom = 2131165507;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatTextHelper_android_drawableEnd = 1;
@@ -11438,8 +14070,8 @@ namespace lirksi.Mobile.Droid
 					2130968855,
 					2130968983};
 			
-			// aapt resource value: 0x7F070138
-			public const int AppCompatTextView_android_textAppearance = 2131165496;
+			// aapt resource value: 0x7F070151
+			public const int AppCompatTextView_android_textAppearance = 2131165521;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatTextView_autoSizeMaxTextSize = 1;
@@ -11594,8 +14226,8 @@ namespace lirksi.Mobile.Droid
 					2130969052,
 					2130969053};
 			
-			// aapt resource value: 0x7F070150
-			public const int AppCompatTheme_actionBarDivider = 2131165520;
+			// aapt resource value: 0x7F070163
+			public const int AppCompatTheme_actionBarDivider = 2131165539;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatTheme_actionBarItemBackground = 1;
@@ -11965,8 +14597,8 @@ namespace lirksi.Mobile.Droid
 					2130968775,
 					2130968806};
 			
-			// aapt resource value: 0x7F070272
-			public const int BottomAppBar_backgroundTint = 2131165810;
+			// aapt resource value: 0x7F070285
+			public const int BottomAppBar_backgroundTint = 2131165829;
 			
 			// aapt resource value: 0x1
 			public const int BottomAppBar_fabAlignmentMode = 1;
@@ -11995,8 +14627,8 @@ namespace lirksi.Mobile.Droid
 					2130968840,
 					2130968876};
 			
-			// aapt resource value: 0x7F070279
-			public const int BottomNavigationView_elevation = 2131165817;
+			// aapt resource value: 0x7F070292
+			public const int BottomNavigationView_elevation = 2131165842;
 			
 			// aapt resource value: 0x1
 			public const int BottomNavigationView_itemBackground = 1;
@@ -12031,8 +14663,8 @@ namespace lirksi.Mobile.Droid
 					2130968636,
 					2130968637};
 			
-			// aapt resource value: 0x7F070290
-			public const int BottomSheetBehavior_Layout_behavior_fitToContents = 2131165840;
+			// aapt resource value: 0x7F070303
+			public const int BottomSheetBehavior_Layout_behavior_fitToContents = 2131165955;
 			
 			// aapt resource value: 0x1
 			public const int BottomSheetBehavior_Layout_behavior_hideable = 1;
@@ -12046,8 +14678,8 @@ namespace lirksi.Mobile.Droid
 			public static int[] ButtonBarLayout = new int[] {
 					2130968615};
 			
-			// aapt resource value: 0x7F070295
-			public const int ButtonBarLayout_allowStacking = 2131165845;
+			// aapt resource value: 0x7F070308
+			public const int ButtonBarLayout_allowStacking = 2131165960;
 			
 			public static int[] CardView = new int[] {
 					16843072,
@@ -12064,8 +14696,8 @@ namespace lirksi.Mobile.Droid
 					2130968731,
 					2130968732};
 			
-			// aapt resource value: 0x7F070297
-			public const int CardView_android_minHeight = 2131165847;
+			// aapt resource value: 0x7F070310
+			public const int CardView_android_minHeight = 2131165968;
 			
 			// aapt resource value: 0x1
 			public const int CardView_android_minWidth = 1;
@@ -12147,8 +14779,8 @@ namespace lirksi.Mobile.Droid
 					2130968926,
 					2130968927};
 			
-			// aapt resource value: 0x7F070346
-			public const int ChipGroup_checkedChip = 2131166022;
+			// aapt resource value: 0x7F070359
+			public const int ChipGroup_checkedChip = 2131166041;
 			
 			// aapt resource value: 0x1
 			public const int ChipGroup_chipSpacing = 1;
@@ -12165,8 +14797,8 @@ namespace lirksi.Mobile.Droid
 			// aapt resource value: 0x5
 			public const int ChipGroup_singleSelection = 5;
 			
-			// aapt resource value: 0x7F070311
-			public const int Chip_android_checkable = 2131165969;
+			// aapt resource value: 0x7F070324
+			public const int Chip_android_checkable = 2131165988;
 			
 			// aapt resource value: 0x1
 			public const int Chip_android_ellipsize = 1;
@@ -12285,8 +14917,8 @@ namespace lirksi.Mobile.Droid
 					2130969021,
 					2130969031};
 			
-			// aapt resource value: 0x7F070353
-			public const int CollapsingToolbarLayout_collapsedTitleGravity = 2131166035;
+			// aapt resource value: 0x7F070366
+			public const int CollapsingToolbarLayout_collapsedTitleGravity = 2131166054;
 			
 			// aapt resource value: 0x1
 			public const int CollapsingToolbarLayout_collapsedTitleTextAppearance = 1;
@@ -12319,8 +14951,8 @@ namespace lirksi.Mobile.Droid
 					2130968847,
 					2130968848};
 			
-			// aapt resource value: 0x7F070370
-			public const int CollapsingToolbarLayout_Layout_layout_collapseMode = 2131166064;
+			// aapt resource value: 0x7F070383
+			public const int CollapsingToolbarLayout_Layout_layout_collapseMode = 2131166083;
 			
 			// aapt resource value: 0x1
 			public const int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = 1;
@@ -12348,8 +14980,8 @@ namespace lirksi.Mobile.Droid
 					16843551,
 					16843173};
 			
-			// aapt resource value: 0x7F070003
-			public const int ColorStateListItem_alpha = 2131165187;
+			// aapt resource value: 0x7F070016
+			public const int ColorStateListItem_alpha = 2131165206;
 			
 			// aapt resource value: 0x1
 			public const int ColorStateListItem_android_alpha = 1;
@@ -12362,8 +14994,8 @@ namespace lirksi.Mobile.Droid
 					2130968663,
 					2130968664};
 			
-			// aapt resource value: 0x7F070373
-			public const int CompoundButton_android_button = 2131166067;
+			// aapt resource value: 0x7F070386
+			public const int CompoundButton_android_button = 2131166086;
 			
 			// aapt resource value: 0x1
 			public const int CompoundButton_buttonTint = 1;
@@ -12375,8 +15007,8 @@ namespace lirksi.Mobile.Droid
 					2130968589,
 					2130968596};
 			
-			// aapt resource value: 0x7F070041
-			public const int CoordinatorLayout_keylines = 2131165249;
+			// aapt resource value: 0x7F070054
+			public const int CoordinatorLayout_keylines = 2131165268;
 			
 			public static int[] CoordinatorLayout_Layout = new int[] {
 					16842931,
@@ -12387,8 +15019,8 @@ namespace lirksi.Mobile.Droid
 					2130968594,
 					2130968595};
 			
-			// aapt resource value: 0x7F070044
-			public const int CoordinatorLayout_Layout_android_layout_gravity = 2131165252;
+			// aapt resource value: 0x7F070057
+			public const int CoordinatorLayout_Layout_android_layout_gravity = 2131165271;
 			
 			// aapt resource value: 0x1
 			public const int CoordinatorLayout_Layout_layout_anchor = 1;
@@ -12415,8 +15047,8 @@ namespace lirksi.Mobile.Droid
 					2130968642,
 					2130968643};
 			
-			// aapt resource value: 0x7F070377
-			public const int DesignTheme_bottomSheetDialogTheme = 2131166071;
+			// aapt resource value: 0x7F070390
+			public const int DesignTheme_bottomSheetDialogTheme = 2131166096;
 			
 			// aapt resource value: 0x1
 			public const int DesignTheme_bottomSheetStyle = 1;
@@ -12431,8 +15063,8 @@ namespace lirksi.Mobile.Droid
 					2130968931,
 					2130969011};
 			
-			// aapt resource value: 0x7F070380
-			public const int DrawerArrowToggle_arrowHeadLength = 2131166080;
+			// aapt resource value: 0x7F070393
+			public const int DrawerArrowToggle_arrowHeadLength = 2131166099;
 			
 			// aapt resource value: 0x1
 			public const int DrawerArrowToggle_arrowShaftLength = 1;
@@ -12470,8 +15102,8 @@ namespace lirksi.Mobile.Droid
 					2130968922,
 					2130969041};
 			
-			// aapt resource value: 0x7F070389
-			public const int FloatingActionButton_backgroundTint = 2131166089;
+			// aapt resource value: 0x7F070402
+			public const int FloatingActionButton_backgroundTint = 2131166210;
 			
 			// aapt resource value: 0x1
 			public const int FloatingActionButton_backgroundTintMode = 1;
@@ -12479,8 +15111,8 @@ namespace lirksi.Mobile.Droid
 			public static int[] FloatingActionButton_Behavior_Layout = new int[] {
 					2130968632};
 			
-			// aapt resource value: 0x7F070403
-			public const int FloatingActionButton_Behavior_Layout_behavior_autoHide = 2131166211;
+			// aapt resource value: 0x7F070416
+			public const int FloatingActionButton_Behavior_Layout_behavior_autoHide = 2131166230;
 			
 			// aapt resource value: 0x2
 			public const int FloatingActionButton_borderWidth = 2;
@@ -12519,8 +15151,8 @@ namespace lirksi.Mobile.Droid
 					2130968834,
 					2130968856};
 			
-			// aapt resource value: 0x7F070405
-			public const int FlowLayout_itemSpacing = 2131166213;
+			// aapt resource value: 0x7F070418
+			public const int FlowLayout_itemSpacing = 2131166232;
 			
 			// aapt resource value: 0x1
 			public const int FlowLayout_lineSpacing = 1;
@@ -12545,8 +15177,8 @@ namespace lirksi.Mobile.Droid
 					2130968587,
 					2130968588};
 			
-			// aapt resource value: 0x7F070014
-			public const int FontFamilyFont_android_font = 2131165204;
+			// aapt resource value: 0x7F070027
+			public const int FontFamilyFont_android_font = 2131165223;
 			
 			// aapt resource value: 0x1
 			public const int FontFamilyFont_android_fontStyle = 1;
@@ -12575,8 +15207,8 @@ namespace lirksi.Mobile.Droid
 			// aapt resource value: 0x9
 			public const int FontFamilyFont_ttcIndex = 9;
 			
-			// aapt resource value: 0x7F070007
-			public const int FontFamily_fontProviderAuthority = 2131165191;
+			// aapt resource value: 0x7F070020
+			public const int FontFamily_fontProviderAuthority = 2131165216;
 			
 			// aapt resource value: 0x1
 			public const int FontFamily_fontProviderCerts = 1;
@@ -12598,8 +15230,8 @@ namespace lirksi.Mobile.Droid
 					16843264,
 					2130968796};
 			
-			// aapt resource value: 0x7F070408
-			public const int ForegroundLinearLayout_android_foreground = 2131166216;
+			// aapt resource value: 0x7F070421
+			public const int ForegroundLinearLayout_android_foreground = 2131166241;
 			
 			// aapt resource value: 0x1
 			public const int ForegroundLinearLayout_android_foregroundGravity = 1;
@@ -12625,14 +15257,14 @@ namespace lirksi.Mobile.Droid
 					16843173,
 					16844052};
 			
-			// aapt resource value: 0x7F070038
-			public const int GradientColorItem_android_color = 2131165240;
+			// aapt resource value: 0x7F070051
+			public const int GradientColorItem_android_color = 2131165265;
 			
 			// aapt resource value: 0x1
 			public const int GradientColorItem_android_offset = 1;
 			
-			// aapt resource value: 0x7F070025
-			public const int GradientColor_android_centerColor = 2131165221;
+			// aapt resource value: 0x7F070038
+			public const int GradientColor_android_centerColor = 2131165240;
 			
 			// aapt resource value: 0x1
 			public const int GradientColor_android_centerX = 1;
@@ -12670,8 +15302,8 @@ namespace lirksi.Mobile.Droid
 			public static int[] ItemsViewRendererTheme = new int[] {
 					0};
 			
-			// aapt resource value: 0x7F070753
-			public const int ItemsViewRendererTheme_collectionViewStyle = 2131167059;
+			// aapt resource value: 0x7F070766
+			public const int ItemsViewRendererTheme_collectionViewStyle = 2131167078;
 			
 			public static int[] LinearLayoutCompat = new int[] {
 					16843046,
@@ -12684,8 +15316,8 @@ namespace lirksi.Mobile.Droid
 					2130968875,
 					2130968921};
 			
-			// aapt resource value: 0x7F070412
-			public const int LinearLayoutCompat_android_baselineAligned = 2131166226;
+			// aapt resource value: 0x7F070425
+			public const int LinearLayoutCompat_android_baselineAligned = 2131166245;
 			
 			// aapt resource value: 0x1
 			public const int LinearLayoutCompat_android_baselineAlignedChildIndex = 1;
@@ -12711,8 +15343,8 @@ namespace lirksi.Mobile.Droid
 					16843137,
 					16842996};
 			
-			// aapt resource value: 0x7F070422
-			public const int LinearLayoutCompat_Layout_android_layout_gravity = 2131166242;
+			// aapt resource value: 0x7F070435
+			public const int LinearLayoutCompat_Layout_android_layout_gravity = 2131166261;
 			
 			// aapt resource value: 0x1
 			public const int LinearLayoutCompat_Layout_android_layout_height = 1;
@@ -12733,8 +15365,8 @@ namespace lirksi.Mobile.Droid
 					16843436,
 					16843437};
 			
-			// aapt resource value: 0x7F070427
-			public const int ListPopupWindow_android_dropDownHorizontalOffset = 2131166247;
+			// aapt resource value: 0x7F070440
+			public const int ListPopupWindow_android_dropDownHorizontalOffset = 2131166272;
 			
 			// aapt resource value: 0x1
 			public const int ListPopupWindow_android_dropDownVerticalOffset = 1;
@@ -12757,8 +15389,8 @@ namespace lirksi.Mobile.Droid
 					2130968944,
 					2130968945};
 			
-			// aapt resource value: 0x7F070430
-			public const int MaterialButton_android_insetBottom = 2131166256;
+			// aapt resource value: 0x7F070443
+			public const int MaterialButton_android_insetBottom = 2131166275;
 			
 			// aapt resource value: 0x1
 			public const int MaterialButton_android_insetLeft = 1;
@@ -12809,8 +15441,8 @@ namespace lirksi.Mobile.Droid
 					2130968944,
 					2130968945};
 			
-			// aapt resource value: 0x7F070447
-			public const int MaterialCardView_strokeColor = 2131166279;
+			// aapt resource value: 0x7F070460
+			public const int MaterialCardView_strokeColor = 2131166304;
 			
 			// aapt resource value: 0x1
 			public const int MaterialCardView_strokeWidth = 1;
@@ -12849,8 +15481,8 @@ namespace lirksi.Mobile.Droid
 					2130969004,
 					2130969008};
 			
-			// aapt resource value: 0x7F070450
-			public const int MaterialComponentsTheme_bottomSheetDialogTheme = 2131166288;
+			// aapt resource value: 0x7F070463
+			public const int MaterialComponentsTheme_bottomSheetDialogTheme = 2131166307;
 			
 			// aapt resource value: 0x1
 			public const int MaterialComponentsTheme_bottomSheetStyle = 1;
@@ -12953,8 +15585,8 @@ namespace lirksi.Mobile.Droid
 					16843231,
 					16843156};
 			
-			// aapt resource value: 0x7F070483
-			public const int MenuGroup_android_checkableBehavior = 2131166339;
+			// aapt resource value: 0x7F070496
+			public const int MenuGroup_android_checkableBehavior = 2131166358;
 			
 			// aapt resource value: 0x1
 			public const int MenuGroup_android_enabled = 1;
@@ -12996,8 +15628,8 @@ namespace lirksi.Mobile.Droid
 					2130968920,
 					2130969036};
 			
-			// aapt resource value: 0x7F070490
-			public const int MenuItem_actionLayout = 2131166352;
+			// aapt resource value: 0x7F070503
+			public const int MenuItem_actionLayout = 2131166467;
 			
 			// aapt resource value: 0x1
 			public const int MenuItem_actionProviderClass = 1;
@@ -13076,8 +15708,8 @@ namespace lirksi.Mobile.Droid
 					2130968899,
 					2130968946};
 			
-			// aapt resource value: 0x7F070514
-			public const int MenuView_android_headerBackground = 2131166484;
+			// aapt resource value: 0x7F070527
+			public const int MenuView_android_headerBackground = 2131166503;
 			
 			// aapt resource value: 0x1
 			public const int MenuView_android_horizontalDivider = 1;
@@ -13117,8 +15749,8 @@ namespace lirksi.Mobile.Droid
 					2130968838,
 					2130968876};
 			
-			// aapt resource value: 0x7F070524
-			public const int NavigationView_android_background = 2131166500;
+			// aapt resource value: 0x7F070537
+			public const int NavigationView_android_background = 2131166519;
 			
 			// aapt resource value: 0x1
 			public const int NavigationView_android_fitsSystemWindows = 1;
@@ -13161,11 +15793,11 @@ namespace lirksi.Mobile.Droid
 			public static int[] PopupWindowBackgroundState = new int[] {
 					2130968937};
 			
-			// aapt resource value: 0x7F070541
-			public const int PopupWindowBackgroundState_state_above_anchor = 2131166529;
+			// aapt resource value: 0x7F070554
+			public const int PopupWindowBackgroundState_state_above_anchor = 2131166548;
 			
-			// aapt resource value: 0x7F070537
-			public const int PopupWindow_android_popupAnimationStyle = 2131166519;
+			// aapt resource value: 0x7F070550
+			public const int PopupWindow_android_popupAnimationStyle = 2131166544;
 			
 			// aapt resource value: 0x1
 			public const int PopupWindow_android_popupBackground = 1;
@@ -13173,12 +15805,62 @@ namespace lirksi.Mobile.Droid
 			// aapt resource value: 0x2
 			public const int PopupWindow_overlapAnchor = 2;
 			
+			public static int[] ProgressWheel = new int[] {
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0};
+			
+			// aapt resource value: 0x7F070005
+			public const int ProgressWheel_ahBarColor = 2131165189;
+			
+			// aapt resource value: 0x7F070013
+			public const int ProgressWheel_ahBarLength = 2131165203;
+			
+			// aapt resource value: 0x7F070012
+			public const int ProgressWheel_ahBarWidth = 2131165202;
+			
+			// aapt resource value: 0x7F070010
+			public const int ProgressWheel_ahCircleColor = 2131165200;
+			
+			// aapt resource value: 0x7F070009
+			public const int ProgressWheel_ahDelayMillis = 2131165193;
+			
+			// aapt resource value: 0x7F070011
+			public const int ProgressWheel_ahRadius = 2131165201;
+			
+			// aapt resource value: 0x7F070006
+			public const int ProgressWheel_ahRimColor = 2131165190;
+			
+			// aapt resource value: 0x7F070007
+			public const int ProgressWheel_ahRimWidth = 2131165191;
+			
+			// aapt resource value: 0x7F070008
+			public const int ProgressWheel_ahSpinSpeed = 2131165192;
+			
+			// aapt resource value: 0x7F070002
+			public const int ProgressWheel_ahText = 2131165186;
+			
+			// aapt resource value: 0x7F070003
+			public const int ProgressWheel_ahTextColor = 2131165187;
+			
+			// aapt resource value: 0x7F070004
+			public const int ProgressWheel_ahTextSize = 2131165188;
+			
 			public static int[] RecycleListView = new int[] {
 					2130968884,
 					2130968887};
 			
-			// aapt resource value: 0x7F070543
-			public const int RecycleListView_paddingBottomNoButtons = 2131166531;
+			// aapt resource value: 0x7F070556
+			public const int RecycleListView_paddingBottomNoButtons = 2131166550;
 			
 			// aapt resource value: 0x1
 			public const int RecycleListView_paddingTopNoTitle = 1;
@@ -13196,8 +15878,8 @@ namespace lirksi.Mobile.Droid
 					2130968930,
 					2130968936};
 			
-			// aapt resource value: 0x7F070546
-			public const int RecyclerView_android_descendantFocusability = 2131166534;
+			// aapt resource value: 0x7F070559
+			public const int RecyclerView_android_descendantFocusability = 2131166553;
 			
 			// aapt resource value: 0x1
 			public const int RecyclerView_android_orientation = 1;
@@ -13232,14 +15914,14 @@ namespace lirksi.Mobile.Droid
 			public static int[] ScrimInsetsFrameLayout = new int[] {
 					2130968825};
 			
-			// aapt resource value: 0x7F070558
-			public const int ScrimInsetsFrameLayout_insetForeground = 2131166552;
+			// aapt resource value: 0x7F070571
+			public const int ScrimInsetsFrameLayout_insetForeground = 2131166577;
 			
 			public static int[] ScrollingViewBehavior_Layout = new int[] {
 					2130968635};
 			
-			// aapt resource value: 0x7F070560
-			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 2131166560;
+			// aapt resource value: 0x7F070573
+			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 2131166579;
 			
 			public static int[] SearchView = new int[] {
 					16842970,
@@ -13260,8 +15942,8 @@ namespace lirksi.Mobile.Droid
 					2130968952,
 					2130969043};
 			
-			// aapt resource value: 0x7F070562
-			public const int SearchView_android_focusable = 2131166562;
+			// aapt resource value: 0x7F070575
+			public const int SearchView_android_focusable = 2131166581;
 			
 			// aapt resource value: 0x1
 			public const int SearchView_android_imeOptions = 1;
@@ -13320,8 +16002,8 @@ namespace lirksi.Mobile.Droid
 					2130968758,
 					2130968872};
 			
-			// aapt resource value: 0x7F070583
-			public const int SnackbarLayout_android_maxWidth = 2131166595;
+			// aapt resource value: 0x7F070596
+			public const int SnackbarLayout_android_maxWidth = 2131166614;
 			
 			// aapt resource value: 0x1
 			public const int SnackbarLayout_elevation = 1;
@@ -13329,8 +16011,8 @@ namespace lirksi.Mobile.Droid
 			// aapt resource value: 0x2
 			public const int SnackbarLayout_maxActionInlineWidth = 2;
 			
-			// aapt resource value: 0x7F070580
-			public const int Snackbar_snackbarButtonStyle = 2131166592;
+			// aapt resource value: 0x7F070593
+			public const int Snackbar_snackbarButtonStyle = 2131166611;
 			
 			// aapt resource value: 0x1
 			public const int Snackbar_snackbarStyle = 1;
@@ -13342,8 +16024,8 @@ namespace lirksi.Mobile.Droid
 					16843131,
 					2130968897};
 			
-			// aapt resource value: 0x7F070587
-			public const int Spinner_android_dropDownWidth = 2131166599;
+			// aapt resource value: 0x7F070600
+			public const int Spinner_android_dropDownWidth = 2131166720;
 			
 			// aapt resource value: 0x1
 			public const int Spinner_android_entries = 1;
@@ -13368,11 +16050,11 @@ namespace lirksi.Mobile.Droid
 			public static int[] StateListDrawableItem = new int[] {
 					16843161};
 			
-			// aapt resource value: 0x7F070752
-			public const int StateListDrawableItem_android_drawable = 2131167058;
+			// aapt resource value: 0x7F070765
+			public const int StateListDrawableItem_android_drawable = 2131167077;
 			
-			// aapt resource value: 0x7F070745
-			public const int StateListDrawable_android_constantSize = 2131167045;
+			// aapt resource value: 0x7F070758
+			public const int StateListDrawable_android_constantSize = 2131167064;
 			
 			// aapt resource value: 0x1
 			public const int StateListDrawable_android_dither = 1;
@@ -13405,8 +16087,8 @@ namespace lirksi.Mobile.Droid
 					2130969038,
 					2130969039};
 			
-			// aapt resource value: 0x7F070593
-			public const int SwitchCompat_android_textOff = 2131166611;
+			// aapt resource value: 0x7F070606
+			public const int SwitchCompat_android_textOff = 2131166726;
 			
 			// aapt resource value: 0x1
 			public const int SwitchCompat_android_textOn = 1;
@@ -13452,8 +16134,8 @@ namespace lirksi.Mobile.Droid
 					16842994,
 					16843087};
 			
-			// aapt resource value: 0x7F070608
-			public const int TabItem_android_icon = 2131166728;
+			// aapt resource value: 0x7F070621
+			public const int TabItem_android_icon = 2131166753;
 			
 			// aapt resource value: 0x1
 			public const int TabItem_android_layout = 1;
@@ -13488,8 +16170,8 @@ namespace lirksi.Mobile.Droid
 					2130968981,
 					2130968982};
 			
-			// aapt resource value: 0x7F070612
-			public const int TabLayout_tabBackground = 2131166738;
+			// aapt resource value: 0x7F070625
+			public const int TabLayout_tabBackground = 2131166757;
 			
 			// aapt resource value: 0x1
 			public const int TabLayout_tabContentStart = 1;
@@ -13578,8 +16260,8 @@ namespace lirksi.Mobile.Droid
 					2130968786,
 					2130968983};
 			
-			// aapt resource value: 0x7F070638
-			public const int TextAppearance_android_fontFamily = 2131166776;
+			// aapt resource value: 0x7F070651
+			public const int TextAppearance_android_fontFamily = 2131166801;
 			
 			// aapt resource value: 0x1
 			public const int TextAppearance_android_shadowColor = 1;
@@ -13647,8 +16329,8 @@ namespace lirksi.Mobile.Droid
 					2130968894,
 					2130968895};
 			
-			// aapt resource value: 0x7F070652
-			public const int TextInputLayout_android_hint = 2131166802;
+			// aapt resource value: 0x7F070665
+			public const int TextInputLayout_android_hint = 2131166821;
 			
 			// aapt resource value: 0x1
 			public const int TextInputLayout_android_textColorHint = 1;
@@ -13736,8 +16418,8 @@ namespace lirksi.Mobile.Droid
 					2130968759,
 					2130968760};
 			
-			// aapt resource value: 0x7F070681
-			public const int ThemeEnforcement_android_textAppearance = 2131166849;
+			// aapt resource value: 0x7F070694
+			public const int ThemeEnforcement_android_textAppearance = 2131166868;
 			
 			// aapt resource value: 0x1
 			public const int ThemeEnforcement_enforceMaterialTheme = 1;
@@ -13776,8 +16458,8 @@ namespace lirksi.Mobile.Droid
 					2130969028,
 					2130969029};
 			
-			// aapt resource value: 0x7F070685
-			public const int Toolbar_android_gravity = 2131166853;
+			// aapt resource value: 0x7F070698
+			public const int Toolbar_android_gravity = 2131166872;
 			
 			// aapt resource value: 0x1
 			public const int Toolbar_android_minHeight = 1;
@@ -13875,8 +16557,8 @@ namespace lirksi.Mobile.Droid
 					2130968629,
 					2130968630};
 			
-			// aapt resource value: 0x7F070721
-			public const int ViewBackgroundHelper_android_background = 2131167009;
+			// aapt resource value: 0x7F070734
+			public const int ViewBackgroundHelper_android_background = 2131167028;
 			
 			// aapt resource value: 0x1
 			public const int ViewBackgroundHelper_backgroundTint = 1;
@@ -13889,8 +16571,8 @@ namespace lirksi.Mobile.Droid
 					16842995,
 					16842994};
 			
-			// aapt resource value: 0x7F070725
-			public const int ViewStubCompat_android_id = 2131167013;
+			// aapt resource value: 0x7F070738
+			public const int ViewStubCompat_android_id = 2131167032;
 			
 			// aapt resource value: 0x1
 			public const int ViewStubCompat_android_inflatedId = 1;
@@ -13898,8 +16580,8 @@ namespace lirksi.Mobile.Droid
 			// aapt resource value: 0x2
 			public const int ViewStubCompat_android_layout = 2;
 			
-			// aapt resource value: 0x7F070715
-			public const int View_android_focusable = 2131166997;
+			// aapt resource value: 0x7F070728
+			public const int View_android_focusable = 2131167016;
 			
 			// aapt resource value: 0x1
 			public const int View_android_theme = 1;
@@ -13926,8 +16608,8 @@ namespace lirksi.Mobile.Droid
 		public partial class Xml
 		{
 			
-			// aapt resource value: 0x7F080002
-			public const int xamarin_essentials_fileprovider_file_paths = 2131230722;
+			// aapt resource value: 0x7F100002
+			public const int xamarin_essentials_fileprovider_file_paths = 2131755010;
 			
 			static Xml()
 			{

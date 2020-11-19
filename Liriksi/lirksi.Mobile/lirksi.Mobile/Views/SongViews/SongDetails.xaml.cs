@@ -1,4 +1,5 @@
-﻿using liriksi.Model.Requests;
+﻿using Acr.UserDialogs;
+using liriksi.Model.Requests;
 using lirksi.Mobile.Services.OfflineModeServices;
 using lirksi.Mobile.ViewModels;
 using System;
@@ -50,6 +51,11 @@ namespace lirksi.Mobile.Views
 
         private async void Rate_Clicked(object sender, EventArgs e)
         {
+            if (ValidationHelpers.ValidationHelper.IsAnyNullOrEmpty(model.UserRate))
+            {
+                UserDialogs.Instance.Toast(ValidationHelpers.MessagesResource.rate_required);
+                return;
+            }
             await model.RateSong();
             //call onAppearing to refresh rateFeature(to disable it)
             OnAppearing();
@@ -78,13 +84,14 @@ namespace lirksi.Mobile.Views
             SongGetRequest obj = model.GetSongByIdOffline(model._songId);
             if(obj != null)
             {
-                await Application.Current.MainPage.DisplayAlert("Warning", "You have already downloaded this song.", "OK");
+                UserDialogs.Instance.Toast(ValidationHelpers.MessagesResource.already_downloaded);
                 return;
             }
             else
             {
                 await model.DownloadSongOffline();
-                await Application.Current.MainPage.DisplayAlert("Success", "Successfully downloaded!", "OK");
+                UserDialogs.Instance.Toast(ValidationHelpers.MessagesResource.download_success);
+
             }
         }
     }
