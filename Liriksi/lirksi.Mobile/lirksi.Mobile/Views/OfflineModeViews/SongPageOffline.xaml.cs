@@ -17,12 +17,13 @@ namespace lirksi.Mobile.Views.OfflineModeViews
         public SongOfflineViewModel model { get; set; }
         public SongPageOffline ()
 		{
-			InitializeComponent ();
+            InitializeComponent ();
             BindingContext = model = new SongOfflineViewModel();
 		}
 
         protected async override void OnAppearing()
         {
+          
             base.OnAppearing();
             await model.GetAllDownloadedSongs();
         }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Genre = new System.Windows.Forms.Label();
@@ -41,7 +42,9 @@
             this.cmbPerformer = new System.Windows.Forms.ComboBox();
             this.btnAddGenre = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picboxAlbum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTitle
@@ -50,6 +53,7 @@
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(235, 22);
             this.txtTitle.TabIndex = 0;
+            this.txtTitle.Validating += new System.ComponentModel.CancelEventHandler(this.txtTitle_Validating);
             // 
             // label1
             // 
@@ -159,6 +163,10 @@
             this.label3.TabIndex = 53;
             this.label3.Text = "Cover photo";
             // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
             // frmAddAlbum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -182,6 +190,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAddAlbum_FormClosed);
             this.Load += new System.EventHandler(this.frmAddAlbum_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picboxAlbum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,5 +211,6 @@
         private System.Windows.Forms.ComboBox cmbPerformer;
         private System.Windows.Forms.Button btnAddGenre;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }

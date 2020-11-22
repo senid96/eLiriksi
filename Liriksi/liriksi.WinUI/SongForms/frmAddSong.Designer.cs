@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbAlbum = new System.Windows.Forms.ComboBox();
@@ -37,6 +38,8 @@
             this.txtLyrics = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnFinish = new System.Windows.Forms.Button();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // txtName
@@ -45,6 +48,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(277, 22);
             this.txtName.TabIndex = 0;
+            this.txtName.Validating += new System.ComponentModel.CancelEventHandler(this.txtName_Validating);
             // 
             // label1
             // 
@@ -98,6 +102,7 @@
             this.txtLyrics.Size = new System.Drawing.Size(277, 276);
             this.txtLyrics.TabIndex = 8;
             this.txtLyrics.Text = "";
+            this.txtLyrics.Validating += new System.ComponentModel.CancelEventHandler(this.txtLyrics_Validating);
             // 
             // label4
             // 
@@ -117,6 +122,10 @@
             this.btnFinish.Text = "Finish";
             this.btnFinish.UseVisualStyleBackColor = true;
             this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
+            // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
             // 
             // frmAddSong
             // 
@@ -139,6 +148,7 @@
             this.Text = "frmAddSong";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAddSong_FormClosed);
             this.Load += new System.EventHandler(this.frmAddSong_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,5 +165,6 @@
         private System.Windows.Forms.RichTextBox txtLyrics;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnFinish;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }

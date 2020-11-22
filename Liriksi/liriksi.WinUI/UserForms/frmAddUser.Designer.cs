@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblUserType = new System.Windows.Forms.Label();
             this.lblCountry = new System.Windows.Forms.Label();
             this.txtBoxPhone = new System.Windows.Forms.MaskedTextBox();
@@ -51,7 +52,9 @@
             this.txtboxPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtboxConfirmPassword = new System.Windows.Forms.TextBox();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picboxUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // lblUserType
@@ -82,6 +85,7 @@
             this.txtBoxPhone.Name = "txtBoxPhone";
             this.txtBoxPhone.Size = new System.Drawing.Size(243, 22);
             this.txtBoxPhone.TabIndex = 36;
+            this.txtBoxPhone.Validating += new System.ComponentModel.CancelEventHandler(this.txtBoxPhone_Validating);
             // 
             // lblUsername
             // 
@@ -100,6 +104,7 @@
             this.txtboxUsername.Name = "txtboxUsername";
             this.txtboxUsername.Size = new System.Drawing.Size(410, 22);
             this.txtboxUsername.TabIndex = 34;
+            this.txtboxUsername.Validating += new System.ComponentModel.CancelEventHandler(this.txtboxUsername_Validating);
             // 
             // lblPhone
             // 
@@ -128,6 +133,7 @@
             this.txtboxEmail.Name = "txtboxEmail";
             this.txtboxEmail.Size = new System.Drawing.Size(411, 22);
             this.txtboxEmail.TabIndex = 31;
+            this.txtboxEmail.Validating += new System.ComponentModel.CancelEventHandler(this.txtboxEmail_Validating);
             // 
             // lblSurname
             // 
@@ -146,6 +152,7 @@
             this.txtboxSurname.Name = "txtboxSurname";
             this.txtboxSurname.Size = new System.Drawing.Size(245, 22);
             this.txtboxSurname.TabIndex = 29;
+            this.txtboxSurname.Validating += new System.ComponentModel.CancelEventHandler(this.txtboxSurname_Validating);
             // 
             // lblName
             // 
@@ -164,6 +171,7 @@
             this.txtboxName.Name = "txtboxName";
             this.txtboxName.Size = new System.Drawing.Size(245, 22);
             this.txtboxName.TabIndex = 27;
+            this.txtboxName.Validating += new System.ComponentModel.CancelEventHandler(this.txtboxName_Validating);
             // 
             // picboxUser
             // 
@@ -249,6 +257,7 @@
             this.txtboxPassword.PasswordChar = '*';
             this.txtboxPassword.Size = new System.Drawing.Size(410, 22);
             this.txtboxPassword.TabIndex = 53;
+            this.txtboxPassword.Validating += new System.ComponentModel.CancelEventHandler(this.txtboxPassword_Validating);
             // 
             // label2
             // 
@@ -269,6 +278,11 @@
             this.txtboxConfirmPassword.PasswordChar = '*';
             this.txtboxConfirmPassword.Size = new System.Drawing.Size(411, 22);
             this.txtboxConfirmPassword.TabIndex = 51;
+            this.txtboxConfirmPassword.Validating += new System.ComponentModel.CancelEventHandler(this.txtboxConfirmPassword_Validating);
+            // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
             // 
             // frmAddUser
             // 
@@ -303,6 +317,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAddUser_FormClosed);
             this.Load += new System.EventHandler(this.frmAddUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picboxUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -332,5 +347,6 @@
         private System.Windows.Forms.TextBox txtboxPassword;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtboxConfirmPassword;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }

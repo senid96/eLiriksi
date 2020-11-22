@@ -34,10 +34,24 @@ namespace liriksi.WinUI.SongForms.SongUtilForms
 
         private async void btnAddPerformer_Click(object sender, EventArgs e)
         {
-            byte[] img = ImageHelperMethods.PrepareImgForDB(picBoxPerformer.Image);
-            Performer obj = new Performer() { Name = txtName.Text, Surname = txtSurname.Text, ArtisticName = txtArtisticName.Text, Image = img };
-            await _performerService.Insert<Performer>(obj, "AddPerformer");
-            this.Close();
+            if (this.ValidateChildren())
+            {
+                if (picBoxPerformer.Image == null)
+                {
+                    errorProvider.SetError(picBoxPerformer, "Image is required");
+                    return;
+                }
+                else
+                {
+                    errorProvider.SetError(picBoxPerformer, null);
+                }
+
+                byte[] img = ImageHelperMethods.PrepareImgForDB(picBoxPerformer.Image);
+                Performer obj = new Performer() { Name = txtName.Text, Surname = txtSurname.Text, ArtisticName = txtArtisticName.Text, Image = img };
+                await _performerService.Insert<Performer>(obj, "AddPerformer");
+                this.Close();
+            }
+           
         }
 
         private void frmAddPerformer_FormClosed(object sender, FormClosedEventArgs e)
@@ -81,6 +95,45 @@ namespace liriksi.WinUI.SongForms.SongUtilForms
                     Bitmap img = new Bitmap(openFileDialog.FileName);
                     picBoxPerformer.Image = ImageHelperMethods.ResizeImage(img, 150, 120);
                 }
+            }
+        }
+
+        private void txtName_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtName.Text))
+            {
+                errorProvider.SetError(txtName, "Required field!");
+                e.Cancel = true;
+            }
+            else
+            {
+                errorProvider.SetError(txtName, null);
+            }
+        }
+
+        private void txtSurname_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtSurname.Text))
+            {
+                errorProvider.SetError(txtSurname, "Required field!");
+                e.Cancel = true;
+            }
+            else
+            {
+                errorProvider.SetError(txtSurname, null);
+            }
+        }
+
+        private void txtArtisticName_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtArtisticName.Text))
+            {
+                errorProvider.SetError(txtArtisticName, "Required field!");
+                e.Cancel = true;
+            }
+            else
+            {
+                errorProvider.SetError(txtArtisticName, null);
             }
         }
     }

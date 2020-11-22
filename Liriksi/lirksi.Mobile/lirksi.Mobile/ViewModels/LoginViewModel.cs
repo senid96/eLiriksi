@@ -40,12 +40,12 @@ namespace lirksi.Mobile.ViewModels
         public async Task Login()
         {
 
-            //APIService._username = Username;     
-            //APIService._password = Password;
+            APIService._username = Username;     
+            APIService._password = Password;
 
             //za brzi razvoj samo TODO obrisati kasnije
-            APIService._username = "testiranje"; 
-            APIService._password = "testiranje";
+            //APIService._username = "testiranje"; 
+            //APIService._password = "testiranje";
 
             if(Connectivity.NetworkAccess < NetworkAccess.Local)
             {

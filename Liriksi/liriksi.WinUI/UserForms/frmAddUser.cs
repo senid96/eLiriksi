@@ -64,26 +64,40 @@ namespace liriksi.WinUI.UserForms
 
         private async void btnSaveUser_Click(object sender, EventArgs e)
         {
-            //prepare image for database
-            byte[] ImageData = ImageHelperMethods.PrepareImgForDB(picboxUser.Image);
-
-            UserInsertRequest obj = new UserInsertRequest()
+            if (this.ValidateChildren())
             {
-                Name = txtboxName.Text,
-                Surname = txtboxSurname.Text,
-                Username = txtboxSurname.Text,
-                Email = txtboxEmail.Text,
-                PhoneNumber = txtBoxPhone.Text,
-                UserTypeId = Convert.ToInt32(cmbUserType.SelectedValue),
-                CityId = Convert.ToInt32(cmbCity.SelectedValue),
-                Password = txtboxPassword.Text,
-                PasswordConfirmation = txtboxConfirmPassword.Text,
-                Image = ImageData,
-                Status = true //active by default
-            };
+                if (picboxUser.Image == null)
+                {
+                    errorProvider.SetError(picboxUser, "Image is required!");
+                    return;
+                }
+                else
+                {
+                    errorProvider.SetError(picboxUser, null);
+                }
+              
+                 
+                //prepare image for database
+                byte[] ImageData = ImageHelperMethods.PrepareImgForDB(picboxUser.Image);
+
+                UserInsertRequest obj = new UserInsertRequest()
+                {
+                    Name = txtboxName.Text,
+                    Surname = txtboxSurname.Text,
+                    Username = txtboxSurname.Text,
+                    Email = txtboxEmail.Text,
+                    PhoneNumber = txtBoxPhone.Text,
+                    UserTypeId = Convert.ToInt32(cmbUserType.SelectedValue),
+                    CityId = Convert.ToInt32(cmbCity.SelectedValue),
+                    Password = txtboxPassword.Text,
+                    PasswordConfirmation = txtboxConfirmPassword.Text,
+                    Image = ImageData,
+                    Status = true //active by default
+                };
 
                 await _userService.Insert<UserInsertRequest>(obj, "InsertUser");
                 this.Close();
+            }
         }
 
         private async void frmAddUser_Load(object sender, EventArgs e)
@@ -116,5 +130,99 @@ namespace liriksi.WinUI.UserForms
             frm.MdiParent = Application.OpenForms["frmIndex"];
             frm.Show();
         }
+
+        private void txtboxName_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtboxName.Text))
+            {
+                errorProvider.SetError(txtboxName, "Required field");
+                e.Cancel = true;
+            }
+            else
+            {
+                errorProvider.SetError(txtboxName, null);
+            }
+        }
+
+        private void txtboxSurname_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtboxSurname.Text))
+            {
+                errorProvider.SetError(txtboxSurname, "Required field");
+                e.Cancel = true;
+            }
+            else
+            {
+                errorProvider.SetError(txtboxSurname, null);
+
+            }
+        }
+
+        private void txtBoxPhone_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtBoxPhone.Text))
+            {
+                errorProvider.SetError(txtBoxPhone, "Required field");
+                e.Cancel = true;
+            }
+            else
+            {
+                errorProvider.SetError(txtBoxPhone, null);
+            }
+        }
+
+        private void txtboxUsername_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtboxUsername.Text))
+            {
+                errorProvider.SetError(txtboxUsername, "Required field");
+                e.Cancel = true;
+            }
+            else
+            {
+                errorProvider.SetError(txtboxUsername, null);
+            }
+        }
+
+        private void txtboxEmail_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtboxEmail.Text))
+            {
+                errorProvider.SetError(txtboxEmail, "Required field");
+                e.Cancel = true;
+            }
+            else
+            {
+                errorProvider.SetError(txtboxEmail, null);
+            }
+        }
+
+        private void txtboxPassword_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtboxPassword.Text))
+            {
+                errorProvider.SetError(txtboxPassword, "Required field");
+                e.Cancel = true;
+            }
+            else
+            {
+                errorProvider.SetError(txtboxPassword, null);
+            }
+        }
+
+        private void txtboxConfirmPassword_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtboxConfirmPassword.Text))
+            {
+                errorProvider.SetError(txtboxConfirmPassword, "Required field");
+                e.Cancel = true;
+            }
+            else
+            {
+                errorProvider.SetError(txtboxConfirmPassword, null);
+            }
+        }
+
+       
     }
 }

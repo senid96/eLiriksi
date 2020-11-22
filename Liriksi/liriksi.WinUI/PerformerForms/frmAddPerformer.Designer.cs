@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnAddPerformer = new System.Windows.Forms.Button();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,7 +39,9 @@
             this.picBoxPerformer = new System.Windows.Forms.PictureBox();
             this.btnUpload = new System.Windows.Forms.Button();
             this.lblImg = new System.Windows.Forms.Label();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxPerformer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAddPerformer
@@ -57,6 +60,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(204, 22);
             this.txtName.TabIndex = 4;
+            this.txtName.Validating += new System.ComponentModel.CancelEventHandler(this.txtName_Validating);
             // 
             // label1
             // 
@@ -73,6 +77,7 @@
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(204, 22);
             this.txtSurname.TabIndex = 7;
+            this.txtSurname.Validating += new System.ComponentModel.CancelEventHandler(this.txtSurname_Validating);
             // 
             // Surname
             // 
@@ -90,6 +95,7 @@
             this.txtArtisticName.Name = "txtArtisticName";
             this.txtArtisticName.Size = new System.Drawing.Size(204, 22);
             this.txtArtisticName.TabIndex = 9;
+            this.txtArtisticName.Validating += new System.ComponentModel.CancelEventHandler(this.txtArtisticName_Validating);
             // 
             // label3
             // 
@@ -128,6 +134,10 @@
             this.lblImg.TabIndex = 12;
             this.lblImg.Text = "Image";
             // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
             // frmAddPerformer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -149,6 +159,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAddPerformer_FormClosed);
             this.Load += new System.EventHandler(this.frmAddPerformer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxPerformer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,5 +177,6 @@
         private System.Windows.Forms.PictureBox picBoxPerformer;
         private System.Windows.Forms.Button btnUpload;
         private System.Windows.Forms.Label lblImg;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }

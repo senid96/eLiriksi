@@ -8,10 +8,10 @@ namespace liriksi.Model.Requests
     public class UserInsertRequest
     {
         [Required]
-        [MinLength(2)]
+        [MinLength(1)]
         public string Name { get; set; }
         [Required]
-        [MinLength(3)]
+        [MinLength(1)]
         public string Surname { get; set; }
         [Required]
         [EmailAddress]
@@ -19,7 +19,7 @@ namespace liriksi.Model.Requests
         [Required]
         public string PhoneNumber { get; set; }
         [Required]
-        [MinLength(5)]
+        [MinLength(1)]
         public string Username { get; set; }
         public string Password { get; set; }
         public string PasswordConfirmation { get; set; }

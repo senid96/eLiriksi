@@ -51,11 +51,27 @@ namespace liriksi.WinUI.UtilForms
 
         private async void finishAlbum_Click(object sender, EventArgs e)
         {
-            byte[] ImageData = ImageHelperMethods.PrepareImgForDB(picboxAlbum.Image);
+            if (this.ValidateChildren())
+            {
+                
+                if (picboxAlbum.Image == null)
+                {
+                    errorProvider.SetError(picboxAlbum, "Image is required");
+                    return;
+                }
+                else
+                {
+                    errorProvider.SetError(picboxAlbum, null);
+                }
+                
 
-            AlbumInsertRequest obj = new AlbumInsertRequest() { Name = txtTitle.Text, GenreId = (int)cmbGenre.SelectedValue, YearRelease = (int)cmbYear.SelectedValue, Image = ImageData, PerformerId = (int)cmbPerformer.SelectedValue };
-            await _albumService.Insert<AlbumInsertRequest>(obj, "InsertAlbum");
-            this.Close();
+                byte[] ImageData = ImageHelperMethods.PrepareImgForDB(picboxAlbum.Image);
+
+                AlbumInsertRequest obj = new AlbumInsertRequest() { Name = txtTitle.Text, GenreId = (int)cmbGenre.SelectedValue, YearRelease = (int)cmbYear.SelectedValue, Image = ImageData, PerformerId = (int)cmbPerformer.SelectedValue };
+                await _albumService.Insert<AlbumInsertRequest>(obj, "InsertAlbum");
+                this.Close();
+            }
+           
         }
 
         private void frmAddAlbum_FormClosed(object sender, FormClosedEventArgs e)
@@ -99,6 +115,19 @@ namespace liriksi.WinUI.UtilForms
                     Bitmap img = new Bitmap(openFileDialog.FileName);
                     picboxAlbum.Image = ImageHelperMethods.ResizeImage(img, 120, 120);
                 }
+            }
+        }
+
+        private void txtTitle_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtTitle.Text))
+            {
+                errorProvider.SetError(txtTitle, "Required field!");
+                e.Cancel = true;
+            }
+            else
+            {
+                errorProvider.SetError(txtTitle, null);
             }
         }
     }

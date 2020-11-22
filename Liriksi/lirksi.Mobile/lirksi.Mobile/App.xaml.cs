@@ -53,7 +53,6 @@ namespace lirksi.Mobile
                     {
                         // The root page of your application
                         MainPage = new NavigationPage(new Views.OfflineModeViews.SongPageOffline());
-                        NavigationPage.SetHasNavigationBar(this, true);
                         return;
                     }
                 }
@@ -61,7 +60,6 @@ namespace lirksi.Mobile
             }
             catch (Exception)
             {
-                // Possible that device doesn't support secure storage on device.
             }
 
             Current.MainPage = new LoginPage();

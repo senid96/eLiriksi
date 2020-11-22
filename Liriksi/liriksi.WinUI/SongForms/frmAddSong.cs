@@ -38,17 +38,20 @@ namespace liriksi.WinUI.SongForms
 
         private async void btnFinish_Click(object sender, EventArgs e)
         {
-            SongInsertRequest req = new SongInsertRequest();
-            req.Title = txtName.Text;
-            req.Text = txtLyrics.Text;
-            req.AlbumId = (int)cmbAlbum.SelectedValue;
+            if (this.ValidateChildren())
+            {
+                SongInsertRequest req = new SongInsertRequest();
+                req.Title = txtName.Text;
+                req.Text = txtLyrics.Text;
+                req.AlbumId = (int)cmbAlbum.SelectedValue;
 
-            await _songService.Insert<SongInsertRequest>(req, "AddSong");
-            this.Close();
-            frmSong frm = new frmSong();
-            frm.Show();
-            frm.MdiParent = Application.OpenForms["frmIndex"];      
-            frm.WindowState = FormWindowState.Maximized;
+                await _songService.Insert<SongInsertRequest>(req, "AddSong");
+                this.Close();
+                frmSong frm = new frmSong();
+                frm.Show();
+                frm.MdiParent = Application.OpenForms["frmIndex"];
+                frm.WindowState = FormWindowState.Maximized;
+            }
         }
 
         private async void frmAddSong_Load(object sender, EventArgs e)
@@ -88,6 +91,32 @@ namespace liriksi.WinUI.SongForms
             frm.MdiParent = Application.OpenForms["frmIndex"];
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();
+        }
+
+        private void txtName_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtName.Text))
+            {
+                errorProvider.SetError(txtName, "Required field!");
+                e.Cancel = true;
+            }
+            else
+            {
+                errorProvider.SetError(txtName, null);
+            }
+        }
+
+        private void txtLyrics_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace( txtLyrics.Text))
+            {
+                errorProvider.SetError(txtLyrics, "Required field!");
+                e.Cancel = true;
+            }
+            else
+            {
+                errorProvider.SetError(txtLyrics, null);
+            }
         }
     }
 }
