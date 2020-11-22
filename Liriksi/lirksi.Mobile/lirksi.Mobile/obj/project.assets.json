@@ -60,6 +60,18 @@
           "lib/netstandard2.0/Flurl.Http.dll": {}
         }
       },
+      "LazZiya.ImageResize/3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "4.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/LazZiya.ImageResize.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/LazZiya.ImageResize.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -743,6 +755,15 @@
           "ref/netstandard1.5/System.Diagnostics.Tracing.dll": {}
         }
       },
+      "System.Drawing.Common/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        }
+      },
       "System.Dynamic.Runtime/4.0.11": {
         "type": "package",
         "dependencies": {
@@ -1298,6 +1319,22 @@
         "lib/netstandard1.3/Flurl.Http.xml",
         "lib/netstandard2.0/Flurl.Http.dll",
         "lib/netstandard2.0/Flurl.Http.xml"
+      ]
+    },
+    "LazZiya.ImageResize/3.0.2": {
+      "sha512": "iuJgQXysm0ueTpTJ3HcNocyhMyaVF6pj9SJ2c0CqRC+2u9YgGT6YTV/Bx0OZMGKVT8OxToF6tYNjuDdaULLhNw==",
+      "type": "package",
+      "path": "lazziya.imageresize/3.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.ico",
+        "icon.png",
+        "lazziya.imageresize.3.0.2.nupkg.sha512",
+        "lazziya.imageresize.nuspec",
+        "lib/netstandard2.0/LazZiya.ImageResize.dll",
+        "lib/netstandard2.0/LazZiya.ImageResize.xml",
+        "license.txt"
       ]
     },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.0.0": {
@@ -2509,6 +2546,39 @@
         "ref/xamarinwatchos10/_._",
         "system.diagnostics.tracing.4.3.0.nupkg.sha512",
         "system.diagnostics.tracing.nuspec"
+      ]
+    },
+    "System.Drawing.Common/4.5.1": {
+      "sha512": "GiyeGi/v4xYDz1vCNFwFvhz9k1XddOG7VD3jxRqzRBCbTHji+s3HxxbxtoymuK4OadEpgotI8zQ5+GEEH9sUEQ==",
+      "type": "package",
+      "path": "system.drawing.common/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.Drawing.Common.dll",
+        "ref/netstandard2.0/System.Drawing.Common.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "system.drawing.common.4.5.1.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Dynamic.Runtime/4.0.11": {
@@ -4528,6 +4598,7 @@
       "Acr.UserDialogs >= 7.1.0.466",
       "Flurl >= 2.8.1",
       "Flurl.Http >= 2.4.1",
+      "LazZiya.ImageResize >= 3.0.2",
       "NETStandard.Library >= 2.0.3",
       "Xam.Plugin.Media >= 5.0.1",
       "Xamarin.Essentials >= 1.5.3.2",
@@ -4594,6 +4665,10 @@
           "Flurl.Http": {
             "target": "Package",
             "version": "[2.4.1, )"
+          },
+          "LazZiya.ImageResize": {
+            "target": "Package",
+            "version": "[3.0.2, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",

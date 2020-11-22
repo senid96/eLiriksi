@@ -11,6 +11,6 @@ namespace liriksi.Model.Requests
         public int GenreId { get; set; }
         public int PerformerId { get; set; }
         public byte[] Image { get; set; }
-        public string About { get; set; }
+        public string Description { get; set; }
     }
 }

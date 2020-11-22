@@ -40,9 +40,9 @@ namespace lirksi.Mobile.Views.PerformerViews
                     file.GetStream().CopyTo(memoryStream);
                     bytes = memoryStream.ToArray();
                 }
-                AlbumImage.Source = ImageSource.FromStream(() => file.GetStream());
-                AlbumImage.WidthRequest = 200;
-                AlbumImage.HeightRequest = 200;
+                PerfImg.Source = ImageSource.FromStream(() => file.GetStream());
+                PerfImg.WidthRequest = 200;
+                PerfImg.HeightRequest = 200;
 
                 //set to viewmodel
                 model.PerformerReq.Image = bytes;

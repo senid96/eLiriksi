@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "9b6ab2b437f100ba3c820357cc207f2afbe70a5a"
+    "signature": "e17a41bb13ea07265397fd3f43731af2332fa02b"
   },
   "compilationOptions": {},
   "targets": {
@@ -12,6 +12,7 @@
           "Acr.UserDialogs": "7.1.0.466",
           "Flurl": "2.8.1",
           "Flurl.Http": "2.4.1",
+          "LazZiya.ImageResize": "3.0.2",
           "NETStandard.Library": "2.0.3",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
@@ -74,6 +75,17 @@
           "lib/netstandard2.0/Flurl.Http.dll": {
             "assemblyVersion": "2.4.1.0",
             "fileVersion": "2.4.1.0"
+          }
+        }
+      },
+      "LazZiya.ImageResize/3.0.2": {
+        "dependencies": {
+          "System.Drawing.Common": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/LazZiya.ImageResize.dll": {
+            "assemblyVersion": "3.0.2.0",
+            "fileVersion": "3.0.2.0"
           }
         }
       },
@@ -669,6 +681,14 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Drawing.Common/4.5.1": {
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
+          }
+        }
+      },
       "System.Dynamic.Runtime/4.0.11": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -1123,6 +1143,13 @@
       "path": "flurl.http/2.4.1",
       "hashPath": "flurl.http.2.4.1.nupkg.sha512"
     },
+    "LazZiya.ImageResize/3.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iuJgQXysm0ueTpTJ3HcNocyhMyaVF6pj9SJ2c0CqRC+2u9YgGT6YTV/Bx0OZMGKVT8OxToF6tYNjuDdaULLhNw==",
+      "path": "lazziya.imageresize/3.0.2",
+      "hashPath": "lazziya.imageresize.3.0.2.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1493,6 +1520,13 @@
       "sha512": "sha512-rswfv0f/Cqkh78rA5S8eN8Neocz234+emGCtTF3lxPY96F+mmmUen6tbn0glN6PMvlKQb9bPAY5e9u7fgPTkKw==",
       "path": "system.diagnostics.tracing/4.3.0",
       "hashPath": "system.diagnostics.tracing.4.3.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GiyeGi/v4xYDz1vCNFwFvhz9k1XddOG7VD3jxRqzRBCbTHji+s3HxxbxtoymuK4OadEpgotI8zQ5+GEEH9sUEQ==",
+      "path": "system.drawing.common/4.5.1",
+      "hashPath": "system.drawing.common.4.5.1.nupkg.sha512"
     },
     "System.Dynamic.Runtime/4.0.11": {
       "type": "package",

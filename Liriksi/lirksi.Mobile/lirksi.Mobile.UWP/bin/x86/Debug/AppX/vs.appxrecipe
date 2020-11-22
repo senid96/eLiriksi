@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-11-19T15:53:15.902</Modified>
+      <Modified>2020-11-22T00:04:14.667</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\bin\x86\Debug\lirksi.Mobile.UWP.exe">
       <PackagePath>entrypoint\lirksi.Mobile.UWP.exe</PackagePath>
-      <Modified>2020-11-19T15:53:13.595</Modified>
+      <Modified>2020-11-22T00:04:13.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\acr.userdialogs\7.1.0.466\lib\uap10.0.16299\Acr.UserDialogs.dll">
       <PackagePath>Acr.UserDialogs.dll</PackagePath>
@@ -65,6 +65,10 @@
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\flurl.http\2.4.1\lib\netstandard2.0\Flurl.Http.dll">
       <PackagePath>Flurl.Http.dll</PackagePath>
       <Modified>2019-02-15T02:24:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\lazziya.imageresize\3.0.2\lib\netstandard2.0\LazZiya.ImageResize.dll">
+      <PackagePath>LazZiya.ImageResize.dll</PackagePath>
+      <Modified>2020-06-08T03:45:42.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\microsoft.aspnetcore.authentication.abstractions\2.0.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Abstractions.dll">
       <PackagePath>Microsoft.AspNetCore.Authentication.Abstractions.dll</PackagePath>
@@ -234,6 +238,10 @@
       <PackagePath>Swashbuckle.AspNetCore.SwaggerUI.dll</PackagePath>
       <Modified>2018-11-07T09:25:06.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\system.drawing.common\4.5.1\lib\netstandard2.0\System.Drawing.Common.dll">
+      <PackagePath>System.Drawing.Common.dll</PackagePath>
+      <Modified>2018-09-18T17:38:14.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\system.text.encodings.web\4.4.0\lib\netstandard2.0\System.Text.Encodings.Web.dll">
       <PackagePath>System.Text.Encodings.Web.dll</PackagePath>
       <Modified>2017-07-19T08:01:30.000</Modified>
@@ -268,11 +276,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\Debug\netstandard2.0\lirksi.Mobile.dll">
       <PackagePath>lirksi.Mobile.dll</PackagePath>
-      <Modified>2020-11-19T15:53:06.732</Modified>
+      <Modified>2020-11-22T00:04:12.845</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\Debug\netstandard2.0\liriksi.Model.dll">
       <PackagePath>liriksi.Model.dll</PackagePath>
-      <Modified>2020-11-19T15:53:03.213</Modified>
+      <Modified>2020-11-21T23:48:51.331</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -281,6 +289,34 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2018-10-23T00:33:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\background.jpg">
+      <PackagePath>background.jpg</PackagePath>
+      <Modified>2020-11-21T10:15:02.013</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\background1.jpg">
+      <PackagePath>background1.jpg</PackagePath>
+      <Modified>2020-11-20T21:38:41.494</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\background2.jpg">
+      <PackagePath>background2.jpg</PackagePath>
+      <Modified>2020-11-20T20:41:30.169</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\background3.jpg">
+      <PackagePath>background3.jpg</PackagePath>
+      <Modified>2020-11-20T20:41:30.170</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\background4.jpg">
+      <PackagePath>background4.jpg</PackagePath>
+      <Modified>2020-11-20T20:41:30.171</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\background5.jpg">
+      <PackagePath>background5.jpg</PackagePath>
+      <Modified>2020-11-20T20:41:30.166</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\background6.jpg">
+      <PackagePath>background6.jpg</PackagePath>
+      <Modified>2020-11-20T20:41:30.167</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -443,11 +479,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-11-19T15:53:13.450</Modified>
+      <Modified>2020-11-22T00:01:02.361</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-11-19T15:53:13.450</Modified>
+      <Modified>2020-11-22T00:01:02.361</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.17763.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -547,11 +583,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-11-19T15:53:14.220</Modified>
+      <Modified>2020-11-21T23:50:11.836</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\bin\x86\Debug\Core\lirksi.Mobile.UWP.exe">
       <PackagePath>lirksi.Mobile.UWP.exe</PackagePath>
-      <Modified>2020-11-19T15:53:15.897</Modified>
+      <Modified>2020-11-22T00:04:14.663</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

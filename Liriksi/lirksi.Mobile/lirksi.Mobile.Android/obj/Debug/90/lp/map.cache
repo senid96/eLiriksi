@@ -110,3 +110,13 @@ System.Linq
 System.IO.FileSystem.Primitives
 System.Threading
 System.Diagnostics.Debug
+DLToolkit.Forms.Controls.ImageCropView
+FFImageLoading
+FFImageLoading.Forms
+FFImageLoading.Forms.Droid
+FFImageLoading.Platform
+FFImageLoading.Transformations
+LazZiya.ImageResize
+Wibci.LogicCommand
+Wibci.Xamarin.Images
+Wibci.Xamarin.Images.Droid

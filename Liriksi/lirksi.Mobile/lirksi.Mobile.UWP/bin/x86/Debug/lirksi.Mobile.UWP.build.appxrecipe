@@ -49,6 +49,9 @@
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\flurl.http\2.4.1\lib\netstandard2.0\Flurl.Http.dll">
       <PackagePath>Flurl.Http.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\lazziya.imageresize\3.0.2\lib\netstandard2.0\LazZiya.ImageResize.dll">
+      <PackagePath>LazZiya.ImageResize.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\microsoft.aspnetcore.authentication.abstractions\2.0.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Abstractions.dll">
       <PackagePath>Microsoft.AspNetCore.Authentication.Abstractions.dll</PackagePath>
     </AppxPackagedFile>
@@ -175,6 +178,9 @@
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\swashbuckle.aspnetcore.swaggerui\4.0.1\lib\netstandard2.0\Swashbuckle.AspNetCore.SwaggerUI.dll">
       <PackagePath>Swashbuckle.AspNetCore.SwaggerUI.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\system.drawing.common\4.5.1\lib\netstandard2.0\System.Drawing.Common.dll">
+      <PackagePath>System.Drawing.Common.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\system.text.encodings.web\4.4.0\lib\netstandard2.0\System.Text.Encodings.Web.dll">
       <PackagePath>System.Text.Encodings.Web.dll</PackagePath>
     </AppxPackagedFile>
@@ -210,6 +216,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\background.jpg">
+      <PackagePath>background.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\background1.jpg">
+      <PackagePath>background1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\background2.jpg">
+      <PackagePath>background2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\background3.jpg">
+      <PackagePath>background3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\background4.jpg">
+      <PackagePath>background4.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\background5.jpg">
+      <PackagePath>background5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\background6.jpg">
+      <PackagePath>background6.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

@@ -22,6 +22,11 @@ namespace lirksi.Mobile.ViewModels.MyProfileViewModels
             set { SetProperty(ref _user, value); }
         }
 
+        public EditProfileViewModel()
+        {
+            Title = "Edit profile";
+        }
+
         /* methods */
         public void LoadUser()
         {
@@ -42,5 +47,6 @@ namespace lirksi.Mobile.ViewModels.MyProfileViewModels
             await _userService.Update<UserGetRequest>(User.Id, User);
             APIService._currentUser = await _userService.Get<UserGetRequest>(null, "GetMyProfile");
         }
+
     }
 }

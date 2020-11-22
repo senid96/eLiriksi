@@ -1,16 +1,9 @@
 ﻿using Acr.UserDialogs;
-using liriksi.Model.Requests;
-using lirksi.Mobile.Converters;
 using lirksi.Mobile.ViewModels.MyProfileViewModels;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -40,7 +33,7 @@ namespace lirksi.Mobile.Views.MyProfileViews
                 PhotoSize = PhotoSize.MaxWidthHeight,
                 CompressionQuality = 50
             });
-
+            
             if (file != null)
             {
                 using (var memoryStream = new MemoryStream())
@@ -51,6 +44,8 @@ namespace lirksi.Mobile.Views.MyProfileViews
                 NewImage.Source = ImageSource.FromStream(() => file.GetStream());
                 NewImage.WidthRequest = 200;
                 NewImage.HeightRequest = 200;
+                //
+              
 
                 //set to viewmodel
                 model.User.Image = bytes;

@@ -3,17 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:converters="clr-namespace:lirksi.Mobile.Converters"
              x:Class="lirksi.Mobile.Views.PerformerViews.PerformerDetails"
+             BackgroundImageSource="background.jpg"
              Title="{Binding Title}">
     <ContentPage.Resources>
         <converters:ImageConverter x:Key="imgConv"></converters:ImageConverter>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout>
-            <Image Source="{Binding PerformerDetails.Image, Converter={StaticResource imgConv}}" WidthRequest="200" HeightRequest="200"></Image>
-            <Label Text="Performer details:" FontSize="Title" ></Label>
-            <Label Text="Name:" Style="{DynamicResource ListItemTextStyle}" TextColor="Black"></Label>
-            <Label Text="{Binding PerformerDetails.ArtisticName}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
-            <Label Text="{Binding PerformerDetails.About}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
-        </StackLayout>
+        <ScrollView HorizontalOptions="Center">
+            <StackLayout Padding="5,5,5,5">
+                <Label Style="{DynamicResource SubtitleStyle}" Text="{Binding PerformerDetails.ArtisticName}"></Label>
+                <Frame x:Name="circleFrame" HasShadow="False" Padding="0" Margin="0" HorizontalOptions="Start" BackgroundColor="Gray">
+                    <Image HorizontalOptions="Center" Aspect="Fill" HeightRequest="250" WidthRequest="250" x:Name="AlbumImgSong" Source="{Binding PerformerDetails.Image, Converter={StaticResource imgConv}}" ></Image>
+                </Frame>
+                <Label Text="{Binding PerformerDetails.About}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
