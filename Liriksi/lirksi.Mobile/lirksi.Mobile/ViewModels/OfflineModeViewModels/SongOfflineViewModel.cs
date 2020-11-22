@@ -36,5 +36,7 @@ namespace lirksi.Mobile.ViewModels.OfflineModeViewModels
         {
              SongServiceOffline.DeleteDownloadedSongs();
         }
+
+        
     }
 }

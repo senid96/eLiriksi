@@ -17,6 +17,7 @@ namespace lirksi.Mobile.Views
         LoginViewModel model { get; set; }
         public LoginPage()
         {
+            NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
             BindingContext = model = new LoginViewModel();
         }

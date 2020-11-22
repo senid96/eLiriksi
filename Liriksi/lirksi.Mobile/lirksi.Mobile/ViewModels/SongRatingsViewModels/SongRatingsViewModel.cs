@@ -15,18 +15,18 @@ namespace lirksi.Mobile.ViewModels.SongRatingsViewModels
         private readonly APIService _genreService = new APIService("genre");
 
         /* viewModels & lists */
-        public ObservableCollection<AverageRate> SongRateList { get; set; } = new ObservableCollection<AverageRate>();
+        public ObservableCollection<RateDetails> SongRateList { get; set; } = new ObservableCollection<RateDetails>();
 
 
         /* methods */
         public SongRatingsViewModel()
         {
-            Title = "Top rated songs";
+            Title = "Top 10 songs";
         }
 
         public async Task GetTop10Songs()
         {
-            var songRateList = await _ratingService.Get<IEnumerable<AverageRate>>(null, "GetSongRates");
+            var songRateList = await _ratingService.Get<IEnumerable<RateDetails>>(null, "GetSongRates");
             SongRateList.Clear();
             foreach (var item in songRateList)
             {

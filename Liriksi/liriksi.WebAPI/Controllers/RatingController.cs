@@ -24,14 +24,14 @@ namespace liriksi.WebAPI.Controllers
 
         //get rates grouped by song and their average rates
         [HttpGet("GetSongRates")]
-        public List<AverageRate> GetSongRates()
+        public List<RateDetails> GetSongRates()
         {
             return _service.GetSongRates();
         }
 
         //get rates grouped by album and their average rates
         [HttpGet("GetAlbumRates")]
-        public List<AverageRate> GetAlbumRates()
+        public List<RateDetails> GetAlbumRates()
         {
             return _service.GetAlbumRates();
         }

@@ -10,7 +10,7 @@ namespace lirksi.Mobile.ViewModels
         public AboutViewModel()
         {
             Title = "About";
-            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://xamarin.com"));
+            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://www.facebook.com/ajkunicsenid/"));
         }
 
         public ICommand OpenWebCommand { get; }

@@ -33,24 +33,49 @@ namespace lirksi.Mobile.Views
                 switch (id)
                 {
                     case (int)MenuItemType.Songs:
+                        if (Connectivity.NetworkAccess < NetworkAccess.Local)
+                        {
+                            MenuPages.Add(id, new NavigationPage(new NothingToSeeHere()));
+                            break;
+                        }
                         MenuPages.Add(id, new NavigationPage(new SongPage()));
                         break;
                     case (int)MenuItemType.Albums:
+                        if (Connectivity.NetworkAccess < NetworkAccess.Local)
+                        {
+                            MenuPages.Add(id, new NavigationPage(new NothingToSeeHere()));
+                            break;
+                        }
                         MenuPages.Add(id, new NavigationPage(new AlbumPage()));
                         break;
                     case (int)MenuItemType.MyProfile:
                         MenuPages.Add(id, new NavigationPage(new MyProfile()));
                         break;
                     case (int)MenuItemType.Performers:
+                        if (Connectivity.NetworkAccess < NetworkAccess.Local)
+                        {
+                            MenuPages.Add(id, new NavigationPage(new NothingToSeeHere()));
+                            break;
+                        }
                         MenuPages.Add(id, new NavigationPage(new PerformerViews.PerformerPage()));
                         break;
                     case (int)MenuItemType.About:
                         MenuPages.Add(id, new NavigationPage(new AboutPage()));
                         break;
                     case (int)MenuItemType.AlbumRatings:
+                        if (Connectivity.NetworkAccess < NetworkAccess.Local)
+                        {
+                            MenuPages.Add(id, new NavigationPage(new NothingToSeeHere()));
+                            break;
+                        }
                         MenuPages.Add(id, new NavigationPage(new AlbumRatingsViews.AlbumRatings()));
                         break;
                     case (int)MenuItemType.SongRatings:
+                        if (Connectivity.NetworkAccess < NetworkAccess.Local)
+                        {
+                            MenuPages.Add(id, new NavigationPage(new NothingToSeeHere()));
+                            break;
+                        }
                         MenuPages.Add(id, new NavigationPage(new SongRatingsViews.SongRatings()));
                         break;
                     case (int)MenuItemType.Downloaded:
@@ -60,6 +85,7 @@ namespace lirksi.Mobile.Views
                         SecureStorage.Remove("username");
                         SecureStorage.Remove("password");
                         MenuPages.Add(id, new NavigationPage(new LoginPage()));
+
                         break;
 
                 }

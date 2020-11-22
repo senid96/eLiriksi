@@ -15,8 +15,8 @@ namespace liriksi.WebAPI.Services.Interfaces
 
         List<UserAlbumRateGetRequest> GetRatesByAlbum(int albumId);
         List<UserSongRateGetRequest> GetRatesBySong(int songId);
-        List<AverageRate> GetSongRates();
-        List<AverageRate> GetAlbumRates();
+        List<RateDetails> GetSongRates();
+        List<RateDetails> GetAlbumRates();
         List<UserSongRateGetRequest> GetSongRatesByUser(int userId);
         List<UserAlbumRateGetRequest> GetAlbumRatesByUser(int userId);
         UsersSongRate GetRateBySongByUser(HasUserRatedRequest obj);

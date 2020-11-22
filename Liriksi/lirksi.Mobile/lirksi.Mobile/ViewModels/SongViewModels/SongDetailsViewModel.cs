@@ -56,6 +56,11 @@ namespace lirksi.Mobile.ViewModels
             SongDetail = await _songService.GetById<SongGetRequest>(_songId, "GetSongById");
         }
 
+        public async Task GetSongDetailsBySongIdOffline()
+        {
+            SongDetail = SongServiceOffline.GetDownloadedSongById(_songId);
+        }
+
         public async Task GetSongRatings()
         {
             //search object (userId, songId)

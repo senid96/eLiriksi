@@ -85,7 +85,8 @@ namespace liriksi.WebAPI.Services
 
         //get all albums and their average rate
         //get top 10
-        public List<AverageRate> GetAlbumRates()
+        //koristi se
+        public List<RateDetails> GetAlbumRates()
         {
             List<AverageRate> list = _context.UsersAlbumRates
                  .Join(_context.Album,
@@ -95,20 +96,36 @@ namespace liriksi.WebAPI.Services
                  {
                      album.Name,
                      rate.Rate,
-                     rate.AlbumId
+                     rate.AlbumId,
+                     album.Image
                  })
                  .GroupBy(p => p.AlbumId)
                  .Select(g => new AverageRate { Id = g.First().AlbumId, Title = g.First().Name,  AvgRate = Math.Round( Convert.ToDouble(g.Sum(x => x.Rate)) / g.Count(), 1) }).OrderByDescending(x=>x.AvgRate).Take(10).ToList();
 
-            return list;
+            List<RateDetails> avgRateDetailList = new List<RateDetails>();
+            foreach (AverageRate item in list)
+            {
+                Album obj = _context.Album.Include(x => x.Performer).Where(x => x.Id == item.Id).FirstOrDefault();
+                RateDetails rateDet = new RateDetails()
+                {
+                    Id = obj.Id,
+                    Image = obj.Image,
+                    Title = obj.Name,
+                    Performer = obj.Performer.ArtisticName,
+                    AvgRate = item.AvgRate
+                };
+                avgRateDetailList.Add(rateDet);
+            }
+            return avgRateDetailList;
         }
 
         //get all songs and their average rate
         //get top 10
-        public List<AverageRate> GetSongRates()
+        //koristi se
+        public List<RateDetails> GetSongRates()
         {
 
-            //
+            //get average rate
             List<AverageRate> list = _context.UsersSongRates
                 .Join(
                 _context.Song,
@@ -123,7 +140,21 @@ namespace liriksi.WebAPI.Services
                 .GroupBy(p => p.SongId)
                 .Select(g => new AverageRate{ Id = g.First().SongId, Title = g.First().Title , AvgRate = Math.Round(Convert.ToDouble(g.Sum(x => x.Rate)) / g.Count(), 1) }).OrderByDescending(x=>x.AvgRate).Take(10).ToList();
 
-            return list;
+            List<RateDetails> avgRateDetailList = new List<RateDetails>();
+            foreach (AverageRate item in list)
+            {
+                SongGetRequest obj = _mapper.Map<SongGetRequest>(_context.Song.Include(x=>x.Album).Include(x=>x.Album.Performer).Where(x => x.Id == item.Id).FirstOrDefault());
+                RateDetails rateDet = new RateDetails()
+                {
+                    Id = obj.Id,
+                    Image = obj.Album.Image,
+                    Title = obj.Title,
+                    Performer = obj.Album.Performer.ArtisticName,
+                    AvgRate = item.AvgRate
+                };
+                avgRateDetailList.Add(rateDet);
+            }
+            return avgRateDetailList;
         }
 
         public List<UserSongRateGetRequest> GetSongRatesByUser(int userId)

@@ -51,7 +51,9 @@ namespace lirksi.Mobile
                     }
                     else
                     {
-                        Current.MainPage = new MainPage();
+                        // The root page of your application
+                        MainPage = new NavigationPage(new Views.OfflineModeViews.SongPageOffline());
+                        NavigationPage.SetHasNavigationBar(this, true);
                         return;
                     }
                 }

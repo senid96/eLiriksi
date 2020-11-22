@@ -29,7 +29,7 @@ namespace lirksi.Mobile.Views.AlbumRatingsViews
 
         private async void AlbumRateList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var item = e.SelectedItem as AverageRate;
+            var item = e.SelectedItem as RateDetails;
             await Navigation.PushAsync(new AlbumDetails(item.Id));
         }
     }

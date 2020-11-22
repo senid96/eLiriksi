@@ -30,22 +30,34 @@ namespace lirksi.Mobile.Views
 
         protected override async void OnAppearing()
         {
-            base.OnAppearing();
-            await model.Init();
-            await model.GetRecommendedSongs();
-            
-
-            //if its already rated, disable rate feature
-            if(model.UserRate != null)
+            if (Xamarin.Essentials.Connectivity.NetworkAccess < Xamarin.Essentials.NetworkAccess.Local)
             {
-                PickerRate.IsEnabled = false;
-                Comment.IsEnabled = false;
-                Rate.IsEnabled = false;
+                base.OnAppearing();
+                await model.GetSongDetailsBySongIdOffline();
+                Rate.IsVisible = false;
+                Comment.IsVisible = false;
+                PickerRate.IsVisible = false;
+                DownloadSongBtn.IsVisible = false;
+                recommendedLabel.IsVisible = false;
             }
             else
             {
-                //instance userRate VM, so it can be used with picker and rate feature
-                model.UserRate = new liriksi.Model.UsersSongRate();
+                base.OnAppearing();
+                await model.Init();
+                await model.GetRecommendedSongs();
+
+                //if its already rated, disable rate feature
+                if (model.UserRate != null)
+                {
+                    PickerRate.IsEnabled = false;
+                    Comment.IsEnabled = false;
+                    Rate.IsEnabled = false;
+                }
+                else
+                {
+                    //instance userRate VM, so it can be used with picker and rate feature
+                    model.UserRate = new liriksi.Model.UsersSongRate();
+                }
             }
         }
 

@@ -29,7 +29,7 @@
                 </Frame>
                 <Label Style="{DynamicResource ListItemTextStyle}" HorizontalOptions="Center" Text="Phone:"></Label>
                 <Frame Padding = "0" CornerRadius="5" IsClippedToBounds="true" >
-                    <Entry IsReadOnly="True" Placeholder="Name" Text="{Binding User.Phone}" ></Entry>
+                    <Entry IsReadOnly="True" Placeholder="Phone number" Text="{Binding User.PhoneNumber}" ></Entry>
                 </Frame>
                 <Label Style="{DynamicResource ListItemTextStyle}" HorizontalOptions="Center" Text="City: "></Label>
                 <Frame Padding = "0" CornerRadius="5" IsClippedToBounds="true" >

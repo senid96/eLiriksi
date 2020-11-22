@@ -49,7 +49,7 @@
                 <Button StyleClass="button-custom-second" CornerRadius="5" x:Name="DownloadSongBtn" Text="Download song" Clicked="DownloadSongBtn_Clicked" ></Button>
 
                 <!-- recommender view -->
-                <Label Padding="5" VerticalOptions="Center" HorizontalOptions="Center" Style="{DynamicResource SubtitleStyle}" Text="Recommended songs:"></Label>
+                <Label Padding="5" VerticalOptions="Center" HorizontalOptions="Center" Style="{DynamicResource SubtitleStyle}" x:Name="recommendedLabel" Text="Recommended songs:"></Label>
                 <ListView x:Name="RecommendedList" ItemsSource="{Binding RecommendedList}" ItemSelected="RecommendedList_ItemSelected" HorizontalOptions="Center" VerticalOptions="Center">
                     <ListView.ItemTemplate>
                         <DataTemplate>
