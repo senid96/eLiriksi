@@ -114,6 +114,7 @@ class MonoPackageManager_Resources {
 		"Flurl.dll",
 		"Flurl.Http.dll",
 		"FormsViewGroup.dll",
+		"LazZiya.ImageResize.dll",
 		"lirksi.Mobile.dll",
 		"Microsoft.AspNetCore.Authentication.Abstractions.dll",
 		"Microsoft.AspNetCore.Authentication.Core.dll",

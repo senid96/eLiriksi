@@ -17,23 +17,23 @@
                 </Frame>
                 <Label Style="{DynamicResource ListItemTextStyle}" HorizontalOptions="Center" Text="Name: "></Label>
                 <Frame Padding = "0" CornerRadius="5" IsClippedToBounds="true"  >
-                    <Entry IsReadOnly="True" Placeholder="Name" Text="{Binding User.Name}" ></Entry>
+                    <Entry IsEnabled="False" IsReadOnly="True" Placeholder="Name" Text="{Binding User.Name}" ></Entry>
                 </Frame>
                 <Label Style="{DynamicResource ListItemTextStyle}" HorizontalOptions="Center" Text="Surname: "></Label>
                 <Frame Padding = "0" CornerRadius="5" IsClippedToBounds="true" >
-                    <Entry IsReadOnly="True" Placeholder="Name" Text="{Binding User.Surname}" ></Entry>
+                    <Entry IsEnabled="False" IsReadOnly="True" Placeholder="Name" Text="{Binding User.Surname}" ></Entry>
                 </Frame>
                 <Label Style="{DynamicResource ListItemTextStyle}" HorizontalOptions="Center" Text="Email: "></Label>
                 <Frame Padding = "0" CornerRadius="5" IsClippedToBounds="true" >
-                    <Entry IsReadOnly="True" Placeholder="Name" Text="{Binding User.Email}" ></Entry>
+                    <Entry IsEnabled="False" IsReadOnly="True" Placeholder="Name" Text="{Binding User.Email}" ></Entry>
                 </Frame>
                 <Label Style="{DynamicResource ListItemTextStyle}" HorizontalOptions="Center" Text="Phone:"></Label>
                 <Frame Padding = "0" CornerRadius="5" IsClippedToBounds="true" >
-                    <Entry IsReadOnly="True" Placeholder="Phone number" Text="{Binding User.PhoneNumber}" ></Entry>
+                    <Entry IsEnabled="False" IsReadOnly="True" Placeholder="Phone number" Text="{Binding User.PhoneNumber}" ></Entry>
                 </Frame>
                 <Label Style="{DynamicResource ListItemTextStyle}" HorizontalOptions="Center" Text="City: "></Label>
                 <Frame Padding = "0" CornerRadius="5" IsClippedToBounds="true" >
-                    <Entry IsReadOnly="True" Placeholder="Name" Text="{Binding User.City.Name}" ></Entry>
+                    <Entry IsEnabled="False" IsReadOnly="True" Placeholder="Name" Text="{Binding User.City.Name}" ></Entry>
                 </Frame>
                 <Button CornerRadius="5" Text="Edit profile" x:Name="EditProfile" Clicked="EditProfile_Clicked" StyleClass="button-custom"></Button>
             </StackLayout>

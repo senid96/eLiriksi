@@ -42,6 +42,7 @@
                         <FormattedString>
                             <FormattedString.Spans>
                                 <Span Text="Liriksi is a place where you can search your favourite song lyrics. You can rate them and download them. Search for your favourite performer, favourite album and read about them." />
+                                <Span Text=" "></Span>
                                 <Span Text="App created by Senid Ajkunić." />
                             </FormattedString.Spans>
                         </FormattedString>
