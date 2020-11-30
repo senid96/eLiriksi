@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-11-28T16:37:37.217</Modified>
+      <Modified>2020-11-30T07:50:02.801</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\bin\x86\Debug\lirksi.Mobile.UWP.exe">
       <PackagePath>entrypoint\lirksi.Mobile.UWP.exe</PackagePath>
-      <Modified>2020-11-28T16:37:35.639</Modified>
+      <Modified>2020-11-30T07:50:01.547</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\.nuget\packages\acr.userdialogs\7.1.0.466\lib\uap10.0.16299\Acr.UserDialogs.dll">
       <PackagePath>Acr.UserDialogs.dll</PackagePath>
@@ -567,7 +567,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile.UWP\bin\x86\Debug\Core\lirksi.Mobile.UWP.exe">
       <PackagePath>lirksi.Mobile.UWP.exe</PackagePath>
-      <Modified>2020-11-28T16:37:37.212</Modified>
+      <Modified>2020-11-30T07:50:02.783</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

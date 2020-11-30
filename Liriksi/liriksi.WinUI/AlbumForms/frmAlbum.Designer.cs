@@ -120,11 +120,11 @@
             // 
             // Title
             // 
-            this.Title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Title.DataPropertyName = "Name";
             this.Title.HeaderText = "Title";
             this.Title.MinimumWidth = 6;
             this.Title.Name = "Title";
+            this.Title.Width = 420;
             // 
             // YearRelease
             // 
@@ -136,11 +136,11 @@
             // 
             // Image
             // 
+            this.Image.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Image.DataPropertyName = "Image";
             this.Image.HeaderText = "Image";
             this.Image.MinimumWidth = 6;
             this.Image.Name = "Image";
-            this.Image.Width = 420;
             // 
             // frmAlbum
             // 
