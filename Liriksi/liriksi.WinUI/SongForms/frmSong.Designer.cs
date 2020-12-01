@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvSong = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtboxTitle = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSongSearch = new System.Windows.Forms.Button();
@@ -38,6 +37,9 @@
             this.txtBoxLyrics = new System.Windows.Forms.TextBox();
             this.btnClearInputs = new System.Windows.Forms.Button();
             this.userGetRequestBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Text = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userGetRequestBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -47,9 +49,11 @@
             this.dgvSong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Id});
+            this.Id,
+            this.Title,
+            this.Text});
             this.dgvSong.Location = new System.Drawing.Point(0, 97);
-            this.dgvSong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvSong.Margin = new System.Windows.Forms.Padding(4);
             this.dgvSong.Name = "dgvSong";
             this.dgvSong.ReadOnly = true;
             this.dgvSong.RowHeadersWidth = 51;
@@ -59,19 +63,10 @@
             this.dgvSong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvSong_CellContentClick);
             this.dgvSong.DoubleClick += new System.EventHandler(this.DgvSong_DoubleClick);
             // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "Id";
-            this.Id.MinimumWidth = 6;
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Visible = false;
-            // 
             // txtboxTitle
             // 
             this.txtboxTitle.Location = new System.Drawing.Point(91, 15);
-            this.txtboxTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtboxTitle.Margin = new System.Windows.Forms.Padding(4);
             this.txtboxTitle.Name = "txtboxTitle";
             this.txtboxTitle.Size = new System.Drawing.Size(212, 22);
             this.txtboxTitle.TabIndex = 1;
@@ -89,7 +84,7 @@
             // btnSongSearch
             // 
             this.btnSongSearch.Location = new System.Drawing.Point(324, 47);
-            this.btnSongSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSongSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSongSearch.Name = "btnSongSearch";
             this.btnSongSearch.Size = new System.Drawing.Size(100, 26);
             this.btnSongSearch.TabIndex = 3;
@@ -110,7 +105,7 @@
             // txtBoxLyrics
             // 
             this.txtBoxLyrics.Location = new System.Drawing.Point(91, 47);
-            this.txtBoxLyrics.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBoxLyrics.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoxLyrics.Name = "txtBoxLyrics";
             this.txtBoxLyrics.Size = new System.Drawing.Size(212, 22);
             this.txtBoxLyrics.TabIndex = 4;
@@ -118,7 +113,7 @@
             // btnClearInputs
             // 
             this.btnClearInputs.Location = new System.Drawing.Point(432, 47);
-            this.btnClearInputs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClearInputs.Margin = new System.Windows.Forms.Padding(4);
             this.btnClearInputs.Name = "btnClearInputs";
             this.btnClearInputs.Size = new System.Drawing.Size(100, 26);
             this.btnClearInputs.TabIndex = 6;
@@ -129,6 +124,29 @@
             // userGetRequestBindingSource
             // 
             this.userGetRequestBindingSource.DataSource = typeof(liriksi.Model.Requests.UserGetRequest);
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.MinimumWidth = 6;
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
+            // 
+            // Title
+            // 
+            this.Title.DataPropertyName = "Title";
+            this.Title.HeaderText = "Title";
+            this.Title.Name = "Title";
+            this.Title.ReadOnly = true;
+            // 
+            // Text
+            // 
+            this.Text.DataPropertyName = "Text";
+            this.Text.HeaderText = "Text";
+            this.Text.Name = "Text";
+            this.Text.ReadOnly = true;
             // 
             // frmSong
             // 
@@ -142,9 +160,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtboxTitle);
             this.Controls.Add(this.dgvSong);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmSong";
-            this.Text = "frmSong";
             this.Load += new System.EventHandler(this.FrmSong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userGetRequestBindingSource)).EndInit();
@@ -159,10 +176,12 @@
         private System.Windows.Forms.TextBox txtboxTitle;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSongSearch;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.Label Keyword;
         private System.Windows.Forms.TextBox txtBoxLyrics;
         private System.Windows.Forms.Button btnClearInputs;
         private System.Windows.Forms.BindingSource userGetRequestBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Title;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Text;
     }
 }

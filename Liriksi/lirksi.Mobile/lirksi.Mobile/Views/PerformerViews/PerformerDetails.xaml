@@ -13,7 +13,7 @@
             <StackLayout Padding="5,5,5,5">
                 <Label Style="{DynamicResource SubtitleStyle}" Text="{Binding PerformerDetails.ArtisticName}"></Label>
                 <Frame x:Name="circleFrame" HasShadow="False" Padding="0" Margin="0" HorizontalOptions="Start" BackgroundColor="Gray">
-                    <Image HorizontalOptions="Center" Aspect="Fill" HeightRequest="250" WidthRequest="250" x:Name="AlbumImgSong" Source="{Binding PerformerDetails.Image, Converter={StaticResource imgConv}}" ></Image>
+                    <Image HorizontalOptions="Center" Aspect="Fill" HeightRequest="150" WidthRequest="150" x:Name="AlbumImgSong" Source="{Binding PerformerDetails.Image, Converter={StaticResource imgConv}}" ></Image>
                 </Frame>
                 <Label Text="{Binding PerformerDetails.About}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
             </StackLayout>

@@ -36,7 +36,7 @@ namespace liriksi.WebAPI.Services
                 query = query.Where(x => x.Text.Contains(request.Text));
             }
           
-            var result = query.Include(x=>x.Album).Include(x=>x.Album.Performer).Take(9).ToList();
+            var result = query.Include(x=>x.Album).Include(x=>x.Album.Performer).OrderBy(x => x.Title).Take(9).ToList();
 
             return _mapper.Map<List<SongGetRequest>>(result);
         }

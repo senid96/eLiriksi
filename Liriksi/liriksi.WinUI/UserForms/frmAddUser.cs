@@ -84,7 +84,7 @@ namespace liriksi.WinUI.UserForms
                 {
                     Name = txtboxName.Text,
                     Surname = txtboxSurname.Text,
-                    Username = txtboxSurname.Text,
+                    Username = txtboxUsername.Text,
                     Email = txtboxEmail.Text,
                     PhoneNumber = txtBoxPhone.Text,
                     UserTypeId = Convert.ToInt32(cmbUserType.SelectedValue),

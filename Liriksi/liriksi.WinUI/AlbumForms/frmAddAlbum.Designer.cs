@@ -43,6 +43,8 @@
             this.btnAddGenre = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.txtAbout = new System.Windows.Forms.RichTextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picboxAlbum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
@@ -92,7 +94,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(269, 312);
+            this.button2.Location = new System.Drawing.Point(269, 488);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 24);
             this.button2.TabIndex = 8;
@@ -110,7 +112,7 @@
             // 
             // btnOpenFileDialog
             // 
-            this.btnOpenFileDialog.Location = new System.Drawing.Point(269, 282);
+            this.btnOpenFileDialog.Location = new System.Drawing.Point(269, 458);
             this.btnOpenFileDialog.Name = "btnOpenFileDialog";
             this.btnOpenFileDialog.Size = new System.Drawing.Size(75, 24);
             this.btnOpenFileDialog.TabIndex = 47;
@@ -121,7 +123,7 @@
             // picboxAlbum
             // 
             this.picboxAlbum.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picboxAlbum.Location = new System.Drawing.Point(202, 177);
+            this.picboxAlbum.Location = new System.Drawing.Point(202, 353);
             this.picboxAlbum.Name = "picboxAlbum";
             this.picboxAlbum.Size = new System.Drawing.Size(142, 99);
             this.picboxAlbum.TabIndex = 50;
@@ -157,7 +159,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 177);
+            this.label3.Location = new System.Drawing.Point(10, 353);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 17);
             this.label3.TabIndex = 53;
@@ -167,11 +169,31 @@
             // 
             this.errorProvider.ContainerControl = this;
             // 
+            // txtAbout
+            // 
+            this.txtAbout.Location = new System.Drawing.Point(109, 183);
+            this.txtAbout.Name = "txtAbout";
+            this.txtAbout.Size = new System.Drawing.Size(235, 151);
+            this.txtAbout.TabIndex = 54;
+            this.txtAbout.Text = "";
+            this.txtAbout.Validating += new System.ComponentModel.CancelEventHandler(this.txtAbout_Validating);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(10, 183);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 17);
+            this.label4.TabIndex = 55;
+            this.label4.Text = "About";
+            // 
             // frmAddAlbum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(362, 364);
+            this.ClientSize = new System.Drawing.Size(366, 517);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtAbout);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbPerformer);
             this.Controls.Add(this.lblPerformer);
@@ -212,5 +234,7 @@
         private System.Windows.Forms.Button btnAddGenre;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ErrorProvider errorProvider;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.RichTextBox txtAbout;
     }
 }

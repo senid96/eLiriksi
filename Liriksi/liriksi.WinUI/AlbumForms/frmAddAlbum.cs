@@ -67,7 +67,7 @@ namespace liriksi.WinUI.UtilForms
 
                 byte[] ImageData = ImageHelperMethods.PrepareImgForDB(picboxAlbum.Image);
 
-                AlbumInsertRequest obj = new AlbumInsertRequest() { Name = txtTitle.Text, GenreId = (int)cmbGenre.SelectedValue, YearRelease = (int)cmbYear.SelectedValue, Image = ImageData, PerformerId = (int)cmbPerformer.SelectedValue };
+                AlbumInsertRequest obj = new AlbumInsertRequest() { Name = txtTitle.Text, GenreId = (int)cmbGenre.SelectedValue, YearRelease = (int)cmbYear.SelectedValue, Image = ImageData, PerformerId = (int)cmbPerformer.SelectedValue, Description = txtAbout.Text };
                 await _albumService.Insert<AlbumInsertRequest>(obj, "InsertAlbum");
                 this.Close();
             }
@@ -128,6 +128,19 @@ namespace liriksi.WinUI.UtilForms
             else
             {
                 errorProvider.SetError(txtTitle, null);
+            }
+        }
+
+        private void txtAbout_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtAbout.Text))
+            {
+                errorProvider.SetError(txtAbout, "Required field!");
+                e.Cancel = true;
+            }
+            else
+            {
+                errorProvider.SetError(txtAbout, null);
             }
         }
     }

@@ -35,6 +35,7 @@ C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\MyProfileViews\EditProfile.xaml.g.cs
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\MyProfileViews\MyProfile.xaml.g.cs
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
+C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\NothingToSeeHere.xaml.g.cs
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\OfflineModeViews\SongPageOffline.xaml.g.cs
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\PerformerViews\AddPerformer.xaml.g.cs
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\PerformerViews\PerformerDetails.xaml.g.cs
@@ -53,4 +54,3 @@ C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\lirksi.Mobile.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\ref\lirksi.Mobile.dll
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\lirksi.Mobile.pdb
-C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\obj\Debug\netstandard2.0\Views\NothingToSeeHere.xaml.g.cs

@@ -47,7 +47,7 @@ namespace liriksi.WinUI.SongForms.SongUtilForms
                 }
 
                 byte[] img = ImageHelperMethods.PrepareImgForDB(picBoxPerformer.Image);
-                Performer obj = new Performer() { Name = txtName.Text, Surname = txtSurname.Text, ArtisticName = txtArtisticName.Text, Image = img };
+                Performer obj = new Performer() { Name = txtName.Text, Surname = txtSurname.Text, ArtisticName = txtArtisticName.Text, Image = img, About = txtAbout.Text };
                 await _performerService.Insert<Performer>(obj, "AddPerformer");
                 this.Close();
             }
@@ -134,6 +134,19 @@ namespace liriksi.WinUI.SongForms.SongUtilForms
             else
             {
                 errorProvider.SetError(txtArtisticName, null);
+            }
+        }
+
+        private void txtAbout_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtAbout.Text))
+            {
+                errorProvider.SetError(txtAbout, "Required field!");
+                e.Cancel = true;
+            }
+            else
+            {
+                errorProvider.SetError(txtAbout, null);
             }
         }
     }
