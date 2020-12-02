@@ -276,7 +276,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\Debug\netstandard2.0\lirksi.Mobile.dll">
       <PackagePath>lirksi.Mobile.dll</PackagePath>
-      <Modified>2020-11-30T10:45:21.373</Modified>
+      <Modified>2020-12-02T18:39:22.898</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\lirksi.Mobile\lirksi.Mobile\bin\Debug\netstandard2.0\liriksi.Model.dll">
       <PackagePath>liriksi.Model.dll</PackagePath>

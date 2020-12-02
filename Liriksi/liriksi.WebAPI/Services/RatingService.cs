@@ -193,12 +193,13 @@ namespace liriksi.WebAPI.Services
 
         public UsersSongRate GetRateBySongByUser(HasUserRatedRequest obj)
         {
-            return _context.UsersSongRates.Where(x => x.SongId == obj.Id).Where(x=>x.UserId == obj.UserId).FirstOrDefault();
+            UsersSongRate t = _context.UsersSongRates.Where(x => x.SongId == obj.Id && x.UserId == obj.UserId).FirstOrDefault();
+            return t;
         }
 
         public UsersAlbumRate GetRateByAlbumByUser(HasUserRatedRequest obj)
         {
-            return _context.UsersAlbumRates.Where(x => x.AlbumId == obj.Id).Where(x => x.UserId == obj.UserId).FirstOrDefault();
+            return _context.UsersAlbumRates.Where(x => x.AlbumId == obj.Id && x.UserId == obj.UserId).FirstOrDefault();
         }
 
     }
