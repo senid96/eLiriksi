@@ -36,17 +36,22 @@ namespace lirksi.Mobile.ViewModels
         }
 
         public ObservableCollection<SongGetRequest> RecommendedList { get; set; } = new ObservableCollection<SongGetRequest>();
-
+        public ObservableCollection<int> DefaultRateList { get; set; } = new ObservableCollection<int>();
 
 
         /*---------------------------------------- METHODS ------------------------------------------- */
         public SongDetailsViewModel()
         {
             Title = "Song details";
+            
         }
 
         public async Task Init()
         {
+            for (int i = 1; i <= 5; i++)
+            {
+                DefaultRateList.Add(i);
+            }
             await GetSongDetailsBySongId();
             await GetSongRatings();
         }

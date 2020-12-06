@@ -35,7 +35,7 @@ namespace lirksi.Mobile.Views
             if (model.UserRate != null)
             {
                 int index = model.UserRate.Rate - 2;
-                PickerRate.SelectedIndex = index;
+                PickerRate.SelectedIndex = model.UserRate.AlbumId;
                 PickerRate.IsEnabled = false;
                 Comment.IsEnabled = false;
                 Rate.IsEnabled = false;

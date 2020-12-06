@@ -49,8 +49,7 @@ namespace lirksi.Mobile.Views
                 //if its already rated, disable rate feature
                 if (model.UserRate != null)
                 {
-                    int index = model.UserRate.Rate - 2;
-                    PickerRate.SelectedIndex = index;
+                    PickerRate.SelectedItem = model.UserRate.Rate;
                     PickerRate.IsEnabled = false;
                     Comment.IsEnabled = false;
                     Rate.IsEnabled = false;

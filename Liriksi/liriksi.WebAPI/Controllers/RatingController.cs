@@ -80,7 +80,8 @@ namespace liriksi.WebAPI.Controllers
         [HttpGet("GetRateBySongByUser")]
         public UsersSongRate GetRateBySongByUser([FromQuery]HasUserRatedRequest obj)
         {
-            return _service.GetRateBySongByUser(obj);
+            UsersSongRate entity = _service.GetRateBySongByUser(obj);
+            return entity;
         }
 
         [HttpGet("GetRateByAlbumByUser")]

@@ -37,10 +37,15 @@ namespace lirksi.Mobile.ViewModels
 
         /* song list */
         public ObservableCollection<SongGetRequest> SongList { get; set; } = new ObservableCollection<SongGetRequest>();
+        public ObservableCollection<int> DefaultRateList { get; set; } = new ObservableCollection<int>();
 
         public AlbumDetailsViewModel()
         {
             Title = "Album details";
+            for (int i = 1; i <= 5; i++)
+            {
+                DefaultRateList.Add(i);
+            }
         }
 
         /*---------------------------------------- METHODS ------------------------------------------- */
