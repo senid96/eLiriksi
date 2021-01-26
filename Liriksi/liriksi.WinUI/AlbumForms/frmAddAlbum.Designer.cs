@@ -209,6 +209,7 @@
             this.Controls.Add(this.txtTitle);
             this.Name = "frmAddAlbum";
             this.Text = "frmAddAlbum";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAddAlbum_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAddAlbum_FormClosed);
             this.Load += new System.EventHandler(this.frmAddAlbum_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picboxAlbum)).EndInit();

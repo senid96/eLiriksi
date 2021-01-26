@@ -118,5 +118,10 @@ namespace liriksi.WinUI.SongForms
                 errorProvider.SetError(txtLyrics, null);
             }
         }
+
+        private void frmAddSong_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = false;
+        }
     }
 }

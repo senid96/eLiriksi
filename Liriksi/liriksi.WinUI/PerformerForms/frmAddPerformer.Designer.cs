@@ -178,6 +178,7 @@
             this.Name = "frmAddPerformer";
             this.Text = "frmAddPerformer";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAddPerformer_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAddPerformer_FormClosed);
             this.Load += new System.EventHandler(this.frmAddPerformer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxPerformer)).EndInit();

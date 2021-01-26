@@ -58,7 +58,7 @@ namespace liriksi.WebAPI.Controllers
             return _songService.Insert(song);
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public ActionResult<SongGetRequest> Update(int id, SongInsertRequest song)
         {
             return _songService.Update(id, song);

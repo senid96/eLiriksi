@@ -68,7 +68,7 @@ namespace liriksi.WebAPI
                .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
 
             //entity framework.. mijenjati zavisno gdje radis.. na poslu, laptopu i slicno
-            services.AddDbContext<LiriksiContext>(options => options.UseSqlServer("Server=BST123\\SQLEXPRESS; Database=liriksiDB; Trusted_Connection=true;"));
+            services.AddDbContext<LiriksiContext>(options => options.UseSqlServer("Server=.; Database=liriksiDB; Trusted_Connection=true;"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

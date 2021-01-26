@@ -223,6 +223,9 @@ namespace liriksi.WinUI.UserForms
             }
         }
 
-       
+        private void frmAddUser_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = false;
+        }
     }
 }

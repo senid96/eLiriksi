@@ -78,5 +78,10 @@ namespace liriksi.WinUI
                 errorProvider.SetError(txtboxPassword, null);
             }
         }
+
+        private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = false;
+        }
     }
 }

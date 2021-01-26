@@ -22,6 +22,16 @@ namespace liriksi.WinUI.UtilForms
 
         private async void btnAddGenre_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtGenreName.Text))
+            {
+                errorProvider1.SetError(txtGenreName, "Required field!");
+                return;
+            }
+            else
+            {
+                errorProvider1.SetError(txtGenreName, null);
+                errorProvider1.Clear();
+            }
             Genre obj = new Genre { Name = txtGenreName.Text };
             await _genreService.Insert<Genre>(obj, "AddGenre");
             this.Close();
@@ -41,6 +51,8 @@ namespace liriksi.WinUI.UtilForms
             frm.Show();
         }
 
-      
+        private void frmAddGenre_FormClosing(object sender, FormClosingEventArgs e)
+        {
+        }
     }
 }

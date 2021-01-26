@@ -314,6 +314,7 @@
             this.Controls.Add(this.txtboxName);
             this.Name = "frmAddUser";
             this.Text = "frmAddUser";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAddUser_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAddUser_FormClosed);
             this.Load += new System.EventHandler(this.frmAddUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picboxUser)).EndInit();

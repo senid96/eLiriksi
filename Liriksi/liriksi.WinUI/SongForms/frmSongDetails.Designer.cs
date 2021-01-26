@@ -36,6 +36,7 @@
             this.txtboxAlbum = new System.Windows.Forms.TextBox();
             this.txtboxGenre = new System.Windows.Forms.TextBox();
             this.picboxAlbum = new System.Windows.Forms.PictureBox();
+            this.btnEditSong = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picboxAlbum)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,11 +116,22 @@
             this.picboxAlbum.TabIndex = 11;
             this.picboxAlbum.TabStop = false;
             // 
+            // btnEditSong
+            // 
+            this.btnEditSong.Location = new System.Drawing.Point(376, 490);
+            this.btnEditSong.Name = "btnEditSong";
+            this.btnEditSong.Size = new System.Drawing.Size(75, 23);
+            this.btnEditSong.TabIndex = 12;
+            this.btnEditSong.Text = "Edit";
+            this.btnEditSong.UseVisualStyleBackColor = true;
+            this.btnEditSong.Click += new System.EventHandler(this.btnEditSong_Click);
+            // 
             // frmSongDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 531);
+            this.ClientSize = new System.Drawing.Size(463, 561);
+            this.Controls.Add(this.btnEditSong);
             this.Controls.Add(this.picboxAlbum);
             this.Controls.Add(this.txtboxGenre);
             this.Controls.Add(this.txtboxAlbum);
@@ -148,5 +160,6 @@
         private System.Windows.Forms.TextBox txtboxAlbum;
         private System.Windows.Forms.TextBox txtboxGenre;
         private System.Windows.Forms.PictureBox picboxAlbum;
+        private System.Windows.Forms.Button btnEditSong;
     }
 }

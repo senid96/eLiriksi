@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAddGenre = new System.Windows.Forms.Button();
             this.txtGenreName = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -59,6 +62,10 @@
             this.txtGenreName.Size = new System.Drawing.Size(204, 22);
             this.txtGenreName.TabIndex = 3;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // frmAddGenre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -69,8 +76,10 @@
             this.Controls.Add(this.label1);
             this.Name = "frmAddGenre";
             this.Text = "frmAddGenre";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAddGenre_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAddGenre_FormClosed);
             this.Load += new System.EventHandler(this.frmAddGenre_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -81,5 +90,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAddGenre;
         private System.Windows.Forms.TextBox txtGenreName;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

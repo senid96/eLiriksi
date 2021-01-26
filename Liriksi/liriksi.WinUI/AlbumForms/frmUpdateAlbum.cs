@@ -114,5 +114,10 @@ namespace liriksi.WinUI.AlbumForms
                 frm.WindowState = FormWindowState.Maximized;
                 frm.Show();
         }
+
+        private void frmUpdateAlbum_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
     }
     }

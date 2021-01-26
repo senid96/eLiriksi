@@ -14,9 +14,9 @@ namespace liriksi.WinUI.SongForms
 {
     public partial class frmSongDetails : Form
     {
-        private readonly int? _id = null;
+        private readonly int _id;
         private readonly APIService _songService = new APIService("song");
-        public frmSongDetails(int? id = null)
+        public frmSongDetails(int id)
         {
             _id = id;
             InitializeComponent();
@@ -38,6 +38,14 @@ namespace liriksi.WinUI.SongForms
         private void TxtboxLyrics_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private async void btnEditSong_Click(object sender, EventArgs e)
+        {
+            HelperMethods.CloseForm("frmSongDetails");
+            SongGetRequest song = await _songService.GetById<SongGetRequest>(_id, "GetSongById");
+            frmEditSong frm = new frmEditSong(_id);
+            frm.Show();
         }
     }
 }

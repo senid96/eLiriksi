@@ -149,5 +149,10 @@ namespace liriksi.WinUI.SongForms.SongUtilForms
                 errorProvider.SetError(txtAbout, null);
             }
         }
+
+        private void frmAddPerformer_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = false;
+        }
     }
 }

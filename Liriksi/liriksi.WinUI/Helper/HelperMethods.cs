@@ -19,7 +19,7 @@ namespace liriksi.WinUI.Helper
 
             foreach (Form f in Application.OpenForms)
                 openForms.Add(f);
-
+            
             foreach (Form f in openForms)
             {
                 if(!f.Name.Equals("frmIndex"))
@@ -34,6 +34,20 @@ namespace liriksi.WinUI.Helper
             //genericko otvaranje formi jednom metodom
             var form = Activator.CreateInstance(Type.GetType(frmNamespace + "."+ frmName)) as Form;
             form.Show();
+        }
+
+        public static void CloseForm(string frmName)
+        {
+            List<Form> openForms = new List<Form>();
+
+            foreach (Form f in Application.OpenForms)
+                openForms.Add(f);
+
+            foreach (Form f in openForms)
+            {
+                if (f.Name.Equals(frmName))
+                    f.Visible = false;
+            }
         }
     }
 }

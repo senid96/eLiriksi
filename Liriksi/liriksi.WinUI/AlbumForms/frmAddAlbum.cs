@@ -143,5 +143,11 @@ namespace liriksi.WinUI.UtilForms
                 errorProvider.SetError(txtAbout, null);
             }
         }
+
+        private void frmAddAlbum_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            e.Cancel = false;
+        }
     }
 }

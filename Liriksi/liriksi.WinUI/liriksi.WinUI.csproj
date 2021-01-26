@@ -136,6 +136,12 @@
     <Compile Include="SongForms\frmAddSong.Designer.cs">
       <DependentUpon>frmAddSong.cs</DependentUpon>
     </Compile>
+    <Compile Include="SongForms\frmEditSong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SongForms\frmEditSong.Designer.cs">
+      <DependentUpon>frmEditSong.cs</DependentUpon>
+    </Compile>
     <Compile Include="SongForms\frmSong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SongForms\frmAddSong.resx">
       <DependentUpon>frmAddSong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SongForms\frmEditSong.resx">
+      <DependentUpon>frmEditSong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SongForms\frmSong.resx">
       <DependentUpon>frmSong.cs</DependentUpon>

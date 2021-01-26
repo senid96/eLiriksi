@@ -203,6 +203,9 @@ namespace liriksi.WinUI
             frm.Show();
         }
 
-       
+        private void frmIndex_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = false;
+        }
     }
 }

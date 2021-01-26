@@ -63,3 +63,4 @@ C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WinUI\obj\Debug\liriksi.
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WinUI\obj\Debug\liriksi.WinUI.csproj.CopyComplete
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WinUI\obj\Debug\liriksi.WinUI.exe
 C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WinUI\obj\Debug\liriksi.WinUI.pdb
+C:\Users\senid.ajkunic\eLiriksiProjekat\Liriksi\liriksi.WinUI\obj\Debug\liriksi.WinUI.SongForms.frmEditSong.resources

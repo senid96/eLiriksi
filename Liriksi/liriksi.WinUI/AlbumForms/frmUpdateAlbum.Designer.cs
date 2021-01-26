@@ -178,6 +178,7 @@
             this.Controls.Add(this.txtTitle);
             this.Name = "frmUpdateAlbum";
             this.Text = "frmUpdateAlbum";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmUpdateAlbum_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmUpdateAlbum_FormClosed);
             this.Load += new System.EventHandler(this.frmUpdateAlbum_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picboxAlbum)).EndInit();
